@@ -1,842 +1,730 @@
-//------------------------ ½ÃÀÛ -------------------------------//
-//±âº»º¯¼ö
-var i;//Æã¼Ç ¼ýÀÚ º¯¼ö
-var temp;var txt;
+//------------------------ ï¿½ï¿½ï¿½ï¿½ -------------------------------//
+//ï¿½âº»ï¿½ï¿½ï¿½ï¿½
+var i; //ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+var temp;
+var txt;
 var wSize;
-var mall;//¸ôº¯¼ö
-var scp;//CSS & font°ª º¯¼ö
+var mall; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+var scp; //CSS & fontï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-//°øÅëÇÔ¼ö
-function round(num,ja){
-	ja=Math.pow(10,ja);
-	return Math.round(num*ja)/ja;
+//ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½
+function round(num, ja) {
+	ja = Math.pow(10, ja);
+	return Math.round(num * ja) / ja;
 }
-function ceil(num,ja){
-	ja=Math.pow(10,ja);
-	return Math.ceil(num*ja)/ja;
+function ceil(num, ja) {
+	ja = Math.pow(10, ja);
+	return Math.ceil(num * ja) / ja;
 }
-function Left(Str, Num){
-	if (Num <=0){return "";}
-	else if (Num > String(Str).length){return Str;}
-	else {return String(Str).substring(0, Num);}		
+function Left(Str, Num) {
+	if (Num <= 0) {
+		return '';
+	} else if (Num > String(Str).length) {
+		return Str;
+	} else {
+		return String(Str).substring(0, Num);
+	}
 }
-function Right(Str, Num){
-	if (Num <=0){return "";}
-	else if (Num > String(Str).length){return Str;}
-	else {var iLen=String(Str).length;return String(Str).substring(iLen, iLen-Num);}
+function Right(Str, Num) {
+	if (Num <= 0) {
+		return '';
+	} else if (Num > String(Str).length) {
+		return Str;
+	} else {
+		var iLen = String(Str).length;
+		return String(Str).substring(iLen, iLen - Num);
+	}
 }
 
-function Mid(Str, Num1, Num2){
+function Mid(Str, Num1, Num2) {
 	//alert(Num1);
 	return String(Str).substr(Num1, Num2);
 }
 
 function addComma(n) {
-    if(isNaN(n)){return 0;}
-     var reg = /(^[+-]?\d+)(\d{3})/;   
-     n += '';
-     while (reg.test(n))
-       n = n.replace(reg, '$1' + ',' + '$2');
-     return n;
-
+	if (isNaN(n)) {
+		return 0;
+	}
+	var reg = /(^[+-]?\d+)(\d{3})/;
+	n += '';
+	while (reg.test(n)) n = n.replace(reg, '$1' + ',' + '$2');
+	return n;
 }
 
-function cntCng(k){
-	if(k<10){k = '0'+k;}
-	else{k = k;}
+function cntCng(k) {
+	if (k < 10) {
+		k = '0' + k;
+	} else {
+		k = k;
+	}
 	return k;
 }
 
-String.prototype.trim = function(){
-    return this.replace(/\s/g, "");
-}
+String.prototype.trim = function () {
+	return this.replace(/\s/g, '');
+};
 
-
-//¿À´Ã³¯Â¥ ÀÚµ¿ÀÔ·Â
-window.onload=function(){
-	now=new Date();
-	var year = Right(now.getYear(),2);
-	var mon = now.getMonth()+1;
+//ï¿½ï¿½ï¿½Ã³ï¿½Â¥ ï¿½Úµï¿½ï¿½Ô·ï¿½
+window.onload = function () {
+	now = new Date();
+	var year = Right(now.getYear(), 2);
+	var mon = now.getMonth() + 1;
 	var day = now.getDate();
-	
+
 	//alert(monC);
-	if(String(mon).length==1){
-		mon="0"+mon;	}
-	if(String(day).length==1){
-		day="0"+day;	}
+	if (String(mon).length == 1) {
+		mon = '0' + mon;
+	}
+	if (String(day).length == 1) {
+		day = '0' + day;
+	}
 
 	//alert(year+mon+day);
 	//return year+mon+day;
 	document.frm.today.value = '161231_340_basic';
 	//document.frm.today.value = document.frm.today.value;
-	//document.frm.today.value = year+mon+day+'_µô¿µ¹®¸í';
-	dayCode=document.frm.today.value;
-}
+	//document.frm.today.value = year+mon+day+'_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
+	dayCode = document.frm.today.value;
+};
 
-/*HTML º¹»ç*/
+/*HTML ï¿½ï¿½ï¿½ï¿½*/
 function jsCopy(obj) {
- 
- var copyObj = obj;
- var copyStr = document.getElementById(copyObj).innerHTML;
- 
- window.clipboardData.setData("text", copyStr);
- alert("Html ¼Ò½º°¡ º¹»çµÇ¾ú½À´Ï´Ù.");
+	var copyObj = obj;
+	var copyStr = document.getElementById(copyObj).innerHTML;
+
+	window.clipboardData.setData('text', copyStr);
+	alert('Html ï¿½Ò½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.');
 }
 
-// ÀÌ¹ÌÁö º¯È¯ 
-function picResize(secPic){
+// ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
+function picResize(secPic) {
 	/* alert(secPic);*/
 	temp = String(secPic);
-	temp = temp.replace("img_95", "img_615"); //Ä¡È¯	
-	temp = temp.replace("img_140", "img_615");
-	temp = temp.replace("img_150", "img_615");
-	temp = temp.replace("img_170", "img_615");
-	temp = temp.replace("img_220", "img_615");
-	temp = temp.replace("_detail1_5", "_detail1_ORIGIN");
-	temp = temp.replace("_detail2_5", "_detail2_ORIGIN");
-	temp = temp.replace("_detail3_5", "_detail3_ORIGIN");
-	temp = temp.replace("_detail4_5", "_detail4_ORIGIN");
-	temp = temp.replace("_detail5_5", "_detail5_ORIGIN"); 
+	temp = temp.replace('img_95', 'img_615'); //Ä¡È¯
+	temp = temp.replace('img_140', 'img_615');
+	temp = temp.replace('img_150', 'img_615');
+	temp = temp.replace('img_170', 'img_615');
+	temp = temp.replace('img_220', 'img_615');
+	temp = temp.replace('_detail1_5', '_detail1_ORIGIN');
+	temp = temp.replace('_detail2_5', '_detail2_ORIGIN');
+	temp = temp.replace('_detail3_5', '_detail3_ORIGIN');
+	temp = temp.replace('_detail4_5', '_detail4_ORIGIN');
+	temp = temp.replace('_detail5_5', '_detail5_ORIGIN');
 
-	temp = temp.replace("_detail1_4", "_detail1_ORIGIN");
-	temp = temp.replace("_detail2_4", "_detail2_ORIGIN");
-	temp = temp.replace("_detail3_4", "_detail3_ORIGIN");
-	temp = temp.replace("_detail4_4", "_detail4_ORIGIN");
-	temp = temp.replace("_detail5_4", "_detail5_ORIGIN"); 
+	temp = temp.replace('_detail1_4', '_detail1_ORIGIN');
+	temp = temp.replace('_detail2_4', '_detail2_ORIGIN');
+	temp = temp.replace('_detail3_4', '_detail3_ORIGIN');
+	temp = temp.replace('_detail4_4', '_detail4_ORIGIN');
+	temp = temp.replace('_detail5_4', '_detail5_ORIGIN');
 
-	temp = temp.replace("_detail1_3", "_detail1_ORIGIN");
-	temp = temp.replace("_detail2_3", "_detail2_ORIGIN");
-	temp = temp.replace("_detail3_3", "_detail3_ORIGIN");
-	temp = temp.replace("_detail4_3", "_detail4_ORIGIN");
-	temp = temp.replace("_detail5_3", "_detail5_ORIGIN");
-	
-	temp = temp.replace("_detail1_2", "_detail1_ORIGIN");
-	temp = temp.replace("_detail2_2", "_detail2_ORIGIN");
-	temp = temp.replace("_detail3_2", "_detail3_ORIGIN");
-	temp = temp.replace("_detail4_2", "_detail4_ORIGIN");
-	temp = temp.replace("_detail5_2", "_detail5_ORIGIN");
+	temp = temp.replace('_detail1_3', '_detail1_ORIGIN');
+	temp = temp.replace('_detail2_3', '_detail2_ORIGIN');
+	temp = temp.replace('_detail3_3', '_detail3_ORIGIN');
+	temp = temp.replace('_detail4_3', '_detail4_ORIGIN');
+	temp = temp.replace('_detail5_3', '_detail5_ORIGIN');
 
-	temp = temp.replace("_detail1_1", "_detail1_ORIGIN");
-	temp = temp.replace("_detail2_1", "_detail2_ORIGIN");
-	temp = temp.replace("_detail3_1", "_detail3_ORIGIN");
-	temp = temp.replace("_detail4_1", "_detail4_ORIGIN");
-	temp = temp.replace("_detail5_1", "_detail5_ORIGIN");
+	temp = temp.replace('_detail1_2', '_detail1_ORIGIN');
+	temp = temp.replace('_detail2_2', '_detail2_ORIGIN');
+	temp = temp.replace('_detail3_2', '_detail3_ORIGIN');
+	temp = temp.replace('_detail4_2', '_detail4_ORIGIN');
+	temp = temp.replace('_detail5_2', '_detail5_ORIGIN');
 
-	temp = temp.replace("THUMB_1", "ORIGIN"); 
-	temp = temp.replace("THUMB_2", "ORIGIN"); 
-	temp = temp.replace("THUMB_3", "ORIGIN"); 
-	temp = temp.replace("THUMB_4", "ORIGIN"); 
-	temp = temp.replace("THUMB_5", "ORIGIN");
-	
+	temp = temp.replace('_detail1_1', '_detail1_ORIGIN');
+	temp = temp.replace('_detail2_1', '_detail2_ORIGIN');
+	temp = temp.replace('_detail3_1', '_detail3_ORIGIN');
+	temp = temp.replace('_detail4_1', '_detail4_ORIGIN');
+	temp = temp.replace('_detail5_1', '_detail5_ORIGIN');
+
+	temp = temp.replace('THUMB_1', 'ORIGIN');
+	temp = temp.replace('THUMB_2', 'ORIGIN');
+	temp = temp.replace('THUMB_3', 'ORIGIN');
+	temp = temp.replace('THUMB_4', 'ORIGIN');
+	temp = temp.replace('THUMB_5', 'ORIGIN');
+
 	return temp;
 }
 
-// ÅØ½ºÆ® º¯°æ
-function txtCng(k){
+// ï¿½Ø½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
+function txtCng(k) {
 	/* alert(secPic);*/
 	cng = String(k);
 	//alert(cng);
-	cng = cng.replace(/;/gi, "<br/>");cng = cng.replace(/_/gi, "&nbsp;&nbsp;&nbsp;&nbsp;");
-	cng = cng.replace("[", "<span>");cng = cng.replace("]", "</span>");
+	cng = cng.replace(/;/gi, '<br/>');
+	cng = cng.replace(/_/gi, '&nbsp;&nbsp;&nbsp;&nbsp;');
+	cng = cng.replace('[', '<span>');
+	cng = cng.replace(']', '</span>');
 	//cng = ""+cng;
-	
-	return cng;	
+
+	return cng;
 }
 
-//------------------------- °øÅë ¿µ¿ª --------------------------------//
-//¿ÀÇÂ ³¯Â¥ ¹Ý¿µ
-function todayCode(){
-	dayCode = document.frm.today.value;//¿ÀÇÂ³¯Â¥ ÀÎÇ²°ª ¹Ý¿µ
-	//alert(dayCode+'·Î Ã£¾Æº¼°Ô¿ä!');
+//------------------------- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ --------------------------------//
+//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ ï¿½Ý¿ï¿½
+function todayCode() {
+	dayCode = document.frm.today.value; //ï¿½ï¿½ï¿½Â³ï¿½Â¥ ï¿½ï¿½Ç²ï¿½ï¿½ ï¿½Ý¿ï¿½
+	//alert(dayCode+'ï¿½ï¿½ Ã£ï¿½Æºï¿½ï¿½Ô¿ï¿½!');
 }
 
-//------------------------- ±âÅ¸ ¿µ¿ª --------------------------------//
+//------------------------- ï¿½ï¿½Å¸ ï¿½ï¿½ï¿½ï¿½ --------------------------------//
 
-
-//¿¢¼¿ ºÒ·¯¿À±â
-function excel(Location, i){ //¿¢¼¿ÀÌ ÀÔ·ÂµÉ Å¸°Ù, ±âÈ¹ÀüÅ¸ÀÔ¹øÈ£
+//ï¿½ï¿½ï¿½ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½
+function excel(Location, i) {
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Âµï¿½ Å¸ï¿½ï¿½, ï¿½ï¿½È¹ï¿½ï¿½Å¸ï¿½Ô¹ï¿½È£
 
 	todayCode();
 
 	//alert(i);
-	cTemp='border-left:1px dotted #ccc;border-right:1px dotted #ccc;border-bottom:1px dotted #ccc;';
-	switch (i){
-		//ÀÔÁ¡
-		case '0': mall='cjmall';outPut='_cj_deal';wSize='758';break;
-		case '1': mall='hmall';outPut='_h_deal';wSize='778';break; 
-		case '2': mall='gsshop';outPut='_gs_deal';wSize='778';break;
-		case '3': mall='lottei';outPut='_lottei_deal';wSize='778';break;
-		case '4': mall='naver';outPut='_naver_deal';wSize='758';break; 
-		case '5': mall='11st';outPut='_e_deal';wSize='858';break; //11¹ø°¡
-		case '6': mall='auction';outPut='_a_deal';wSize='858';break; //¿Á¼Ç
-		case '7': mall='gmarket';outPut='_g_deal';wSize='858';break; //G¸¶ÄÏ
-		case '8': mall='g9';outPut='_g9_deal';wSize='778';break; 
-		case '9': mall='tmon';outPut='_tmon_deal';wSize='768';break; 
-		case '99': mall='';outPut='';wSize='758';break; //etc
-		default : alert('´Ù½Ã ¼³Á¤ ÇØÁÖ¼¼¿ä.');break;
-		
-	};
+	cTemp = 'border-left:1px dotted #ccc;border-right:1px dotted #ccc;border-bottom:1px dotted #ccc;';
+	switch (i) {
+		//ï¿½ï¿½ï¿½ï¿½
+		case '0':
+			mall = 'cjmall';
+			outPut = '_cj_deal';
+			wSize = '758';
+			break;
+		case '1':
+			mall = 'hmall';
+			outPut = '_h_deal';
+			wSize = '778';
+			break;
+		case '2':
+			mall = 'gsshop';
+			outPut = '_gs_deal';
+			wSize = '778';
+			break;
+		case '3':
+			mall = 'lottei';
+			outPut = '_lottei_deal';
+			wSize = '778';
+			break;
+		case '4':
+			mall = 'naver';
+			outPut = '_naver_deal';
+			wSize = '758';
+			break;
+		case '5':
+			mall = '11st';
+			outPut = '_e_deal';
+			wSize = '858';
+			break; //11ï¿½ï¿½ï¿½ï¿½
+		case '6':
+			mall = 'auction';
+			outPut = '_a_deal';
+			wSize = '858';
+			break; //ï¿½ï¿½ï¿½ï¿½
+		case '7':
+			mall = 'gmarket';
+			outPut = '_g_deal';
+			wSize = '858';
+			break; //Gï¿½ï¿½ï¿½ï¿½
+		case '8':
+			mall = 'g9';
+			outPut = '_g9_deal';
+			wSize = '778';
+			break;
+		case '9':
+			mall = 'tmon';
+			outPut = '_tmon_deal';
+			wSize = '768';
+			break;
+		case '99':
+			mall = '';
+			outPut = '';
+			wSize = '758';
+			break; //etc
+		default:
+			alert('ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.');
+			break;
+	}
 	//alert(wSize);
 
-	//¿¢¼¿¿ë º¯¼ö ¼±¾ð
-	var Excel,oRange;
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	var Excel, oRange;
 
-	// ¿¢¼¿ °´Ã¼»ý¼º
-	Excel = new ActiveXObject("Excel.Application");
-	Excel.Application.Workbooks.Open('\\\\172.17.14.220\\Lguidesystem\\ip\\'+dayCode+outPut+'.xls');
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½
+	Excel = new ActiveXObject('Excel.Application');
+	Excel.Application.Workbooks.Open('\\\\100.10.10.200\\Lguidesystem\\ip\\' + dayCode + outPut + '.xls');
 	//Excel.Application.Workbooks.Open('C:/Guide/ip/'+dayCode+outPut+'.xls');
-	//Excel.Application.Workbooks.Open('http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/excel/'+dayCode+outPut+'.xls'); 
-	//Excel.Application.Workbooks.Open('http://jpub.cafe24.com/G_v02/excel/ip/'+dayCode+outPut+'.xls'); 
+	//Excel.Application.Workbooks.Open('http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/excel/'+dayCode+outPut+'.xls');
+	//Excel.Application.Workbooks.Open('http://jpub.cafe24.com/G_v02/excel/ip/'+dayCode+outPut+'.xls');
 
-	//¿¢¼¿Ç¥½Ã
+	//ï¿½ï¿½ï¿½ï¿½Ç¥ï¿½ï¿½
 	Excel.Application.Visible = true;
-	//sheet1 ¼±ÅÃ
-	Excel.Application.Worksheets("sheet1").Activate;
-	// sheet1³» ÀÛ¾÷¿µ¿ªÀ» °´Ã¼¿¡ ÀúÀå
-	oRange = Excel.Application.ActiveSheet.UsedRange;//oRange¿¡´Â ÇöÀç ³»¿ëÀÌ ÀÖ´Â ºÎºÐ¸¸ ¼±ÅÃµÊ.
-	//oRangeºÎºÐÀ» ¼±ÅÃÇ¥½Ã
+	//sheet1 ï¿½ï¿½ï¿½ï¿½
+	Excel.Application.Worksheets('sheet1').Activate;
+	// sheet1ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	oRange = Excel.Application.ActiveSheet.UsedRange; //oRangeï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ÎºÐ¸ï¿½ ï¿½ï¿½ï¿½Ãµï¿½.
+	//oRangeï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¥ï¿½ï¿½
 	oRange.Select();
- 
 
-	//oRangeºÎºÐÀ» ºê¶ó¿ìÀú¿¡ Ãâ·Â
-	var Type; 
-	var all = document.getElementById('dev_all'); //Ã£°í
-	all.innerHTML = '';	//ÃÊ±âÈ­
+	//oRangeï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+	var Type;
+	var all = document.getElementById('dev_all'); //Ã£ï¿½ï¿½
+	all.innerHTML = ''; //ï¿½Ê±ï¿½È­
 
-	var sum='';//ÇÕ°è°ª
-	var oBox='';var oBoxC='';//¿É¼Ç¿µ¿ª
-	var oSec='';var oSecC='';//¿É¼Ç±¸ºÐ¿µ¿ª
-	var tBox='';var tBoxC='';//Å¸ÀÌÆ²¿µ¿ª
-	var tSec='';var tSecC='';//Å¸ÀÌÆ²±¸ºÐ¿µ¿ª
-	var cnt=0;var cntT;//Ä«¿îÆ® º¯¼ö
-	var sNum; // ¹øÈ£
-	var ttl; //Å¸ÀÌÆ²
-	var pic; //»çÁø
-	var dc; //ÇÒÀÎ
-	var pc; //°¡°Ý
-	var pct1;var pct2;var pct3; //°¡°Ý¸í
-	var pcn1;var pcn2;var pcn3; //°¡°Ý
-	var pc1;var pc2;var pc3; //°¡°Ý ÇÕÃ¼°ª
-	var ee;//¼³¸í°ª
-	var tt;//Å¸ÀÌÆ²°ª
-	var ss;//¿É¼Ç°ª
-	var stNum; //Å¸ÀÌÆ²¹øÈ£
-	var tTtl; //Å¸ÀÌÆ²
-	var tpic; //»çÁø
-	var tdc; //ÇÒÀÎ
-	var tpc; //°¡°Ý
-	var tpct1;var tpct2;var tpct3; //°¡°Ý¸í
-	var tpcn1;var tpcn2;var tpcn3; //°¡°Ý
-	var tpc1;var tpc2;var tpc3; //°¡°Ý ÇÕÃ¼°ª
-	var part1; var part2; var part3;
-	var tpart1; var tpart2; var tpart3;
-	var emt=''; //ºó¿µ¿ª °ª
+	var sum = ''; //ï¿½Õ°è°ª
+	var oBox = '';
+	var oBoxC = ''; //ï¿½É¼Ç¿ï¿½ï¿½ï¿½
+	var oSec = '';
+	var oSecC = ''; //ï¿½É¼Ç±ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½
+	var tBox = '';
+	var tBoxC = ''; //Å¸ï¿½ï¿½Æ²ï¿½ï¿½ï¿½ï¿½
+	var tSec = '';
+	var tSecC = ''; //Å¸ï¿½ï¿½Æ²ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½
+	var cnt = 0;
+	var cntT; //Ä«ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
+	var sNum; // ï¿½ï¿½È£
+	var ttl; //Å¸ï¿½ï¿½Æ²
+	var pic; //ï¿½ï¿½ï¿½ï¿½
+	var dc; //ï¿½ï¿½ï¿½ï¿½
+	var pc; //ï¿½ï¿½ï¿½ï¿½
+	var pct1;
+	var pct2;
+	var pct3; //ï¿½ï¿½ï¿½Ý¸ï¿½
+	var pcn1;
+	var pcn2;
+	var pcn3; //ï¿½ï¿½ï¿½ï¿½
+	var pc1;
+	var pc2;
+	var pc3; //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½
+	var ee; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	var tt; //Å¸ï¿½ï¿½Æ²ï¿½ï¿½
+	var ss; //ï¿½É¼Ç°ï¿½
+	var stNum; //Å¸ï¿½ï¿½Æ²ï¿½ï¿½È£
+	var tTtl; //Å¸ï¿½ï¿½Æ²
+	var tpic; //ï¿½ï¿½ï¿½ï¿½
+	var tdc; //ï¿½ï¿½ï¿½ï¿½
+	var tpc; //ï¿½ï¿½ï¿½ï¿½
+	var tpct1;
+	var tpct2;
+	var tpct3; //ï¿½ï¿½ï¿½Ý¸ï¿½
+	var tpcn1;
+	var tpcn2;
+	var tpcn3; //ï¿½ï¿½ï¿½ï¿½
+	var tpc1;
+	var tpc2;
+	var tpc3; //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½
+	var part1;
+	var part2;
+	var part3;
+	var tpart1;
+	var tpart2;
+	var tpart3;
+	var emt = ''; //ï¿½ó¿µ¿ï¿½ ï¿½ï¿½
 
-	var ex= new Array();
+	var ex = new Array();
 
-	//°ª ¹Þ±â
-	for(var e=12;e<=oRange.Rows.count;e++){ 
-		ex[e] = new Array(); //excel°ª ¹è¿­ ¼±¾ð
-		for(var j=1;j<=oRange.Columns.count;j++){ 
-			ex[e][j] = oRange.Cells(e,j);
+	//ï¿½ï¿½ ï¿½Þ±ï¿½
+	for (var e = 12; e <= oRange.Rows.count; e++) {
+		ex[e] = new Array(); //excelï¿½ï¿½ ï¿½è¿­ ï¿½ï¿½ï¿½ï¿½
+		for (var j = 1; j <= oRange.Columns.count; j++) {
+			ex[e][j] = oRange.Cells(e, j);
 
-			 /*undeÁ¦°Å ¹× ±âº»°ª ¼³Á¤*/
-			if(ex[e][j]=='.' || ex[e][j].value == undefined || ex[e][j].value == null || ex[e][j].value == false){
-				switch (j){ 
-					case 2: ex[e][j]='d0';break; //µðÀÚÀÎ
-					case 4: ex[e][j]='s2';break; //»óÇ° ³ª¿­ ¹æ½Ä
-					case 20: ex[e][j]='s2';break; //°¡°ÝÇ¥½Ã
-					case 36: ex[e][j]='h0';break; //ÀÌ¹ÌÁö È®´ë
-					case 37: ex[e][j]='h2';break; //¿É¼Ç ³ôÀÌ
-					case 38: ex[e][j]='h1';break; //Å¸ÀÌÆ² ³ôÀÌ					
-					default : ex[e][j]='';break;
-				}; /*switch (j) */
-			} /*undeÁ¦°Å ¹× ±âº»°ª ¼³Á¤*/
+			/*undeï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½âº»ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+			if (ex[e][j] == '.' || ex[e][j].value == undefined || ex[e][j].value == null || ex[e][j].value == false) {
+				switch (j) {
+					case 2:
+						ex[e][j] = 'd0';
+						break; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+					case 4:
+						ex[e][j] = 's2';
+						break; //ï¿½ï¿½Ç° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+					case 20:
+						ex[e][j] = 's2';
+						break; //ï¿½ï¿½ï¿½ï¿½Ç¥ï¿½ï¿½
+					case 36:
+						ex[e][j] = 'h0';
+						break; //ï¿½Ì¹ï¿½ï¿½ï¿½ È®ï¿½ï¿½
+					case 37:
+						ex[e][j] = 'h2';
+						break; //ï¿½É¼ï¿½ ï¿½ï¿½ï¿½ï¿½
+					case 38:
+						ex[e][j] = 'h1';
+						break; //Å¸ï¿½ï¿½Æ² ï¿½ï¿½ï¿½ï¿½
+					default:
+						ex[e][j] = '';
+						break;
+				} /*switch (j) */
+			} /*undeï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½âº»ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 			//sum=sum+ex[e][j]+' ';
 
-			if(e>=13){
-				/* °ª ÇÒ´ç */
-				if(j==59){
-					
-					if(ex[e][11]==''){ee='';} //¼³¸í±Û Àç±¸¼º
-					else if(ex[e][11]=='@'){ee='				<p class="e emt"></p>';}
-					else{ee='				<p class="e">'+txtCng(ex[e][11])+'</p>';};
-					if(ex[e][15]==''){tt='';} //Å¸ÀÌÆ² Àç±¸¼º
-					else{tt='				<p class="t">'+txtCng(ex[e][15])+'</p>';};
-					if(ex[e][16]==''){ss='';} //¿É¼Ç Àç±¸¼º
-					else{ss='				<p class="s">'+txtCng(ex[e][16])+'</p>';};
+			if (e >= 13) {
+				/* ï¿½ï¿½ ï¿½Ò´ï¿½ */
+				if (j == 59) {
+					if (ex[e][11] == '') {
+						ee = '';
+					} //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ç±¸ï¿½ï¿½
+					else if (ex[e][11] == '@') {
+						ee = '				<p class="e emt"></p>';
+					} else {
+						ee = '				<p class="e">' + txtCng(ex[e][11]) + '</p>';
+					}
+					if (ex[e][15] == '') {
+						tt = '';
+					} //Å¸ï¿½ï¿½Æ² ï¿½ç±¸ï¿½ï¿½
+					else {
+						tt = '				<p class="t">' + txtCng(ex[e][15]) + '</p>';
+					}
+					if (ex[e][16] == '') {
+						ss = '';
+					} //ï¿½É¼ï¿½ ï¿½ç±¸ï¿½ï¿½
+					else {
+						ss = '				<p class="s">' + txtCng(ex[e][16]) + '</p>';
+					}
 
-					if(ex[e][21]==''){pct1='';} //°¡°Ý¸í1 Àç±¸¼º
-					else{pct1='				<span>'+ex[e][21]+'</span>';};
-					if(ex[e][22]==''){pcn1='';} //°¡°Ý1 Àç±¸¼º
-					else{pcn1='				<em>'+addComma(ex[e][22])+'<span>¿ø</span></em>';};
-					
-					if(ex[e][23]==''){pct2='';} //°¡°Ý¸í2 Àç±¸¼º
-					else{pct2='				<span>'+ex[e][23]+'</span>';};
-					if(ex[e][24]==''){pcn2='';} //°¡°Ý2 Àç±¸¼º
-					else{pcn2='				<em>'+addComma(ex[e][24])+'<span>¿ø</span></em>';};
+					if (ex[e][21] == '') {
+						pct1 = '';
+					} //ï¿½ï¿½ï¿½Ý¸ï¿½1 ï¿½ç±¸ï¿½ï¿½
+					else {
+						pct1 = '				<span>' + ex[e][21] + '</span>';
+					}
+					if (ex[e][22] == '') {
+						pcn1 = '';
+					} //ï¿½ï¿½ï¿½ï¿½1 ï¿½ç±¸ï¿½ï¿½
+					else {
+						pcn1 = '				<em>' + addComma(ex[e][22]) + '<span>ï¿½ï¿½</span></em>';
+					}
 
-					if(ex[e][25]==''){pct3='';} //°¡°Ý¸í3 Àç±¸¼º
-					else{pct3='				<span>'+ex[e][25]+'</span>';};
-					if(ex[e][26]==''){pcn3='';} //°¡°Ý3 Àç±¸¼º
-					else{pcn3='				<em>'+addComma(ex[e][26])+'<span>¿ø</span></em>';};
+					if (ex[e][23] == '') {
+						pct2 = '';
+					} //ï¿½ï¿½ï¿½Ý¸ï¿½2 ï¿½ç±¸ï¿½ï¿½
+					else {
+						pct2 = '				<span>' + ex[e][23] + '</span>';
+					}
+					if (ex[e][24] == '') {
+						pcn2 = '';
+					} //ï¿½ï¿½ï¿½ï¿½2 ï¿½ç±¸ï¿½ï¿½
+					else {
+						pcn2 = '				<em>' + addComma(ex[e][24]) + '<span>ï¿½ï¿½</span></em>';
+					}
 
-					ex[e][32]=round(ex[e][32],2); //
-					
-					if(pct1=='' && pcn1==''){pc1='';}
-					else if(String(ex[e][2])=='d0' || String(ex[e][2])=='tmon0'){//±âº»ÇüÀÎ °æ¿ì reverse
-						pc1=''+
-								'				<div class="pc1">'+
-								pcn1+pct1+
-								'				</div>';	
+					if (ex[e][25] == '') {
+						pct3 = '';
+					} //ï¿½ï¿½ï¿½Ý¸ï¿½3 ï¿½ç±¸ï¿½ï¿½
+					else {
+						pct3 = '				<span>' + ex[e][25] + '</span>';
 					}
-					else{
-						pc1=''+
-								'				<div class="pc1">'+
-								pct1+pcn1+
-								'				</div>';	
+					if (ex[e][26] == '') {
+						pcn3 = '';
+					} //ï¿½ï¿½ï¿½ï¿½3 ï¿½ç±¸ï¿½ï¿½
+					else {
+						pcn3 = '				<em>' + addComma(ex[e][26]) + '<span>ï¿½ï¿½</span></em>';
 					}
-					if(pct2=='' && pcn2==''){pc2='';}
-					else if(String(ex[e][2])=='d0' || String(ex[e][2])=='tmon0'){//±âº»ÇüÀÎ °æ¿ì reverse
-						pc2=''+
-								'				<div class="pc2">'+
-								pcn2+pct2+
-								'				</div>';	
+
+					ex[e][32] = round(ex[e][32], 2); //
+
+					if (pct1 == '' && pcn1 == '') {
+						pc1 = '';
+					} else if (String(ex[e][2]) == 'd0' || String(ex[e][2]) == 'tmon0') {
+						//ï¿½âº»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ reverse
+						pc1 = '' + '				<div class="pc1">' + pcn1 + pct1 + '				</div>';
+					} else {
+						pc1 = '' + '				<div class="pc1">' + pct1 + pcn1 + '				</div>';
 					}
-					else{
-						pc2=''+
-								'				<div class="pc2">'+
-								pct2+pcn2+
-								'				</div>';	
+					if (pct2 == '' && pcn2 == '') {
+						pc2 = '';
+					} else if (String(ex[e][2]) == 'd0' || String(ex[e][2]) == 'tmon0') {
+						//ï¿½âº»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ reverse
+						pc2 = '' + '				<div class="pc2">' + pcn2 + pct2 + '				</div>';
+					} else {
+						pc2 = '' + '				<div class="pc2">' + pct2 + pcn2 + '				</div>';
 					}
-					if(pct3=='' && pcn3==''){pc3='';}
-					else if(String(ex[e][2])=='d0' || String(ex[e][2])=='tmon0'){//±âº»ÇüÀÎ °æ¿ì reverse
-						pc3=''+
-								'				<div class="pc3">'+
-								pcn3+pct3+
-								'				</div>';	
+					if (pct3 == '' && pcn3 == '') {
+						pc3 = '';
+					} else if (String(ex[e][2]) == 'd0' || String(ex[e][2]) == 'tmon0') {
+						//ï¿½âº»ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ reverse
+						pc3 = '' + '				<div class="pc3">' + pcn3 + pct3 + '				</div>';
+					} else {
+						pc3 = '' + '				<div class="pc3">' + pct3 + pcn3 + '				</div>';
 					}
-					else{
-						pc3=''+
-								'				<div class="pc3">'+
-								pct3+pcn3+
-								'				</div>';	
+					if (ex[e][27] == '') {
+						etc = '';
+					} else {
+						etc = '' + '				<div class="etc">' + ex[e][27] + '				</div>';
 					}
-					if(ex[e][27]==''){etc='';}
-					else{
-						etc=''+
-								'				<div class="etc">'+
-								ex[e][27]+
-								'				</div>';
-					}
-					
-					sNum=''+
-							'<!-- ¼ýÀÚ¿µ¿ª sNum -->'+
-							'<div class="sNum '+ex[e][37]+'">'+
-							'	<table class="typeA">'+
-							'		<tr>'+
-							'			<td>'+
-							'				<span>'+ex[e][9]+'</span>'+
-							'				<strong>'+ex[e][10]+'</strong>'+
-							'			</td>'+
-							'		</tr>'+
-							'	</table>'+
-							'</div>'+
+
+					sNum = '' + '<!-- ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ sNum -->' + '<div class="sNum ' + ex[e][37] + '">' + '	<table class="typeA">' + '		<tr>' + '			<td>' + '				<span>' + ex[e][9] + '</span>' + '				<strong>' + ex[e][10] + '</strong>' + '			</td>' + '		</tr>' + '	</table>' + '</div>' + '';
+					ttl = '' + '<!-- Å¸ï¿½ï¿½Æ²ï¿½ï¿½ï¿½ï¿½ -->' + '<div class="ttl ' + ex[e][37] + '">' + '	<table class="typeA">' + '		<tr>' + '			<td>' + ee + tt + ss + '			</td>' + '		</tr>' + '	</table>' + '</div>' + '';
+					if (ex[e][31] == '' && ex[e][32] == '' && ex[e][33] == '') {
+						dc = '';
+					} else {
+						dc =
+							'' +
+							'<!-- ï¿½ï¿½ï¿½Î¿ï¿½ï¿½ï¿½ -->' +
+							'<div class="dc">' +
+							'	<table class="typeA">' +
+							'		<tr>' +
+							'			<td>' +
+							'				<em>' +
+							ex[e][31] +
+							'</em>' + //ï¿½ï¿½ï¿½ï¿½ï¿½Ü¸ï¿½
+							'				<strong>' +
+							ex[e][32] +
+							'</strong>' + //ï¿½ï¿½Ä¡
+							'				<span>' +
+							ex[e][33] +
+							'</span>' + //ï¿½ï¿½ï¿½ï¿½
+							'			</td>' +
+							'		</tr>' +
+							'	</table>' +
+							'</div>' +
 							'';
-					ttl=''+
-							'<!-- Å¸ÀÌÆ²¿µ¿ª -->'+
-							'<div class="ttl '+ex[e][37]+'">'+
-							'	<table class="typeA">'+
-							'		<tr>'+
-							'			<td>'+
-											ee+
-											tt+
-											ss+
-							'			</td>'+
-							'		</tr>'+
-							'	</table>'+
-							'</div>'+
-							'';
-					if(ex[e][31]=='' && ex[e][32]=='' && ex[e][33]==''){dc='';}
-					else{
-						dc=''+
-								'<!-- ÇÒÀÎ¿µ¿ª -->'+
-								'<div class="dc">'+
-								'	<table class="typeA">'+
-								'		<tr>'+
-								'			<td>'+
-								'				<em>'+ex[e][31]+'</em>'+ //¾ÆÀÌÄÜ¸í
-								'				<strong>'+ex[e][32]+'</strong>'+ //¼öÄ¡
-								'				<span>'+ex[e][33]+'</span>'+ //´ÜÀ§
-								'			</td>'+
-								'		</tr>'+
-								'	</table>'+
-								'</div>'+
-								'';
-					};
-					pic=''+
-							'<!-- »çÁø¿µ¿ª -->'+
-							'<div class="pic '+ex[e][36]+'">'+
-							'	<p><img src="'+picResize(ex[e][34])+'" alt="" /></p>'+					
-							'</div>'+
-							'';
-					pc=''+
-							'<!-- °¡°Ý¿µ¿ª -->'+
-							'<div class="prc">'+
-							'	<table class="typeA">'+
-							'		<tr>'+
-							'			<td>'+
-							'				<!-- °¡°Ý¿µ¿ª -->'+
-							pc1+
-							pc2+
-							pc3+
-							etc+
-							'			</td>'+
-							'		</tr>'+
-							'	</table>'+
-							'</div>'+
-							'';
-					
-					/* Å¸ÀÌÆ² °ª ¿µ¿ª ÇÒ´ç */
-					if(ex[e][9]=='@' || ex[e][10]=='@'){
-						sNum=''+
-							'<!-- ¼ýÀÚ¿µ¿ª sNum -->'+
-							'<div class="sNum emt '+ex[e][37]+'">'+
-							'</div>'+
-							'';	
-						stNum=''+
-									'<div class="sNum emt  '+ex[e][38]+'">'+
-									'</div>'+
-									'';	
 					}
-					else if(ex[e][9]=='' && ex[e][10]==''){
-						sNum=''+
-							'<!-- ¼ýÀÚ¿µ¿ª sNum -->'+
-							'<div class="sNum emt '+ex[e][37]+'">'+
-							'</div>'+
-							'';	
-						stNum=''+
-									//'<div class="sNum emt  '+ex[e][38]+'">'+
-									//'</div>'+
-									'';	
-					}
-					else{
-						stNum=''+
-								'<!-- ³Ñ¹ö ¿µ¿ª -->'+
-								'<div class="sNum '+ex[e][38]+'">'+
-								'	<table class="typeA">'+
-								'		<tr>'+
-								'			<td>'+
-								'				<em>'+ex[e][9]+'</em><span>'+ex[e][10]+'</span>'+
-								'			</td>'+
-								'		</tr>'+
-								'	</table>'+
-								'</div>'+
-								'';
-					};
-					tTtl=''+
-							'<div class="ttl '+ex[e][37]+'">'+
-							'	<table class="typeA">'+
-							'		<tr>'+
-							'			<td>'+
-											ee+
-											tt+
-											ss+
-							'			</td>'+
-							'		</tr>'+
-							'	</table>'+
-							'</div>'+
+					pic = '' + '<!-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ -->' + '<div class="pic ' + ex[e][36] + '">' + '	<p><img src="' + picResize(ex[e][34]) + '" alt="" /></p>' + '</div>' + '';
+					pc = '' + '<!-- ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ -->' + '<div class="prc">' + '	<table class="typeA">' + '		<tr>' + '			<td>' + '				<!-- ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ -->' + pc1 + pc2 + pc3 + etc + '			</td>' + '		</tr>' + '	</table>' + '</div>' + '';
+
+					/* Å¸ï¿½ï¿½Æ² ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò´ï¿½ */
+					if (ex[e][9] == '@' || ex[e][10] == '@') {
+						sNum = '' + '<!-- ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ sNum -->' + '<div class="sNum emt ' + ex[e][37] + '">' + '</div>' + '';
+						stNum = '' + '<div class="sNum emt  ' + ex[e][38] + '">' + '</div>' + '';
+					} else if (ex[e][9] == '' && ex[e][10] == '') {
+						sNum = '' + '<!-- ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ sNum -->' + '<div class="sNum emt ' + ex[e][37] + '">' + '</div>' + '';
+						stNum =
+							'' +
+							//'<div class="sNum emt  '+ex[e][38]+'">'+
+							//'</div>'+
 							'';
-					if(ex[e][22]=='' && ex[e][24]=='' && ex[e][26]==''){
-						pc='';
-						tpc='';
+					} else {
+						stNum = '' + '<!-- ï¿½Ñ¹ï¿½ ï¿½ï¿½ï¿½ï¿½ -->' + '<div class="sNum ' + ex[e][38] + '">' + '	<table class="typeA">' + '		<tr>' + '			<td>' + '				<em>' + ex[e][9] + '</em><span>' + ex[e][10] + '</span>' + '			</td>' + '		</tr>' + '	</table>' + '</div>' + '';
 					}
-					else{
-						tpc=''+
-								'<div class="prc '+ex[e][20]+' '+ex[e][38]+'">'+
-								'	<table class="typeA">'+
-								'		<tr>'+
-								'			<td>'+
-								'				<!-- °¡°Ý¿µ¿ª -->'+
-										pc1+
-										pc2+
-										pc3+
-										etc+
-								'			</td>'+
-								'		</tr>'+
-								'	</table>'+
-								'</div>'+
-								'';
-					};
-				};//°ª ÇÒ´ç
-				/* Á¶¸³ */
-				if(j==60){
+					tTtl = '' + '<div class="ttl ' + ex[e][37] + '">' + '	<table class="typeA">' + '		<tr>' + '			<td>' + ee + tt + ss + '			</td>' + '		</tr>' + '	</table>' + '</div>' + '';
+					if (ex[e][22] == '' && ex[e][24] == '' && ex[e][26] == '') {
+						pc = '';
+						tpc = '';
+					} else {
+						tpc = '' + '<div class="prc ' + ex[e][20] + ' ' + ex[e][38] + '">' + '	<table class="typeA">' + '		<tr>' + '			<td>' + '				<!-- ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ -->' + pc1 + pc2 + pc3 + etc + '			</td>' + '		</tr>' + '	</table>' + '</div>' + '';
+					}
+				} //ï¿½ï¿½ ï¿½Ò´ï¿½
+				/* ï¿½ï¿½ï¿½ï¿½ */
+				if (j == 60) {
 					/* Css & Font */
-					if(e==13){			
-						var css; //CSS Á¤ÀÇ º¯¼ö
-						if(ex[e][2]=='l1' || ex[e][2]=='l2'){
-							css='l0';
+					if (e == 13) {
+						var css; //CSS ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+						if (ex[e][2] == 'l1' || ex[e][2] == 'l2') {
+							css = 'l0';
+						} else {
+							css = ex[e][2];
 						}
-						else{css=ex[e][2];}
-					}; // e°ªÀÌ 12ÀÏ¶§ ÇÑ¹ø¸¸ ½ÇÇà
-					scp='<link rel="stylesheet" type="text/css" href="css/'+css+'.css"/> '; //Ãß°¡ ½ºÅ©¸³Æ®°ª
+					} // eï¿½ï¿½ï¿½ï¿½ 12ï¿½Ï¶ï¿½ ï¿½Ñ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+					scp = '<link rel="stylesheet" type="text/css" href="css/' + css + '.css"/> '; //ï¿½ß°ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½
 
 					//alert(ex[e][2]);
-					switch (String(ex[e][2])){
+					switch (String(ex[e][2])) {
 						case 'gs0':
-								scp=scp+
-										'<link rel="stylesheet" type="text/css" href="css/NanumBarunGothic.css"/>'+
-										'<link rel="stylesheet" type="text/css" href="css/whitney-Bold.css"/>'+
-										'<link rel="stylesheet" type="text/css" href="css/OldSansBlack.css"/>'; //Ãß°¡ ½ºÅ©¸³Æ®°ª
-								part1=''+
-										'<div class="part1">'+
-										sNum+
-										ttl+
-										'</div>'+
-										'';
-								part2=''+
-										'<div class="part2">'+
-										pic+
-										dc+
-										'</div>'+
-										'';
-								part3=''+
-										'<div class="part3">'+
-										pc+
-										'</div>'+
-										'';
-								tpart1=''+
-										'<div class="part1">'+
-										stNum+
-										'</div>'+
-										'';
-								tpart2=''+
-										'<div class="part2">'+
-										tTtl+
-										'</div>'+
-										'';
-								tpart3=''+
-										'';
+							scp = scp + '<link rel="stylesheet" type="text/css" href="css/NanumBarunGothic.css"/>' + '<link rel="stylesheet" type="text/css" href="css/whitney-Bold.css"/>' + '<link rel="stylesheet" type="text/css" href="css/OldSansBlack.css"/>'; //ï¿½ß°ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½
+							part1 = '' + '<div class="part1">' + sNum + ttl + '</div>' + '';
+							part2 = '' + '<div class="part2">' + pic + dc + '</div>' + '';
+							part3 = '' + '<div class="part3">' + pc + '</div>' + '';
+							tpart1 = '' + '<div class="part1">' + stNum + '</div>' + '';
+							tpart2 = '' + '<div class="part2">' + tTtl + '</div>' + '';
+							tpart3 = '' + '';
 							break;
 						case 'gs1':
-								scp=scp+
-										'<link rel="stylesheet" type="text/css" href="css/NanumBarunGothic.css"/>'+
-										'<link rel="stylesheet" type="text/css" href="css/whitney-Bold.css"/>'+
-										'<link rel="stylesheet" type="text/css" href="css/OldSansBlack.css"/>'; //Ãß°¡ ½ºÅ©¸³Æ®°ª
-								part1=''+
-										'<div class="part1">'+
-										sNum+
-										ttl+
-										'</div>'+
-										'';
-								part2=''+
-										'<div class="part2">'+
-										pic+
-										dc+
-										'</div>'+
-										'';
-								part3=''+
-										'<div class="part3">'+
-										pc+
-										'</div>'+
-										'';
-								tpart1=''+
-										'<div class="part1">'+
-										stNum+
-										'</div>'+
-										'';
-								tpart2=''+
-										'<div class="part2">'+
-										tTtl+
-										'</div>'+
-										'';
-								tpart3=''+
-										'';
+							scp = scp + '<link rel="stylesheet" type="text/css" href="css/NanumBarunGothic.css"/>' + '<link rel="stylesheet" type="text/css" href="css/whitney-Bold.css"/>' + '<link rel="stylesheet" type="text/css" href="css/OldSansBlack.css"/>'; //ï¿½ß°ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½
+							part1 = '' + '<div class="part1">' + sNum + ttl + '</div>' + '';
+							part2 = '' + '<div class="part2">' + pic + dc + '</div>' + '';
+							part3 = '' + '<div class="part3">' + pc + '</div>' + '';
+							tpart1 = '' + '<div class="part1">' + stNum + '</div>' + '';
+							tpart2 = '' + '<div class="part2">' + tTtl + '</div>' + '';
+							tpart3 = '' + '';
 							break;
 						case 'l0':
-								scp=scp+
-										'<link href="https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css" rel="stylesheet" type="text/css"/>'+
-										''; //Ãß°¡ ½ºÅ©¸³Æ®°ª
-								part1=''+
-										'<div class="part1">'+
-										sNum+
-										pic+
-										'</div>'+
-										'';
-								part2=''+
-										'<div class="part2">'+
-										ttl+
-										dc+
-										'</div>'+
-										'';
-								part3=''+
-										'<div class="part3">'+
-										pc+
-										'</div>'+
-										'';
-								tpart1=''+
-										'<div class="part1">'+
-										stNum+
-										'</div>'+
-										'';
-								tpart2=''+
-										'<div class="part2">'+
-										tTtl+
-										'</div>'+
-										'';
-								tpart3=''+
-										'<div class="part3">'+
-										tpc+
-										'</div>'+
-										'';
+							scp = scp + '<link href="https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css" rel="stylesheet" type="text/css"/>' + ''; //ï¿½ß°ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½
+							part1 = '' + '<div class="part1">' + sNum + pic + '</div>' + '';
+							part2 = '' + '<div class="part2">' + ttl + dc + '</div>' + '';
+							part3 = '' + '<div class="part3">' + pc + '</div>' + '';
+							tpart1 = '' + '<div class="part1">' + stNum + '</div>' + '';
+							tpart2 = '' + '<div class="part2">' + tTtl + '</div>' + '';
+							tpart3 = '' + '<div class="part3">' + tpc + '</div>' + '';
 							break;
 						case 'a0':
-								scp=scp+
-										'<link rel="stylesheet" type="text/css" href="css/NanumBarunGothic.css"/>'+
-										'<link rel="stylesheet" type="text/css" href="css/OldSansBlack.css"/>'; //Ãß°¡ ½ºÅ©¸³Æ®°ª
-								part1=''+
-										'<div class="part1">'+
-										sNum+
-										ttl+
-										'</div>'+
-										'';
-								part2=''+
-										'<div class="part2">'+
-										pc+
-										dc+
-										'</div>'+
-										'';
-								part3=''+
-										'<div class="part3">'+
-										pic+
-										'</div>'+
-										'';
-								tpart1=''+
-										'<div class="part1">'+
-										stNum+
-										'</div>'+
-										'';
-								tpart2=''+
-										'<div class="part2">'+
-										tTtl+
-										'</div>'+
-										'';
-								tpart3=''+
-										'<div class="part3">'+
-										tpc+
-										dc+
-										'</div>'+
-										'';
+							scp = scp + '<link rel="stylesheet" type="text/css" href="css/NanumBarunGothic.css"/>' + '<link rel="stylesheet" type="text/css" href="css/OldSansBlack.css"/>'; //ï¿½ß°ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½
+							part1 = '' + '<div class="part1">' + sNum + ttl + '</div>' + '';
+							part2 = '' + '<div class="part2">' + pc + dc + '</div>' + '';
+							part3 = '' + '<div class="part3">' + pic + '</div>' + '';
+							tpart1 = '' + '<div class="part1">' + stNum + '</div>' + '';
+							tpart2 = '' + '<div class="part2">' + tTtl + '</div>' + '';
+							tpart3 = '' + '<div class="part3">' + tpc + dc + '</div>' + '';
 							break;
-						case 'tmon0' : 
-								scp=scp+
-										'<link rel="stylesheet" type="text/css" href="css/NanumBarunGothic.css"/>'+
-										'<link rel="stylesheet" type="text/css" href="css/whitney-Bold.css"/>'+
-										'<link rel="stylesheet" type="text/css" href="css/OldSansBlack.css"/>'; //Ãß°¡ ½ºÅ©¸³Æ®°ª
-								part1=''+
-										'<div class="part1">'+
-										sNum+
-										ttl+
-										'</div>'+
-										'';
-								part2=''+
-										'<div class="part2">'+
-										pic+
-										'</div>'+
-										'';
-								part3=''+
-										'<div class="part3">'+
-										dc+
-										pc+
-										'</div>'+
-										'';
-								tpart1=''+
-										'<div class="part1">'+
-										stNum+
-										'</div>'+
-										'';
-								tpart2=''+
-										'<div class="part2">'+
-										tTtl+
-										'</div>'+
-										'';
-								tpart3=''+
-										'<div class="part3">'+
-										tpc+
-										'</div>'+
-										'';
-							break;			
-						default : 
-								scp=scp+
-										'<link rel="stylesheet" type="text/css" href="css/NanumBarunGothic.css"/>'+
-										'<link rel="stylesheet" type="text/css" href="css/whitney-Bold.css"/>'+
-										'<link rel="stylesheet" type="text/css" href="css/OldSansBlack.css"/>'; //Ãß°¡ ½ºÅ©¸³Æ®°ª
-								part1=''+
-										'<div class="part1">'+
-										sNum+
-										ttl+
-										'</div>'+
-										'';
-								part2=''+
-										'<div class="part2">'+
-										pic+
-										'</div>'+
-										'';
-								part3=''+
-										'<div class="part3">'+
-										dc+
-										pc+
-										'</div>'+
-										'';
-								tpart1=''+
-										'<div class="part1">'+
-										stNum+
-										'</div>'+
-										'';
-								tpart2=''+
-										'<div class="part2">'+
-										tTtl+
-										'</div>'+
-										'';
-								tpart3=''+
-										'<div class="part3">'+
-										tpc+
-										'</div>'+
-										'';
-							break;			
-					}; 
-					oSec=oSec+
-							'<div class="oSec">'+
-							'	<a href="'+ex[e][35]+'" target="_blank">'+
-									part1+part2+part3+
-							'	</a>'+
-							'</div>'+
-							'';
-
-					tSec=''+
-							'<!-- Å¸ÀÌÆ² ¿µ¿ª -->'+
-							'<div class="tSec">'+
-									tpart1+tpart2+tpart3+
-							'</div>'+
-							//'<p style="clear:both;margin:0;padding:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/00_product/03_ipjum/'+ex[e][50]+'.jpg" style="display:block;margin:0 auto;" border="0" alt=""/></p>'+
-							'';
-					
-					if(String(e-12).length==1){cntT= '0'+String(e-12)}
-					else{cntT= String(e-12);};
-					tSecC=''+
-								'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/guide/t'+cntT+'.jpg" style="margin: 0px auto; border: 0px currentColor; border-image: none; display: block;" border="0"></p>'+
-								'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/b'+cntT+'.jpg" style="margin: 0px auto; border: 0px currentColor; border-image: none; display: block;" border="0"></p>'+
-								'';
-
-					if(ex[13][4]=='s2' && e%2==0){ //Â¦¼öÀÏ¶§¸¸ ½ÇÇà
-						oBox=oBox+
-									'<!-- ¿É¼Ç¸®½ºÆ® ¿µ¿ª -->'+
-									'<div class="oBox '+ex[13][4]+'">'+
-									oSec+
-									'</div>'+
-									'';
-						oSec=''; //±¸ºÐ°ª º¯¼ö ÃÊ±âÈ­
-						cnt=cnt+1; //Ä«¿îÆ®
-						//ÀÚ¸´¼ö º¯Çü
-						if(String(cnt).length==1){cntC='0'+String(cnt);}
-						else{cntC=cnt;}
-						oSecC=oSecC+
-									'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/guide/o'+cntC+'.jpg" usemap="#lvtMap'+cntC+'" style="margin: 0px auto; border: 0px currentColor; border-image: none; display: block;" border="0">'+
-									'	<map name="lvtMap'+cntC+'" id="lvtMap'+cntC+'">'+
-									//'	  <area shape="rect" coords="0,0,387,648" href='+ex[e-1][35]+' title="'+ex[e-1][15]+'" target="_blank" />'+  
-									//'	  <area shape="rect" coords="392,4,777,645" href='+ex[e][35]+' title="'+ex[e][15]+'" target="_blank" />'+
-									'	</map>'+
-									'</p>'+
-									'';
-					} //if Â¦¼ö°ªÀÏ¶§¸¸ ´Ý´Â´Ù
-					
-					else if(e==oRange.Rows.count && e%2==1){ //È¦¼ö°ªÃ³¸®
-						oSec=''+
-							'<div class="oSec">'+
-							'	<a href="'+ex[e][35]+'" target="_blank">'+
-									part1+part2+part3+
-							'	</a>'+
-							'</div>'+
-							'';
-						emt='<div class="oSec empty">'+
-								'	<table class="typeA">'+
-								'		<tr>'+
-								'			<td>'+
-								'				<img src="http://mall.hyundailivart.co.kr/image/mobile/renewal/logo.png" alt="Çö´ë¸®¹ÙÆ®"/>'+ 		
-								'			</td>'+
-								'		</tr>'+
-								'	</table>'+
-								//'	<p>ºñ¾ú´Ù¾Æ¾Æ</p>'+
-								'</div>';
-						emt=''+
-									'<!-- ¿É¼Ç¸®½ºÆ® ¿µ¿ª -->'+
-									'<div class="oBox '+ex[13][4]+'">'+
-									oSec+
-									emt+
-									'</div>'+
-									'';
-						oSec='';
-					};
-
-
-					if(ex[13][4]=='s2' && e==oRange.Rows.count && e%2==1){
-						cntC=cnt+1;
-						if(String(cntC).length==1){cntC='0'+String(cntC);}
-						emtC='<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/guide/o'+cntC+'.jpg" usemap="#lvtMap'+cntC+'" style="margin: 0px auto; border: 0px currentColor; border-image: none; display: block;" border="0">'+
-									'	<map name="lvtMap'+cntC+'" id="lvtMap'+cntC+'">'+							
-									//'	  <area shape="rect" coords="0,0,387,648"  href='+ex[e-1][35]+' title="'+ex[e-1][15]+'" target="_blank" />'+ //¸µÅ©°ª
-									'	</map>'+
-									'</p>'+
-									'';
+						case 'tmon0':
+							scp = scp + '<link rel="stylesheet" type="text/css" href="css/NanumBarunGothic.css"/>' + '<link rel="stylesheet" type="text/css" href="css/whitney-Bold.css"/>' + '<link rel="stylesheet" type="text/css" href="css/OldSansBlack.css"/>'; //ï¿½ß°ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½
+							part1 = '' + '<div class="part1">' + sNum + ttl + '</div>' + '';
+							part2 = '' + '<div class="part2">' + pic + '</div>' + '';
+							part3 = '' + '<div class="part3">' + dc + pc + '</div>' + '';
+							tpart1 = '' + '<div class="part1">' + stNum + '</div>' + '';
+							tpart2 = '' + '<div class="part2">' + tTtl + '</div>' + '';
+							tpart3 = '' + '<div class="part3">' + tpc + '</div>' + '';
+							break;
+						default:
+							scp = scp + '<link rel="stylesheet" type="text/css" href="css/NanumBarunGothic.css"/>' + '<link rel="stylesheet" type="text/css" href="css/whitney-Bold.css"/>' + '<link rel="stylesheet" type="text/css" href="css/OldSansBlack.css"/>'; //ï¿½ß°ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½
+							part1 = '' + '<div class="part1">' + sNum + ttl + '</div>' + '';
+							part2 = '' + '<div class="part2">' + pic + '</div>' + '';
+							part3 = '' + '<div class="part3">' + dc + pc + '</div>' + '';
+							tpart1 = '' + '<div class="part1">' + stNum + '</div>' + '';
+							tpart2 = '' + '<div class="part2">' + tTtl + '</div>' + '';
+							tpart3 = '' + '<div class="part3">' + tpc + '</div>' + '';
+							break;
 					}
-					else{emtC='';}; //if emtC °ª »ý¼º
+					oSec = oSec + '<div class="oSec">' + '	<a href="' + ex[e][35] + '" target="_blank">' + part1 + part2 + part3 + '	</a>' + '</div>' + '';
 
-					tBox=tBox+tSec;
+					tSec =
+						'' +
+						'<!-- Å¸ï¿½ï¿½Æ² ï¿½ï¿½ï¿½ï¿½ -->' +
+						'<div class="tSec">' +
+						tpart1 +
+						tpart2 +
+						tpart3 +
+						'</div>' +
+						//'<p style="clear:both;margin:0;padding:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/00_product/03_ipjum/'+ex[e][50]+'.jpg" style="display:block;margin:0 auto;" border="0" alt=""/></p>'+
+						'';
 
-					oBoxC=oSecC+emtC;
-					tBoxC=tBoxC+tSecC;
+					if (String(e - 12).length == 1) {
+						cntT = '0' + String(e - 12);
+					} else {
+						cntT = String(e - 12);
+					}
+					tSecC =
+						'' +
+						'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/' +
+						mall +
+						'/' +
+						dayCode +
+						'_deal/guide/t' +
+						cntT +
+						'.jpg" style="margin: 0px auto; border: 0px currentColor; border-image: none; display: block;" border="0"></p>' +
+						'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/' +
+						mall +
+						'/' +
+						dayCode +
+						'_deal/b' +
+						cntT +
+						'.jpg" style="margin: 0px auto; border: 0px currentColor; border-image: none; display: block;" border="0"></p>' +
+						'';
 
-				}; //j40
-			}; //if e>=13
+					if (ex[13][4] == 's2' && e % 2 == 0) {
+						//Â¦ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+						oBox = oBox + '<!-- ï¿½É¼Ç¸ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ -->' + '<div class="oBox ' + ex[13][4] + '">' + oSec + '</div>' + '';
+						oSec = ''; //ï¿½ï¿½ï¿½Ð°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­
+						cnt = cnt + 1; //Ä«ï¿½ï¿½Æ®
+						//ï¿½Ú¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+						if (String(cnt).length == 1) {
+							cntC = '0' + String(cnt);
+						} else {
+							cntC = cnt;
+						}
+						oSecC =
+							oSecC +
+							'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/' +
+							mall +
+							'/' +
+							dayCode +
+							'_deal/guide/o' +
+							cntC +
+							'.jpg" usemap="#lvtMap' +
+							cntC +
+							'" style="margin: 0px auto; border: 0px currentColor; border-image: none; display: block;" border="0">' +
+							'	<map name="lvtMap' +
+							cntC +
+							'" id="lvtMap' +
+							cntC +
+							'">' +
+							//'	  <area shape="rect" coords="0,0,387,648" href='+ex[e-1][35]+' title="'+ex[e-1][15]+'" target="_blank" />'+
+							//'	  <area shape="rect" coords="392,4,777,645" href='+ex[e][35]+' title="'+ex[e][15]+'" target="_blank" />'+
+							'	</map>' +
+							'</p>' +
+							'';
+					} //if Â¦ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½ ï¿½Ý´Â´ï¿½
+					else if (e == oRange.Rows.count && e % 2 == 1) {
+						//È¦ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½
+						oSec = '' + '<div class="oSec">' + '	<a href="' + ex[e][35] + '" target="_blank">' + part1 + part2 + part3 + '	</a>' + '</div>' + '';
+						emt =
+							'<div class="oSec empty">' +
+							'	<table class="typeA">' +
+							'		<tr>' +
+							'			<td>' +
+							'				<img src="http://mall.hyundailivart.co.kr/image/mobile/renewal/logo.png" alt="ï¿½ï¿½ï¿½ë¸®ï¿½ï¿½Æ®"/>' +
+							'			</td>' +
+							'		</tr>' +
+							'	</table>' +
+							//'	<p>ï¿½ï¿½ï¿½ï¿½Ù¾Æ¾ï¿½</p>'+
+							'</div>';
+						emt = '' + '<!-- ï¿½É¼Ç¸ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ -->' + '<div class="oBox ' + ex[13][4] + '">' + oSec + emt + '</div>' + '';
+						oSec = '';
+					}
 
+					if (ex[13][4] == 's2' && e == oRange.Rows.count && e % 2 == 1) {
+						cntC = cnt + 1;
+						if (String(cntC).length == 1) {
+							cntC = '0' + String(cntC);
+						}
+						emtC =
+							'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/' +
+							mall +
+							'/' +
+							dayCode +
+							'_deal/guide/o' +
+							cntC +
+							'.jpg" usemap="#lvtMap' +
+							cntC +
+							'" style="margin: 0px auto; border: 0px currentColor; border-image: none; display: block;" border="0">' +
+							'	<map name="lvtMap' +
+							cntC +
+							'" id="lvtMap' +
+							cntC +
+							'">' +
+							//'	  <area shape="rect" coords="0,0,387,648"  href='+ex[e-1][35]+' title="'+ex[e-1][15]+'" target="_blank" />'+ //ï¿½ï¿½Å©ï¿½ï¿½
+							'	</map>' +
+							'</p>' +
+							'';
+					} else {
+						emtC = '';
+					} //if emtC ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+
+					tBox = tBox + tSec;
+
+					oBoxC = oSecC + emtC;
+					tBoxC = tBoxC + tSecC;
+				} //j40
+			} //if e>=13
 		} //for j
+	} //for e //for e
 
-	} //for e
-	
-	
 	//tBox='';
-	/* °ª Àç±¸¼º */
+	/* ï¿½ï¿½ ï¿½ç±¸ï¿½ï¿½ */
 	/*for(var e=10;e<=oRange.Rows.count;e++){ 
 		for(var j=1;j<=oRange.Columns.count;j++){ 
 			
 		};//for j
-	};*/ //for e
-
-	/*ÃÖÁ¾ °á°ú°ª »êÃâ*/
-	sum =   ''+
-			scp+ //Css, Font È£Ãâ°ª
-			'<div class="oWrap" style="width:'+wSize+'px;">'+
-			oBox+
-			emt+
-			'</div>'+
-			'<!-- Å¸ÀÌÆ² ¿µ¿ª -->'+
-			'<div class="tBox" style="width:'+wSize+'px;">'+
-			tBox+
-			'</div>'+
-
-			'<div id="dev_allC" style="display:none;">'+ //  
-			'	<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/a01.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+ 
-			oBoxC+
-			tBoxC+
-			'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/00_product/01_online/01_ismine/01_common/99_ship/01.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+ // ¹è¼ÛÁ¤º¸
-			'</div>'+
-			//'test'+
-			'';			
-	//alert(sum);	
-	/*ÃÖÁ¾ °á°ú°ª »êÃâ*/
+	};*/ /*ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
+	sum =
+		'' +
+		scp + //Css, Font È£ï¿½â°ª
+		'<div class="oWrap" style="width:' +
+		wSize +
+		'px;">' +
+		oBox +
+		emt +
+		'</div>' +
+		'<!-- Å¸ï¿½ï¿½Æ² ï¿½ï¿½ï¿½ï¿½ -->' +
+		'<div class="tBox" style="width:' +
+		wSize +
+		'px;">' +
+		tBox +
+		'</div>' +
+		'<div id="dev_allC" style="display:none;">' + //
+		'	<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/' +
+		mall +
+		'/' +
+		dayCode +
+		'_deal/a01.jpg" style="display:block;margin:0 auto;" border="0"/></p>' +
+		oBoxC +
+		tBoxC +
+		'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/00_product/01_online/01_ismine/01_common/99_ship/01.jpg" style="display:block;margin:0 auto;" border="0"/></p>' + // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		'</div>' +
+		//'test'+
+		'';
+	//alert(sum);
+	/*ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½*/
 
 	all.innerHTML = sum;
-	
 }
-
-

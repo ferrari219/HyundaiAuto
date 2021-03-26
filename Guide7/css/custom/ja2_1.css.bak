@@ -312,7 +312,7 @@ h4 {
   .color .s1-2 dd .icon,
   .color .specBox .spec .s1-2 dd .icon {
     height: 105px;
-    background: url(http://172.17.14.220/00_pd/on/01/01_cmn/deco/css_sprites.png) no-repeat;
+    background: url(http://100.10.10.200/00_pd/on/01/01_cmn/deco/css_sprites.png) no-repeat;
     text-indent: -5000px; }
   .specBox .spec .s1-1 dd .edge00, .specBox .spec .series .s1-2 dd .edge00, .series .specBox .spec .s1-2 dd .edge00, .specBox .spec .product .s1-2 dd .edge00, .product .specBox .spec .s1-2 dd .edge00, .specBox .spec .detail .s1-2 dd .edge00, .detail .specBox .spec .s1-2 dd .edge00, .specBox .spec .check .s1-2 dd .edge00, .check .specBox .spec .s1-2 dd .edge00, .specBox .spec
   .special .s1-2 dd .edge00,

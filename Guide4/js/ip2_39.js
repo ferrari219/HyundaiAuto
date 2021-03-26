@@ -1,606 +1,856 @@
-//------------------------ ½ÃÀÛ -------------------------------//
-//±âº»º¯¼ö
-var i;//Æã¼Ç ¼ýÀÚ º¯¼ö
-var a=1;//Æã¼Ç ¼ýÀÚ º¯¼ö
-var trFs; //Ã¼Å©	
-var temp;var txt;
-var cng;var tcng;
-var rowNum; //ÀüÃ¼°¹¼ö/2
-var coding; //ÄÚµùº¯¼ö
+//------------------------ ï¿½ï¿½ï¿½ï¿½ -------------------------------//
+//ï¿½âº»ï¿½ï¿½ï¿½ï¿½
+var i; //ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+var a = 1; //ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+var trFs; //Ã¼Å©
+var temp;
+var txt;
+var cng;
+var tcng;
+var rowNum; //ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½/2
+var coding; //ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½
 var tempIco;
 var tempPriOn;
 var wSize;
 var cTemp;
 var cjTF;
-var mall;//¸ôº¯¼ö
-var count;//Ä«¿îÆ®º¯¼ö
+var mall; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+var count; //Ä«ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½
 
 //var linkArea ='background-color:cyan;opacity:0.5;filter:alpha(opacity=50);';
 
-//°øÅëÇÔ¼ö
-function round(num,ja){
-	ja=Math.pow(10,ja);
-	return Math.round(num*ja)/ja;
+//ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½
+function round(num, ja) {
+	ja = Math.pow(10, ja);
+	return Math.round(num * ja) / ja;
 }
-function ceil(num,ja){
-	ja=Math.pow(10,ja);
-	return Math.ceil(num*ja)/ja;
+function ceil(num, ja) {
+	ja = Math.pow(10, ja);
+	return Math.ceil(num * ja) / ja;
 }
-function Left(Str, Num){
-	if (Num <=0){return "";}
-	else if (Num > String(Str).length){return Str;}
-	else {return String(Str).substring(0, Num);}		
+function Left(Str, Num) {
+	if (Num <= 0) {
+		return '';
+	} else if (Num > String(Str).length) {
+		return Str;
+	} else {
+		return String(Str).substring(0, Num);
+	}
 }
-function Right(Str, Num){
-	if (Num <=0){return "";}
-	else if (Num > String(Str).length){return Str;}
-	else {var iLen=String(Str).length;return String(Str).substring(iLen, iLen-Num);}
+function Right(Str, Num) {
+	if (Num <= 0) {
+		return '';
+	} else if (Num > String(Str).length) {
+		return Str;
+	} else {
+		var iLen = String(Str).length;
+		return String(Str).substring(iLen, iLen - Num);
+	}
 }
 
-function Mid(Str, Num1, Num2){
+function Mid(Str, Num1, Num2) {
 	//alert(Num1);
 	return String(Str).substr(Num1, Num2);
 }
 
 function addComma(n) {
-    if(isNaN(n)){return 0;}
-     var reg = /(^[+-]?\d+)(\d{3})/;   
-     n += '';
-     while (reg.test(n))
-       n = n.replace(reg, '$1' + ',' + '$2');
-     return n;
-
+	if (isNaN(n)) {
+		return 0;
+	}
+	var reg = /(^[+-]?\d+)(\d{3})/;
+	n += '';
+	while (reg.test(n)) n = n.replace(reg, '$1' + ',' + '$2');
+	return n;
 }
 
-function cntCng(k){
-	if(k<10){k = '0'+k;}
-	else{k = k;}
+function cntCng(k) {
+	if (k < 10) {
+		k = '0' + k;
+	} else {
+		k = k;
+	}
 	return k;
 }
 
-String.prototype.trim = function(){
-    return this.replace(/\s/g, "");
-}
-
-function PriOnMake(m,n){
-	switch (String(m)){
-		case 'O': temp=String(n);break;
-		case 'X': temp='<img border="0" src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/etc/btn/btn.gif" alt="¹Ù·Î°¡±â"/>';break;
-		case '.': alert('°¡°ÝÇ¥½Ã´Â O³ª X·Î¸¸ Ç¥½ÃÇØÁÖ¼¼¿ä.');break;
-	};
+String.prototype.trim = function () {
+	return this.replace(/\s/g, '');
 };
 
-//¿À´Ã³¯Â¥ ÀÚµ¿ÀÔ·Â
-window.onload=function(){
-	now=new Date();
-	var year = Right(now.getYear(),2);
-	var mon = now.getMonth()+1;
+function PriOnMake(m, n) {
+	switch (String(m)) {
+		case 'O':
+			temp = String(n);
+			break;
+		case 'X':
+			temp = '<img border="0" src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/etc/btn/btn.gif" alt="ï¿½Ù·Î°ï¿½ï¿½ï¿½"/>';
+			break;
+		case '.':
+			alert('ï¿½ï¿½ï¿½ï¿½Ç¥ï¿½Ã´ï¿½ Oï¿½ï¿½ Xï¿½Î¸ï¿½ Ç¥ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.');
+			break;
+	}
+}
+
+//ï¿½ï¿½ï¿½Ã³ï¿½Â¥ ï¿½Úµï¿½ï¿½Ô·ï¿½
+window.onload = function () {
+	now = new Date();
+	var year = Right(now.getYear(), 2);
+	var mon = now.getMonth() + 1;
 	var day = now.getDate();
-	
+
 	//alert(monC);
-	if(String(mon).length==1){
-		mon="0"+mon;	}
-	if(String(day).length==1){
-		day="0"+day;	}
+	if (String(mon).length == 1) {
+		mon = '0' + mon;
+	}
+	if (String(day).length == 1) {
+		day = '0' + day;
+	}
 
 	//alert(year+mon+day);
 	//return year+mon+day;
 	//document.frm.today.value = '160119_table_pc'; //'151231_test341';
 	//document.frm.today.value = document.frm.today.value;
-	document.frm.today.value = year+mon+day+'_Ä«Å×°í¸®¿µ¹®';
-	dayCode=document.frm.today.value;
-}
+	document.frm.today.value = year + mon + day + '_Ä«ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
+	dayCode = document.frm.today.value;
+};
 
-/*HTML º¹»ç*/
+/*HTML ï¿½ï¿½ï¿½ï¿½*/
 function jsCopy(obj) {
- 
- var copyObj = obj;
- var copyStr = document.getElementById(copyObj).innerHTML;
- 
- window.clipboardData.setData("text", copyStr);
- alert("Html ¼Ò½º°¡ º¹»çµÇ¾ú½À´Ï´Ù.");
+	var copyObj = obj;
+	var copyStr = document.getElementById(copyObj).innerHTML;
+
+	window.clipboardData.setData('text', copyStr);
+	alert('Html ï¿½Ò½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.');
 }
 
-//------------------------- °øÅë ¿µ¿ª --------------------------------//
-//¿ÀÇÂ ³¯Â¥ ¹Ý¿µ
-function todayCode(){
-	dayCode = document.frm.today.value;//¿ÀÇÂ³¯Â¥ ÀÎÇ²°ª ¹Ý¿µ
-	//alert(dayCode+'·Î Ã£¾Æº¼°Ô¿ä!');
+//------------------------- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ --------------------------------//
+//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Â¥ ï¿½Ý¿ï¿½
+function todayCode() {
+	dayCode = document.frm.today.value; //ï¿½ï¿½ï¿½Â³ï¿½Â¥ ï¿½ï¿½Ç²ï¿½ï¿½ ï¿½Ý¿ï¿½
+	//alert(dayCode+'ï¿½ï¿½ Ã£ï¿½Æºï¿½ï¿½Ô¿ï¿½!');
 }
 
-//------------------------- ±âÅ¸ ¿µ¿ª --------------------------------//
-//¾ÆÀÌÄÜ º¯°æ
-function icoMake(m){
-	switch (String(m)){
-		//ÀÔÁ¡
-		case 'ico00': temp='<table width="65" border="0" cellpadding="0" cellspacing="0">'+
-							'	<tr>'+
-							'		<td height="60" align="center" valign="middle" bgcolor="#dd080c"><strong style="font:bold 28px Arial, Helvetica, sans-serif;color:#fff;">'+tempIco+'</strong><span style="font:bold 12px Arial, Helvetica, sans-serif;color:#fff;">%</span></td>'+
-							'	</tr>'+
-							'</table>';break;
-		case 'x': temp='';break;
-		default : alert('´Ù½Ã ¼³Á¤ ÇØÁÖ¼¼¿ä.');break;
-		
-	};
-};
+//------------------------- ï¿½ï¿½Å¸ ï¿½ï¿½ï¿½ï¿½ --------------------------------//
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+function icoMake(m) {
+	switch (String(m)) {
+		//ï¿½ï¿½ï¿½ï¿½
+		case 'ico00':
+			temp =
+				'<table width="65" border="0" cellpadding="0" cellspacing="0">' +
+				'	<tr>' +
+				'		<td height="60" align="center" valign="middle" bgcolor="#dd080c"><strong style="font:bold 28px Arial, Helvetica, sans-serif;color:#fff;">' +
+				tempIco +
+				'</strong><span style="font:bold 12px Arial, Helvetica, sans-serif;color:#fff;">%</span></td>' +
+				'	</tr>' +
+				'</table>';
+			break;
+		case 'x':
+			temp = '';
+			break;
+		default:
+			alert('ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.');
+			break;
+	}
+}
 
-//°¡°Ýº¸±â
-function PriOnMake(m,n){
-	switch (String(m)){
-		case 'O': temp=String(n);break;
-		case 'X': temp='<img border="0" src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/etc/btn/btn.gif" alt="¹Ù·Î°¡±â"/>';break;
-		case '.': alert('°¡°ÝÇ¥½Ã´Â O³ª X·Î¸¸ Ç¥½ÃÇØÁÖ¼¼¿ä.');break;
-	};
-};
+//ï¿½ï¿½ï¿½Ýºï¿½ï¿½ï¿½
+function PriOnMake(m, n) {
+	switch (String(m)) {
+		case 'O':
+			temp = String(n);
+			break;
+		case 'X':
+			temp = '<img border="0" src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/etc/btn/btn.gif" alt="ï¿½Ù·Î°ï¿½ï¿½ï¿½"/>';
+			break;
+		case '.':
+			alert('ï¿½ï¿½ï¿½ï¿½Ç¥ï¿½Ã´ï¿½ Oï¿½ï¿½ Xï¿½Î¸ï¿½ Ç¥ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.');
+			break;
+	}
+}
 
-// ÀÌ¹ÌÁö º¯È¯ 
-function picResize(secPic){
+// ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
+function picResize(secPic) {
 	/* alert(secPic);*/
 	temp = String(secPic);
-	temp = temp.replace("img_95", "img_615"); //Ä¡È¯	
-	temp = temp.replace("img_140", "img_615");
-	temp = temp.replace("img_150", "img_615");
-	temp = temp.replace("img_170", "img_615");
-	temp = temp.replace("img_220", "img_615");
-	temp = temp.replace("_detail1_5", "_detail1_ORIGIN");
-	temp = temp.replace("_detail2_5", "_detail2_ORIGIN");
-	temp = temp.replace("_detail3_5", "_detail3_ORIGIN");
-	temp = temp.replace("_detail4_5", "_detail4_ORIGIN");
-	temp = temp.replace("_detail5_5", "_detail5_ORIGIN"); 
+	temp = temp.replace('img_95', 'img_615'); //Ä¡È¯
+	temp = temp.replace('img_140', 'img_615');
+	temp = temp.replace('img_150', 'img_615');
+	temp = temp.replace('img_170', 'img_615');
+	temp = temp.replace('img_220', 'img_615');
+	temp = temp.replace('_detail1_5', '_detail1_ORIGIN');
+	temp = temp.replace('_detail2_5', '_detail2_ORIGIN');
+	temp = temp.replace('_detail3_5', '_detail3_ORIGIN');
+	temp = temp.replace('_detail4_5', '_detail4_ORIGIN');
+	temp = temp.replace('_detail5_5', '_detail5_ORIGIN');
 
-	temp = temp.replace("_detail1_4", "_detail1_ORIGIN");
-	temp = temp.replace("_detail2_4", "_detail2_ORIGIN");
-	temp = temp.replace("_detail3_4", "_detail3_ORIGIN");
-	temp = temp.replace("_detail4_4", "_detail4_ORIGIN");
-	temp = temp.replace("_detail5_4", "_detail5_ORIGIN"); 
+	temp = temp.replace('_detail1_4', '_detail1_ORIGIN');
+	temp = temp.replace('_detail2_4', '_detail2_ORIGIN');
+	temp = temp.replace('_detail3_4', '_detail3_ORIGIN');
+	temp = temp.replace('_detail4_4', '_detail4_ORIGIN');
+	temp = temp.replace('_detail5_4', '_detail5_ORIGIN');
 
-	temp = temp.replace("_detail1_3", "_detail1_ORIGIN");
-	temp = temp.replace("_detail2_3", "_detail2_ORIGIN");
-	temp = temp.replace("_detail3_3", "_detail3_ORIGIN");
-	temp = temp.replace("_detail4_3", "_detail4_ORIGIN");
-	temp = temp.replace("_detail5_3", "_detail5_ORIGIN");
-	
-	temp = temp.replace("_detail1_2", "_detail1_ORIGIN");
-	temp = temp.replace("_detail2_2", "_detail2_ORIGIN");
-	temp = temp.replace("_detail3_2", "_detail3_ORIGIN");
-	temp = temp.replace("_detail4_2", "_detail4_ORIGIN");
-	temp = temp.replace("_detail5_2", "_detail5_ORIGIN");
+	temp = temp.replace('_detail1_3', '_detail1_ORIGIN');
+	temp = temp.replace('_detail2_3', '_detail2_ORIGIN');
+	temp = temp.replace('_detail3_3', '_detail3_ORIGIN');
+	temp = temp.replace('_detail4_3', '_detail4_ORIGIN');
+	temp = temp.replace('_detail5_3', '_detail5_ORIGIN');
 
-	temp = temp.replace("_detail1_1", "_detail1_ORIGIN");
-	temp = temp.replace("_detail2_1", "_detail2_ORIGIN");
-	temp = temp.replace("_detail3_1", "_detail3_ORIGIN");
-	temp = temp.replace("_detail4_1", "_detail4_ORIGIN");
-	temp = temp.replace("_detail5_1", "_detail5_ORIGIN");
+	temp = temp.replace('_detail1_2', '_detail1_ORIGIN');
+	temp = temp.replace('_detail2_2', '_detail2_ORIGIN');
+	temp = temp.replace('_detail3_2', '_detail3_ORIGIN');
+	temp = temp.replace('_detail4_2', '_detail4_ORIGIN');
+	temp = temp.replace('_detail5_2', '_detail5_ORIGIN');
 
-	temp = temp.replace("THUMB_1", "ORIGIN"); 
-	temp = temp.replace("THUMB_2", "ORIGIN"); 
-	temp = temp.replace("THUMB_3", "ORIGIN"); 
-	temp = temp.replace("THUMB_4", "ORIGIN"); 
-	temp = temp.replace("THUMB_5", "ORIGIN");
-	
+	temp = temp.replace('_detail1_1', '_detail1_ORIGIN');
+	temp = temp.replace('_detail2_1', '_detail2_ORIGIN');
+	temp = temp.replace('_detail3_1', '_detail3_ORIGIN');
+	temp = temp.replace('_detail4_1', '_detail4_ORIGIN');
+	temp = temp.replace('_detail5_1', '_detail5_ORIGIN');
+
+	temp = temp.replace('THUMB_1', 'ORIGIN');
+	temp = temp.replace('THUMB_2', 'ORIGIN');
+	temp = temp.replace('THUMB_3', 'ORIGIN');
+	temp = temp.replace('THUMB_4', 'ORIGIN');
+	temp = temp.replace('THUMB_5', 'ORIGIN');
+
 	return temp;
 }
 
-function txtCng(k){
+function txtCng(k) {
 	/* alert(secPic);*/
 	cng = String(k);
 	//alert(cng);
-	cng = cng.replace(/;/gi, "<br/>");cng = cng.replace(/_/gi, "&nbsp;&nbsp;&nbsp;&nbsp;");
-	cng = cng.replace("[", "<span>");cng = cng.replace("]", "</span>");
+	cng = cng.replace(/;/gi, '<br/>');
+	cng = cng.replace(/_/gi, '&nbsp;&nbsp;&nbsp;&nbsp;');
+	cng = cng.replace('[', '<span>');
+	cng = cng.replace(']', '</span>');
 	//cng = ""+cng;
-	
-	return cng;	
+
+	return cng;
 }
-function emCng(k){
+function emCng(k) {
 	/* alert(secPic);*/
 	em = String(k);
 	//alert(em);
-	em = em.replace("{", "<em>");em = em.replace("}", "</em>");
-	
-	return em;	
+	em = em.replace('{', '<em>');
+	em = em.replace('}', '</em>');
+
+	return em;
 }
 
-//------------------------- ¿¢¼¿ ¿µ¿ª --------------------------------//
-//DB ºÒ·¯¿À±â
-function excelAll(Location, i){
+//------------------------- ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ --------------------------------//
+//DB ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½
+function excelAll(Location, i) {
+	var ExcelAll, oRangeAll;
 
-	var ExcelAll,oRangeAll;
-
-	// ¿¢¼¿ °´Ã¼»ý¼º
-	ExcelAll = new ActiveXObject("Excel.Application");
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½
+	ExcelAll = new ActiveXObject('Excel.Application');
 	//ExcelAll.Application.Workbooks.Open('C:/Guide/db/db_150209.xls');
-	//ExcelAll.Application.Workbooks.Open('\\\\172.17.14.220\\Lguidesystem\\db\\db_ip_150401.xlsx');
-	//ExcelAll.Application.Workbooks.Open('http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/Excel/'+dayCode+outPut+'.xls'); 
-	//ExcelAll.Application.Workbooks.Open('http://jpub.cafe24.com/G_v02/excel/db/'+dayCode+outPut+'.xls'); 
+	//ExcelAll.Application.Workbooks.Open('\\\\100.10.10.200\\Lguidesystem\\db\\db_ip_150401.xlsx');
+	//ExcelAll.Application.Workbooks.Open('http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/Excel/'+dayCode+outPut+'.xls');
+	//ExcelAll.Application.Workbooks.Open('http://jpub.cafe24.com/G_v02/excel/db/'+dayCode+outPut+'.xls');
 
-	//¿¢¼¿Ç¥½Ã
+	//ï¿½ï¿½ï¿½ï¿½Ç¥ï¿½ï¿½
 	ExcelAll.Application.Visible = true;
 
-	//sheet1 ¼±ÅÃ
-	ExcelAll.Application.Worksheets("¿ÀÇÂ¸¶ÄÏ").Activate;
+	//sheet1 ï¿½ï¿½ï¿½ï¿½
+	ExcelAll.Application.Worksheets('ï¿½ï¿½ï¿½Â¸ï¿½ï¿½ï¿½').Activate;
 
-	// sheet1³» ÀÛ¾÷¿µ¿ªÀ» °´Ã¼¿¡ ÀúÀå
+	// sheet1ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	oRangeAll = ExcelAll.Application.ActiveSheet.UsedRange;
 
-	//oRangeAll¿¡´Â ÇöÀç ³»¿ëÀÌ ÀÖ´Â ºÎºÐ¸¸ ¼±ÅÃµÊ.
-	//oRangeAllºÎºÐÀ» ¼±ÅÃÇ¥½Ã
+	//oRangeAllï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ÎºÐ¸ï¿½ ï¿½ï¿½ï¿½Ãµï¿½.
+	//oRangeAllï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¥ï¿½ï¿½
 	oRangeAll.Select();
 }
-
 
 /* function eSub(i){
 	//enter Key
 	if(event.keyCode==13){
 		event.cancelBubble=false;
-		//alert("µÇ³Ä");
-		excel('dev_all', '2'); //½ÇÁ¦ submit function
+		//alert("ï¿½Ç³ï¿½");
+		excel('dev_all', '2'); //ï¿½ï¿½ï¿½ï¿½ submit function
 	}
 } */
 
-//¿¢¼¿ ºÒ·¯¿À±â
-function excel(Location, i){ //¿¢¼¿ÀÌ ÀÔ·ÂµÉ Å¸°Ù, ±âÈ¹ÀüÅ¸ÀÔ¹øÈ£
+//ï¿½ï¿½ï¿½ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ï¿½ï¿½
+function excel(Location, i) {
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Âµï¿½ Å¸ï¿½ï¿½, ï¿½ï¿½È¹ï¿½ï¿½Å¸ï¿½Ô¹ï¿½È£
 
 	todayCode();
 
 	//alert(i);
-	cTemp='border-left:1px dotted #ccc;border-right:1px dotted #ccc;border-bottom:1px dotted #ccc;';
-	switch (i){
-		//ÀÔÁ¡
-		case '0': mall='cjmall';outPut='_cj_deal';wSize='758';break;
-		case '1': mall='hmall';outPut='_h_deal';wSize='778';break; 
-		case '2': mall='gsshop';outPut='_gs_deal';wSize='778';break;
-		case '3': mall='lottei';outPut='_lottei_deal';wSize='778';break;
-		case '4': mall='naver';outPut='_naver_deal';wSize='858';break; 
-		case '5': mall='11st';outPut='_e_deal';wSize='858';break; //11¹ø°¡
-		case '6': mall='auction';outPut='_a_deal';wSize='858';break; //¿Á¼Ç
-		case '7': mall='gmarket';outPut='_g_deal';wSize='858';break; //G¸¶ÄÏ
-		case '8': mall='g9';outPut='_g9_deal';wSize='778';break; 
-		case '9': mall='tmon';outPut='_tmon_deal';wSize='768';break; 
-		case '99': mall='';outPut='';wSize='758';break; //etc
-		default : alert('´Ù½Ã ¼³Á¤ ÇØÁÖ¼¼¿ä.');break;
-		
-	};
+	cTemp = 'border-left:1px dotted #ccc;border-right:1px dotted #ccc;border-bottom:1px dotted #ccc;';
+	switch (i) {
+		//ï¿½ï¿½ï¿½ï¿½
+		case '0':
+			mall = 'cjmall';
+			outPut = '_cj_deal';
+			wSize = '758';
+			break;
+		case '1':
+			mall = 'hmall';
+			outPut = '_h_deal';
+			wSize = '778';
+			break;
+		case '2':
+			mall = 'gsshop';
+			outPut = '_gs_deal';
+			wSize = '778';
+			break;
+		case '3':
+			mall = 'lottei';
+			outPut = '_lottei_deal';
+			wSize = '778';
+			break;
+		case '4':
+			mall = 'naver';
+			outPut = '_naver_deal';
+			wSize = '858';
+			break;
+		case '5':
+			mall = '11st';
+			outPut = '_e_deal';
+			wSize = '858';
+			break; //11ï¿½ï¿½ï¿½ï¿½
+		case '6':
+			mall = 'auction';
+			outPut = '_a_deal';
+			wSize = '858';
+			break; //ï¿½ï¿½ï¿½ï¿½
+		case '7':
+			mall = 'gmarket';
+			outPut = '_g_deal';
+			wSize = '858';
+			break; //Gï¿½ï¿½ï¿½ï¿½
+		case '8':
+			mall = 'g9';
+			outPut = '_g9_deal';
+			wSize = '778';
+			break;
+		case '9':
+			mall = 'tmon';
+			outPut = '_tmon_deal';
+			wSize = '768';
+			break;
+		case '99':
+			mall = '';
+			outPut = '';
+			wSize = '758';
+			break; //etc
+		default:
+			alert('ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½.');
+			break;
+	}
 	//alert(wSize);
 
 	/* 
 	if(dayCode==''){
-		alert('¿ÀÇÂ³¯Â¥¸¦ ÀÔ·ÂÇÏÁö ¾ÊÀ¸¸é Á¦°¡ Ã£À» ¼ö ¾ø¾î¿ä¤Ð_¤Ð');
+		alert('ï¿½ï¿½ï¿½Â³ï¿½Â¥ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã£ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½');
 	}
 	else{ */
-		//¿¢¼¿¿ë º¯¼ö ¼±¾ð
-		var Excel,oRange;
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	var Excel, oRange;
 
-		count=0;//Ä«¿îÆ®º¯¼ö
-		hcount=0;//ÇÏÇÁÄ«¿îÆ®º¯¼ö
+	count = 0; //Ä«ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½
+	hcount = 0; //ï¿½ï¿½ï¿½ï¿½Ä«ï¿½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½
 
-		// ¿¢¼¿ °´Ã¼»ý¼º
-		Excel = new ActiveXObject("Excel.Application");
-		//Excel.Application.Workbooks.Open('\\\\192.167.22.242\\Lgudiesystem\\ip\\'+dayCode+outPut+'.xls');
-		Excel.Application.Workbooks.Open('\\\\172.17.14.220\\Lguidesystem\\ip\\'+dayCode+outPut+'.xls');
-		//Excel.Application.Workbooks.Open('C:/Guide/ip/'+dayCode+outPut+'.xls');
-		//Excel.Application.Workbooks.Open('http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/excel/'+dayCode+outPut+'.xls'); 
-		//Excel.Application.Workbooks.Open('http://jpub.cafe24.com/G_v02/excel/ip/'+dayCode+outPut+'.xls'); 
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½
+	Excel = new ActiveXObject('Excel.Application');
+	//Excel.Application.Workbooks.Open('\\\\192.167.22.242\\Lgudiesystem\\ip\\'+dayCode+outPut+'.xls');
+	Excel.Application.Workbooks.Open('\\\\100.10.10.200\\Lguidesystem\\ip\\' + dayCode + outPut + '.xls');
+	//Excel.Application.Workbooks.Open('C:/Guide/ip/'+dayCode+outPut+'.xls');
+	//Excel.Application.Workbooks.Open('http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/excel/'+dayCode+outPut+'.xls');
+	//Excel.Application.Workbooks.Open('http://jpub.cafe24.com/G_v02/excel/ip/'+dayCode+outPut+'.xls');
 
-		//¿¢¼¿Ç¥½Ã
-		Excel.Application.Visible = true;
+	//ï¿½ï¿½ï¿½ï¿½Ç¥ï¿½ï¿½
+	Excel.Application.Visible = true;
 
-		//sheet1 ¼±ÅÃ
-		Excel.Application.Worksheets("sheet1").Activate;
+	//sheet1 ï¿½ï¿½ï¿½ï¿½
+	Excel.Application.Worksheets('sheet1').Activate;
 
-		// sheet1³» ÀÛ¾÷¿µ¿ªÀ» °´Ã¼¿¡ ÀúÀå
-		oRange = Excel.Application.ActiveSheet.UsedRange;
+	// sheet1ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	oRange = Excel.Application.ActiveSheet.UsedRange;
 
-		//oRange¿¡´Â ÇöÀç ³»¿ëÀÌ ÀÖ´Â ºÎºÐ¸¸ ¼±ÅÃµÊ.
-		//oRangeºÎºÐÀ» ¼±ÅÃÇ¥½Ã
-		oRange.Select();
-	 
+	//oRangeï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ÎºÐ¸ï¿½ ï¿½ï¿½ï¿½Ãµï¿½.
+	//oRangeï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç¥ï¿½ï¿½
+	oRange.Select();
 
-		//oRangeºÎºÐÀ» ºê¶ó¿ìÀú¿¡ Ãâ·Â
-		var Type; 
-		var all = document.getElementById('dev_all'); //Ã£°í
-		all.innerHTML = '';	//ÃÊ±âÈ­
+	//oRangeï¿½Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
+	var Type;
+	var all = document.getElementById('dev_all'); //Ã£ï¿½ï¿½
+	all.innerHTML = ''; //ï¿½Ê±ï¿½È­
 
-		var wSizer = new Array();
-		wSizer[2] = (Number(wSize)-30-20)/2;
-		wSizer[3] = (Number(wSize)-30-20*2)/3;
-		wSizer[4] = (Number(wSize)-30-18*3)/4;
+	var wSizer = new Array();
+	wSizer[2] = (Number(wSize) - 30 - 20) / 2;
+	wSizer[3] = (Number(wSize) - 30 - 20 * 2) / 3;
+	wSizer[4] = (Number(wSize) - 30 - 18 * 3) / 4;
 
-		/* coding='<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/cjmall/150709_deal_sofatable/guide/01.jpg" usemap="#lvMap01" style="display:block;margin:0 auto;" border="0"/>'+
+	/* coding='<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/cjmall/150709_deal_sofatable/guide/01.jpg" usemap="#lvMap01" style="display:block;margin:0 auto;" border="0"/>'+
 				'	<map name="lvMap01" id="lvMap01">'+
 				'	  <area shape="rect" coords="3,6,376,636" href="#" target="_blank" />'+
 				'	  <area shape="rect" coords="381,8,757,636" href="#" target="_blank" />'+
 				'	</map>'+
 				'</p>'; */
 
-		var sum='';//ÇÕ°è°ª
-		var optionSum ='';//¿É¼Ç ÇÕ°è°ª 
-		var optionSumC ='';//¿É¼Ç ÄÚµù ÇÕ°è°ª 
-		var ttlSum ='';//Å¸ÀÌÆ² ÇÕ°è°ª
-		var ttlSumC ='';//Å¸ÀÌÆ² ÄÚµùÇÕ°è°ª
-		var num='';
-		var empty ='';//È¦¼ö Â¦¼ö Á¦¾î
-		var emptyC ='';//È¦¼ö Â¦¼ö ÄÚµù
-		var ex= new Array();
+	var sum = ''; //ï¿½Õ°è°ª
+	var optionSum = ''; //ï¿½É¼ï¿½ ï¿½Õ°è°ª
+	var optionSumC = ''; //ï¿½É¼ï¿½ ï¿½Úµï¿½ ï¿½Õ°è°ª
+	var ttlSum = ''; //Å¸ï¿½ï¿½Æ² ï¿½Õ°è°ª
+	var ttlSumC = ''; //Å¸ï¿½ï¿½Æ² ï¿½Úµï¿½ï¿½Õ°è°ª
+	var num = '';
+	var empty = ''; //È¦ï¿½ï¿½ Â¦ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	var emptyC = ''; //È¦ï¿½ï¿½ Â¦ï¿½ï¿½ ï¿½Úµï¿½
+	var ex = new Array();
 
-		for(var e=10;e<=oRange.Rows.count;e++){ 
-			ex[e] = new Array(); //alt[e]°ª ¹è¿­¼±¾ð
-		
-			ico=''; //¾ÆÀÌÄÜ ÇÕ°è º¯¼ö
-			for(var j=1;j<=oRange.Columns.count;j++){ 
-				ex[e][j] = oRange.Cells(e,j)
-				/* ex[e][j] = ex[e][j].replace(/(\,*)/g, ""); */
+	for (var e = 10; e <= oRange.Rows.count; e++) {
+		ex[e] = new Array(); //alt[e]ï¿½ï¿½ ï¿½è¿­ï¿½ï¿½ï¿½ï¿½
 
-				//alert(String(ex[e][j]).length);
-				//alert(ex[e][j]);
+		ico = ''; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Õ°ï¿½ ï¿½ï¿½ï¿½ï¿½
+		for (var j = 1; j <= oRange.Columns.count; j++) {
+			ex[e][j] = oRange.Cells(e, j);
+			/* ex[e][j] = ex[e][j].replace(/(\,*)/g, ""); */
 
-				if(ex[e][j]=='.' || ex[e][j].value == undefined || ex[e][j].value == null || ex[e][j].value == false){
-					//ex[e][j]='';
-					switch (String(j)){
-						//ÀÔÁ¡
-						case '1': ex[e][1]='»çÀºÇ°¾øÀ½';break; //»çÀºÇ°
-						case '2': ex[e][2]='d0';break; //µðÀÚÀÎ
-						case '3': ex[e][3]='¼±ÅÃ';break; //¹øÈ£
-						case '6': ex[e][6]=ex[e][5];break; //Å¸ÀÌÆ²
-						case '21': ex[e][21]='in';break; //Ç¥½ÃÇü½Ä
-						case '22': ex[e][22]='h3';break; //¿É¼Ç³ôÀÌ 
-						case '23': ex[e][23]='h1';break; //Å¸ÀÌÆ²³ôÀÌ 
-						case '37': ex[e][37]='s2';break; //Å¸ÀÌÆ²°¡°ÝºÐÇÒ 
-						default : ex[e][j]='';break;
-						
-					};
+			//alert(String(ex[e][j]).length);
+			//alert(ex[e][j]);
+
+			if (ex[e][j] == '.' || ex[e][j].value == undefined || ex[e][j].value == null || ex[e][j].value == false) {
+				//ex[e][j]='';
+				switch (String(j)) {
+					//ï¿½ï¿½ï¿½ï¿½
+					case '1':
+						ex[e][1] = 'ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½';
+						break; //ï¿½ï¿½ï¿½ï¿½Ç°
+					case '2':
+						ex[e][2] = 'd0';
+						break; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+					case '3':
+						ex[e][3] = 'ï¿½ï¿½ï¿½ï¿½';
+						break; //ï¿½ï¿½È£
+					case '6':
+						ex[e][6] = ex[e][5];
+						break; //Å¸ï¿½ï¿½Æ²
+					case '21':
+						ex[e][21] = 'in';
+						break; //Ç¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+					case '22':
+						ex[e][22] = 'h3';
+						break; //ï¿½É¼Ç³ï¿½ï¿½ï¿½
+					case '23':
+						ex[e][23] = 'h1';
+						break; //Å¸ï¿½ï¿½Æ²ï¿½ï¿½ï¿½ï¿½
+					case '37':
+						ex[e][37] = 's2';
+						break; //Å¸ï¿½ï¿½Æ²ï¿½ï¿½ï¿½Ýºï¿½ï¿½ï¿½
+					default:
+						ex[e][j] = '';
+						break;
 				}
-				else{
-					num = '				<td>'+emCng(txtCng(ex[e][3]))+'</td>';
-					
-					if(ex[e][4]=='.' || ex[e][j].value == undefined){	txt1 = '';	} //¼³¸í¹®±¸
-					else{	txt1 = ex[e][4];	}
-					if(ex[e][6]=='.'){	txt2 = ex[e][5];	} //Å¸ÀÌÆ²
-					else{	txt2 = '<dt>'+ex[e][6]+'</dt>';	}
-					if(ex[e][7]=='.'){	txt3 = '';	} //¿É¼Ç
-					else{	txt3 = ex[e][7];	}
-					
-					if(ex[e][8]=='.'){	prcN1 = '';	} //°¡°Ý¸í1
-					else{	prcN1 = '								<dt>'+ex[e][8]+'</dt>';	} 
-					if(ex[e][9]=='.'){	prcC1 = '';	} //°¡°Ý1
-					else if(String(ex[e][9]).match("~"))
-					{	
-						tmp = String(ex[e][9]).split("~");
-						prcC1 = '								<dd>'+addComma(tmp[0])+'<span>¿ø</span>~'+addComma(tmp[1])+'<span>¿ø</span></dd>';	
-					}
-					else{	prcC1 = '								<dd><strike>'+addComma(round(ex[e][9],0))+'</strike><span>¿ø</span></dd>';	}
-					if(ex[e][10]=='.'){	prcN2 = '';	} //°¡°Ý¸í2
-					else{	prcN2 = '								<dt>'+ex[e][10]+'</dt>';	}
-					if(ex[e][11]=='.'){	prcC2 = '';	} //°¡°Ý2
-					else if(String(ex[e][11]).match("~"))
-					{	
-						tmp = String(ex[e][11]).split("~");
-						prcC2 = '								<dd>'+addComma(tmp[0])+'<span>¿ø</span>~'+addComma(tmp[1])+'<span>¿ø</span></dd>';	
-					}
-					else{	prcC2 = '								<dd>'+addComma(round(ex[e][11],0))+'<span>¿ø</span></dd>';	}
-					if(ex[e][12]=='.'){	prcN3 = '';	} //°¡°Ý¸í3
-					else{	prcN3 = '								<dt><span>'+ex[e][12]+'</span></dt>';	}
-					if(ex[e][13]=='.'){	prcC3 = '';	} //°¡°Ý3 
-					else if(String(ex[e][13]).match("~"))
-					{	
-						tmp = String(ex[e][13]).split("~");
-						prcC3 = '								<dd>'+addComma(tmp[0])+'<span>¿ø</span>~'+addComma(tmp[1])+'<span>¿ø</span></dd>';	
-					}
-					else{	prcC3 = '								<dd>'+addComma(round(ex[e][13],0))+'<span>¿ø</span></dd>';	}
-					if(ex[e][14]=='.'){	etc = '';	} //±×¿Ü 
-					else{	etc = '								<p class="etc">'+ex[e][14]+'</p>';	}
-					if(ex[e][15]==''){ dc = '';} // ÇÒÀÎÀ²
-					else{	dc = '			<p class="dc"><span>'+round(Number(ex[e][15])*100,0)+'</span>%</p>';	}
-					picResize(ex[e][19]);
-					ex[e][19]=temp; //»çÁø
-				};
-				
+			} else {
+				num = '				<td>' + emCng(txtCng(ex[e][3])) + '</td>';
 
-			} //for j
-			
-			if(e>=12 && Left(ex[e][2],1)!=='t0'){
-				//¹øÈ£Ã¼Å©
-				if(ex[e][3]==''){ num='';	}
-				else{num = '				<td>'+emCng(txtCng(ex[e][3]))+'</td>';}
-
-				//¼³¸í¹®±¸,¿É¼Ç Ã¼Å©
-				if(ex[e][4]==''){ txt1='';	}
-				else{txt1 = '				<p>'+ex[e][4]+'</p>';}
-				if(ex[e][7]==''){ txt3='';	}
-				else{txt3 = '				<dd>'+ex[e][7]+'</dd>';}
-
-				//°¡°ÝÃ¼Å©
-				if(ex[e][8]=='' && ex[e][9]==''){ prc1='';	}
-				else{prc1='<dl class="price1">'+txtCng(prcN1)+prcC1+'</dl>';}
-				if(ex[e][10]=='' && ex[e][11]==''){ prc2='';	}
-				else{prc2='<dl class="price2">'+txtCng(prcN2)+prcC2+'</dl>';}
-				if(ex[e][12]=='' && ex[e][13]==''){ prc3='';	}
-				else{prc3='<dl class="price3">'+txtCng(prcN3)+prcC3+'</dl>';}
-
-				//¸µÅ© Ã¼Å©
-				if(ex[e][20]==''){ ex[e][20]='';	}
-				else{ex[e][20] = 'href="'+ex[e][20]+'"';
-					//alert(ex[e][20]);
+				if (ex[e][4] == '.' || ex[e][j].value == undefined) {
+					txt1 = '';
+				} //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				else {
+					txt1 = ex[e][4];
+				}
+				if (ex[e][6] == '.') {
+					txt2 = ex[e][5];
+				} //Å¸ï¿½ï¿½Æ²
+				else {
+					txt2 = '<dt>' + ex[e][6] + '</dt>';
+				}
+				if (ex[e][7] == '.') {
+					txt3 = '';
+				} //ï¿½É¼ï¿½
+				else {
+					txt3 = ex[e][7];
 				}
 
-				//»çÀºÇ°Ã¼Å©
-				if(ex[e][28]==''){}
-				else{ico=ico+'<p class="p1"><img src="/Guide3/img/gift/'+ex[e][28]+'.png" alt=""/></p>'; }//alert(ico);
-				if(ex[e][29]==''){}
-				else{ico=ico+'<p class="p15"><img src="/Guide3/img/gift/'+ex[e][29]+'.png" alt=""/></p>'; }
-				if(ex[e][30]==''){}
-				else{ico=ico+'<p class="p25"><img src="/Guide3/img/gift/'+ex[e][30]+'.png" alt=""/></p>'; }
-				if(ex[e][31]==''){}
-				else{ico=ico+'<p class="p3"><img src="/Guide3/img/gift/'+ex[e][31]+'.png" alt=""/></p>'; }
-				if(ex[e][32]==''){}
-				else{ico=ico+'<p class="p7"><img src="/Guide3/img/gift/'+ex[e][32]+'.png" alt=""/></p>'; }
-				if(ex[e][33]==''){}
-				else{ico=ico+'<p class="p75"><img src="/Guide3/img/gift/'+ex[e][33]+'.png" alt=""/></p>'; }
-				if(ex[e][34]==''){}
-				else{ico=ico+'<p class="p8"><img src="/Guide3/img/gift/'+ex[e][34]+'.png" alt=""/></p>'; }
-				if(ex[e][35]==''){}
-				else{ico=ico+'<p class="p85"><img src="/Guide3/img/gift/'+ex[e][35]+'.png" alt=""/></p>'; }
-				if(ex[e][36]==''){}
-				else{ico=ico+'<p class="p9"><img src="/Guide3/img/gift/'+ex[e][36]+'.png" alt=""/></p>'; }
+				if (ex[e][8] == '.') {
+					prcN1 = '';
+				} //ï¿½ï¿½ï¿½Ý¸ï¿½1
+				else {
+					prcN1 = '								<dt>' + ex[e][8] + '</dt>';
+				}
+				if (ex[e][9] == '.') {
+					prcC1 = '';
+				} //ï¿½ï¿½ï¿½ï¿½1
+				else if (String(ex[e][9]).match('~')) {
+					tmp = String(ex[e][9]).split('~');
+					prcC1 = '								<dd>' + addComma(tmp[0]) + '<span>ï¿½ï¿½</span>~' + addComma(tmp[1]) + '<span>ï¿½ï¿½</span></dd>';
+				} else {
+					prcC1 = '								<dd><strike>' + addComma(round(ex[e][9], 0)) + '</strike><span>ï¿½ï¿½</span></dd>';
+				}
+				if (ex[e][10] == '.') {
+					prcN2 = '';
+				} //ï¿½ï¿½ï¿½Ý¸ï¿½2
+				else {
+					prcN2 = '								<dt>' + ex[e][10] + '</dt>';
+				}
+				if (ex[e][11] == '.') {
+					prcC2 = '';
+				} //ï¿½ï¿½ï¿½ï¿½2
+				else if (String(ex[e][11]).match('~')) {
+					tmp = String(ex[e][11]).split('~');
+					prcC2 = '								<dd>' + addComma(tmp[0]) + '<span>ï¿½ï¿½</span>~' + addComma(tmp[1]) + '<span>ï¿½ï¿½</span></dd>';
+				} else {
+					prcC2 = '								<dd>' + addComma(round(ex[e][11], 0)) + '<span>ï¿½ï¿½</span></dd>';
+				}
+				if (ex[e][12] == '.') {
+					prcN3 = '';
+				} //ï¿½ï¿½ï¿½Ý¸ï¿½3
+				else {
+					prcN3 = '								<dt><span>' + ex[e][12] + '</span></dt>';
+				}
+				if (ex[e][13] == '.') {
+					prcC3 = '';
+				} //ï¿½ï¿½ï¿½ï¿½3
+				else if (String(ex[e][13]).match('~')) {
+					tmp = String(ex[e][13]).split('~');
+					prcC3 = '								<dd>' + addComma(tmp[0]) + '<span>ï¿½ï¿½</span>~' + addComma(tmp[1]) + '<span>ï¿½ï¿½</span></dd>';
+				} else {
+					prcC3 = '								<dd>' + addComma(round(ex[e][13], 0)) + '<span>ï¿½ï¿½</span></dd>';
+				}
+				if (ex[e][14] == '.') {
+					etc = '';
+				} //ï¿½×¿ï¿½
+				else {
+					etc = '								<p class="etc">' + ex[e][14] + '</p>';
+				}
+				if (ex[e][15] == '') {
+					dc = '';
+				} // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				else {
+					dc = '			<p class="dc"><span>' + round(Number(ex[e][15]) * 100, 0) + '</span>%</p>';
+				}
+				picResize(ex[e][19]);
+				ex[e][19] = temp; //ï¿½ï¿½ï¿½ï¿½
+			}
+		} //for j
 
+		if (e >= 12 && Left(ex[e][2], 1) !== 't0') {
+			//ï¿½ï¿½È£Ã¼Å©
+			if (ex[e][3] == '') {
+				num = '';
+			} else {
+				num = '				<td>' + emCng(txtCng(ex[e][3])) + '</td>';
+			}
 
-				if(Left(ex[e][2],2)!=='l1'){
-					count=count+1; //Ä«¿îÆ®
-					optionSum = optionSum +'<div class="optionSub '+ex[e][22]+'">'+
-									'<a '+ex[e][20]+' target="_blank">'+
-									'	<div class="slt '+ex[e][22]+'">'+
-									'		<table class="typeA">'+
-									'			<tr>'+
-									num+
-									'			</tr>'+
-									'		</table>'+
-									'	</div>'+
-									'	<div class="cnt">'+
-									
-									'		<div class="ttl '+ex[e][22]+'">'+
-									'			<table class="typeA">'+
-									'				<tr>'+
-									'					<td>'+
-									txtCng(txt1)+
-									'						<dl>'+
-									txtCng(txt2)+
-									txtCng(txt3)+
-									'						</dl>'+						
-									'					</td>'+
-									'				</tr>'+
-									'			</table>'+
-									'		</div>'+
-									'		<div class="pic '+ex[e][21]+'">'+
-									'			<div><span><img src="'+ex[e][19]+'" alt=""/></span></div>'+
-									dc+
-									ico+ //340 »çÀºÇ°
-									'		</div>'+
-									'		<div class="price">'+
-									'			<table class="typeA">'+
-									'				<tr>'+
-									'					<td>'+
-									prc1+
-									prc2+
-									prc3+
-									etc+
-									'					</td>'+
-									'				</tr>'+
-									'			</table>'+
-									'		</div>'+
-									'	</div>'+
-									'</a>'+
-									'</div>';
-				
-					//ºó ÄÚµù »ý¼º
-					if(e>=12 && e%2==1){
-						hcount=hcount+1;
-						
-						optionSumC = optionSumC +
-										'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/guide/o'+cntCng(hcount)+'.jpg" usemap="#lvtMap'+cntCng(hcount)+'" style="margin: 0px auto; border: 0px currentColor; border-image: none; display: block;" border="0">'+
-										'	<map name="lvtMap'+cntCng(hcount)+'" id="lvtMap'+cntCng(hcount)+'">'+
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½É¼ï¿½ Ã¼Å©
+			if (ex[e][4] == '') {
+				txt1 = '';
+			} else {
+				txt1 = '				<p>' + ex[e][4] + '</p>';
+			}
+			if (ex[e][7] == '') {
+				txt3 = '';
+			} else {
+				txt3 = '				<dd>' + ex[e][7] + '</dd>';
+			}
 
-										//'	  <area shape="rect" coords="3,4,387,648" href="" target="_blank" />'+ 
-										//'	  <area shape="rect" coords="392,4,777,645" href="" target="_blank" />'+
-										'	  <area shape="rect" coords="3,4,387,648" '+ex[e-1][20]+' title="'+ex[e-1][5]+'" target="_blank" />'+  //+oRange.Cells(11+(count*2-1),20)+
-										'	  <area shape="rect" coords="392,4,777,645" '+ex[e][20]+' title="'+ex[e][5]+'" target="_blank" />'+
-										'	</map>'+
-										'</p>'+
-										'';
-					}
-				}; //if
+			//ï¿½ï¿½ï¿½ï¿½Ã¼Å©
+			if (ex[e][8] == '' && ex[e][9] == '') {
+				prc1 = '';
+			} else {
+				prc1 = '<dl class="price1">' + txtCng(prcN1) + prcC1 + '</dl>';
+			}
+			if (ex[e][10] == '' && ex[e][11] == '') {
+				prc2 = '';
+			} else {
+				prc2 = '<dl class="price2">' + txtCng(prcN2) + prcC2 + '</dl>';
+			}
+			if (ex[e][12] == '' && ex[e][13] == '') {
+				prc3 = '';
+			} else {
+				prc3 = '<dl class="price3">' + txtCng(prcN3) + prcC3 + '</dl>';
+			}
 
-				
+			//ï¿½ï¿½Å© Ã¼Å©
+			if (ex[e][20] == '') {
+				ex[e][20] = '';
+			} else {
+				ex[e][20] = 'href="' + ex[e][20] + '"';
+				//alert(ex[e][20]);
+			}
 
-				//if(ex[e][1]=='t0'){
-				ttlSum=ttlSum+
-						'<div class="ttlSub '+ex[e][2]+'">'+
-						'	<div class="slt '+ex[e][23]+'">'+
-						'		<table class="typeA">'+
-						'			<tr>'+
-						num+
-						'			</tr>'+
-						'		</table>'+
-						'	</div>'+
-						'	<div class="cnt '+ex[e][23]+'">'+
-						'		<div class="ttl">'+
-						'			<table class="typeA">'+
-						'				<tr>'+
-						'					<td>'+
-						txtCng(txt1)+
-						'						<dl>'+
-						txtCng(txt2)+
-						txtCng(txt3)+
-						'						</dl>'+
-						'					</td>'+
-						'				</tr>'+
-						'			</table>'+
-						'		</div>'+
-						'		<div class="price '+ex[e][37]+'" style="display:none">'+
-						'			<table class="typeA">'+
-						'				<tr>'+
-						'					<td>'+
-						dc+
-						prc1+
-						prc2+
-						prc3+
-						'					</td>'+
-						'				</tr>'+
-						'			</table>'+
-						'		</div>'+
-						'	</div>'+
-						'</div>'+
-						'';
-				ttlSumC=ttlSumC+
-						//'<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/MALL/YYMMDD_CATE_deal/guide/t00.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+
-						//'<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/MALL/YYMMDD_CATE_deal/00.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+
-						
-						//'<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/guide/t'+cntCng(count)+'.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+
-						//'<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/b'+cntCng(count)+'.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+
-						
-						'<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/guide/t'+cntCng(count)+'.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+ //340  title="'+ex[e][5]+' Å¸ÀÌÆ²" 
-						'<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/b'+cntCng(count)+'.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+ //340   title="'+ex[e][5]+' »ó¼¼±â¼ú¼­"
-						'';
-							
-				//};
-			}//if e°ªÃ¼Å© 12ºÎÅÍ
-		}
+			//ï¿½ï¿½ï¿½ï¿½Ç°Ã¼Å©
+			if (ex[e][28] == '') {
+			} else {
+				ico = ico + '<p class="p1"><img src="/Guide3/img/gift/' + ex[e][28] + '.png" alt=""/></p>';
+			} //alert(ico);
+			if (ex[e][29] == '') {
+			} else {
+				ico = ico + '<p class="p15"><img src="/Guide3/img/gift/' + ex[e][29] + '.png" alt=""/></p>';
+			}
+			if (ex[e][30] == '') {
+			} else {
+				ico = ico + '<p class="p25"><img src="/Guide3/img/gift/' + ex[e][30] + '.png" alt=""/></p>';
+			}
+			if (ex[e][31] == '') {
+			} else {
+				ico = ico + '<p class="p3"><img src="/Guide3/img/gift/' + ex[e][31] + '.png" alt=""/></p>';
+			}
+			if (ex[e][32] == '') {
+			} else {
+				ico = ico + '<p class="p7"><img src="/Guide3/img/gift/' + ex[e][32] + '.png" alt=""/></p>';
+			}
+			if (ex[e][33] == '') {
+			} else {
+				ico = ico + '<p class="p75"><img src="/Guide3/img/gift/' + ex[e][33] + '.png" alt=""/></p>';
+			}
+			if (ex[e][34] == '') {
+			} else {
+				ico = ico + '<p class="p8"><img src="/Guide3/img/gift/' + ex[e][34] + '.png" alt=""/></p>';
+			}
+			if (ex[e][35] == '') {
+			} else {
+				ico = ico + '<p class="p85"><img src="/Guide3/img/gift/' + ex[e][35] + '.png" alt=""/></p>';
+			}
+			if (ex[e][36] == '') {
+			} else {
+				ico = ico + '<p class="p9"><img src="/Guide3/img/gift/' + ex[e][36] + '.png" alt=""/></p>';
+			}
 
-		if(count%2==1){ //Ä«¿îÆ® ÃÖÁ¾°ªÀÌ È¦¼ö¶ó¸é 
-			//alert("È¦¼ö±¸¸Õ");
-			empty='<div class="optionSub">'+
-					'	<p class="empty"></p>'+
+			if (Left(ex[e][2], 2) !== 'l1') {
+				count = count + 1; //Ä«ï¿½ï¿½Æ®
+				optionSum =
+					optionSum +
+					'<div class="optionSub ' +
+					ex[e][22] +
+					'">' +
+					'<a ' +
+					ex[e][20] +
+					' target="_blank">' +
+					'	<div class="slt ' +
+					ex[e][22] +
+					'">' +
+					'		<table class="typeA">' +
+					'			<tr>' +
+					num +
+					'			</tr>' +
+					'		</table>' +
+					'	</div>' +
+					'	<div class="cnt">' +
+					'		<div class="ttl ' +
+					ex[e][22] +
+					'">' +
+					'			<table class="typeA">' +
+					'				<tr>' +
+					'					<td>' +
+					txtCng(txt1) +
+					'						<dl>' +
+					txtCng(txt2) +
+					txtCng(txt3) +
+					'						</dl>' +
+					'					</td>' +
+					'				</tr>' +
+					'			</table>' +
+					'		</div>' +
+					'		<div class="pic ' +
+					ex[e][21] +
+					'">' +
+					'			<div><span><img src="' +
+					ex[e][19] +
+					'" alt=""/></span></div>' +
+					dc +
+					ico + //340 ï¿½ï¿½ï¿½ï¿½Ç°
+					'		</div>' +
+					'		<div class="price">' +
+					'			<table class="typeA">' +
+					'				<tr>' +
+					'					<td>' +
+					prc1 +
+					prc2 +
+					prc3 +
+					etc +
+					'					</td>' +
+					'				</tr>' +
+					'			</table>' +
+					'		</div>' +
+					'	</div>' +
+					'</a>' +
 					'</div>';
-			emptyC='<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/guide/o'+cntCng(round(count/2,0))+'.jpg" usemap="#lvtMap'+cntCng(round(count/2,0))+'" style="margin: 0px auto; border: 0px currentColor; border-image: none; display: block;" border="0">'+
-							'	<map name="lvtMap'+cntCng(round(count/2,0))+'" id="lvtMap'+cntCng(round(count/2,0))+'">'+							
-							//'	  <area shape="rect" coords="3,4,387,648" href="" target="_blank" />'+
-							'	  <area shape="rect" coords="3,4,387,648" '+ex[e-1][20]+' title="'+ex[e-1][5]+'" target="_blank" />'+ //340 ¸µÅ©°ª
-							'	</map>'+
-							'</p>'+
-							'';
-		}
-		else{
-			empty='';
-			emptyC='';
-		}
 
-		//alert(wSize);
-		sum =   ''+
-				'<div class="option '+ex[12][2]+'" style="width:'+wSize+'px;">'+
-					optionSum+
-					empty+
-				'</div>'+
-			    '<div class="ttlBox '+ex[12][2]+'" style="width:'+wSize+'px;">'+
-					ttlSum+
-				'</div>'+
-				'<div id="dev_allC" style="display:none;">'+
-					'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/a01.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+ //342 »ó´ÜÁ¤º¸
-					optionSumC+
-					emptyC+
-					ttlSumC+
-					'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/00_product/01_online/01_ismine/01_common/99_ship/01.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+ //342 ¹è¼ÛÁ¤º¸
-				'</div>'+
-				'';			
+				//ï¿½ï¿½ ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½
+				if (e >= 12 && e % 2 == 1) {
+					hcount = hcount + 1;
 
-		all.innerHTML = sum;
+					optionSumC =
+						optionSumC +
+						'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/' +
+						mall +
+						'/' +
+						dayCode +
+						'_deal/guide/o' +
+						cntCng(hcount) +
+						'.jpg" usemap="#lvtMap' +
+						cntCng(hcount) +
+						'" style="margin: 0px auto; border: 0px currentColor; border-image: none; display: block;" border="0">' +
+						'	<map name="lvtMap' +
+						cntCng(hcount) +
+						'" id="lvtMap' +
+						cntCng(hcount) +
+						'">' +
+						//'	  <area shape="rect" coords="3,4,387,648" href="" target="_blank" />'+
+						//'	  <area shape="rect" coords="392,4,777,645" href="" target="_blank" />'+
+						'	  <area shape="rect" coords="3,4,387,648" ' +
+						ex[e - 1][20] +
+						' title="' +
+						ex[e - 1][5] +
+						'" target="_blank" />' + //+oRange.Cells(11+(count*2-1),20)+
+						'	  <area shape="rect" coords="392,4,777,645" ' +
+						ex[e][20] +
+						' title="' +
+						ex[e][5] +
+						'" target="_blank" />' +
+						'	</map>' +
+						'</p>' +
+						'';
+				}
+			} //if
+
+			//if(ex[e][1]=='t0'){
+			ttlSum =
+				ttlSum +
+				'<div class="ttlSub ' +
+				ex[e][2] +
+				'">' +
+				'	<div class="slt ' +
+				ex[e][23] +
+				'">' +
+				'		<table class="typeA">' +
+				'			<tr>' +
+				num +
+				'			</tr>' +
+				'		</table>' +
+				'	</div>' +
+				'	<div class="cnt ' +
+				ex[e][23] +
+				'">' +
+				'		<div class="ttl">' +
+				'			<table class="typeA">' +
+				'				<tr>' +
+				'					<td>' +
+				txtCng(txt1) +
+				'						<dl>' +
+				txtCng(txt2) +
+				txtCng(txt3) +
+				'						</dl>' +
+				'					</td>' +
+				'				</tr>' +
+				'			</table>' +
+				'		</div>' +
+				'		<div class="price ' +
+				ex[e][37] +
+				'" style="display:none">' +
+				'			<table class="typeA">' +
+				'				<tr>' +
+				'					<td>' +
+				dc +
+				prc1 +
+				prc2 +
+				prc3 +
+				'					</td>' +
+				'				</tr>' +
+				'			</table>' +
+				'		</div>' +
+				'	</div>' +
+				'</div>' +
+				'';
+			ttlSumC =
+				ttlSumC +
+				//'<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/MALL/YYMMDD_CATE_deal/guide/t00.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+
+				//'<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/MALL/YYMMDD_CATE_deal/00.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+
+
+				//'<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/guide/t'+cntCng(count)+'.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+
+				//'<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/'+mall+'/'+dayCode+'_deal/b'+cntCng(count)+'.jpg" style="display:block;margin:0 auto;" border="0"/></p>'+
+
+				'<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/' +
+				mall +
+				'/' +
+				dayCode +
+				'_deal/guide/t' +
+				cntCng(count) +
+				'.jpg" style="display:block;margin:0 auto;" border="0"/></p>' + //340  title="'+ex[e][5]+' Å¸ï¿½ï¿½Æ²"
+				'<p style="padding:0;margin:0;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/' +
+				mall +
+				'/' +
+				dayCode +
+				'_deal/b' +
+				cntCng(count) +
+				'.jpg" style="display:block;margin:0 auto;" border="0"/></p>' + //340   title="'+ex[e][5]+' ï¿½ó¼¼±ï¿½ï¿½ï¿½ï¿½"
+				'';
+
+			//};
+		} //if eï¿½ï¿½Ã¼Å© 12ï¿½ï¿½ï¿½ï¿½
+	}
+
+	if (count % 2 == 1) {
+		//Ä«ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È¦ï¿½ï¿½ï¿½ï¿½ï¿½
+		//alert("È¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		empty = '<div class="optionSub">' + '	<p class="empty"></p>' + '</div>';
+		emptyC =
+			'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/' +
+			mall +
+			'/' +
+			dayCode +
+			'_deal/guide/o' +
+			cntCng(round(count / 2, 0)) +
+			'.jpg" usemap="#lvtMap' +
+			cntCng(round(count / 2, 0)) +
+			'" style="margin: 0px auto; border: 0px currentColor; border-image: none; display: block;" border="0">' +
+			'	<map name="lvtMap' +
+			cntCng(round(count / 2, 0)) +
+			'" id="lvtMap' +
+			cntCng(round(count / 2, 0)) +
+			'">' +
+			//'	  <area shape="rect" coords="3,4,387,648" href="" target="_blank" />'+
+			'	  <area shape="rect" coords="3,4,387,648" ' +
+			ex[e - 1][20] +
+			' title="' +
+			ex[e - 1][5] +
+			'" target="_blank" />' + //340 ï¿½ï¿½Å©ï¿½ï¿½
+			'	</map>' +
+			'</p>' +
+			'';
+	} else {
+		empty = '';
+		emptyC = '';
+	}
+
+	//alert(wSize);
+	sum =
+		'' +
+		'<div class="option ' +
+		ex[12][2] +
+		'" style="width:' +
+		wSize +
+		'px;">' +
+		optionSum +
+		empty +
+		'</div>' +
+		'<div class="ttlBox ' +
+		ex[12][2] +
+		'" style="width:' +
+		wSize +
+		'px;">' +
+		ttlSum +
+		'</div>' +
+		'<div id="dev_allC" style="display:none;">' +
+		'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/' +
+		mall +
+		'/' +
+		dayCode +
+		'_deal/a01.jpg" style="display:block;margin:0 auto;" border="0"/></p>' + //342 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		optionSumC +
+		emptyC +
+		ttlSumC +
+		'<p style="margin: 0px; padding: 0px;"><img src="http://mall.hyundailivart.co.kr/UserFiles/Image/00_product/01_online/01_ismine/01_common/99_ship/01.jpg" style="display:block;margin:0 auto;" border="0"/></p>' + //342 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		'</div>' +
+		'';
+
+	all.innerHTML = sum;
 	/* } */
 }
-
