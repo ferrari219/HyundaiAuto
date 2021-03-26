@@ -1,0 +1,847 @@
+@charset "utf-8";
+/*
+.File Name  :  css/common.css
+.Final Editor : 전성호 (2013-11-12 : 최초 작성) 
+*/
+
+/* base
+------------------------------------------------------------------------------------ */
+html {_overflow-y:scroll; _overflow-x:auto; height:100%;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {padding:0; margin:0;}
+table {border-collapse:collapse; border-spacing:0; empty-cells:show; font-size:12px;}
+ol, ul, li {list-style:none;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal; font-size:100%;}
+form, fieldset {border:0;}
+img {border:0; vertical-align:top;}
+address, caption, em {font-weight:normal; font-style:normal;}
+.clear {clear:both;}
+hr {display:none;}
+button {overflow:visible; margin:0; padding:0; border:0 none; background:transparent; cursor:pointer;}
+select, input, option, textarea {vertical-align:middle; font:12px  gulim, "굴림", dotum, "돋움", arial, sans-serif;}
+div.bug {clear:both; height:0; overflow:hidden; margin:0; padding:0;} 
+
+body{font:normal 12px gulim, "굴림";color:#666666;} 
+a{text-decoration:none; font:normal 12px gulim, "굴림"; color:#666666;}
+a:hover{font-weight:bold;}
+.skip {overflow:hidden;position:absolute;top:-5000em; width:0px !important;height:0px !important;  line-height:0; font-size:0; margin:0 !important;padding:0 !important;} 
+legend{display:none;}
+
+/* 공통 */
+.red{font-weight:bold;color:red;}
+.blu{font-weight:bold;color:blue;}
+.gre{font-weight:bold;color:green;}
+span.lnk{display:inline-block;} 
+.lnk > a{display:block; min-width:55px;height:23px; padding:0 7px; background-color:#8a8a8a;border:none; line-height:24px;text-align:center; font-weight:bold;text-decoration:none;color:#fff;}
+.lnk.em > a{display:block; height:23px;padding:10px 20px; background-color:#00C5BF; line-height:38px; font:bold 16px NanumGothic, gulim, sans-serif;}
+.lnk.light > a{display:block; height:23px;padding:10px 20px; background-color:#9a9a9a; line-height:38px; font:bold 16px NanumGothic, gulim, sans-serif;}
+a.lnk{margin-left:10px;color:blue;}
+.tip{color:#999;}
+.btn{padding:15px 0;text-align:center;}
+.star{color:red;}
+.txt{display:block;padding:5px 0; font-size:11px;color:#999;}
+
+/* Top
+------------------------------------------------------------------------------------ */
+.header{position:relative; min-width:980px; height:65px; margin:0 20px; background:url(../img/bg_line.gif) repeat-x center bottom;}
+.header h1{position:absolute;left:20px;top:20px;}
+.header ul{width:340px; margin:0 auto;}
+.header ul li{float:left;}
+.header ul li a{display:block; padding:20px 20px 10px 20px; font:bold 16px NanumGothic, gulim, sans-serif;color:#333;}
+.header ul li a:hover, header nav ul li a:focus, .header ul li.on a{padding:20px 20px 10px 20px; border-bottom:5px solid #008169; color:#008169;}
+.header p{position:absolute;right:20px;top:24px; font-size:11px; letter-spacing:-1px; color:#999;}
+
+
+/* Wrap
+------------------------------------------------------------------------------------ */
+.Wrap{overflow:hidden; position:relative; margin:20px auto; width:1300px;}
+
+/* leftNavi */
+.Wrap .leftNavi{overflow:hidden; float:left; width:200px;min-height:500px;}
+.Wrap .leftNavi h2{padding:10px 0 10px 5px; font:bold 18px NanumGothic, gulim, sans-serif;color:#333;}
+.Wrap .leftNavi dl dt{padding:20px 5px 5px 5px; font:normal  14px NanumGothic, gulim, sans-serif;color:#333;}
+.Wrap .leftNavi dl dd{padding-left:5px;}
+.Wrap .leftNavi dl dd a{display:inline-block;padding:2px 0; font:normal  12px NanumGothic, gulim, sans-serif;color:#999;}
+.Wrap .leftNavi dl dd a:hover, .Wrap .leftNavi ul li a:focus, .Wrap .leftNavi dl dd.on a{font-weight:bold;letter-spacing:-1px;color:blue;text-decoration:underline;}
+
+/* Content */
+.Wrap .content{overflow:hidden; min-height:500px; padding-left:40px; border-left:1px solid #eee;}
+.Wrap .content h2{padding-bottom:10px; font:bold 26px NanumGothic, gulim, sans-serif;color:#494949;}
+.Wrap .content .step dl dt{font:bold 14px NanumGothic, gulim, sans-serif;color:#008169;}
+.Wrap .content .step dl dd{min-height:300px; padding:10px 0 20px 0; font-size:11px;color:#787878;}
+.Wrap .content .step dl dd img{border:1px solid #ccc;}
+.Wrap .content .step dl dd p strong{background:yellow;color:#000;}
+.Wrap .content .step dl dd p.soc{margin:10px 0 20px 0;padding:10px; background:#eee;}
+
+.Wrap .content .tbl {width:100%; border-top:1px solid #333;}
+.Wrap .content .tbl th{padding:10px 15px; background:#eee;border-bottom:1px solid #ccc; text-align:left;}
+.Wrap .content .tbl td{padding:10px; border-bottom:1px solid #ccc;}
+.Wrap .content .tbl td strong{background:red;color:#fff;}
+.Wrap .content .tbl td input[type="text"]{padding:3px; border:1px solid #ddd;}
+.Wrap .content .tbl td input[type="radio"]{vertical-align:middle;margin:-3px 3px -3px -3px;padding:0 0 2px 3px;}
+.Wrap .content .tbl td label{margin-right:10px;}
+
+.Wrap .content .guide{position:relative;}
+.Wrap .content .guide > .fBtn{position:absolute;right:0;top:-40px;}
+.Wrap .content .guide > .fBtn > a{display:inline-block; width:15px;height:15px; padding:7px; background:#fff;border:1px solid #ccc;color:#666; text-align:center; font-size:16px;font-weight:bold;}
+.Wrap .content .guide > dl{width:100%;}
+.Wrap .content .guide > dl dt{margin:30px 0 10px 0; font-weight:bold; }
+.Wrap .content .guide > dl dd.pic{text-align:center;}
+.Wrap .content .guide > dl dd.soc{margin:10px 0 30px 0;padding:10px; background:#eee;border:1px solid #ddd; line-height:150%;}
+.Wrap .content .guide > dl dd.soc > strong{background:red;color:#fff;}
+.Wrap .content .guide > dl dd.soc > em{background:blue;color:#fff;}
+.Wrap .content .guide > dl dd.pic{max-width:100%;margin:0 0 20px 0;}
+.Wrap .content .guide > dl dd.pic img{max-width:100%;}
+.Wrap .content .guide .secLnk p{line-height:200%;}
+
+/* 신규 자사몰 페이지 */
+.Wrap .content .guide h3{padding:15px 0 5px 0;font:bold 14px NanumGothic, gulim, sans-serif;color:#333;}
+.Wrap .content .guide .tbl p{padding:3px 0;}
+.Wrap .content .guide > div{margin-bottom:30px;}
+.Wrap .content .guide .prv{margin:15px auto 0 auto;}
+.Wrap .content .guide .edm{width:710px;}
+.Wrap .content .guide .cde{display:none;}
+
+.Wrap .content .admin{width:100%;}
+.Wrap .content .admin dt{margin:30px 0 10px 0; font-weight:bold; }
+.Wrap .content .admin dd img{border:1px solid #ccc;}
+
+.Wrap .content .preview{overflow:hidden;border-top:3px solid #000; margin:0; padding-top:20px;}
+.Wrap .content .coding{clear:both;margin:20px 0 30px 0;padding:10px; background:#eee;border:1px solid #ddd; line-height:150%;}
+
+/* 버젼 안내 페이지 */
+.Wrap .content .version .line{color:#ddd;}
+.Wrap .content .version h3{padding:15px 0 10px 0;font:bold 14px NanumGothic, gulim, sans-serif;color:#333;}
+.Wrap .content .version dl dt{float:left; width:9%; padding:2px 0; line-height;150%;}
+.Wrap .content .version dl dd{float:left; width:89%; padding:2px 0; line-height;150%;}
+
+
+/* ----------- 입점몰 딜 페이지 ----------- */
+/* 공통-타이틀 영역 */
+.ttlBox{clear:both;margin:0 auto;}
+.ttlBox .ttlSub{clear:both;overflow:hidden; margin:0; border-bottom:1px solid #fff;}
+.ttlBox.d0{overflow:hidden;clear:both;border:none;} /*float:left; */
+
+.ttlBox.d0 .h1{height:90px;}
+.ttlBox.d0 .h2{height:110px;}
+.ttlBox.d0 .h3{height:130px;}
+
+.ttlBox.d0 .slt{float:left; width:12%; background:#65a7df;}
+.ttlBox.d0 .slt .typeA{width:100%;height:100%;}
+.ttlBox.d0 .slt .typeA td{font:normal 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Verdana,Arial,Helvetica,sans-serif;letter-spacing:-2px; text-align:center;color:#fff;}
+.ttlBox.d0 .slt .typeA td span{display:block; font:bold 32px arial, Verdana,Arial,Helvetica,sans-serif;letter-spacing:-2px;}
+
+.ttlBox.d0 .cnt{float:left; width:88%; background:#4c5156;} /* #5e5e5e */
+.ttlBox.d0 .cnt .ttl{float:left;width:58%;height:100%;}
+.ttlBox.d0 .cnt .ttl > .typeA{width:100%;height:100%;}
+.ttlBox.d0 .cnt .ttl > .typeA td{width:95%;height:100%; padding-left:5%; color:#fff; vertical-align:middle;}
+.ttlBox.d0 .cnt .ttl > .typeA td p{display:none; padding-bottom:8px; font:normal 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#e2e2e2;}
+.ttlBox.d0 .cnt .ttl > .typeA td dt{font:normal 23px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#fff;}
+.ttlBox.d0 .cnt .ttl > .typeA td dd{padding-top:7px; font:normal 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#fff;}
+.ttlBox.d0 .cnt .ttl > .typeA td dd span{padding-left:5px;color:#aedaff;}
+
+.ttlBox.d0 .cnt .price{float:left;width:42%;height:100%;}
+.ttlBox.d0 .cnt .price > .typeA{width:100%;height:100%;}
+.ttlBox.d0 .cnt .price > .typeA td > .dc{display:none;}
+.ttlBox.d0 .cnt .price > .typeA > tbody > tr > td{width:100%;height:100%; vertical-align:middle;}
+.ttlBox.d0 .cnt .price > .typeA td tr:last-child th, .ttlBox.d0 .cnt .price > .typeA td tr:last-child td{padding-bottom:0;}
+.ttlBox.d0 .cnt .price > .typeA td dl{width:90%;padding-right:10%;}
+.ttlBox.d0 .cnt .price > .typeA td dl dt{overflow:hidden; float:left; width:45%;margin:0;padding:0;} 
+.ttlBox.d0 .cnt .price > .typeA td dl dd{float:left; width:55%;margin:0;padding:0;}
+.ttlBox.d0 .cnt .price > .typeA td .price1 dt{vertical-align:middle; height:20px;font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#e8e8e8; text-align:right;}
+.ttlBox.d0 .cnt .price > .typeA td .price1 dd{height:21px;padding:2px 0 0 0;font:bold 18px Arial,Helvetica,sans-serif;color:#e8e8e8; text-align:right;} /* "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim, */
+.ttlBox.d0 .cnt .price > .typeA td .price2{display:none;}
+.ttlBox.d0 .cnt .price > .typeA td .price2 dt{position:relative;top:7px; height:24px;font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#ffde00; text-align:right;}
+.ttlBox.d0 .cnt .price > .typeA td .price2 dd{height:30px;padding:2px 0 0 0;font:bold 30px Arial,Helvetica,sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right;}
+/* height:36px;padding:2px 0 0 0;font:bold 30px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right; */
+.ttlBox.d0 .cnt .price > .typeA td .price3 dt{position:relative;top:7px; height:24px;font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#ffde00; text-align:right;}
+.ttlBox.d0 .cnt .price > .typeA td .price3 dd{height:30px;padding:2px 0 0 0;font:bold 30px Arial,Helvetica,sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right;}
+.ttlBox.d0 .cnt .price > .typeA td .price1 dd > span,
+.ttlBox.d0 .cnt .price > .typeA td .price2 dd > span,
+.ttlBox.d0 .cnt .price > .typeA td .price3 dd > span{display:none;}
+.ttlBox.d0 .cnt .price > .typeA td .etc{display:none; clear:both; padding-left:30px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;}
+
+/* 공통-옵션리스트 영역 */
+.option{overflow:hidden; margin:0 auto -1px auto;border:1px solid #d7d7d7;}
+.option .optionSub .cnt .pic .p1{position:absolute;left:5px;top:5px; z-index:99;}
+.option .optionSub .cnt .pic .p15{position:absolute;left:105px;top:5px; z-index:99;}
+.option .optionSub .cnt .pic .p2{position:absolute;left:50%;top:5px; width:244px; margin-left:-122px; text-align:center; z-index:98;}
+.option .optionSub .cnt .pic .p25{position:absolute;right:105px;top:5px; z-index:99;}
+.option .optionSub .cnt .pic .p3{position:absolute;right:5px;top:5px; z-index:99;}
+
+.option .optionSub .cnt .pic .p7{position:absolute;left:5px;bottom:5px; z-index:99;}
+.option .optionSub .cnt .pic .p75{position:absolute;left:105px;bottom:5px; z-index:99;}
+.option .optionSub .cnt .pic .p8{position:absolute;left:50%;bottom:5px; width:244px; margin-left:-122px; text-align:center; z-index:98;}
+.option .optionSub .cnt .pic .p85{position:absolute;right:105px;bottom:5px; z-index:99;}
+.option .optionSub .cnt .pic .p9{position:absolute;right:5px;bottom:5px; z-index:99;}
+
+.option.d0 .optionSub{float:left;width:50%;margin:-1px; border:1px solid #d7d7d7;border-bottom:none;}
+.option.d0 .optionSub:nth-child(odd){margin-left:-2px;margin-right:0px;}
+.option.d0 .optionSub .slt{float:left; width:23%;height:130px; background:#000;}
+.option.d0 .optionSub .slt .typeA{width:100%;height:100%;}
+.option.d0 .optionSub .slt .typeA td{font:normal 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-2px; text-align:center;color:#fff;}
+.option.d0 .optionSub .slt .typeA td span{display:block;font:bold 32px Arial,Helvetica,sans-serif;}
+
+.option.d0 .optionSub .cnt .ttl{float:left; width:77%;height:130px; background:#fff;}
+.option.d0 .optionSub .cnt .ttl > .typeA{width:100%;height:100%;}
+.option.d0 .optionSub .cnt .ttl > .typeA td{height:auto;vertical-align:middle; padding:0 15px; color:#fff;}
+.option.d0 .optionSub .cnt .ttl > .typeA td p{padding-bottom:8px; font:normal 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#1880e2;}
+.option.d0 .optionSub .cnt .ttl > .typeA td dt{font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#000;}
+.option.d0 .optionSub .cnt .ttl > .typeA td dd{padding-top:7px; font:bold 16px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#8f8f8f;}
+.option.d0 .optionSub .cnt .ttl > .typeA td dd span{padding-left:5px;font-weight:normal;}
+
+.option.d0 .optionSub .cnt .pic{clear:both; position:relative;}
+.option.d0 .optionSub .cnt .pic div{overflow:hidden; position:relative; width:100%;height:100%;}
+.option.d0 .optionSub .cnt .pic.in span > img{width:100%;}
+.option.d0 .optionSub .cnt .pic.out,
+.option.d0 .optionSub .cnt .pic.out1,
+.option.d0 .optionSub .cnt .pic.out2{height:390px;}
+.option.d0 .optionSub .cnt .pic.out span > img{position:relative;left:0;top:0; width:100%;height:100%;}
+.option.d0 .optionSub .cnt .pic.out1 span > img{position:relative;left:-10%;top:-10%; width:120%;height:120%;}
+.option.d0 .optionSub .cnt .pic.out2 span > img{position:relative;left:-25%;top:-25%; width:150%;height:150%;}
+.option.d0 .optionSub .cnt .pic .dc{position:absolute;bottom:-83px; width:90px; padding:21px 0; background:#d8253a; font:bold 13px Arial,Helvetica,sans-serif;color:#fff; text-align:center;}
+.option.d0 .optionSub .cnt .pic .dc span{font-size:36px;}
+
+.option.d0 .optionSub .cnt .price{position:relative;}
+.option.d0 .optionSub .cnt .price > .typeA{float:right;width:100%;}
+.option.d0 .optionSub .cnt .price > .typeA > tbody > tr > td{height:auto;padding:20px 15px 20px 0;vertical-align:middle;}
+.option.d0 .optionSub .cnt .price > .typeA td dl{float:right; overflow:hidden; width:280px;}
+.option.d0 .optionSub .cnt .price > .typeA td dl dt{overflow:hidden; float:left; width:41%;padding-top:0; vertical-align:middle;}
+.option.d0 .optionSub .cnt .price > .typeA td dl dd{float:left; width:59%;padding:2px 0 0 0; vertical-align:middle;}
+.option.d0 .optionSub .cnt .price > .typeA td .price1 dt{height:17px; font:bold 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#7a7a7a; text-align:right;}
+.option.d0 .optionSub .cnt .price > .typeA td .price1 dd{height:20px; font:bold 17px Arial,Helvetica,sans-serif;color:#7a7a7a; text-align:right;}
+.option.d0 .optionSub .cnt .price > .typeA td .price2 dt{position:relative;top:12px; height:20px; font:bold 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#2e2e2e; text-align:right;}
+.option.d0 .optionSub .cnt .price > .typeA td .price2 dd{height:35px; font:bold 34px Arial,Helvetica,sans-serif;color:#d9253a;letter-spacing:-1px; text-align:right;}
+.option.d0 .optionSub .cnt .price > .typeA td .price3 dt{position:relative;top:12px; height:20px; font:bold 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#2e2e2e; text-align:right;}
+.option.d0 .optionSub .cnt .price > .typeA td .price3 dd{height:35px; font:bold 34px Arial,Helvetica,sans-serif;color:#d9253a;letter-spacing:-1px; text-align:right;}
+.option.d0 .optionSub .cnt .price > .typeA td .price1 dd span,
+.option.d0 .optionSub .cnt .price > .typeA td .price2 dd > span,
+.option.d0 .optionSub .cnt .price > .typeA td .price3 dd > span{display:none;}
+.option.d0 .optionSub .cnt .price > .typeA td .etc{clear:both; padding-left:30px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;text-align:right;}
+
+.option .optionSub .empty{width:100%;min-height:600px; background:url(http://jpub.cafe24.com/livart/image/logo.jpg) no-repeat center center;}
+.option.d0 .optionSub .empty1{padding:310px 0;text-align:center;}
+.option.d0 .optionSub .empty2{padding:312px 0;text-align:center;}
+.option.d0 .optionSub .empty3{padding:325px 0;text-align:center;}
+
+
+/* GS-스몰딜 타이틀 영역 */
+.ttlBox.gs0{overflow:hidden;clear:both; border:none;} /*float:left; */
+.ttlBox.gs0 .ttlSub{position:relative; background:#4c4848;}
+.ttlBox.gs0 .slt{width:310px; margin:0 auto; padding:4px 0; background:#63d1d5;}
+.ttlBox.gs0 .slt .typeA{width:100%;height:40px;}
+.ttlBox.gs0 .slt .typeA td{font:bold 29px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Verdana,Arial,Helvetica,sans-serif;letter-spacing:-2px; text-align:center;color:#fff; vertical-align:middle;}
+.ttlBox.gs0 .slt .typeA td span{position:relative;top:1px; margin-left:5px; font:bold 28px "OldSansBlack",OldSansBlack, verdana, gulim, sans-serif; letter-spacing:-1px;}
+
+.ttlBox.gs0 .cnt{float:left; width:100%;}
+.ttlBox.gs0 .cnt .ttl > .typeA{width:100%;text-align:center;}
+.ttlBox.gs0 .cnt .ttl > .typeA td{padding:20px 0 40px 0; vertical-align:top; color:#fff;}
+.ttlBox.gs0 .cnt .ttl > .typeA td p{display:none; padding-bottom:8px; font:normal 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#e2e2e2;}
+.ttlBox.gs0 .cnt .ttl > .typeA td dt{font:normal 24px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#fff;}
+.ttlBox.gs0 .cnt .ttl > .typeA td dd{display:none; padding-top:7px; font:normal 18px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#fff;}
+.ttlBox.gs0 .cnt .ttl > .typeA td dd span{padding-left:5px;color:#aedaff;}
+
+.ttlBox.gs0 .cnt .price{display:none;}
+.ttlBox.gs0 .cnt .price > .dc{display:none;}
+.ttlBox.gs0 .cnt .price > .typeA{float:left;width:37%;}
+.ttlBox.gs0 .cnt .price > .typeA > tbody > tr > td{height:180px;padding-right:15px;vertical-align:middle;}
+.ttlBox.gs0 .cnt .price > .typeA td .prc{width:230px;float:right;}
+.ttlBox.gs0 .cnt .price > .typeA td .prc td{padding-bottom:6px; vertical-align:middle;}
+.ttlBox.gs0 .cnt .price > .typeA td .prc tr:last-child th, .ttlBox.gs0 .cnt .price > .typeA td .prc tr:last-child td{padding-bottom:0;}
+.ttlBox.gs0 .cnt .price > .typeA td .prc th, .ttlBox.gs0 .cnt .price > .typeA td .prc td{vertical-align:middle;}
+.ttlBox.gs0 .cnt .price > .typeA td .prc th.price1{height:30px;font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#e8e8e8; text-align:right;}
+.ttlBox.gs0 .cnt .price > .typeA td .prc td.price1{height:30px;padding:2px 1px 0 0;font:bold 18px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#e8e8e8; text-align:right;}
+.ttlBox.gs0 .cnt .price > .typeA td .prc th.price2{height:45px;font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#ffde00; text-align:right;}
+.ttlBox.gs0 .cnt .price > .typeA td .prc td.price2{height:45px;padding:2px 1px 0 0;font:bold 30px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right;}
+.ttlBox.gs0 .cnt .price > .typeA td .prc td.price1 > span, .ttlBox.gs0 .cnt .price > .typeA td .prc td.price2 > span{display:none;}
+
+/* GS-스몰딜 옵션리스트 영역 */
+.option.gs0{overflow:hidden; margin:0 auto; border:1px solid #d7d7d7;}
+.option.gs0 .optionSub{float:left;width:50%;margin:-1px;border:1px solid #d7d7d7;border-bottom:none;}
+.option.gs0 .optionSub:nth-child(odd){margin-left:-2px;margin-right:0;}
+.option.gs0 .optionSub .slt{float:left; width:25%;height:161px; background:#000;}
+.option.gs0 .optionSub .slt .typeA{width:100%;height:70px; margin:45px 0 45px -1px;border-right:1px solid #6e6e6e;}
+.option.gs0 .optionSub .slt .typeA td{font:normal 22px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px; text-align:center;color:#fff;}
+.option.gs0 .optionSub .slt .typeA td span{display:block;margin-top:-4px;font:bold 30px "Whitney",Whitney-Bold, arial, gulim, sans-serif; letter-spacing:-1px;}
+
+.option.gs0 .optionSub .cnt .ttl{float:left; width:75%;height:161px; background:black;}
+.option.gs0 .optionSub .cnt .ttl > .typeA{width:100%;height:100%;}
+.option.gs0 .optionSub .cnt .ttl > .typeA td{height:auto;vertical-align:middle; padding:0 30px 0 25px; color:#fff;}
+.option.gs0 .optionSub .cnt .ttl > .typeA td p{padding-bottom:9px; font:normal 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;line-height:115%;color:#edb450;}
+.option.gs0 .optionSub .cnt .ttl > .typeA td dt{font:normal 22px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;line-height:115%;color:#fff;}
+.option.gs0 .optionSub .cnt .ttl > .typeA td dd{padding-top:9px; font:600 16px "나눔바른고딕",NanumBarunGothicBold, gulim, sans-serif;color:#bbbbbb;}
+.option.gs0 .optionSub .cnt .ttl > .typeA td dd span{padding-left:5px;}
+
+.option.gs0 .optionSub .cnt .pic{clear:both; overflow:hidden; position:relative;}
+.option.gs0 .optionSub .cnt .pic div{overflow:hidden; position:relative; width:100%;height:100%;}
+.option.gs0 .optionSub .cnt .pic.in span > img{width:100%;}
+.option.gs0 .optionSub .cnt .pic.out,
+.option.gs0 .optionSub .cnt .pic.out1,
+.option.gs0 .optionSub .cnt .pic.out2{height:390px;}
+.option.gs0 .optionSub .cnt .pic.out span img{position:relative;left:0;top:0; width:100%;height:100%;}
+.option.gs0 .optionSub .cnt .pic.out1 span img{position:relative;left:-10%;top:-10%; width:120%;height:120%;}
+.option.gs0 .optionSub .cnt .pic.out2 span img{position:relative;left:-25%;top:-25%; width:150%;height:150%;}
+.option.gs0 .optionSub .cnt .pic .dc{position:absolute;right:5px;top:5px; width:75px;height:60px; padding:20px 0 0 5px; background:#63d1d5;	border-radius:40px;	font:bold 20px arial,verdana;color:#fff;letter-spacing:-2px; text-align:center; z-index:99;}
+/* url(http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/guide/bg_circle.png) no-repeat right top; */
+.option.gs0 .optionSub .cnt .pic .dc span{font-size:36px;}
+
+.option.gs0 .optionSub .cnt .price{position:relative;}
+
+.option.gs0 .optionSub .cnt .price > .typeA{float:right;width:100%;height:105px;}
+.option.gs0 .optionSub .cnt .price > .typeA > tbody > tr > td{height:auto;padding:20px 0; vertical-align:middle;  text-align:center;}
+.option.gs0 .optionSub .cnt .price > .typeA td dl dt{overflow:hidden; display:inline-block; text-align:right; vertical-align:middle;}
+.option.gs0 .optionSub .cnt .price > .typeA td dl dd{display:inline-block; text-align:left; line-height:110%;}
+.option.gs0 .optionSub .cnt .price > .typeA td .price1 dt{position:relative;top:-6px; height:16px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#525252;}
+.option.gs0 .optionSub .cnt .price > .typeA td .price1 dd{font:bold 29px "OldSansBlack",OldSansBlack, verdana;letter-spacing:-2px;color:#525252;}
+.option.gs0 .optionSub .cnt .price > .typeA td .price1 dd span{position:relative;top:-6px;padding-left:2px; font:normal 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;}
+.option.gs0 .optionSub .cnt .price > .typeA td .price2 dt{position:relative;top:-5px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;}
+.option.gs0 .optionSub .cnt .price > .typeA td .price2 dd{font:bold 29px "OldSansBlack",OldSansBlack, verdana;color:#ee2f58;letter-spacing:-2px;}
+.option.gs0 .optionSub .cnt .price > .typeA td .price2 dd > span{position:relative;top:-6px;padding-left:2px; font:normal 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;}
+.option.gs0 .optionSub .cnt .price > .typeA td .price3 dt{position:relative;top:-11px; height:21px; font:bold 17px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ea1414;text-align:left;}
+.option.gs0 .optionSub .cnt .price > .typeA td .price3 dd{position:relative;top:-3px;padding-bottom:5px; font:bold 36px "Whitney",Whitney-Bold, verdana;color:#ea1414;letter-spacing:-3px;}
+.option.gs0 .optionSub .cnt .price > .typeA td .price3 dd > span{position:relative;top:-9px;padding-left:2px; font:normal 17px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;}
+.option.gs0 .optionSub .cnt .price > .typeA td .etc{padding-left:30px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;}
+
+.option.gs0 .optionSub .empty1, 
+.option.gs0 .optionSub .empty2{padding:289px 0 288px 0;text-align:center;}
+.option.gs0 .optionSub .empty3{padding:312px 0;text-align:center;}
+
+
+
+/* GS 베스트딜-타이틀 영역 */
+.ttlBox.gs1{overflow:hidden;clear:both; border:none;} /*float:left; */
+.ttlBox.gs1 .ttlSub{position:relative; background:#4c4848;}
+.ttlBox.gs1 .slt{width:310px; margin:0 auto; padding:4px 0; background:#63d1d5;}
+.ttlBox.gs1 .slt .typeA{width:100%;height:40px;}
+.ttlBox.gs1 .slt .typeA td{font:bold 29px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Verdana,Arial,Helvetica,sans-serif;letter-spacing:-2px; text-align:center;color:#fff; vertical-align:middle;}
+.ttlBox.gs1 .slt .typeA td span{position:relative;top:1px; margin-left:5px; font:bold 28px "OldSansBlack",OldSansBlack, verdana, gulim, sans-serif; letter-spacing:-1px;}
+
+.ttlBox.gs1 .cnt{float:left; width:100%;}
+.ttlBox.gs1 .cnt .ttl > .typeA{width:100%;text-align:center;}
+.ttlBox.gs1 .cnt .ttl > .typeA td{padding:20px 0 40px 0; vertical-align:top; color:#fff;}
+.ttlBox.gs1 .cnt .ttl > .typeA td p{display:none; padding-bottom:8px; font:normal 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#e2e2e2;}
+.ttlBox.gs1 .cnt .ttl > .typeA td dt{font:normal 24px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#fff;}
+.ttlBox.gs1 .cnt .ttl > .typeA td dd{display:none; padding-top:7px; font:normal 18px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#fff;}
+.ttlBox.gs1 .cnt .ttl > .typeA td dd span{padding-left:5px;color:#aedaff;}
+
+.ttlBox.gs1 .cnt .price{display:none;}
+.ttlBox.gs1 .cnt .price > .dc{display:none;}
+.ttlBox.gs1 .cnt .price > .typeA{float:left;width:37%;}
+.ttlBox.gs1 .cnt .price > .typeA > tbody > tr > td{height:180px;padding-right:15px;vertical-align:middle;}
+.ttlBox.gs1 .cnt .price > .typeA td .prc{width:230px;float:right;}
+.ttlBox.gs1 .cnt .price > .typeA td .prc td{padding-bottom:6px; vertical-align:middle;}
+.ttlBox.gs1 .cnt .price > .typeA td .prc tr:last-child th, .ttlBox.gs1 .cnt .price > .typeA td .prc tr:last-child td{padding-bottom:0;}
+.ttlBox.gs1 .cnt .price > .typeA td .prc th, .ttlBox.gs1 .cnt .price > .typeA td .prc td{vertical-align:middle;}
+.ttlBox.gs1 .cnt .price > .typeA td .prc th.price1{height:30px;font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#e8e8e8; text-align:right;}
+.ttlBox.gs1 .cnt .price > .typeA td .prc td.price1{height:30px;padding:2px 1px 0 0;font:bold 18px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#e8e8e8; text-align:right;}
+.ttlBox.gs1 .cnt .price > .typeA td .prc th.price2{height:45px;font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#ffde00; text-align:right;}
+.ttlBox.gs1 .cnt .price > .typeA td .prc td.price2{height:45px;padding:2px 1px 0 0;font:bold 30px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right;}
+.ttlBox.gs1 .cnt .price > .typeA td .prc td.price1 > span, .ttlBox.gs1 .cnt .price > .typeA td .prc td.price2 > span{display:none;}
+
+
+/* GS  베스트딜-옵션리스트 영역 */
+.option.gs1{overflow:hidden; margin:0 auto; border:1px solid #63d1d5;}
+.option.gs1 .optionSub{float:left;width:50%;margin:-1px; border:1px solid #63d1d5;border-bottom:none;}
+.option.gs1 .optionSub:nth-child(odd){margin-left:-2px;margin-right:0px;}
+.option.gs1 .optionSub .slt{width:100%; padding-top:20px; background:#63d1d5;}
+.option.gs1 .optionSub .slt .typeA{width:100%;}
+.option.gs1 .optionSub .slt .typeA td{height:49px; vertical-align:middle; font:bold 31px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-2px; text-align:center;color:#fff;}
+.option.gs1 .optionSub .slt .typeA td span{margin-left:5px; font:bold 28px "OldSansBlack",OldSansBlack, verdana, gulim, sans-serif; letter-spacing:-1px;}
+
+.option.gs1 .optionSub .cnt .ttl{position:relative; width:100%; background:#63d1d5;}
+.option.gs1 .optionSub .cnt .ttl:after{content:''; position:absolute;left:50%;bottom:-20px; display:block;width:0;height:0; border:10px solid transparent;border-top:10px solid #63d1d5;z-index:99;}
+.option.gs1 .optionSub .cnt .ttl > .typeA{width:100%;}
+.option.gs1 .optionSub .cnt .ttl.h1{height:50px;}
+.option.gs1 .optionSub .cnt .ttl.h2{height:80px;}
+.option.gs1 .optionSub .cnt .ttl.h3{height:110px;}
+.option.gs1 .optionSub .cnt .ttl > .typeA td{height:auto;vertical-align:top; padding:0 30px 0 25px; text-align:center; color:#fff;}
+.option.gs1 .optionSub .cnt .ttl > .typeA td p{padding-bottom:5px; font:normal 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;line-height:115%;color:#fff;}
+.option.gs1 .optionSub .cnt .ttl > .typeA td dl{overflow:hidden;padding-bottom:10px;}
+.option.gs1 .optionSub .cnt .ttl > .typeA td dt{font:normal 21px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;line-height:115%;color:#fff;}
+.option.gs1 .optionSub .cnt .ttl > .typeA td dd{padding-top:7px; font:normal 14px "나눔바른고딕",NanumBarunGothicBold, gulim, sans-serif;color:#008287;}
+.option.gs1 .optionSub .cnt .ttl > .typeA td dd span{padding-left:5px;}
+
+.option.gs1 .optionSub .cnt .pic{clear:both; overflow:hidden; position:relative;}
+.option.gs1 .optionSub .cnt .pic div{overflow:hidden; position:relative; width:100%;height:100%;}
+.option.gs1 .optionSub .cnt .pic.in img{width:100%;}
+.option.gs1 .optionSub .cnt .pic.out,
+.option.gs1 .optionSub .cnt .pic.out1,
+.option.gs1 .optionSub .cnt .pic.out2{height:390px;}
+.option.gs1 .optionSub .cnt .pic.out span img{position:relative;left:0;top:0; width:100%;height:100%;}
+.option.gs1 .optionSub .cnt .pic.out1 span img{position:relative;left:-10%;top:-10%; width:120%;height:120%;}
+.option.gs1 .optionSub .cnt .pic.out2 span img{position:relative;left:-25%;top:-25%; width:150%;height:150%;}
+.option.gs1 .optionSub .cnt .pic .dc{position:absolute;right:5px;top:5px; width:75px;height:60px; padding:20px 0 0 5px; background:#000; border-radius:40px;	font:bold 20px arial,verdana;color:#fff;letter-spacing:-2px; text-align:center;}
+/* url(http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/guide/bg_circle.png) no-repeat right top; */
+.option.gs1 .optionSub .cnt .pic .dc span{font-size:36px;}
+
+.option.gs1 .optionSub .cnt .price{position:relative;}
+.option.gs1 .optionSub .cnt .price .dc{display:none;}
+.option.gs1 .optionSub .cnt .price .dc span{font-size:36px;}
+.option.gs1 .optionSub .cnt .price > .typeA{float:right;width:100%;}
+.option.gs1 .optionSub .cnt .price > .typeA > tbody > tr > td{height:auto; padding:20px 0; vertical-align:middle; text-align:center;}
+.option.gs1 .optionSub .cnt .price > .typeA td dl dt{overflow:hidden; display:inline-block; text-align:right; vertical-align:middle;}
+.option.gs1 .optionSub .cnt .price > .typeA td dl dd{display:inline-block; text-align:left; line-height:110%;}
+.option.gs1 .optionSub .cnt .price > .typeA td .price1 dt{position:relative;top:-4px; height:14px; padding-bottom:5px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#525252;}
+.option.gs1 .optionSub .cnt .price > .typeA td .price1 dd{font:bold 29px "OldSansBlack",OldSansBlack, verdana;letter-spacing:-2px;color:#525252;}
+.option.gs1 .optionSub .cnt .price > .typeA td .price1 dd strike{text-decoration:none;}
+.option.gs1 .optionSub .cnt .price > .typeA td .price1 dd span{position:relative;top:-5px;padding-left:2px; font:normal 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;}
+.option.gs1 .optionSub .cnt .price > .typeA td .price2 dt{position:relative;top:-2px; height:22px; padding-bottom:5px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;}
+.option.gs1 .optionSub .cnt .price > .typeA td .price2 dd{padding-bottom:5px; font:bold 29px "OldSansBlack",OldSansBlack, verdana;color:#ee2f58;letter-spacing:-2px;}
+.option.gs1 .optionSub .cnt .price > .typeA td .price2 dd > span{position:relative;top:-6px;padding-left:2px; font:normal 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;}
+.option.gs1 .optionSub .cnt .price > .typeA td .price3{display:inline; padding:20px 5px 7px 5px; background:#63d1d5;}
+.option.gs1 .optionSub .cnt .price > .typeA td .price3 dt{position:relative;top:-5px;height:22px; margin:0 -5px 0 0;padding:7px 10px 6px 10px; font:normal 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#fff; }
+.option.gs1 .optionSub .cnt .price > .typeA td .price3 dt span{font-weight:bold;}
+.option.gs1 .optionSub .cnt .price > .typeA td .price3 dt > em{display:inline-block; overflow:hidden;height:17px;}
+.option.gs1 .optionSub .cnt .price > .typeA td .price3 dd{height:27px; margin:0;padding:1px 10px 6px 0; font:600 30px "OldSansBlack",OldSansBlack, verdana;color:#fff;letter-spacing:-2px;}
+.option.gs1 .optionSub .cnt .price > .typeA td .price3 dd > span{position:relative;top:-6px; padding-left:2px; font:normal 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;}
+.option.gs1 .optionSub .cnt .price > .typeA td .etc{padding-left:30px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;}
+
+.option.gs1 .optionSub .empty1, .option.gs1 .optionSub .empty2, .option.gs1 .optionSub .empty3{padding:334px 0 335px 0; border-top:1px solid #63d1d5;text-align:center;}
+
+
+/* 옥션-타이틀 영역 */
+.ttlBox.a0{padding-top:47px; background:#fff url(/Guide3/img/ip/auction/tit_detail.gif) no-repeat left top; border-bottom:1px solid #ddd;}
+.ttlBox.a0 .ttlSub{margin:-1px;padding:42px 0 0 0; border:1px solid #ddd;border-bottom:none;}
+.ttlBox.a0 .ttlSub:last-child{border-bottom:1px solid #ddd;}
+.ttlBox.a0 .slt{width:100%;padding:0 0 23px 0;}
+.ttlBox.a0 .slt .typeA{width:100%;height:100%;}
+.ttlBox.a0 .slt .typeA td{height:132px; padding-top:2px;vertical-align:middle; background:#fff url(/Guide3/img/ip/auction/lcircle.gif) no-repeat center center; font:600 25px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px; text-align:center;color:#fff;}
+.ttlBox.a0 .slt .typeA td > span{display:block;margin-top:-1px;font:normal 42px "OldSansBlack",OldSansBlack, "나눔고딕",NanumGothic, Arial,Helvetica,sans-serif; letter-spacing:-1px;}
+.ttlBox.a0 .slt .typeA td > span > span{position:relative;top:-5px;font:normal 34px "나눔고딕",NanumGothic, Arial,Helvetica,sans-serif; letter-spacing:-1px;}
+.ttlBox.a0 .cnt{position:relative; height:195px;margin:-1px;}
+.ttlBox.a0 .cnt .ttl > .typeA{width:100%;}
+.ttlBox.a0 .cnt .ttl > .typeA td p{display:none;}
+.ttlBox.a0 .cnt .ttl > .typeA td dl{overflow:hidden;}
+.ttlBox.a0 .cnt .ttl > .typeA td dt{height:60px; font:600 24px "나눔고딕",NanumGothic,"OldSansBlack",OldSansBlack,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;line-height:115%;color:#000;text-align:center;}
+.ttlBox.a0 .cnt .ttl > .typeA td dd{padding:57px 0 62px 0; font:normal 15px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#626262;line-height:150%;text-align:center;}
+
+.ttlBox.a0 .cnt .price{display:inline; position:absolute;bottom:80px; width:100%;height:56px; text-align:center;}
+.ttlBox.a0 .cnt .price > .typeA .dc{float:right; position:relative;left:0;top:10px; display:inline; margin-top:-6px;padding:0 33px 0 15px; background:url(/Guide3/img/ip/auction/arrow.gif) no-repeat right center; font:600 38px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#0079ea;letter-spacing:-2px;}
+.ttlBox.a0 .cnt .price > .typeA{overflow:hidden; display:inline; width:500px;}
+.ttlBox.a0 .cnt .price > .typeA > tbody > tr > td{ width:100%;vertical-align:top;}
+.ttlBox.a0 .cnt .price > .typeA td dl{display:inline-block;}
+.ttlBox.a0 .cnt .price > .typeA td .price1 dt, .ttlBox.a0 .cnt .price > .typeA td .prc .price2 dt{display:none;}
+.ttlBox.a0 .cnt .price > .typeA td .price1 dd{position:relative;top:5px;padding-right:20px; font:normal 24px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#919191;letter-spacing:-1px;}
+.ttlBox.a0 .cnt .price > .typeA td .price2 dt, .ttlBox.a0 .cnt .price > .typeA td .price2 dd, .ttlBox.a0 .cnt .price > .typeA td .price3 dt{display:none;}
+.ttlBox.a0 .cnt .price > .typeA td .price3 dd{position:relative;top:5px; font:600 38px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#ea1414;letter-spacing:-2px; text-align:right;}
+.ttlBox.a0 .cnt .price > .typeA td .price1 dd span{position:relative;top:-4px;padding-left:2px; font:800 16px "나눔고딕",NanumGothicBold, gulim, sans-serif;letter-spacing:-1px;}
+.ttlBox.a0 .cnt .price > .typeA td .price3 dd > span{position:relative;top:-6px;padding-left:2px; font:800 22px "나눔고딕",NanumGothicBold, gulim, sans-serif;letter-spacing:-1px;}
+.ttlBox.a0 .cnt .price > .typeA td .etc{display:none; clear:both; padding-left:30px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;text-align:right;}
+
+/* 옥션-옵션리스트 영역 */
+.option.a0{clear:both;padding-top:47px; background:#fff url(/Guide3/img/ip/auction/tit.gif) no-repeat left top;}
+.option.a0 .optionSub{clear:both;position:relative; width:100%;margin:-1px; background:#fff;border:1px solid #ddd;}
+.option.a0 .optionSub .slt{float:left;margin:0 0 0 40px;}
+.option.a0 .optionSub .slt .typeA{width:100%;height:190px;}
+.option.a0 .optionSub .slt .typeA td{width:88px;height:88px; background:url(/Guide3/img/ip/auction/circle.gif) no-repeat center center; font:500 17px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px; text-align:center;color:#fff;}
+.option.a0 .optionSub .slt .typeA td > span{display:block;margin-top:-1px;font:normal 28px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif; letter-spacing:-1px;}
+.option.a0 .optionSub .slt .typeA td > span > span{position:relative;top:-3px;font:normal 22px "나눔고딕",NanumGothic, Arial,Helvetica,sans-serif; letter-spacing:-1px;}
+
+.option.a0 .optionSub .cnt .ttl{float:left;width:70%;height:190px;}
+.option.a0 .optionSub .cnt .ttl > .typeA{width:100%;height:100%;}
+.option.a0 .optionSub .cnt .ttl > .typeA td{height:100%;vertical-align:middle; padding:0 30px 0 21px; color:#000;}
+.option.a0 .optionSub .cnt .ttl > .typeA td p{display:none;}
+.option.a0 .optionSub .cnt .ttl > .typeA td dt{overflow:hidden;white-space:nowrap;text-overflow:ellipsis; width:345px; font:600 24px "나눔고딕",NanumGothic,"OldSansBlack",OldSansBlack,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;line-height:115%;color:#000;}
+.option.a0 .optionSub .cnt .ttl > .typeA td dd{width:290px; padding-top:9px; font:normal 15px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#626262;line-height:150%;}
+.option.a0 .optionSub .cnt .ttl > .typeA td dd span{padding-left:5px;}
+
+.option.a0 .optionSub .cnt .pic{position:relative; clear:both; background:url(/Guide3/img/ip/auction/bg_line.jpg) right bottom; border-top:1px solid #ddd;}
+.option.a0 .optionSub .cnt .pic div{overflow:hidden; position:relative; width:50%;height:100%;}
+.option.a0 .optionSub .cnt .pic.in span > img{width:100%;}
+.option.a0 .optionSub .cnt .pic.out,
+.option.a0 .optionSub .cnt .pic.out1,
+.option.a0 .optionSub .cnt .pic.out2{height:390px;}
+.option.a0 .optionSub .cnt .pic.out img{position:relative;left:0;top:0; width:100%;height:100%;}
+.option.a0 .optionSub .cnt .pic.out1 img{position:relative;left:-10%;top:-10%; width:120%;height:120%;}
+.option.a0 .optionSub .cnt .pic.out2 img{position:relative;left:-25%;top:-25%; width:150%;height:150%;}
+.option.a0 .optionSub .cnt .pic img{width:50%;margin-right:-1px; border-right:1px solid #ddd;}
+.option.a0 .optionSub .cnt .pic .dc{position:absolute;right:40px;top:-98px;margin-top:-6px;float:right;padding:0 33px 0 15px; background:url(/Guide3/img/ip/auction/arrow.gif) no-repeat right center; font:600 38px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#0079ea;letter-spacing:-2px;}
+.option.a0 .optionSub .cnt .pic .p1,
+.option.a0 .optionSub .cnt .pic .p2,
+.option.a0 .optionSub .cnt .pic .p3,
+.option.a0 .optionSub .cnt .pic .p7,
+.option.a0 .optionSub .cnt .pic .p8,
+.option.a0 .optionSub .cnt .pic .p9{display:none;}
+
+.option.a0 .optionSub .cnt .price{position:absolute;right:39px;top:0;}
+.option.a0 .optionSub .cnt .price > .typeA{float:right;margin-right:115px;}
+.option.a0 .optionSub .cnt .price > .typeA > tbody > tr > td{height:190px;vertical-align:middle;}
+.option.a0 .optionSub .cnt .price > .typeA td dl dt{width:31%;padding-top:0; vertical-align:middle;}
+.option.a0 .optionSub .cnt .price > .typeA td dl dd{padding-top:2px; vertical-align:middle; text-align:right;}
+.option.a0 .optionSub .cnt .price > .typeA td .price1 dt, .option.a0 .optionSub .cnt .price > .typeA td .price2 dt{display:none;}
+.option.a0 .optionSub .cnt .price > .typeA td .price1 dd{position:relative;top:10px;right:1px; font:normal 24px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#919191;}
+.option.a0 .optionSub .cnt .price > .typeA td .price1 dd span{position:relative;top:-4px;padding-left:2px; font:800 16px "나눔고딕",NanumGothicBold, gulim, sans-serif;letter-spacing:-1px;}
+.option.a0 .optionSub .cnt .price > .typeA td .price2 dt, .option.a0 .optionSub .cnt .price > .typeA td .price2 dd, .option.a0 .optionSub .cnt .price > .typeA td .price3 dt{display:none;}
+.option.a0 .optionSub .cnt .price > .typeA td .price3 dd{font:600 38px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#ea1414;letter-spacing:-2px; text-align:right;}
+.option.a0 .optionSub .cnt .price > .typeA td .price3 dd > span{position:relative;top:-4px;padding-left:2px; font:800 22px "나눔고딕",NanumGothicBold, gulim, sans-serif;letter-spacing:-1px;}
+.option.a0 .optionSub .cnt .price > .typeA td .etc{display:none; clear:both; padding-left:30px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;text-align:right;}
+
+.option.a0 .optionSub .empty,
+.option.a0 .optionSub .empty1,
+.option.a0 .optionSub .empty2,
+.option.a0 .optionSub .empty3{display:none;padding:289px 0 288px;text-align:center;}
+
+
+/* 롯데i 땡큐딜-타이틀 영역 */
+.ttlBox.l0{overflow:hidden;clear:both;border:none;} /*float:left; */
+
+.ttlBox.l0 .ttlSub{position:relative;}
+.ttlSub.l0 .h1,
+.ttlSub.l0 .h2{height:265px;}
+.ttlSub.l0 .h3{height:282px;}
+
+.ttlSub.l0 .slt{position:absolute;left:60px;top:27px; width:130px;height:130px; background:url(../img/ip/lottei/theart.png) no-repeat center center;}
+.ttlSub.l0 .slt .typeA{width:100%;height:100%;}
+.ttlSub.l0 .slt .typeA td{padding-top:8px; font:normal 19px Noto Sans Korean, 'Noto Sans Korean', sans-serif;letter-spacing:-2px; text-align:center;color:#fff; vertical-align:top;}
+.ttlSub.l0 .slt .typeA td span{display:block; padding-top:1px; font:500 48px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#424242; letter-spacing:-2px;}
+
+.ttlSub.l0 .cnt{width:100%;} /* #5e5e5e */
+.ttlSub.l0 .cnt .ttl{height:180px; padding-left:190px; background:#393939;}
+.ttlSub.l0 .cnt .ttl > .typeA{width:100%;height:100%;}
+.ttlSub.l0 .cnt .ttl > .typeA td{width:100%;height:100%; color:#fff; text-align:center;vertical-align:middle;}
+.ttlSub.l0 .cnt .ttl > .typeA td p{position:relative;bottom:2px; display:inline; margin:-3px; padding:0 5px 0 5px; font:normal 25px Noto Sans Korean, 'Noto Sans Korean', sans-serif; background:#da281c;letter-spacing:-2px;color:#fff;}
+.ttlSub.l0 .cnt .ttl > .typeA td dt{font:normal 29px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#fff;}
+.ttlSub.l0 .cnt .ttl > .typeA td dd{padding-top:7px; font:normal 15px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#fff;}
+.ttlSub.l0 .cnt .ttl > .typeA td dd span{padding-left:5px;color:#aedaff;}
+
+.ttlSub.l0 .cnt .price{clear:both; width:100%;height:80px;}
+.ttlSub.l0 .cnt .price.s2{background:url(../img/ip/lottei/dotline.jpg) no-repeat center center;}
+.ttlSub.l0 .cnt .price.s2 > .typeA{width:100%;height:100%; margin:2px -2px 0 0;}
+.ttlSub.l0 .cnt .price > .typeA td > .dc{display:none;}
+.ttlSub.l0 .cnt .price > .typeA > tbody > tr > td{width:100%;height:100%; vertical-align:middle;border:1px solid #393939;}
+.ttlSub.l0 .cnt .price > .typeA td tr:last-child th, .ttlSub.l0 .cnt .price > .typeA td tr:last-child td{padding-bottom:0;}
+.ttlSub.l0 .cnt .price.s2 > .typeA td dl{float:left; width:50%; text-align:center;}
+.ttlSub.l0 .cnt .price.s2 > .typeA td dl dt{display:inline-block; overflow:hidden; margin:0;padding:0;} 
+.ttlSub.l0 .cnt .price.s2 > .typeA td dl dd{display:inline-block; margin:0;padding:0;}
+.ttlSub.l0 .cnt .price.s2 > .typeA td .price2{height:60px;}
+.ttlSub.l0 .cnt .price.s2 > .typeA td .price2 dt{position:relative;top:-11px; vertical-align:middle; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; text-align:right;}
+.ttlSub.l0 .cnt .price.s2 > .typeA td .price2 dd{position:relative;top:-3px; padding:0;font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; text-align:right;} /* "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim, */
+.ttlSub.l0 .cnt .price.s2 > .typeA td .price3{height:60px;}
+.ttlSub.l0 .cnt .price.s2 > .typeA td .price3 dt{position:relative;top:1px; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;}
+.ttlSub.l0 .cnt .price.s2 > .typeA td .price3 dd{position:relative;top:-4px; padding:0;font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;letter-spacing:-1px;}
+/* height:36px;padding:2px 0 0 0;font:bold 30px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right; */
+.ttlSub.l0 .cnt .price.s2 > .typeA td .price1{display:none;}
+.ttlSub.l0 .cnt .price.s2 > .typeA td .price1 dt{position:relative;top:1px; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;}
+.ttlSub.l0 .cnt .price.s2 > .typeA td .price1 dd{position:relative;top:-4px; padding:0;font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;letter-spacing:-1px;}
+
+.ttlSub.l0 .cnt .price.s3{background:url(../img/ip/lottei/dotline2.jpg) no-repeat center center;}
+.ttlSub.l0 .cnt .price.s3 > .typeA{width:100%;height:100%; margin:2px -2px 0 0;}
+.ttlSub.l0 .cnt .price.s3 > .typeA td dl{float:left; width:33.3%; text-align:left;}
+.ttlSub.l0 .cnt .price.s3 > .typeA td dl dt{margin:0;padding:8px 0 0 25px;}
+.ttlSub.l0 .cnt .price.s3 > .typeA td dl dd{padding:0 0 0 25px;}
+.ttlSub.l0 .cnt .price.s3 > .typeA td .price2 dt{position:relative;top:8px; vertical-align:middle; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939;}
+.ttlSub.l0 .cnt .price.s3 > .typeA td .price2 dd{position:relative;top:-10px; font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; } /* "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim, */
+.ttlSub.l0 .cnt .price.s3 > .typeA td .price3 dt{position:relative;top:8px; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;}
+.ttlSub.l0 .cnt .price.s3 > .typeA td .price3 dd{position:relative;top:-10px; font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;letter-spacing:-1px;}
+/* height:36px;padding:2px 0 0 0;font:bold 30px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right; */
+.ttlSub.l0 .cnt .price.s3 > .typeA td .price1 dt{position:relative;top:8px; vertical-align:middle; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939;}
+.ttlSub.l0 .cnt .price.s3 > .typeA td .price1 dd{position:relative;top:-10px; font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; } /* "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim, */
+
+.ttlSub.l0 .cnt .price > .typeA td .price2 dd > span,
+.ttlSub.l0 .cnt .price > .typeA td .price3 dd > span,
+.ttlSub.l0 .cnt .price > .typeA td .price1 dd > span{font:normal 30px Noto Sans Korean, 'Noto Sans Korean', sans-serif;}
+.ttlSub.l0 .cnt .price > .typeA td .etc{display:none; clear:both; padding-left:30px; font:bold 15px Noto Sans Korean, 'Noto Sans Korean', sans-serif;letter-spacing:0;color:#ee2f58;}
+
+/* 롯데i 땡큐딜-옵션리스트 영역 */
+.option.l0{overflow:hidden; border:none; border-top:4px solid #393939;}
+.option.l0 .optionSub{position:relative; float:left; width:50%;margin:-1px; border:1px solid #ccc;border-bottom:none;}
+.option.l0 .optionSub:nth-child(odd){margin-left:-2px;margin-right:0px;}
+.option.l0 .optionSub.h1{height:400px;}
+.option.l0 .optionSub.h2{height:480px;}
+.option.l0 .optionSub.h3{height:560px;}
+.option.l0 .optionSub .slt{position:absolute;left:30px;top:20px;width:80px;height:69px;padding-right:2px; background:url(../img/ip/lottei/oheart.png) no-repeat center center; z-index:2;}
+.option.l0 .optionSub .slt .typeA{width:100%;height:100%;}
+.option.l0 .optionSub .slt .typeA td{font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;letter-spacing:-2px; text-align:center;color:#fff;}
+.option.l0 .optionSub .slt .typeA td em{display:none;}
+.option.l0 .optionSub .slt .typeA td span{display:block; position:relative;top:-2px; font:normal 33px Noto Sans Korean, 'Noto Sans Korean', sans-serif;}
+
+.option.l0 .optionSub .cnt .ttl{padding:295px 0 0 15px;}
+.option.l0 .optionSub .cnt .ttl > .typeA{width:100%;height:100%;}
+.option.l0 .optionSub .cnt .ttl > .typeA td{height:auto;vertical-align:middle; padding:0 15px; color:#fff;}
+.option.l0 .optionSub .cnt .ttl > .typeA td p{position:relative;top:3px; margin:0 15px 15px 0; padding:0; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif; background:#da281c;color:#fff;}
+.option.l0 .optionSub .cnt .ttl > .typeA td dt{font:normal 24px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; line-height:110%;}
+.option.l0 .optionSub .cnt .ttl > .typeA td dd{font:300 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#5d5d5d;}
+.option.l0 .optionSub .cnt .ttl > .typeA td dd span{padding-left:5px;}
+
+.option.l0 .optionSub .cnt .pic{clear:both; position:absolute;left:0;top:0; padding:20px 30px; z-index:1;}
+.option.l0 .optionSub .cnt .pic div{overflow:hidden; position:relative; width:100%;height:100%;}
+.option.l0 .optionSub .cnt .pic.in,
+.option.l0 .optionSub .cnt .pic.out,
+.option.l0 .optionSub .cnt .pic.out1,
+.option.l0 .optionSub .cnt .pic.out2{height:258px;}
+.option.l0 .optionSub .cnt .pic.in span > img,
+.option.l0 .optionSub .cnt .pic.out span > img{position:relative;left:0;top:-34px; width:100%;height:auto;}
+.option.l0 .optionSub .cnt .pic.out1 span > img{position:relative;left:-10%;top:-10%; width:120%;height:auto;}
+.option.l0 .optionSub .cnt .pic.out2 span > img{position:relative;left:-25%;top:-25%; width:150%;height:auto;}
+.option.l0 .optionSub .cnt .pic .dc{display:none; position:absolute;bottom:-83px; width:90px; padding:21px 0; background:#d8253a; font:bold 13px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#fff; text-align:center;}
+.option.l0 .optionSub .cnt .pic .dc span{font-size:36px;}
+.option.l0 .optionSub .cnt .pic .p3{position:absolute;right:30px;top:20px; z-index:99;}
+
+.option.l0 .optionSub .cnt .price > .typeA{float:right;width:100%;}
+.option.l0 .optionSub .cnt .price > .typeA > tbody > tr > td{height:auto; margin:0;padding:0 0 20px 32px;vertical-align:middle;}
+.option.l0 .optionSub .cnt .price > .typeA td dl{float:left;}
+.option.l0 .optionSub .cnt .price > .typeA td dl dd{vertical-align:middle;letter-spacing:-2px;}
+.option.l0 .optionSub .cnt .price > .typeA td .price2{clear:both;}
+.option.l0 .optionSub .cnt .price > .typeA td .price2 dt{display:none; height:17px; font:bold 17px Noto Sans Korean, 'Noto Sans Korean', sans-serif; text-align:right;}
+.option.l0 .optionSub .cnt .price > .typeA td .price2 dd{position:relative;top:17px; height:20px; font:400 24px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; text-align:right;}
+.option.l0 .optionSub .cnt .price > .typeA td .price3 dt{display:none; height:20px; font:bold 17px Noto Sans Korean, 'kNoto Sans Korean', sans-serif;color:#2e2e2e; text-align:right;}
+.option.l0 .optionSub .cnt .price > .typeA td .price3 dd{position:relative;top:1px; height:35px; font:bold 40px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;letter-spacing:-1px; text-align:right;}
+.option.l0 .optionSub .cnt .price > .typeA td .price1{clear:both; width:100%; padding-top:8px;}
+.option.l0 .optionSub .cnt .price > .typeA td .price1 dt{position:relative;top:15px; float:left; height:20px; font:500 19px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; text-align:right;}
+.option.l0 .optionSub .cnt .price > .typeA td .price1 dd{position:relative;left:10px;top:14px; float:left; height:35px; font:500 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939;letter-spacing:-1px; text-align:right;}
+.option.l0 .optionSub .cnt .price > .typeA td .price2 dd span{padding-right:25px;}
+.option.l0 .optionSub .cnt .price > .typeA td .price3 dd span{font-weight:400; font-size:29px;}
+.option.l0 .optionSub .cnt .price > .typeA td .price1 dd span{font-weight:400; font-size:19px;}
+.option.l0 .optionSub .cnt .price > .typeA td .etc{display:none; clear:both; padding-left:30px; font:bold 15px Noto Sans Korean, 'Noto Sans Korean', sans-serif;letter-spacing:0;color:#ee2f58;text-align:right;}
+
+.option.l0 .optionSub .empty{min-height:460px;}
+.option.l0 .optionSub .empty1{padding:310px 0;text-align:center;}
+.option.l0 .optionSub .empty2{padding:312px 0;text-align:center;}
+.option.l0 .optionSub .empty3{padding:325px 0;text-align:center;}
+
+
+/* 롯데i 땡큐딜- 그룹화 타이틀 영역 */
+.ttlSub.l1{overflow:hidden;clear:both;border:none;} /*float:left; */
+
+.ttlSub.l1 .ttlSub{position:relative;}
+.ttlSub.l1 .h1,
+.ttlSub.l1 .h2,
+.ttlSub.l1 .h3{height:246px;}
+
+.ttlSub.l1 .slt{position:absolute;left:60px;top:27px; width:130px;height:130px; background:url(../img/ip/lottei/theart.png) no-repeat center center;}
+.ttlSub.l1 .slt .typeA{width:100%;height:100%;}
+.ttlSub.l1 .slt .typeA td{padding-top:8px; font:normal 19px Noto Sans Korean, 'Noto Sans Korean', sans-serif;letter-spacing:-2px; text-align:center;color:#fff; vertical-align:top;}
+.ttlSub.l1 .slt .typeA td span{display:block; padding-top:1px; font:500 48px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#424242; letter-spacing:-2px;}
+
+.ttlSub.l1 .cnt{width:100%; background:url(../img/ip/lottei/bg_gtitle.jpg) no-repeat center bottom;} /* #5e5e5e */
+.ttlSub.l1 .cnt .ttl{height:180px; padding-left:190px; background:#393939;}
+.ttlSub.l1 .cnt .ttl > .typeA{width:100%;height:100%;}
+.ttlSub.l1 .cnt .ttl > .typeA td{width:100%;height:100%; color:#fff; text-align:center;vertical-align:middle;}
+.ttlSub.l1 .cnt .ttl > .typeA td p{display:none; padding-bottom:8px; font:normal 17px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#e2e2e2;}
+.ttlSub.l1 .cnt .ttl > .typeA td dt{font:normal 29px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#fff;}
+.ttlSub.l1 .cnt .ttl > .typeA td dd{padding-top:7px; font:normal 15px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#fff;}
+.ttlSub.l1 .cnt .ttl > .typeA td dd span{padding-left:5px;color:#aedaff;}
+
+.ttlSub.l1 .cnt .price{display:none;}
+
+/* 롯데i 땡큐딜-그룹화 옵션리스트 영역 */
+.option.l1{display:none;}
+
+
+
+/* 롯데i 땡큐딜-타이틀 영역 */
+.ttlBox.l2{overflow:hidden;clear:both;border:none;} /*float:left; */
+
+.ttlBox.l2 .ttlSub{position:relative;}
+.ttlSub.l2 .h1,
+.ttlSub.l2 .h2,
+.ttlSub.l2 .h3{height:161px;}
+
+.ttlSub.l2 .slt{position:absolute;left:98px;top:5px; width:58px;height:50px; background:url(../img/ip/lottei/tsheart.jpg) no-repeat center center;}
+.ttlSub.l2 .slt .typeA{width:100%;height:100%;}
+.ttlSub.l2 .slt .typeA td{padding-top:8px; font:normal 17px Noto Sans Korean, 'Noto Sans Korean', sans-serif;letter-spacing:-2px; text-align:center;color:#fff; vertical-align:top;}
+.ttlSub.l2 .slt .typeA td em{display:none;}
+.ttlSub.l2 .slt .typeA td span{display:block; padding-top:1px; font:500 18px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#424242; letter-spacing:-2px;}
+
+.ttlSub.l2 .cnt{width:100%;} /* #5e5e5e */
+.ttlSub.l2 .cnt .ttl{height:59px; padding-left:170px; background:#74797d;}
+.ttlSub.l2 .cnt .ttl > .typeA{width:100%;height:100%;}
+.ttlSub.l2 .cnt .ttl > .typeA td{width:100%;height:100%; color:#fff; text-align:left;vertical-align:middle;}
+.ttlSub.l2 .cnt .ttl > .typeA td p{display:none; padding-bottom:8px; font:normal 17px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#e2e2e2;}
+.ttlSub.l2 .cnt .ttl > .typeA td dt{padding-bottom:5px; font:normal 21px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#fff;}
+.ttlSub.l2 .cnt .ttl > .typeA td dd{display:none; padding-top:7px; font:normal 15px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#fff;}
+.ttlSub.l2 .cnt .ttl > .typeA td dd span{padding-left:5px;color:#aedaff;}
+
+.ttlSub.l2 .cnt .price{clear:both; width:100%;}
+.ttlSub.l2 .cnt .price.s2{height:80px; background:url(../img/ip/lottei/dotline.jpg) no-repeat center center;}
+.ttlSub.l2 .cnt .price.s2 > .typeA{width:100%;height:100%; margin:2px -2px 0 0;}
+.ttlSub.l2 .cnt .price > .typeA td > .dc{display:none;}
+.ttlSub.l2 .cnt .price > .typeA > tbody > tr > td{width:100%;height:100%; vertical-align:middle;border:1px solid #393939;}
+.ttlSub.l2 .cnt .price > .typeA td tr:last-child th, .ttlSub.l2 .cnt .price > .typeA td tr:last-child td{padding-bottom:0;}
+.ttlSub.l2 .cnt .price.s2 > .typeA td dl{float:left; width:50%; text-align:center;}
+.ttlSub.l2 .cnt .price.s2 > .typeA td dl dt{display:inline-block; overflow:hidden; margin:0;padding:0;} 
+.ttlSub.l2 .cnt .price.s2 > .typeA td dl dd{display:inline-block; margin:0;padding:0;}
+.ttlSub.l2 .cnt .price.s2 > .typeA td .price2{height:60px;}
+.ttlSub.l2 .cnt .price.s2 > .typeA td .price2 dt{position:relative;top:-11px; vertical-align:middle; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; text-align:right;}
+.ttlSub.l2 .cnt .price.s2 > .typeA td .price2 dd{position:relative;top:-3px; padding:0;font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; text-align:right;} /* "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim, */
+.ttlSub.l2 .cnt .price.s2 > .typeA td .price3{height:60px;}
+.ttlSub.l2 .cnt .price.s2 > .typeA td .price3 dt{position:relative;top:1px; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;}
+.ttlSub.l2 .cnt .price.s2 > .typeA td .price3 dd{position:relative;top:-4px; padding:0;font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;letter-spacing:-1px;}
+/* height:36px;padding:2px 0 0 0;font:bold 30px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right; */
+.ttlSub.l2 .cnt .price.s2 > .typeA td .price1{display:none;}
+.ttlSub.l2 .cnt .price.s2 > .typeA td .price1 dt{position:relative;top:1px; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;}
+.ttlSub.l2 .cnt .price.s2 > .typeA td .price1 dd{position:relative;top:-4px; padding:0;font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;letter-spacing:-1px;}
+
+.ttlSub.l2 .cnt .price.s3{height:95px; background:url(../img/ip/lottei/dotline2.jpg) no-repeat center center;}
+.ttlSub.l2 .cnt .price.s3 > .typeA{width:100%;height:100%; margin:0 -2px 0 0;}
+.ttlSub.l2 .cnt .price.s3 > .typeA td dl{float:left; width:33.3%; text-align:left;}
+.ttlSub.l2 .cnt .price.s3 > .typeA td dl dt{margin:0;padding:8px 0 0 25px;}
+.ttlSub.l2 .cnt .price.s3 > .typeA td dl dd{padding:0 0 0 25px;}
+.ttlSub.l2 .cnt .price.s3 > .typeA td .price2 dt{position:relative;top:8px; vertical-align:middle; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939;}
+.ttlSub.l2 .cnt .price.s3 > .typeA td .price2 dd{position:relative;top:-10px; font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; } /* "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim, */
+.ttlSub.l2 .cnt .price.s3 > .typeA td .price3 dt{position:relative;top:8px; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;}
+.ttlSub.l2 .cnt .price.s3 > .typeA td .price3 dd{position:relative;top:-10px; font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;letter-spacing:-1px;}
+/* height:36px;padding:2px 0 0 0;font:bold 30px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right; */
+.ttlSub.l2 .cnt .price.s3 > .typeA td .price1 dt{position:relative;top:8px; vertical-align:middle; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939;}
+.ttlSub.l2 .cnt .price.s3 > .typeA td .price1 dd{position:relative;top:-10px; font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; } /* "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim, */
+
+.ttlSub.l2 .cnt .price > .typeA td .price2 dd > span,
+.ttlSub.l2 .cnt .price > .typeA td .price3 dd > span,
+.ttlSub.l2 .cnt .price > .typeA td .price1 dd > span{font:normal 30px Noto Sans Korean, 'Noto Sans Korean', sans-serif;}
+.ttlSub.l2 .cnt .price > .typeA td .etc{display:none; clear:both; padding-left:30px; font:bold 15px Noto Sans Korean, 'Noto Sans Korean', sans-serif;letter-spacing:0;color:#ee2f58;}
+
+/* 롯데i 땡큐딜-옵션리스트 영역 */
+.option.l2{overflow:hidden; border:none; border-top:4px solid #393939;}
+.option.l2 .optionSub{position:relative; float:left; width:50%;margin:-1px; border:1px solid #ccc;border-bottom:none;}
+.option.l2 .optionSub:nth-child(odd){margin-left:-2px;margin-right:0px;}
+.option.l2 .optionSub.h1{height:440px;}
+.option.l2 .optionSub.h2{height:480px;}
+.option.l2 .optionSub.h3{height:520px;}
+.option.l2 .optionSub .slt{position:absolute;left:30px;top:20px; width:80px;height:69px;padding-right:2px;  background:url(../img/ip/lottei/oheart.png) no-repeat center center; z-index:2;}
+.option.l2 .optionSub .slt .typeA{width:100%;height:100%;}
+.option.l2 .optionSub .slt .typeA td{font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;letter-spacing:-2px; text-align:center;color:#fff;}
+.option.l2 .optionSub .slt .typeA td em{display:none;}
+.option.l2 .optionSub .slt .typeA td span{display:block; position:relative;top:-2px; font:normal 33px Noto Sans Korean, 'Noto Sans Korean', sans-serif;}
+
+.option.l2 .optionSub .cnt .ttl{padding:295px 0 0 15px;}
+.option.l2 .optionSub .cnt .ttl > .typeA{width:100%;height:100%;}
+.option.l2 .optionSub .cnt .ttl > .typeA td{height:auto;vertical-align:middle; padding:0 15px; color:#fff;}
+.option.l2 .optionSub .cnt .ttl > .typeA td p{position:relative;top:3px; margin:0 15px 15px 0; padding:0; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif; background:#da281c;color:#fff;}
+.option.l2 .optionSub .cnt .ttl > .typeA td dl{clear:both;}
+.option.l2 .optionSub .cnt .ttl > .typeA td dt{font:normal 24px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; line-height:110%;}
+.option.l2 .optionSub .cnt .ttl > .typeA td dd{font:300 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#5d5d5d;}
+.option.l2 .optionSub .cnt .ttl > .typeA td dd span{padding-left:5px;}
+
+.option.l2 .optionSub .cnt .pic{clear:both; position:absolute;left:0;top:0; padding:20px 30px; z-index:1;}
+.option.l2 .optionSub .cnt .pic div{overflow:hidden; position:relative; width:100%;height:100%;}
+.option.l2 .optionSub .cnt .pic.in,
+.option.l2 .optionSub .cnt .pic.out,
+.option.l2 .optionSub .cnt .pic.out1,
+.option.l2 .optionSub .cnt .pic.out2{height:258px;}
+.option.l2 .optionSub .cnt .pic.in span > img,
+.option.l2 .optionSub .cnt .pic.out span > img{position:relative;left:0;top:-34px; width:100%;height:auto;}
+.option.l2 .optionSub .cnt .pic.out1 span > img{position:relative;left:-10%;top:-10%; width:120%;height:auto;}
+.option.l2 .optionSub .cnt .pic.out2 span > img{position:relative;left:-25%;top:-25%; width:150%;height:auto;}
+.option.l2 .optionSub .cnt .pic .dc{display:none; position:absolute;bottom:-83px; width:90px; padding:21px 0; background:#d8253a; font:bold 13px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#fff; text-align:center;}
+.option.l2 .optionSub .cnt .pic .dc span{font-size:36px;}
+
+.option.l2 .optionSub .cnt .price > .typeA{float:right;width:100%;}
+.option.l2 .optionSub .cnt .price > .typeA > tbody > tr > td{height:auto; margin:0;padding:0 0 20px 32px;vertical-align:middle;}
+.option.l2 .optionSub .cnt .price > .typeA td dl{float:left;}
+.option.l2 .optionSub .cnt .price > .typeA td dl dd{vertical-align:middle;}
+.option.l2 .optionSub .cnt .price > .typeA td .price2 dt{display:none; height:17px; font:bold 17px Noto Sans Korean, 'Noto Sans Korean', sans-serif; text-align:right;}
+.option.l2 .optionSub .cnt .price > .typeA td .price2 dd{position:relative;top:17px; height:20px; font:400 24px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; text-align:right;}
+.option.l2 .optionSub .cnt .price > .typeA td .price3 dt{display:none; height:20px; font:bold 17px Noto Sans Korean, 'kNoto Sans Korean', sans-serif;color:#2e2e2e; text-align:right;}
+.option.l2 .optionSub .cnt .price > .typeA td .price3 dd{position:relative;top:1px; height:35px; font:bold 40px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;letter-spacing:-1px; text-align:right;}
+.option.l2 .optionSub .cnt .price > .typeA td .price1{clear:both; width:100%; padding-top:8px;}
+.option.l2 .optionSub .cnt .price > .typeA td .price1 dt{position:relative;top:15px; float:left; height:20px; font:500 19px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; text-align:right;}
+.option.l2 .optionSub .cnt .price > .typeA td .price1 dd{position:relative;left:10px;top:14px; float:left; height:35px; font:500 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939;letter-spacing:-1px; text-align:right;}
+.option.l2 .optionSub .cnt .price > .typeA td .price2 dd span{padding-right:25px;}
+.option.l2 .optionSub .cnt .price > .typeA td .price3 dd span{font-weight:400; font-size:29px;}
+.option.l2 .optionSub .cnt .price > .typeA td .price1 dd span{font-weight:400; font-size:19px;}
+.option.l2 .optionSub .cnt .price > .typeA td .etc{display:none; clear:both; padding-left:30px; font:bold 15px Noto Sans Korean, 'Noto Sans Korean', sans-serif;letter-spacing:0;color:#ee2f58;text-align:right;}
+
+.option.l2 .optionSub .empty{min-height:460px; padding:310px 0;text-align:center;}
+.option.l2 .optionSub .empty1{padding:310px 0;text-align:center;}
+.option.l2 .optionSub .empty2{padding:312px 0;text-align:center;}
+.option.l2 .optionSub .empty3{padding:325px 0;text-align:center;}
+
+
+
+/* 롯데i-타이틀 영역 */
+.ttlBox.l3{overflow:hidden;clear:both;border:none;} /*float:left; */
+
+.ttlBox.l3 .h1{height:90px;}
+.ttlBox.l3 .h2{height:110px;}
+.ttlBox.l3 .h3{height:130px;}
+
+.ttlBox.l3 .slt{float:left; width:12%; background:#65a7df;}
+.ttlBox.l3 .slt .typeA{width:100%;height:100%;}
+.ttlBox.l3 .slt .typeA td{font:normal 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Verdana,Arial,Helvetica,sans-serif;letter-spacing:-2px; text-align:center;color:#fff;}
+.ttlBox.l3 .slt .typeA td span{display:block; font:bold 32px arial, Verdana,Arial,Helvetica,sans-serif;letter-spacing:-2px;}
+
+.ttlBox.l3 .cnt{float:left; width:88%; background:#4c5156;} /* #5e5e5e */
+.ttlBox.l3 .cnt .ttl{float:left;width:58%;height:100%;}
+.ttlBox.l3 .cnt .ttl > .typeA{width:100%;height:100%;}
+.ttlBox.l3 .cnt .ttl > .typeA td{width:95%;height:100%; padding-left:5%; color:#fff; vertical-align:middle;}
+.ttlBox.l3 .cnt .ttl > .typeA td p{display:none; padding-bottom:8px; font:normal 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#e2e2e2;}
+.ttlBox.l3 .cnt .ttl > .typeA td dt{font:normal 23px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#fff;}
+.ttlBox.l3 .cnt .ttl > .typeA td dd{padding-top:7px; font:normal 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#fff;}
+.ttlBox.l3 .cnt .ttl > .typeA td dd span{padding-left:5px;color:#aedaff;}
+
+.ttlBox.l3 .cnt .price{float:left;width:42%;height:100%;}
+.ttlBox.l3 .cnt .price > .typeA{width:100%;height:100%;}
+.ttlBox.l3 .cnt .price > .typeA td > .dc{display:none;}
+.ttlBox.l3 .cnt .price > .typeA > tbody > tr > td{width:100%;height:100%; vertical-align:middle;}
+.ttlBox.l3 .cnt .price > .typeA td tr:last-child th, .ttlBox.l3 .cnt .price > .typeA td tr:last-child td{padding-bottom:0;}
+.ttlBox.l3 .cnt .price > .typeA td dl{width:90%;padding-right:10%;}
+.ttlBox.l3 .cnt .price > .typeA td dl dt{overflow:hidden; float:left; width:45%;margin:0;padding:0;} 
+.ttlBox.l3 .cnt .price > .typeA td dl dd{float:left; width:55%;margin:0;padding:0;}
+.ttlBox.l3 .cnt .price > .typeA td .price1 dt{vertical-align:middle; height:20px;font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#e8e8e8; text-align:right;}
+.ttlBox.l3 .cnt .price > .typeA td .price1 dd{height:21px;padding:2px 0 0 0;font:bold 18px Arial,Helvetica,sans-serif;color:#e8e8e8; text-align:right;} /* "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim, */
+.ttlBox.l3 .cnt .price > .typeA td .price1 dd strike{text-decoration:none;}
+.ttlBox.l3 .cnt .price > .typeA td .price2{display:none;}
+.ttlBox.l3 .cnt .price > .typeA td .price2 dt{position:relative;top:7px; height:24px;font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#ffde00; text-align:right;}
+.ttlBox.l3 .cnt .price > .typeA td .price2 dd{height:30px;padding:2px 0 0 0;font:bold 30px Arial,Helvetica,sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right;}
+/* height:36px;padding:2px 0 0 0;font:bold 30px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right; */
+.ttlBox.l3 .cnt .price > .typeA td .price3 dt{position:relative;top:7px; height:24px;font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#ffde00; text-align:right;}
+.ttlBox.l3 .cnt .price > .typeA td .price3 dd{height:30px;padding:2px 0 0 0;font:bold 30px Arial,Helvetica,sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right;}
+.ttlBox.l3 .cnt .price > .typeA td .price1 dd > span,
+.ttlBox.l3 .cnt .price > .typeA td .price2 dd > span,
+.ttlBox.l3 .cnt .price > .typeA td .price3 dd > span{display:none;}
+.ttlBox.l3 .cnt .price > .typeA td .etc{display:none; clear:both; padding-left:30px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;}
+
+/* 롯데i-옵션리스트 영역 */
+.option.l3 .optionSub{float:left;width:50%;margin:-1px; border:1px solid #d7d7d7;border-bottom:none;}
+.option.l3 .optionSub:nth-child(odd){margin-left:-2px;margin-right:0px;}
+.option.l3 .optionSub .slt{float:left; width:23%;height:130px; background:#000;}
+.option.l3 .optionSub .slt .typeA{width:100%;height:100%;}
+.option.l3 .optionSub .slt .typeA td{font:normal 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-2px; text-align:center;color:#fff;}
+.option.l3 .optionSub .slt .typeA td span{display:block;font:bold 32px Arial,Helvetica,sans-serif;}
+
+.option.l3 .optionSub .cnt .ttl{float:left; width:77%;height:130px; background:#fff;}
+.option.l3 .optionSub .cnt .ttl > .typeA{width:100%;height:100%;}
+.option.l3 .optionSub .cnt .ttl > .typeA td{height:auto;vertical-align:middle; padding:0 15px; color:#fff;}
+.option.l3 .optionSub .cnt .ttl > .typeA td p{padding-bottom:8px; font:normal 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#1880e2;}
+.option.l3 .optionSub .cnt .ttl > .typeA td dt{font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#000;}
+.option.l3 .optionSub .cnt .ttl > .typeA td dd{padding-top:7px; font:bold 16px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#8f8f8f;}
+.option.l3 .optionSub .cnt .ttl > .typeA td dd span{padding-left:5px;font-weight:normal;}
+
+.option.l3 .optionSub .cnt .pic{clear:both; position:relative;}
+.option.l3 .optionSub .cnt .pic div{overflow:hidden; position:relative; width:100%;height:100%;}
+.option.l3 .optionSub .cnt .pic.in span > img{width:100%;}
+.option.l3 .optionSub .cnt .pic.out,
+.option.l3 .optionSub .cnt .pic.out1,
+.option.l3 .optionSub .cnt .pic.out2{height:390px;}
+.option.l3 .optionSub .cnt .pic.out span > img{position:relative;left:0;top:0; width:100%;height:100%;}
+.option.l3 .optionSub .cnt .pic.out1 span > img{position:relative;left:-10%;top:-10%; width:120%;height:120%;}
+.option.l3 .optionSub .cnt .pic.out2 span > img{position:relative;left:-25%;top:-25%; width:150%;height:150%;}
+.option.l3 .optionSub .cnt .pic .dc{position:absolute;bottom:-83px; width:90px; padding:21px 0; background:#d8253a; font:bold 13px Arial,Helvetica,sans-serif;color:#fff; text-align:center;}
+.option.l3 .optionSub .cnt .pic .dc span{font-size:36px;}
+
+.option.l3 .optionSub .cnt .price{position:relative;}
+.option.l3 .optionSub .cnt .price > .typeA{float:right;width:100%;}
+.option.l3 .optionSub .cnt .price > .typeA > tbody > tr > td{height:auto;padding:20px 15px 20px 0;vertical-align:middle;}
+.option.l3 .optionSub .cnt .price > .typeA td dl{float:right; overflow:hidden; width:280px;}
+.option.l3 .optionSub .cnt .price > .typeA td dl dt{overflow:hidden; float:left; width:41%;padding-top:0; vertical-align:middle;}
+.option.l3 .optionSub .cnt .price > .typeA td dl dd{float:left; width:59%;padding:2px 0 0 0; vertical-align:middle;}
+.option.l3 .optionSub .cnt .price > .typeA td .price1 dt{height:17px; font:bold 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#7a7a7a; text-align:right;}
+.option.l3 .optionSub .cnt .price > .typeA td .price1 dd{height:20px; font:bold 17px Arial,Helvetica,sans-serif;color:#7a7a7a; text-align:right;}
+.option.l3 .optionSub .cnt .price > .typeA td .price1 strike{text-decoration:none;}
+.option.l3 .optionSub .cnt .price > .typeA td .price2 dt{position:relative;top:12px; height:20px; font:bold 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#2e2e2e; text-align:right;}
+.option.l3 .optionSub .cnt .price > .typeA td .price2 dd{height:35px; font:bold 34px Arial,Helvetica,sans-serif;color:#d9253a;letter-spacing:-1px; text-align:right;}
+.option.l3 .optionSub .cnt .price > .typeA td .price3 dt{position:relative;top:12px; height:20px; font:bold 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#2e2e2e; text-align:right;}
+.option.l3 .optionSub .cnt .price > .typeA td .price3 dd{height:35px; font:bold 34px Arial,Helvetica,sans-serif;color:#d9253a;letter-spacing:-1px; text-align:right;}
+.option.l3 .optionSub .cnt .price > .typeA td .price1 dd span,
+.option.l3 .optionSub .cnt .price > .typeA td .price2 dd > span,
+.option.l3 .optionSub .cnt .price > .typeA td .price3 dd > span{display:none;}
+.option.l3 .optionSub .cnt .price > .typeA td .etc{clear:both; padding-left:30px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;text-align:right;}
+
+.option.l3 .optionSub .empty1{padding:310px 0;text-align:center;}
+.option.l3 .optionSub .empty2{padding:312px 0;text-align:center;}
+.option.l3 .optionSub .empty3{padding:325px 0;text-align:center;}
+
+
+
+/* Footer
+------------------------------------------------------------------------------------ */
+.footer{margin:0 20px; padding:20px 0 30px 0; border-top:1px solid #eee; text-align:center;}

@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*
+.File Name  :  css/common.css
+.Final Editor : 전성호 (2015-03-23 : 최초 작성) 
+*/
+
+/* base
+------------------------------------------------------------------------------------ */
+@font-face{
+	font-family:'OldSansBlack';
+	src:url(/font/OldSansBlack.eot);
+	src:local(☺),url(/font/OldSansBlack.eot?#iefix) format(embedded-opentype),
+		url(/font/OldSansBlack.woff) format(woff),
+		url(/font/OldSansBlack.ttf) format(truetype);
+	font-weight:normal;
+	font-style:normal
+}

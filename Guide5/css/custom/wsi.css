@@ -1,0 +1,73 @@
+.wsi_detail *{margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","나눔고딕",NanumGothic;letter-spacing: -1px;line-height:1.6;}
+.wsi_detail h2{display:inline-block;margin:40px 0 20px 0;padding-top:5px;border-top:5px solid #222; font-size: 30px;font-weight:600;color:#2d2d2d;letter-spacing: -1px;}
+.wsi_detail .main *{text-align:center;}
+.wsi_detail .main .exp{padding: 0 20px 38px 20px;font-size:18px;line-height:1.5;}
+.wsi_detail .info > h2{margin-top:0;}
+.wsi_detail .info table{width:100%; border-top:2px solid #222;border-bottom:1px solid #222;}
+.wsi_detail .info table tbody > tr > th{width:25%;padding:15px 0 15px 20px; border-bottom:1px solid #aaa; background:#eee;font-size:20px;font-weight:600;vertical-align:middle;color:#222;}
+.wsi_detail .info table tbody > tr > td{border-bottom:1px solid #aaa; padding:15px 0 15px 20px;font-size:18px;color:#555;}
+.wsi_detail .info table tbody > tr:last-child > th,
+.wsi_detail .info table tbody > tr:last-child > td{border:none;}
+
+.wsi_detail .color ul,
+.wsi_detail .label ul{width:100%; list-style:none;}
+.wsi_detail .label{padding-top:50px;}
+.wsi_detail .color ul li,
+.wsi_detail .label ul li{float:left;}    
+.wsi_detail .color ul li img{width:100%;max-width:373px}
+.wsi_detail .label ul li img{width:100%;max-width:278px}
+.wsi_detail .box1,
+.wsi_detail .box2,
+.wsi_detail .box3{width:100%;max-width:758px;}
+.wsi_detail .box1 li{width:100%;padding-bottom:30px;text-align:center;}    
+.wsi_detail .box2 li{width:49%;text-align:center;}
+.wsi_detail .box2 li:nth-child(even){width:49%;margin-left:2%;}
+.wsi_detail .box3 li{width:31.99%;text-align:center;margin-right:2%;}
+.wsi_detail .box3 li:nth-child(3n){margin-right:0;}
+.wsi_detail .color .box2 li{height:580px;}
+.wsi_detail .color .box3 li{height:470px;}
+
+.wsi_detail .dot{margin:5px 0 15px 0;padding:0;list-style:none;}
+.wsi_detail .dot li{padding:5px 0 5px 10px;background:url(http://172.17.14.220/pd/01_online/10_wsi/01_ws/01_common/99_etc/dot.gif) no-repeat left 16px;font-size:18px;}
+.wsi_detail .tip{padding:13px 0;font-weight:400;color:#222;}
+.wsi_detail .features h2{margin-top:0;}
+.wsi_detail h2+.tip{padding:0 0 20px 0;}
+.wsi_detail .ttl{padding:35px 0 20px 0; font-weight:600;font-size:20px;text-align:center;letter-spacing: -1px;}
+.wsi_detail .box{width:100%;text-align:center}
+.wsi_detail .box > span{display:inline-block;margin:0 0 5px 5px;padding:10px;border:1px solid #000;font-weight:500;font-size:16px;color:#222}
+.wsi_detail .box > span:first-child{margin:0 0 5px 0;}
+.wsi_detail .box2 .box > span:nth-child(8),
+.wsi_detail .box2 .box > span:nth-child(9),
+.wsi_detail .box2 .box > span:nth-child(10),
+.wsi_detail .box2 .box > span:nth-child(11),
+.wsi_detail .box2 .box > span:nth-child(12),
+.wsi_detail .box2 .box > span:nth-child(13),
+.wsi_detail .box2 .box > span:nth-child(14),
+.wsi_detail .box2 .box > span:nth-child(15),
+.wsi_detail .box2 .box > span:nth-child(16),
+.wsi_detail .box2 .box > span:nth-child(17),
+.wsi_detail .box2 .box > span:nth-child(18),
+.wsi_detail .box2 .box > span:nth-child(19),
+.wsi_detail .box2 .box > span:nth-child(20),
+.wsi_detail .box3 .box > span:nth-child(6),
+.wsi_detail .box3 .box > span:nth-child(7),
+.wsi_detail .box3 .box > span:nth-child(8),
+.wsi_detail .box3 .box > span:nth-child(9),
+.wsi_detail .box3 .box > span:nth-child(10),
+.wsi_detail .box3 .box > span:nth-child(11),
+.wsi_detail .box3 .box > span:nth-child(12),
+.wsi_detail .box3 .box > span:nth-child(13),
+.wsi_detail .box3 .box > span:nth-child(14),
+.wsi_detail .box3 .box > span:nth-child(15),
+.wsi_detail .box3 .box > span:nth-child(16),
+.wsi_detail .box3 .box > span:nth-child(17),
+.wsi_detail .box3 .box > span:nth-child(18),
+.wsi_detail .box3 .box > span:nth-child(19),
+.wsi_detail .box3 .box > span:nth-child(20){display:none;}
+.wsi_detail > div{clear:both;}
+
+.wsi_detail .features table tbody > tr > td > img{box-sizing:border-box;border:1px solid #aaa;}
+
+.wsi_detail .label > .box1 > li,
+.wsi_detail .label > .box2 > li,
+.wsi_detail .label > .box3 > li{padding-bottom:30px;}

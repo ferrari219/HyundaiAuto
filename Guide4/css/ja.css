@@ -1,0 +1,1815 @@
+
+img {border:0;}
+
+/* AS-IS promotion(현업 요청) */
+/* 기획전 자동화가이드 CSS*/
+/* New */
+div.promotion_page div.promotion_cont_wrap .promotion{width:1018px;margin:0 auto; border:1px solid #fff;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2{width:1140px;margin:0 auto; border:none;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .top img{float:none;}
+div.promotion_page div.promotion_cont_wrap .promotion p{margin:0;padding:0;text-align:center;}
+div.promotion_page div.promotion_cont_wrap .promotion img{display:block;margin:0 auto;border:0;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0{overflow:hidden; width:100%; padding:0;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s7{display:none;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .i0 {clear:both;overflow:hidden; width:100%; margin:0 0 30px 0;}
+div.promotion_page div.promotion_cont_wrap .promotion .t0 {clear:both; width:100%; margin:20px 0 10px 0;padding:15px 0; background:#7e828d; font:bold 25px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#FFF;text-align:center;}
+
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl{position:relative;}
+
+
+
+div.promotion_page div.promotion_cont_wrap .promotion dl .ttl{overflow:hidden; white-space: normal;text-overflow:ellipsis; width:100%;height:34px; margin-bottom:5px; font:bold 14px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#333; text-align:left;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s1 dl .ttl{height:75px;font:600 30px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#333;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s2 dl .ttl{height:48px; font:600 20px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#333;}
+div.promotion_page div.promotion_cont_wrap .promotion dl .ttl > span{color:#af6b00;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd{margin:0; text-align:left;}
+
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.price > span{float:left; position:relative;top:10px; font:normal 13px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif; color:#aaa;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.price > strong{float:left; position:relative;padding-left:10px; font:bold 28px arial, gulim, sans-serif;color:#dd080c; letter-spacing:-1px;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.price > strong > span{font-family:"나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;font-size:24px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s1 dl dd.price{padding-top:20px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s1 dl dd.price > span{ position:relative;top:25px; font:normal 20px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s1 dl dd.price > strong{font:bold 50px arial, gulim, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s2 dl dd.price > span{ position:relative;  font:normal 16px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s2 dl dd.price > strong{font:bold 32px arial, gulim, sans-serif;}
+
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.icoD{position:absolute;right:0;top:0;z-index:1px; }
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s1 dl dd.icoD{right:635px;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.icoD .ico01 strong,
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.icoD .ico02 strong{display:none;}
+
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.icoD table{float:right;}
+div.promotion_page div.promotion_cont_wrap .promotion .s1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion .s2 dl dd.icoD table{width:70px;height:58px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s3 dl dd.icoD table{width:65px;height:53px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s4 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl dd.icoD table{width:50px;height:41px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.icoD table td{width:100%;height:100%;text-align:center;vertical-align:middle;color:#fff;padding-bottom:10%;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.icoD table.ico00{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico00.png) no-repeat;background-position:center bottom; letter-spacing:-1px;line-height:110%;}/*background:#e60a45;background-size:60px;font:bold 16px arial, sans-serif;*/
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s1 dl dd.icoD table.ico00 strong{position:relative;right:-1px;font:bold 35px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s1 dl dd.icoD table.ico03 span{position:relative;top:0;font:normal 15px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s1 dl dd.icoD table.ico01 span{position:relative;top:0;font:bold 15px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s1 dl dd.icoD table.ico02 span{position:relative;top:-4px;font:bold 17px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion .s3 dl dd.icoD table.ico00{font-size:14px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s4 dl dd.icoD table.ico00{font-size:11px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl dd.icoD table.ico00{font-size:11px;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.icoD table.ico00 strong{padding-right:2px; font-size:30px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl dd.icoD table.ico00 strong{padding-right:2px; font-size:20px;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.icoD table.ico01{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico01.png) no-repeat;background-position:center bottom;font:bold 16px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림", arial, sans-serif; letter-spacing:-1px;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.icoD table.ico02{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico02.png) no-repeat;background-position:center bottom;font:bold 16px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림", arial, sans-serif; letter-spacing:-1px;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.icoD table.ico03{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico03.png) no-repeat;background-position:center bottom;font:bold 13px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림", arial, sans-serif; letter-spacing:-1px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl dd.icoD table.ico03{font-size:11px;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.icoD table.ico01 strong,
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.icoD table.ico02 strong{display:none;}
+
+
+/*2018년 삭제예정*/
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.dc{position:absolute;right:26px;top:0;z-index:1px; }
+div.promotion_page div.promotion_cont_wrap .promotion.v2 dl dd.dc{position:absolute;right:0;top:0;z-index:1px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s1 dl dd.dc{right:635px;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.dc > span{float:right;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.dc .x{display:none;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.dc .ico00{display:inline-block; width:45px;height:27px; padding:12px 10px 22px 10px; background:#e60a45; font:bold 24px arial, sans-serif; letter-spacing:-1px; color:#FFF;text-align:center;} /* //52% */
+
+div.promotion_page div.promotion_cont_wrap .promotion .s4 dl dd.dc .ico00,
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl dd.dc .ico00,
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl dd.dc .ico00{display:inline-block; width:30px;height:13px; padding:10px 10px 24px 10px; background:#e60a45; font:bold 18px arial, sans-serif; letter-spacing:-1px; color:#FFF;text-align:center;} /* 52% */
+/*2018년 삭제예정*/
+
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.lnk{position:absolute;left:0;top:0;width:100%;height:100%;z-index:999px;}
+div.promotion_page div.promotion_cont_wrap .promotion dl dd.lnk a{display:block;width:100%;height:100%;margin:0;padding:0;text-indent:-5000px; background:red;opacity:0.0;filter:alpha(opacity=0);} /**/
+
+div.promotion_page div.promotion_cont_wrap .promotion dl .pic{overflow:hidden; margin-bottom:10px; background:#f2f2f2;}
+div.promotion_page div.promotion_cont_wrap .promotion dl .pic img{position:relative;left:0;top:0; width:100%;height:100%;}
+div.promotion_page div.promotion_cont_wrap .promotion dl .pic.z1 img{position:relative;left:-10%;top:-10%; width:120%;height:120%;}
+div.promotion_page div.promotion_cont_wrap .promotion dl .pic.z2 img{position:relative;left:-25%;top:-25%; width:150%;height:150%;}
+div.promotion_page div.promotion_cont_wrap .promotion dl .pic.z3 img{position:relative;left:-50%;top:-50%; width:200%;height:200%;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s1 dl .pic{position:absolute;left:65px;top:0;width:370px;height:370px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s2 dl .pic{height:380px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s3 dl .pic{height:360px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s4 dl .pic{height:265px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s5 dl .pic{height:205px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s6 dl .pic{height:180px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 dl .pic{border:none;}
+
+
+div.promotion_page div.promotion_cont_wrap .promotion dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion dl .upcoming{overflow:hidden; position:absolute;left:0;top:0; padding-right:26px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion .s1 dl .upcoming{left:65px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion .s1 dl .upcoming img{float:left; width:370px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .s2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion .s2 dl:first-child .upcoming{left:120px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion .s2 dl .upcoming{left:97px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion .s2 dl .upcoming img{float:left; width:380px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .s3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion .s3 dl:first-child .upcoming{left:0;}
+div.promotion_page div.promotion_cont_wrap .promotion .s3 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion .s3 dl .upcoming{left:30px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s3 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion .s3 dl .upcoming img{float:left; width:360px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .s4 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion .s4 dl:first-child .upcoming{left:0;}
+div.promotion_page div.promotion_cont_wrap .promotion .s4 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion .s4 dl .upcoming{left:26px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s4 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion .s4 dl .upcoming img{float:left; width:265px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl:first-child .upcoming{left:0;}
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl .upcoming{left:28px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl .upcoming img{float:left; width:205px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl:first-child .upcoming{left:0;}
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl .upcoming{left:12px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl .upcoming img{float:left; width:180px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s1,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s1{overflow:hidden; width:100%; margin-top:0;margin-bottom:20px;padding:0 0 30px 26px;border-bottom:2px  solid #ddd;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s1:first-child{margin-top:20px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s2,
+div.promotion_page div.promotion_cont_wrap .promotion .s3,
+div.promotion_page div.promotion_cont_wrap .promotion .s4,
+div.promotion_page div.promotion_cont_wrap .promotion .s5,
+div.promotion_page div.promotion_cont_wrap .promotion .s6{overflow:hidden; width:100%; padding:0 0 0 11px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s2{overflow:hidden; width:100%; padding-left:20px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s3,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s4,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s5,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s6,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s3-1{overflow:hidden; width:100%; padding:15px 0 0 0;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s1 dl{min-height:230px;padding-top:110px !important;}
+div.promotion_page div.promotion_cont_wrap .promotion .s2 dl{float:left; position:relative; width:360px; margin:0;padding:0 0 30px 26px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s3 dl{float:left; position:relative; width:305px; margin:0;padding:0 0 30px 25px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s4 dl{float:left; position:relative; width:222px; margin:0;padding:0 0 30px 26px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s1 dl{float:left; position:relative; width:580px; margin:0 0;padding:0 0 20px 490px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s2 dl{float:left; position:relative; width:380px; margin:0 0;padding:0 0 20px 97px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s2 dl:first-child{padding-left:120px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s3 dl{float:left; position:relative; width:360px; margin:0;padding:0 0 20px 30px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s4 dl{float:left; position:relative; width:265px; margin:0;padding:0 0 20px 26px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s5 dl{float:left; position:relative; width:205px; margin:0;padding:0 0 20px 28px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s6 dl{float:left; position:relative; width:180px; margin:0;padding:0 0 20px 12px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s3 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s4 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s5 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s6 dl:first-child{padding:0 0 30px 0;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s1 dl .txt{margin-bottom:5px; font:600 20px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#787878; letter-spacing:-1px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d0 .s2 dl .txt{margin-bottom:5px; font:bold 14px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#4f417a; letter-spacing:-1px;}
+div.promotion_page div.promotion_cont_wrap .promotion .s3 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion .s4 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion .s5 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion .s6 dl .txt{display:none;}
+
+div.promotion_page div.promotion_cont_wrap .promotion #bottom{clear:both;}
+div.promotion_page div.promotion_cont_wrap .promotion .ifm{width:565px;height:315px;max-width:100%;max-height:100%;}
+div.promotion_page div.promotion_cont_wrap .vdo,
+div.event_page div.promotion_cont_wrap .vdo{padding:20px 0;margin:0 auto;}
+div.promotion_page div.promotion_cont_wrap .vdo > div,
+div.event_page div.promotion_cont_wrap .vdo > div{max-width:565px;margin:0 auto;}
+div.promotion_page div.promotion_cont_wrap .vdo > div > iframe,
+div.event_page div.promotion_cont_wrap .vdo > div > iframe{width:100%;min-height:325px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .group{width:720px;margin:0 auto;}
+
+div.promotion_page div.promotion_cont_wrap .event{width:1018px;margin:0 auto; border:1px solid #fff;}
+div.promotion_page div.promotion_cont_wrap .event.v2{width:1140px;margin:0 auto; border:none;}
+div.promotion_page div.promotion_cont_wrap .event h4,
+div.promotion_page div.promotion_cont_wrap .event h5,
+div.promotion_page div.promotion_cont_wrap .event h6,
+div.promotion_page div.promotion_cont_wrap .event p{margin:0;padding:0;}
+div.promotion_page div.promotion_cont_wrap .event h4 img,
+div.promotion_page div.promotion_cont_wrap .event h5 img,
+div.promotion_page div.promotion_cont_wrap .event h6 img,
+div.promotion_page div.promotion_cont_wrap .event p img{display:block;margin:0 auto;border:0;}
+div.promotion_page div.promotion_cont_wrap .mob,
+div.event_page div.promotion_cont_wrap .mob{display:none;}
+
+div.promotion_page div.promotion_cont_wrap .box2,
+div.promotion_page div.promotion_cont_wrap .box3,
+div.promotion_page div.promotion_cont_wrap .box3-1,
+div.promotion_page div.promotion_cont_wrap .box3-2,
+div.promotion_page div.promotion_cont_wrap .box4,
+div.promotion_page div.promotion_cont_wrap .box5,
+div.event_page div.promotion_cont_wrap .box2,
+div.event_page div.promotion_cont_wrap .box3,
+div.event_page div.promotion_cont_wrap .box4,
+div.event_page div.promotion_cont_wrap .box5{overflow:hidden;width:1018px;margin:0 auto;text-align:center;}
+div.promotion_page div.promotion_cont_wrap .v2 .box2,
+div.promotion_page div.promotion_cont_wrap .v2 .box3,
+div.promotion_page div.promotion_cont_wrap .v2 .box3-1,
+div.promotion_page div.promotion_cont_wrap .v2 .box3-2,
+div.promotion_page div.promotion_cont_wrap .v2 .box4,
+div.promotion_page div.promotion_cont_wrap .v2 .box5,
+div.promotion_page div.promotion_cont_wrap .v2 .box6,
+div.event_page div.promotion_cont_wrap .v2 .box2,
+div.event_page div.promotion_cont_wrap .v2 .box3,
+div.event_page div.promotion_cont_wrap .v2 .box3-1,
+div.event_page div.promotion_cont_wrap .v2 .box3-2,
+div.event_page div.promotion_cont_wrap .v2 .box4,
+div.event_page div.promotion_cont_wrap .v2 .box5,
+div.event_page div.promotion_cont_wrap .v2 .box6{overflow:hidden;width:1140px;margin:0 auto;text-align:center;}
+
+div.promotion_page div.promotion_cont_wrap .box2 li,
+div.promotion_page div.promotion_cont_wrap .box3 li,
+div.promotion_page div.promotion_cont_wrap .box3-1 li,
+div.promotion_page div.promotion_cont_wrap .box3-2 li,
+div.promotion_page div.promotion_cont_wrap .box4 li,
+div.promotion_page div.promotion_cont_wrap .box5 li,
+div.promotion_page div.promotion_cont_wrap .box6 li,
+div.event_page div.promotion_cont_wrap .box2 li,
+div.event_page div.promotion_cont_wrap .box3 li,
+div.event_page div.promotion_cont_wrap .box3-1 li,
+div.event_page div.promotion_cont_wrap .box3-2 li,
+div.event_page div.promotion_cont_wrap .box4 li,
+div.event_page div.promotion_cont_wrap .box5 li,
+div.event_page div.promotion_cont_wrap .box6 li{float:left;}
+
+div.promotion_page div.promotion_cont_wrap img{display:block;border:0;}
+
+/* D1 */
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .t0 {width:100%; margin:20px 0 10px 0;padding:15px 0; background:#41332a; font:bold 25px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#FFF;text-align:center;}
+
+/* D2 */
+div.promotion_page div.promotion_cont_wrap .promotion .d2 .t0 {width:100%; margin:20px 0 10px 0;padding:15px 0; background:#80a2c7; font:bold 25px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#FFF;text-align:center;}
+
+/* D3 */
+div.promotion_page div.promotion_cont_wrap .promotion .d3 .t0 {width:100%; margin:0 0 30px 0;padding:15px 0; background:none;border-top:3px solid #000;border-bottom:2px solid #999; font:700 25px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#333;text-align:center;}
+
+/* 미니기획전 */
+div.promotion_page div.promotion_cont_wrap .promotion .mini4{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/mini_bg.gif) repeat-y 0 0}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 img,
+div.promotion_page div.promotion_cont_wrap .event .mini4 img{margin:0;}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .top,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .top{width:100%;height:23px;padding:7px 0 0 60px; background:#000;}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .cont{width:100%;height:100%;}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont > table,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .cont > table{width:100%;height:360px}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont > table td,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .cont > table td{height:100%;  vertical-align:middle;}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont > table td .lft,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .cont > table td .lft{padding-left:60px;}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont .m0 img,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .cont .m0 img{max-height:48px}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont .m1,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .cont .m1{display:inline-block; margin:2px 0 30px 0;padding:2px 10px; background:#000;color:#fff; font:bold 16px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;line-height:110%;}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont .m2,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .cont .m2{padding-bottom:10px; font:600 18px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;line-height:110%;color:#7b7b7b; text-align:left;}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont .m3,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .cont .m3{font:600 43px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;line-height:110%;color:#000; text-align:left;letter-spacing:-1px}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont .m4,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .cont .m4{padding-top:5px; font:600 43px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;line-height:110%;color:#d81414; text-align:left;letter-spacing:-1px}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont .rgt,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .cont .rgt{width:310px;height:auto; padding:20px 60px 20px 20px;}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont .rgt table,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .cont .rgt table{width:100%;height:100%;}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont .imgBox img,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .cont .imgBox img{width:100%;height:auto;}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont .imgBox tr:first-child td{padding-bottom:10px;}
+div.promotion_page div.promotion_cont_wrap .promotion .mini4 .cont .imgBox .emt,
+div.promotion_page div.promotion_cont_wrap .event .mini4 .cont .imgBox .emt{width:5px;}
+
+/* d1  d2 d3 모듈 추가*/
+/*******************upcoming/soldout***********************/
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 dl .soldout{overflow:hidden; position:absolute;left:0;top:0; padding-right:20px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 dl .soldout img{position:relative; float:left;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl .soldout{left:0; height:370px; padding-right:20px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl .soldout img{top:-105px; left:0; width:560px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s2 dl:first-child .soldout{left:0;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s2 dl .soldout{left:20px; height:300px; padding-right:20px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s2 dl .soldout img{top:-125px; left:0; width:550px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl:first-child .soldout{left:0;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3 dl .soldout{left:20px; height:300px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3 dl .soldout img{top:-25px; left:0; width:360px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl:first-child+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl:first-child+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl:first-child+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl:first-child+dl+dl .soldout img{top:-145px; left:0; width:550px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl .soldout{left:20px; height:260px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl .soldout img{top:0; left:0; width:265px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s4 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s4 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s4 dl:first-child .soldout{left:0;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s4 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s4 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s4 dl .soldout{left:20px; height:240px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s4 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s4 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s4 dl .soldout img{top:-25; left:0px; width:265px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl:first-child .soldout{left:0;height:610px; width:340px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl:first-child .soldout img{top:0; left:-127px; width:610px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl .soldout{left:20px; height:250px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl .soldout img{top:-50px; left:0px; width:360px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl:first-child+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl:first-child+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl:first-child+dl+dl+dl .soldout{left:0;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl:first-child+dl+dl .soldout{height:610px; width:340px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl:first-child+dl+dl .soldout img{top:0;left:-127px;width:610px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl .soldout{left:20px; height:250px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl .soldout img{top:-50px; left:0px; width:360px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl:first-child+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl:first-child+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl:first-child+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl:first-child+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl:first-child+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl:first-child+dl .soldout{left:0;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl:first-child+dl+dl .soldout{height:610px; width:340px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl:first-child+dl+dl .soldout img{top:0;left:-127px;width:610px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl .soldout{left:20px; height:250px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl .soldout img{top:-50px; left:0px; width:360px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child .soldout{left:0;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl .soldout{left:20px; height:130px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl .soldout img{top:-20px; left:0px; width:170px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child+dl+dl+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child+dl+dl+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child+dl+dl+dl+dl+dl .soldout{height:300px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child+dl+dl+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child+dl+dl+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child+dl+dl+dl+dl+dl .soldout img{top:-30px; left:0px; width:360px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl:first-child .soldout{left:0; height:420px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl:first-child+dl+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl:first-child+dl+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl:first-child+dl+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl .soldout{height:420px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl:first-child .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl:first-child .soldout img{top:-65px; left:0; width:550px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl:first-child+dl+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl:first-child+dl+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl:first-child+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl:first-child+dl+dl+dl+dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl .soldout img{top:-65px; width:550px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl:first-child+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl:first-child+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl:first-child+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl:first-child+dl+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl:first-child+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl:first-child+dl+dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl:first-child .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl:first-child+dl+dl+dl .soldout{left:0}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl .soldout,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl .soldout{left:20px; height:150px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl .soldout img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl .soldout img{top:-10px; left:0; width:170px;}
+/*******************upcoming/soldout***********************/
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1{overflow:hidden; width:100%; padding:0;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2{overflow:hidden; width:100%; padding:0;background:#323232;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3{overflow:hidden; width:100%; padding:0;background:#eef3f5;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1{overflow:hidden; width:100%; margin-top:20px;margin-bottom:20px;padding:0;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1>div,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2>div,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3>div{overflow:hidden; width:100%; padding:15px 0 0 10px; margin:0;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl{position:relative;float:left;min-height:230px;padding-top:110px !important;width:520px; margin:0;padding:0 30px 20px 590px;background:#f6f6f6;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl{position:relative;float:left;min-height:230px;width:520px;margin:0;padding:110px 30px 20px 590px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 dl{float:left; position:relative;margin:0;padding:0 0 20px 20px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 dl:first-child{padding-left:0;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl:first-child{padding-left:590px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s2 dl{width:550px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3 dl{width:360px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl:first-child+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl:first-child+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl:first-child+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl:first-child+dl+dl{width:550px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl{width:265px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s4 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s4 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s4 dl{width:265px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl{width:208px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl{width:360px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl:first-child+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl:first-child+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl:first-child+dl{position:absolute;margin-top:351px;padding-left:0;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl:first-child+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl:first-child+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl:first-child+dl+dl+dl+dl{position:absolute;margin:352px 0 0 360px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl{width:170px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl{position:absolute;margin-top:200px; padding:0 0 20px 0;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child+dl+dl{position:absolute;margin-top:200px; margin-left:360px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child+dl+dl+dl+dl{position:absolute;margin-top:200px;margin-left:550px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl:first-child+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl:first-child+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl:first-child+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl{width:550px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl{width:170px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl:first-child+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl:first-child+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl:first-child+dl{position:absolute;margin-top:251px;padding:0 0 20px 0;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl:first-child+dl+dl+dl{position:absolute;margin-top:251px; padding:0 0 20px 0;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl:first-child+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl:first-child+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl:first-child+dl+dl+dl+dl{position:absolute;margin:251px 0 0 170px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl:first-child+dl+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl:first-child+dl+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl:first-child+dl+dl+dl+dl+dl{position:absolute;margin:251px 0 0 360px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl .pic{position:absolute;left:0;top:0;width:560px;height:370px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s2 dl .pic{height:300px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3 dl .pic{height:300px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl .pic{height:260px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s4 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s4 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s4 dl .pic{height:240px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl:first-child+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl:first-child+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl:first-child+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl:first-child+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl:first-child+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl:first-child+dl+dl .pic{height:610px;}
+
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl .pic{height:178px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl .pic{height:250px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl .pic{height:130px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child+dl+dl+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child+dl+dl+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child+dl+dl+dl+dl+dl .pic{height:300px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child+dl+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child+dl+dl+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child+dl+dl+dl,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child+dl+dl+dl+dl+dl{width:360px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl .pic{height:150px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl:first-child+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl:first-child+dl+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl:first-child+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl:first-child+dl+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl:first-child .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl:first-child+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl:first-child+dl+dl+dl+dl .pic,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl .pic{height:420px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .pic img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .pic img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .pic img{position:relative;left:0;width:100%;margin-top:-50%;top:50%;height:auto;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .pic.h1 img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .pic.h1 img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .pic.h1 img{top:40%;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .pic.h2 img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .pic.h2 img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .pic.h2 img{top:60%;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl:first-child .pic img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl:first-child+dl+dl .pic img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl:first-child+dl+dl .pic img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl:first-child .pic img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl:first-child+dl+dl .pic img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl:first-child+dl+dl .pic img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl:first-child .pic img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl:first-child+dl+dl .pic img,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl:first-child+dl+dl .pic img{position: relative;left:-120px;height:100%;margin-top:-50%;top:29.5%;width:auto;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl .txt{display:block;margin-bottom:5px; font:600 20px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#787878; line-height:110% letter-spacing:-1px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .txt{display:none;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s2 dl .txt{display:block;margin-bottom:5px; font:600 14px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#787878;line-height:110%;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s4 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child+dl+dl+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl:first-child+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl:first-child+dl+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl .txt{display:block;margin-bottom:5px; font:600 12px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#787878; line-height:110%; letter-spacing:-1px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl .txt{display:block;margin-bottom:5px; font:600 20px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#999; line-height:110%;letter-spacing:-1px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s2 dl .txt{display:block;margin-bottom:5px; font:600 14px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#999;line-height:110%;letter-spacing:-1px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s4 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child+dl+dl+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl:first-child+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl:first-child+dl+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl .txt{display:block;margin-bottom:5px; font:600 12px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#999;line-height:110%;letter-spacing:-1px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl .txt{display:block;margin-bottom:5px; font:600 20px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#878d91; line-height:110%;letter-spacing:-1px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s2 dl .txt{display:block;margin-bottom:5px; font:600 14px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#878d91;line-height:110%;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s4 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child+dl+dl+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl:first-child .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl:first-child+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl:first-child+dl+dl+dl+dl .txt,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl .txt{display:block;margin-bottom:5px; font:600 12px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#878d91;line-height:110%;letter-spacing:-1px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl .ttl{height:82px;font:600 30px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#333;line-height:110%;overflow:hidden;white-space: normal;text-overflow:ellipsis;-webkit-line-clamp:2;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl .ttl{height:82px;font:600 30px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#fff;line-height:110%;overflow:hidden;white-space: normal;text-overflow:ellipsis;-webkit-line-clamp:2;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s2 dl .ttl{height:41px;font:600 18px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#333;line-height:110%;overflow:hidden;white-space: normal;text-overflow:ellipsis;-webkit-line-clamp:2;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s2 dl .ttl{height:41px;font:600 18px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#fff;line-height:110%;overflow:hidden;white-space: normal;text-overflow:ellipsis;-webkit-line-clamp:2;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl .ttl{height:82px;font:600 30px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#181818;line-height:110%;overflow:hidden;white-space: normal;text-overflow:ellipsis;-webkit-line-clamp:2;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s2 dl .ttl{height:41px;font:600 18px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#181818;line-height:110%;overflow:hidden;white-space: normal;text-overflow:ellipsis;-webkit-line-clamp:2;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 dl .ttl{color:#fff;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 dl .ttl > span{color:#fff;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 dl .ttl{color:#181818;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 dl .ttl > span{color:#181818;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.price{padding-top:20px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl dd.price > span{position:relative;top:25px; font:normal 20px arial, gulim, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.price > strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl dd.price > strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl dd.price > strong{font:bold 50px arial, gulim, sans-serif;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl .price{display:none;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child+dl+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child+dl+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child+dl+dl+dl+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child+dl+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child+dl+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child+dl+dl+dl+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child+dl+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child+dl+dl+dl .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child .price,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child+dl+dl+dl+dl+dl .price{display:block;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl dd.price > span{display:none;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl:first-child dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl:first-child dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl:first-child+dl+dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl:first-child+dl+dl+dl+dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl:first-child dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl:first-child dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl:first-child+dl+dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl:first-child+dl+dl+dl+dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl:first-child dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl:first-child dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl:first-child+dl+dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl:first-child+dl+dl+dl+dl dd.price > span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl dd.price > span{display:block;float:left; position:relative;top:10px; font:normal 13px "나눔고딕",NanumGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif; color:#aaa;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 dl dd.price > strong{color:#ef0345;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 dl dd.icoD{position:absolute;right:0;bottom:0;z-index:1;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 dl dd.icoD table{float:right;color:#fff;text-align:center;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl dd.icoD{right:580px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl dd.icoD table{width:80px;height:66px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl dd.icoD table.ico00{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico00.png) no-repeat;background-position:center bottom;background-size:80px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl dd.icoD table.ico01{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico01.png) no-repeat;background-position:center bottom;background-size:80px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl dd.icoD table.ico02{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico02.png) no-repeat;background-position:center bottom;background-size:80px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl dd.icoD table.ico03{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico03.png) no-repeat;background-position:center bottom;background-size:80px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s2 dl dd.icoD table{width:70px;height:58px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s2 dl dd.icoD table.ico00{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico00.png) no-repeat;background-position:center bottom;background-size:70px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s2 dl dd.icoD table.ico01{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico01.png) no-repeat;background-position:center bottom;background-size:70px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s2 dl dd.icoD table.ico02{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico02.png) no-repeat;background-position:center bottom;background-size:70px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s2 dl dd.icoD table.ico03{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico03.png) no-repeat;background-position:center bottom;background-size:70px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl dd.icoD table{width:65px;height:53px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl dd.icoD table.ico00{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico00.png) no-repeat;background-position:center bottom;background-size:65px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl dd.icoD table.ico01
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl dd.icoD table.ico01
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl dd.icoD table.ico01{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico01.png) no-repeat;background-position:center bottom;background-size:66px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl dd.icoD table.ico02{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico02.png) no-repeat;background-position:center bottom;background-size:65px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl dd.icoD table.ico03{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico03.png) no-repeat;background-position:center bottom;background-size:65px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s4 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s4 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s4 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl dd.icoD table,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl dd.icoD table{width:50px;height:41px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s4 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s4 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s4 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl dd.icoD table.ico00,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl dd.icoD table.ico00{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico00.png) no-repeat;background-position:center bottom;background-size:50px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s4 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s4 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s4 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl dd.icoD table.ico01,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl dd.icoD table.ico01{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico01.png) no-repeat;background-position:center bottom;background-size:51px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s4 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s4 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s4 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl dd.icoD table.ico02,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl dd.icoD table.ico02{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico02.png) no-repeat;background-position:center bottom;background-size:50px;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s4 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s4 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s4 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl dd.icoD table.ico03,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl dd.icoD table.ico03{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico03.png) no-repeat;background-position:center bottom;background-size:50px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl dd.icoD{display:none;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6 dl:first-child+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl:first-child+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dlfirst-child+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl:first-child+dl+dl+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl:first-child+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl:first-child+dl+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6 dl:first-child+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl:first-child+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dlfirst-child+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl:first-child+dl+dl+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl:first-child+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl:first-child+dl+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6 dl:first-child+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl:first-child+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dlfirst-child+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl:first-child+dl+dl+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl:first-child dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl:first-child+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl:first-child+dl+dl+dl+dl dd.icoD,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl:first-child+dl+dl+dl+dl+dl+dl dd.icoD{display:block;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 dl dd.icoD table td,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 dl dd.icoD table td,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 dl dd.icoD table td{height:80%;padding-bottom:9%;vertical-align:middle;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl dd.icoD table.ico00 strong{position:relative;right:-1px;font:bold 37px Arial, Helvetica, sans-serifl;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl dd.icoD table.ico00 span{position:relative;top:0;font:normal 18px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl dd.icoD table.ico03 span{position:relative;top:0;font:bold 18px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s1 dl dd.icoD table.ico02 span{position:relative;top:-4px;font:bold 18px Arial, Helvetica, sans-serif;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s2 dl dd.icoD table.ico00 strong{position:relative;right:-1px;font:bold 35px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s2 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s2 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s2 dl dd.icoD table.ico03 span{position:relative;top:0;font:normal 15px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s2 dl dd.icoD table.ico02 span{position:relative;top:-4px;font:bold 17px Arial, Helvetica, sans-serif;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s3 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl dd.icoD table.ico00 strong{position:relative;right:-1px;font:bold 32px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s3 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl dd.icoD table.ico00 span{position:relative;top:0;font:normal 14px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s3 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl dd.icoD table.ico01 span{position:relative;top:-2px;font:bold 14px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s3 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl dd.icoD table.ico02 span{position:relative;top:-4px;font:bold 16px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s3 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-2 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5-3 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-2 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-3 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s7-4 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-2 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5-3 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-2 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-3 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s7-4 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-2 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5-3 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-2 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-3 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s7-4 dl dd.icoD table.ico03 span{position:relative;top:0;font:bold 14px Arial, Helvetica, sans-serif;}
+
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s5 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s4 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s6 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl dd.icoD table.ico00 strong,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl dd.icoD table.ico00 strong{position:relative;right:-1px;font:bold 25px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s5 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s4 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s6 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl dd.icoD table.ico00 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl dd.icoD table.ico00 span{position:relative;top:0;font:normal 11px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s5 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s4 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s6 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl dd.icoD table.ico01 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl dd.icoD table.ico01 span{position:relative;top:-2px;font:bold 12px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s5 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s4 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1.s5 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s6 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl dd.icoD table.ico02 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl dd.icoD table.ico02 span{position:relative;top:-3px;font:bold 13px Arial, Helvetica, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d0 .s5 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-2 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s3-3 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s4 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s5 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .s6 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-2 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d1 .s6-3 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-2 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s3-3 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s5 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-2 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d2 .s6-3 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-2 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s3-3 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s5 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-1 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-2 dl dd.icoD table.ico03 span,
+div.promotion_page div.promotion_cont_wrap .promotion.v2 .d3 .s6-3 dl dd.icoD table.ico03 span{position:relative;top:-2px;font:bold 12px Arial, Helvetica, sans-serif;}
+
+/* d4 */
+div.promotion_page div.promotion_cont_wrap .promotion .d4{overflow:hidden;width:100%;padding:15px 0;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 > div{width:91%;margin:0 auto;padding:0;border:1px solid #ddd;overflow:hidden;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl{position:relative;margin:0;float:left;padding:15px 17px;border-left:1px solid #ddd;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl:first-child{border-left:none;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n1 dl{padding:125px 58px 91px 459px;width:520px;min-height: 204px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n2 dl{padding:15px 48px;width:420px;min-height: 538px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n3 dl{width:310px;min-height: 416px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n4 dl{width: 224px; min-height:330px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n5 dl{padding:15px;width:176px;min-height:279px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl .soldout{position:absolute;top:0;left:0;padding-right:0;width:100%;height:100%;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl .soldout .soldout_txt{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);padding:10px;width:80%;color:#fff;font:bold 80px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;text-align:center;border:2px solid #fff;z-index:100;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl .soldout .soldout_back{position: absolute;background-color:#000;width:100%;height:100%;z-index:99;opacity: 0.6;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n2 dl .soldout .soldout_txt{font-size: 52px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n3 dl .soldout .soldout_txt{font-size: 44px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n4 dl .soldout .soldout_txt{font-size: 32px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n5 dl .soldout .soldout_txt{font-size: 28px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl .pic{border:1px solid #eee;box-sizing:border-box;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n1 dl .pic{position:absolute;left:0;top:0;margin:15px;width:390px;height:390px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n2 dl .pic{height:420px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n3 dl .pic{height:310px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n4 dl .pic{height:224px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n5 dl .pic{height:176px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n1 dl .txt{padding-bottom: 5px;font: bold 18px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color: #3970B6;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n2 dl .txt{position: absolute;bottom: 25%;left: 11%;padding: 1px 8px;font: bold 16px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color: #3970B6;background: #fff;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl .ttl{overflow:hidden;white-space:normal;text-overflow:ellipsis;width:100%;margin-bottom:8px;height:31px;font:bold 14px "Noto Sans KR","맑은 고딕","MalgunGothic","돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;line-height:110%;color:#666;text-align:left;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n1 dl .ttl{height:61px;font-size:26px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n2 dl .ttl{height:39px;font-size:18px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n5 dl .ttl{height:28px;font-size:13px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl .priceInfo{width:100%;height:32px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl .priceInfo .sale{display: inline-block;margin-right:8px;font-weight: bold;font-size:36px;line-height:16px;letter-spacing:-1px;color:#dd080c;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl .priceInfo .sale span{font-size:16px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl .priceInfo .price{display:inline-block;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl .priceInfo .price s{display:block;min-height:7px;font-size:11px;color:#999;line-height:7px;text-align:left;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl .priceInfo .price strong{font-size:18px;font-weight:bold;color:#3f3c3d;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n1 dl .priceInfo{height:64px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n1 dl .priceInfo .sale{font-size:60px;line-height:100%;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n1 dl .priceInfo .sale span{font-size:28px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n1 dl .priceInfo .price s{min-height:12px;font-size:16px;line-height:12px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n1 dl .priceInfo .price strong{font-size:28px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n2 dl .priceInfo{min-height:36px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n2 dl .priceInfo .sale{font-size:44px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n2 dl .priceInfo .price s{min-height:5px;line-height:5px;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n2 dl .priceInfo .price strong{font-size:22px;}
+
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl dd.icoD{padding-top:5px;position:static;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl dd.icoD div{display:inline-block;width:60px;height:20px;font-size:12px;color:#fff;text-align:center;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl dd.icoD div span{line-height:20px;font-family:NanumGothic, "나눔고딕", gulim, sans-serif;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl dd.icoD .ico01{background-color:#288cfe;} /*무료배송*/
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl dd.icoD .ico02{background-color:#ffbe0a;} /*신상품*/
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl dd.icoD .ico03{background-color:#00ac64;} /*쿠폰*/
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl dd.icoD .ico04{background-color:#ff5f7f;} /*사은품*/
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl dd.icoD .ico05{background-color:#6464ff;} /*이벤트*/
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl dd.icoD .ico06{background-color:#eb3132;} /*BEST*/
+div.promotion_page div.promotion_cont_wrap .promotion .d4 dl dd.icoD .ico07{background-color:#FA7D40;} /*최저가*/
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n1 dl dd.icoD {padding:0 0 10px 0;}
+div.promotion_page div.promotion_cont_wrap .promotion .d4 .n5 dl dd.icoD div{width:55px;}
+
+
+
+.detail_info_content .skip,
+div.promotion_page div.promotion_cont_wrap .skip{overflow:hidden;position:absolute;top:-5000em; width:0px !important;height:0px !important;  line-height:0; font-size:0; margin:0 !important;padding:0 !important;}
+/* // AS-IS promotion */

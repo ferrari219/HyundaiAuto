@@ -1,0 +1,349 @@
+
+img {border:0;}
+
+/* AS-IS promotion(현업 요청) */
+/* 기획전 자동화가이드 CSS*/
+div.promotion_page .editor_cont .promotion{overflow:hidden;max-width:640px;margin:0 auto; border:1px solid #fff;}
+div.promotion_page .editor_cont .promotion.v2{border:none;}
+div.promotion_page .editor_cont .promotion img{width:100%;}
+
+div.promotion_page .editor_cont .box2,
+div.promotion_page .editor_cont .box3,
+div.promotion_page .editor_cont .box4,
+div.promotion_page .editor_cont .box5{overflow:hidden;width:100%;}
+div.promotion_page .editor_cont ul{clear:both;}
+div.promotion_page .editor_cont ul li img{display:block;margin:0 auto;}
+
+div.promotion_page .editor_cont .box2 li{width:50%;float:left;}
+div.promotion_page .editor_cont .box3 li{width:33.30006%;float:left;}
+div.promotion_page .editor_cont .box3 li:last-child{width:33.3988%;float:left;}
+div.promotion_page .editor_cont .v2 .box3 li,
+div.promotion_page .editor_cont .v2 .box3 li:last-child{width:33.33333%;}
+div.promotion_page .editor_cont .box3-1 li{width:25.05%;float:left;}
+div.promotion_page .editor_cont .box3-1 li:first-child{width:50%;float:left;}
+div.promotion_page .editor_cont .box3-1 li:last-child{width:24.95%;float:left;}
+div.promotion_page .editor_cont .box3-2 li{width:25.05%;float:left;}
+div.promotion_page .editor_cont .box3-2 li:last-child{width:50%;float:left;}
+div.promotion_page .editor_cont .box3-2 li:first-child{width:24.95%;float:left;}
+
+div.promotion_page .editor_cont v2 .box3-1 li{width:25%;float:left;}
+div.promotion_page .editor_cont v2 .box3-1 li:first-child{width:50%;float:left;}
+div.promotion_page .editor_cont v2 .box3-1 li:last-child{width:25%;float:left;}
+div.promotion_page .editor_cont v2 .box3-2 li{width:25%;float:left;}
+div.promotion_page .editor_cont v2 .box3-2 li:last-child{width:50%;float:left;}
+div.promotion_page .editor_cont v2 .box3-2 li:first-child{width:25%;float:left;}
+
+div.promotion_page .editor_cont .box4 li{width:25%;float:left;}
+div.promotion_page .editor_cont .box4 li:first-child,
+div.promotion_page .editor_cont .box4 li:last-child{width:24.95%;float:left;}
+div.promotion_page .editor_cont .v2 .box4 li,
+div.promotion_page .editor_cont .v2 .box4 li:first-child,
+div.promotion_page .editor_cont .v2 .box4 li:last-child{width:25%;}
+div.promotion_page .editor_cont .box5 li{width:20.0393%;float:left;}
+div.promotion_page .editor_cont .box5 li:first-child,
+div.promotion_page .editor_cont .box5 li:last-child{width:19.9411%;float:left;}
+div.promotion_page .editor_cont .v2 .box5 li,
+div.promotion_page .editor_cont .v2 .box5 li:first-child,
+div.promotion_page .editor_cont .v2 .box5 li:last-child{width:20%;}
+div.promotion_page .editor_cont .promotion .pc,
+div.promotion_page .editor_cont .event .pc{display:none;}
+
+/* New */
+div.promotion_page .editor_cont .promotion{width:100%;}
+div.promotion_page .editor_cont .promotion > p,
+div.promotion_page .editor_cont .promotion > p > img,
+div.promotion_page .editor_cont .promotion > p > a > img{width:100%; margin:0;padding:0;}
+
+div.promotion_page .editor_cont .promotion .i0 {clear:both; overflow:hidden; width:100%; margin:0 0 1.5em 0;}
+div.promotion_page .editor_cont .promotion .t0 {clear:both; overflow:hidden;white-space: normal;text-overflow:ellipsis; width:100%;height:25px; margin:0;padding:2% 0; background:#7e828d; font:bold 1.2em NanumGothic, "나눔고딕", gulim, sans-serif;color:#FFF;text-align:center;}
+
+div.promotion_page .editor_cont .promotion .d0{margin:0;padding:0;}
+div.promotion_page .editor_cont .promotion .s1 dl{position:relative;overflow:hidden;float:left; width:96%; margin:2% 0 0 0;padding:0 2% 2% 2%;}
+div.promotion_page .editor_cont .promotion .d0 .s2 dl,
+div.promotion_page .editor_cont .promotion .s3 dl,
+div.promotion_page .editor_cont .promotion .s3-1 dl,
+div.promotion_page .editor_cont .promotion .s3-2 dl,
+div.promotion_page .editor_cont .promotion .s3-3 dl,
+div.promotion_page .editor_cont .promotion .s4 dl,
+div.promotion_page .editor_cont .promotion .s5 dl,
+div.promotion_page .editor_cont .promotion .s5-1 dl,
+div.promotion_page .editor_cont .promotion .s5-2 dl,
+div.promotion_page .editor_cont .promotion .s5-3 dl,
+div.promotion_page .editor_cont .promotion .s6 dl,
+div.promotion_page .editor_cont .promotion .s6-1 dl,
+div.promotion_page .editor_cont .promotion .s6-2 dl,
+div.promotion_page .editor_cont .promotion .s6-3 dl,
+div.promotion_page .editor_cont .promotion .s7 dl,
+div.promotion_page .editor_cont .promotion .s7-1 dl,
+div.promotion_page .editor_cont .promotion .s7-2 dl,
+div.promotion_page .editor_cont .promotion .s7-3 dl,
+div.promotion_page .editor_cont .promotion .s7-4 dl{position:relative;overflow:hidden;float:left; width:46%; margin:2% 0 0 0;padding:0 2% 2% 2%;}
+
+div.promotion_page .editor_cont .promotion .s1 dl .ttl,
+div.promotion_page .editor_cont .promotion .d1 .s2 dl .ttl{overflow:hidden; white-space: normal;text-overflow:ellipsis; width:100%; padding:0.2em 0 0.6em 0; font:bold 1em NanumGothic, "나눔고딕", gulim, sans-serif;color:#666;line-height:150%; text-align:left;}
+div.promotion_page .editor_cont .promotion .d2 .s1 dl .ttl,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl .ttl{overflow:hidden; white-space: normal;text-overflow:ellipsis; width:100%; padding:0.2em 0 0.6em 0; font:bold 1em NanumGothic, "나눔고딕", gulim, sans-serif;color:#fff;line-height:150%; text-align:left;}
+div.promotion_page .editor_cont .promotion .d3 .s1 dl .ttl,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl .ttl{overflow:hidden; white-space: normal;text-overflow:ellipsis; width:100%; padding:0.2em 0 0.6em 0; font:bold 1em NanumGothic, "나눔고딕", gulim, sans-serif;color:#333;line-height:150%; text-align:left;}
+div.promotion_page .editor_cont .promotion .d2 dl .ttl{color:#fff !important;}
+div.promotion_page .editor_cont .promotion .d3 dl .ttl{color:#333 !important;}
+div.promotion_page .editor_cont .promotion .s2 dl .ttl,
+div.promotion_page .editor_cont .promotion .s3 dl .ttl,
+div.promotion_page .editor_cont .promotion .s3-1 dl .ttl,
+div.promotion_page .editor_cont .promotion .s3-2 dl .ttl,
+div.promotion_page .editor_cont .promotion .s3-3 dl .ttl,
+div.promotion_page .editor_cont .promotion .s4 dl .ttl,
+div.promotion_page .editor_cont .promotion .s5 dl .ttl,
+div.promotion_page .editor_cont .promotion .s5-1 dl .ttl,
+div.promotion_page .editor_cont .promotion .s5-2 dl .ttl,
+div.promotion_page .editor_cont .promotion .s5-3 dl .ttl,
+div.promotion_page .editor_cont .promotion .s6 dl .ttl,
+div.promotion_page .editor_cont .promotion .s6-1 dl .ttl,
+div.promotion_page .editor_cont .promotion .s6-2 dl .ttl,
+div.promotion_page .editor_cont .promotion .s6-3 dl .ttl,
+div.promotion_page .editor_cont .promotion .s7 dl .ttl,
+div.promotion_page .editor_cont .promotion .s7-1 dl .ttl,
+div.promotion_page .editor_cont .promotion .s7-2 dl .ttl,
+div.promotion_page .editor_cont .promotion .s7-3 dl .ttl,
+div.promotion_page .editor_cont .promotion .s7-4 dl .ttl{overflow:hidden; white-space: normal;text-overflow:ellipsis; width:100%;height:3.0em; padding:0.2em 0; font:bold 0.9em NanumGothic, "나눔고딕", gulim, sans-serif;color:#666;line-height:150%; text-align:left;}
+div.promotion_page .editor_cont .promotion dl .ttl > span{color:#af6b00;}
+div.promotion_page .editor_cont .promotion .d2 dl .ttl > span{color:#fff;}
+div.promotion_page .editor_cont .promotion .d3 dl .ttl > span{color:#333;}
+div.promotion_page .editor_cont .promotion dl dd{margin:0;padding:0; text-align:left;}
+
+div.promotion_page .editor_cont .promotion dl dd.price{overflow:hidden;}
+div.promotion_page .editor_cont .promotion dl dd.price > span{float:left; position:relative;top:7px; font:normal 0.7em NanumGothic, "나눔고딕", gulim, sans-serif; color:#aaa;}
+div.promotion_page .editor_cont .promotion dl dd.price > strong{float:left; position:relative;padding-left:10px; font:bold 1.3em arial, gulim, sans-serif;color:#dd080c; letter-spacing:-1px;}
+div.promotion_page .editor_cont .promotion .d2 dl dd.price > strong,
+div.promotion_page .editor_cont .promotion .d3 dl dd.price > strong{color:#ef0345;}
+div.promotion_page .editor_cont .promotion dl dd.price > strong > span{font-family:NanumGothic, "나눔고딕", sans-serif;font-size:24px;}
+
+div.promotion_page .editor_cont .promotion dl dd.icoD{position:absolute;right:4%;top:0;z-index:1; }
+div.promotion_page .editor_cont .promotion.v2 .d0 .s1 dl dd.icoD{right:2%;}
+div.promotion_page .editor_cont .promotion dl dd.icoD .ico01 strong,
+div.promotion_page .editor_cont .promotion dl dd.icoD .ico02 strong{display:none;}
+
+div.promotion_page .editor_cont .promotion dl dd.icoD table{float:right;}
+div.promotion_page .editor_cont .promotion dl dd.icoD table{width:40px;height:37px;}
+div.promotion_page .editor_cont .promotion .s1 dl dd.icoD table,
+div.promotion_page .editor_cont .promotion .d1 .s2 dl dd.icoD table,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl dd.icoD table,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl dd.icoD table{width:50px;height:41px;}
+
+div.promotion_page .editor_cont .promotion dl dd.icoD table td{position:relative;top:-3px;width:100%;height:100%;text-align:center;vertical-align:middle;color:#fff;}
+
+div.promotion_page .editor_cont .promotion dl dd.icoD table.ico00{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico00.png) no-repeat;background-position:center top;background-size:45px;font:bold 10px arial, sans-serif; letter-spacing:-1px;}
+div.promotion_page .editor_cont .promotion dl dd.icoD table.ico00 strong{padding-right:1px; font-size:16px;}
+div.promotion_page .editor_cont .promotion dl dd.icoD table.ico01{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico01.png) no-repeat;background-position:center top;background-size:45px;font:bold 10px NanumGothic, "나눔고딕","돋움",Dotum,"굴림", arial, sans-serif; letter-spacing:-1px;line-height:11px;}
+div.promotion_page .editor_cont .promotion dl dd.icoD table.ico02{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico02.png) no-repeat;background-position:center top;background-size:45px;font:bold 10px NanumGothic, "나눔고딕","돋움",Dotum,"굴림", arial, sans-serif; letter-spacing:-1px;}
+div.promotion_page .editor_cont .promotion dl dd.icoD table.ico03{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico03.png) no-repeat;background-position:center top;background-size:45px;font:bold 10px NanumGothic, "나눔고딕","돋움",Dotum,"굴림", arial, sans-serif; letter-spacing:-1px;line-height:11px;}
+div.promotion_page .editor_cont .promotion dl dd.icoD table.ico01 strong,
+div.promotion_page .editor_cont .promotion dl dd.icoD table.ico02 strong{display:none;}
+
+/*2018년 삭제예정*/
+div.promotion_page .editor_cont .promotion .s1 dl dd.dc{position:absolute;right:2%;top:0;z-index:1px;}
+div.promotion_page .editor_cont .promotion .s2 dl dd.dc,
+div.promotion_page .editor_cont .promotion .s3 dl dd.dc,
+div.promotion_page .editor_cont .promotion .s3-1 dl dd.dc,
+div.promotion_page .editor_cont .promotion .s4 dl dd.dc,
+div.promotion_page .editor_cont .promotion .s5 dl dd.dc,
+div.promotion_page .editor_cont .promotion .s6 dl dd.dc{position:absolute;right:4%;top:0;z-index:1px;}
+div.promotion_page .editor_cont .promotion dl dd.dc > span{display:inline-block; float:right;}
+div.promotion_page .editor_cont .promotion dl dd.dc > span > strong{font-size:2.3em;}
+div.promotion_page .editor_cont .promotion dl dd.dc .x{display:none;}
+div.promotion_page .editor_cont .promotion dl dd.dc .ico00{width:2.6em;height:2.2em; padding:0.6em 1.2em 1.4em 0.8em; background:#e60a45 url(/UserFiles/Image/01_promotion/common/ico00.jpg) no-repeat left top; font:bold 0.8em arial, sans-serif; letter-spacing:-1px; color:#FFF;text-align:center;} /* 52% */
+div.promotion_page .editor_cont .promotion dl dd.dc .ico01{width:2.6em;height:2.4em; padding:0.5em; background:#2c53ae; font:bold 1em NanumGothic, "나눔고딕","돋움",Dotum,"굴림", arial, sans-serif; letter-spacing:-1px; color:#FFF;text-align:center;} /* 무료배송 */
+div.promotion_page .editor_cont .promotion dl dd.dc .ico02{width:2.6em;height:1.3em; padding:1.1em 0.5em 1em 0.5em; background:#0a9882; font:bold 1em NanumGothic, "나눔고딕","돋움",Dotum,"굴림", arial, sans-serif; letter-spacing:-1px; color:#FFF;text-align:center;} /* 신상품 */
+div.promotion_page .editor_cont .promotion dl dd.dc .ico01 strong,
+div.promotion_page .editor_cont .promotion dl dd.dc .ico02 strong{display:none;}
+/*2018년 삭제예정*/
+
+div.promotion_page .editor_cont .promotion dl dd.lnk{position:absolute;left:0;top:0;width:100%;height:100%;z-index:999px;}
+div.promotion_page .editor_cont .promotion dl dd.lnk a{display:block;width:100%;height:100%;text-indent:-5000px; background:red;opacity:0.0;filter:alpha(opacity=0);}
+
+div.promotion_page .editor_cont .promotion dl .pic{clear:both; overflow:hidden; width:100%;height:auto; padding:0;margin:0 0 0 0; background:#f2f2f2;}
+div.promotion_page .editor_cont .promotion .s1 dl .pic{height:200px;}
+div.promotion_page .editor_cont .promotion .s1 dl .h1 img{position:relative;top:0 !important;margin-top:0 !important;}
+div.promotion_page .editor_cont .promotion .s1 dl img{position:relative;top:50%;margin-top:-50%;}
+div.promotion_page .editor_cont .promotion .s1 dl .h3 img{position:relative;top:100% !important;margin-top:-100% !important;}
+div.promotion_page .editor_cont .promotion dl .pic img{float:left; width:100%;height:auto;}
+div.promotion_page .editor_cont .promotion .s1 dl .soldout{overflow:hidden; position:absolute;left:0%;left:2%; top:0; width:96%;height:200px; padding:0; }
+div.promotion_page .editor_cont .promotion .s2 dl .soldout,
+div.promotion_page .editor_cont .promotion .s3 dl .soldout,
+div.promotion_page .editor_cont .promotion .s3-1 dl .soldout,
+div.promotion_page .editor_cont .promotion .s3-2 dl .soldout,
+div.promotion_page .editor_cont .promotion .s3-3 dl .soldout,
+div.promotion_page .editor_cont .promotion .s4 dl .soldout,
+div.promotion_page .editor_cont .promotion .s5 dl .soldout,
+div.promotion_page .editor_cont .promotion .s5-1 dl .soldout,
+div.promotion_page .editor_cont .promotion .s5-2 dl .soldout,
+div.promotion_page .editor_cont .promotion .s5-3 dl .soldout,
+div.promotion_page .editor_cont .promotion .s6 dl .soldout,
+div.promotion_page .editor_cont .promotion .s6-1 dl .soldout,
+div.promotion_page .editor_cont .promotion .s6-2 dl .soldout,
+div.promotion_page .editor_cont .promotion .s6-3 dl .soldout,
+div.promotion_page .editor_cont .promotion .s7 dl .soldout,
+div.promotion_page .editor_cont .promotion .s7-1 dl .soldout,
+div.promotion_page .editor_cont .promotion .s7-2 dl .soldout,
+div.promotion_page .editor_cont .promotion .s7-3 dl .soldout,
+div.promotion_page .editor_cont .promotion .s7-4 dl .soldout{overflow:hidden; position:absolute;left:0%;left:4%; top:0; width:92%; padding:0; }
+div.promotion_page .editor_cont .promotion dl .soldout img{float:left; width:100%;height:auto;}
+div.promotion_page .editor_cont .promotion .s1 dl .soldout img{position:relative;top:50%;margin-top:-50%;}
+
+div.promotion_page .editor_cont .promotion .s2 dl,
+div.promotion_page .editor_cont .promotion .s3 dl,
+div.promotion_page .editor_cont .promotion .s3-1 dl,
+div.promotion_page .editor_cont .promotion .s4 dl{position:relative;}
+
+div.promotion_page .editor_cont .promotion .s1 dl .txt,
+div.promotion_page .editor_cont .promotion .d1 .s2 dl .txt{overflow:hidden; white-space: nowrap;text-overflow:ellipsis; width:100%; height:1.5em; margin:0.6em 0 0 0; font:bold 0.95em NanumGothic, "나눔고딕", gulim, sans-serif;color:#4f417a; letter-spacing:-1px;}
+div.promotion_page .editor_cont .promotion .d2 .s1 dl .txt,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl .txt,
+div.promotion_page .editor_cont .promotion .d3 .s1 dl .txt,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl .txt{overflow:hidden; white-space: nowrap;text-overflow:ellipsis; width:100%; height:1.5em; margin:0.6em 0 0 0; font:bold 0.95em NanumGothic, "나눔고딕", gulim, sans-serif;color:#fff; letter-spacing:-1px; background:#3eb165;}
+div.promotion_page .editor_cont .promotion .d0 .s2 dl .txt,
+div.promotion_page .editor_cont .promotion .s3 dl .txt,
+div.promotion_page .editor_cont .promotion .s3-1 dl .txt,
+div.promotion_page .editor_cont .promotion .s3-2 dl .txt,
+div.promotion_page .editor_cont .promotion .s3-3 dl .txt,
+div.promotion_page .editor_cont .promotion .s4 dl .txt,
+div.promotion_page .editor_cont .promotion .s5 dl .txt,
+div.promotion_page .editor_cont .promotion .s5-1 dl .txt,
+div.promotion_page .editor_cont .promotion .s5-2 dl .txt,
+div.promotion_page .editor_cont .promotion .s5-3 dl .txt,
+div.promotion_page .editor_cont .promotion .s6 dl .txt,
+div.promotion_page .editor_cont .promotion .s6-1 dl .txt,
+div.promotion_page .editor_cont .promotion .s6-2 dl .txt,
+div.promotion_page .editor_cont .promotion .s6-3 dl .txt,
+div.promotion_page .editor_cont .promotion .s7 dl .txt,
+div.promotion_page .editor_cont .promotion .s7-1 dl .txt,
+div.promotion_page .editor_cont .promotion .s7-2 dl .txt,
+div.promotion_page .editor_cont .promotion .s7-3 dl .txt,
+div.promotion_page .editor_cont .promotion .s7-4 dl .txt{display:none;}
+
+div.promotion_page .editor_cont .promotion .ifm{width:300px;height:220px;max-width:100%;max-height:100%;}
+div.promotion_page .editor_cont .promotion .vdo{padding:20px 0;margin:0 auto;}
+div.promotion_page .editor_cont .promotion .vdo > div{max-width:565px;margin:0 auto;}
+div.promotion_page .editor_cont .promotion .vdo > div > iframe {width:100%;min-height:325px;}
+
+/* D1 */
+div.promotion_page .editor_cont .promotion .d1 .t0 {clear:both; overflow:hidden; width:100%; background:#41332a; font:bold 16px NanumGothic, "나눔고딕", gulim, sans-serif;color:#FFF;text-align:center;}
+
+/* D2 */
+div.promotion_page .editor_cont .promotion .d2 .t0 {clear:both; overflow:hidden; width:100%; background:#80a2c7; font:bold 16px NanumGothic, "나눔고딕", gulim, sans-serif;color:#FFF;text-align:center;}
+
+/* D3 */
+div.promotion_page .editor_cont .promotion .d3 .t0 {clear:both; overflow:hidden; width:100%; background:none;border-top:3px solid #000;border-bottom:2px solid #999; font:bold 16px NanumGothic, "나눔고딕", gulim, sans-serif;color:#333;text-align:center;}
+
+.detail_info_content .skip{overflow:hidden;position:absolute;top:-5000em; width:0px !important;height:0px !important;  line-height:0; font-size:0; margin:0 !important;padding:0 !important;}
+
+/** D1, D2, D3 **/
+div.promotion_page .editor_cont .promotion .d2 dl{background:#323232;}
+div.promotion_page .editor_cont .promotion .d3 dl{background:#eef3f5;}
+
+div.promotion_page .editor_cont .promotion .d1 .s2 dl{position:relative;overflow:hidden;float:left; width:96%; margin:2% 0 0 0;padding:0 2% 2% 2%;}
+div.promotion_page .editor_cont .promotion .d2 .s1 dl,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl,
+div.promotion_page .editor_cont .promotion .d3 .s1 dl,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl{position:relative;overflow:hidden;float:left; width:96%; margin:0;padding:0 2% 4% 2%;}
+div.promotion_page .editor_cont .promotion .d2 dl,
+div.promotion_page .editor_cont .promotion .d3 dl{margin:0 !important;padding:0 2% 4% 2% !important;}
+div.promotion_page .editor_cont .promotion .d1 .s2 dl .pic,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl .pic,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl .pic{height:200px;}
+div.promotion_page .editor_cont .promotion .d1 .s1 .pic img,
+div.promotion_page .editor_cont .promotion .d1 .s2 .pic img,
+div.promotion_page .editor_cont .promotion .d2 .s1 .pic img,
+div.promotion_page .editor_cont .promotion .d2 .s2 .pic img,
+div.promotion_page .editor_cont .promotion .d3 .s1 .pic img,
+div.promotion_page .editor_cont .promotion .d3 .s2 .pic img{position:relative;left:0;width:100%;margin-top:-50% !important;top:45% !important;height:auto;}
+div.promotion_page .editor_cont .promotion .d1 .s1 .pic.h1 img,
+div.promotion_page .editor_cont .promotion .d1 .s2 .pic.h1 img,
+div.promotion_page .editor_cont .promotion .d2 .s1 .pic.h1 img,
+div.promotion_page .editor_cont .promotion .d2 .s2 .pic.h1 img,
+div.promotion_page .editor_cont .promotion .d3 .s1 .pic.h1 img,
+div.promotion_page .editor_cont .promotion .d3 .s2 .pic.h1 img{top:35% !important;}
+div.promotion_page .editor_cont .promotion .d1 .s1 .pic.h2 img,
+div.promotion_page .editor_cont .promotion .d1 .s2 .pic.h2 img,
+div.promotion_page .editor_cont .promotion .d2 .s1 .pic.h2 img,
+div.promotion_page .editor_cont .promotion .d2 .s2 .pic.h2 img,
+div.promotion_page .editor_cont .promotion .d3 .s1 .pic.h2 img,
+div.promotion_page .editor_cont .promotion .d3 .s2 .pic.h2 img{top:55% !important;}
+
+div.promotion_page .editor_cont .promotion .d1 .s2 dl .soldout,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl .soldout,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl .soldout{overflow:hidden; position:absolute;left:0%;left:2%; top:0; width:96%;height:200px; padding:0; }
+div.promotion_page .editor_cont .promotion .d1 .s2 dl .soldout img,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl .soldout img,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl .soldout img{position:relative;top:50%;margin-top:-50%;}
+div.promotion_page .editor_cont .promotion .s1 dl dd.icoD,
+div.promotion_page .editor_cont .promotion .d1 .s2 dl dd.icoD,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl dd.icoD,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl dd.icoD{position:absolute;right:2%;top:0;z-index:1;}
+
+div.promotion_page .editor_cont .promotion .s1 dl dd.icoD table.ico00,
+div.promotion_page .editor_cont .promotion .d1 .s2 dl dd.icoD table.ico00,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl dd.icoD table.ico00,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl dd.icoD table.ico00{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico00.png) no-repeat;background-position:center top;background-size:50px;}
+div.promotion_page .editor_cont .promotion .s1 dl dd.icoD table.ico01,
+div.promotion_page .editor_cont .promotion .d1 .s2 dl dd.icoD table.ico01,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl dd.icoD table.ico01,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl dd.icoD table.ico01{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico01.png) no-repeat;background-position:center top;background-size:50px;}
+div.promotion_page .editor_cont .promotion .s1 dl dd.icoD table.ico02,
+div.promotion_page .editor_cont .promotion .d1 .s2 dl dd.icoD table.ico02,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl dd.icoD table.ico02,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl dd.icoD table.ico02{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico02.png) no-repeat;background-position:center top;background-size:50px;}
+div.promotion_page .editor_cont .promotion .s1 dl dd.icoD table.ico03,
+div.promotion_page .editor_cont .promotion .d1 .s2 dl dd.icoD table.ico03,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl dd.icoD table.ico03,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl dd.icoD table.ico03{background:url(http://mall.hyundailivart.co.kr/UserFiles/Image/01_promotion/common/ico03.png) no-repeat;background-position:center top;background-size:50px;}
+
+div.promotion_page .editor_cont .promotion .s1 dl dd.icoD table.ico00 strong,
+div.promotion_page .editor_cont .promotion .d1 .s2 dl dd.icoD table.ico00 strong,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl dd.icoD table.ico00 strong,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl dd.icoD table.ico00 strong{font-size:24px;}
+div.promotion_page .editor_cont .promotion .s1 dl dd.icoD table.ico02 span,
+div.promotion_page .editor_cont .promotion .d1 .s2 dl dd.icoD table.ico02 span,
+div.promotion_page .editor_cont .promotion .d2 .s2 dl dd.icoD table.ico02 span,
+div.promotion_page .editor_cont .promotion .d3 .s2 dl dd.icoD table.ico02 span{font-size:12px;}
+
+/* d4 */
+div.promotion_page .editor_cont .promotion .d4{min-width:360px;box-sizing: border-box;}
+div.promotion_page .editor_cont .promotion .d4 *{box-sizing: inherit}
+div.promotion_page .editor_cont .promotion .d4 dl{position:relative;overflow:hidden;float:left;margin:2% 0 0 0;padding:2% 2% 3% 2%;width:50%;border:none;}
+div.promotion_page .editor_cont .promotion .d4 .n1 dl{width:100%;padding:2%;border:1px solid #ddd;}
+
+div.promotion_page .editor_cont .promotion .d4 dl .soldout{position:absolute;top:0;left:0;width:100%;height:100%;}
+div.promotion_page .editor_cont .promotion .d4 dl .soldout .soldout_txt{position:absolute;left:50%;top:50%;padding: 3%;width: 80%;font: bold 2.5em NanumGothic, "나눔고딕", gulim, sans-serif;color: #fff;z-index: 100;transform: translate(-50%, -50%);border: 2px solid #fff;}
+div.promotion_page .editor_cont .promotion .d4 dl .soldout .soldout_back{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #000;z-index: 99;opacity: 0.55;}
+div.promotion_page .editor_cont .promotion .d4 .n1 dl .soldout .soldout_txt{font-size:5em;}
+
+div.promotion_page .editor_cont .promotion .d4 .n1 dl .pic{height:200px;}
+div.promotion_page .editor_cont .promotion .d4 .n1 dl .pic img{position:relative;top:35%;margin-top:-50%;}
+
+div.promotion_page .editor_cont .promotion .d4 .n1 dl .txt{width:100%;font:bold 0.9em NanumGothic, "나눔고딕", gulim, sans-serif;color:#3970B6;line-height:150%;text-align:left;}
+div.promotion_page .editor_cont .promotion .d4 .n2 dl .txt{position: absolute;bottom: 36.4%;width:100%;font:bold 0.9em NanumGothic, "나눔고딕", gulim, sans-serif;color: #3970B6;line-height:150%;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background: #fff;}
+div.promotion_page .editor_cont .promotion .d4 dl .ttl{margin-top: 2%;overflow:hidden;white-space: normal;text-overflow:ellipsis;width:100%;height:32px;font:bold 0.9em NanumGothic, "나눔고딕", gulim, sans-serif;color:#666;line-height:150%;text-align:left;}
+div.promotion_page .editor_cont .promotion .d4 .n1 dl .ttl{height:auto;}
+
+div.promotion_page .editor_cont .promotion .d4 dl .priceInfo{margin-top: 3%;width:100%;height: 33px;}
+div.promotion_page .editor_cont .promotion .d4 dl .priceInfo .sale{display: inline-block;margin-right:3%;font-weight:bold;font:bold 3em arial, gulim, sans-serif;letter-spacing:-1px;color:#dd080c;line-height: 16px;}
+div.promotion_page .editor_cont .promotion .d4 dl .priceInfo .sale span{font-size:0.5em;}
+div.promotion_page .editor_cont .promotion .d4 dl .priceInfo .price{display:inline-block;}
+div.promotion_page .editor_cont .promotion .d4 dl .priceInfo .price s{display:block;font-size:0.87em;color:#999;line-height: 7px;text-align:left;height: 7px;}
+div.promotion_page .editor_cont .promotion .d4 dl .priceInfo .price strong{font:bold 1.7em arial, gulim, sans-serif;font-size:1.7em;color:#3f3c3d;letter-spacing: -1px;}
+
+div.promotion_page .editor_cont .promotion .d4 dl dd.icoD{position:static;margin-top:2%;height: 18px;}
+div.promotion_page .editor_cont .promotion .d4 dl dd.icoD div{display:inline-block;width:31%;height:16px;font-size:0.75em;color:#fff;text-align:center;}
+div.promotion_page .editor_cont .promotion .d4 dl dd.icoD div span{line-height:1.5em;font-family:NanumGothic, "나눔고딕", gulim, sans-serif;}
+div.promotion_page .editor_cont .promotion .d4 dl dd.icoD .ico01{background-color:#288cfe;} /*무료배송*/
+div.promotion_page .editor_cont .promotion .d4 dl dd.icoD .ico02{background-color:#ffbe0a;} /*신상품*/
+div.promotion_page .editor_cont .promotion .d4 dl dd.icoD .ico03{background-color:#00ac64;} /*쿠폰*/
+div.promotion_page .editor_cont .promotion .d4 dl dd.icoD .ico04{background-color:#ff5f7f;} /*사은품*/
+div.promotion_page .editor_cont .promotion .d4 dl dd.icoD .ico05{background-color:#6464ff;} /*이벤트*/
+div.promotion_page .editor_cont .promotion .d4 dl dd.icoD .ico06{background-color:#eb3132;} /*BEST*/
+div.promotion_page .editor_cont .promotion .d4 dl dd.icoD .ico07{background-color:#FA7D40;} /*최저가*/
+div.promotion_page .editor_cont .promotion .d4 .n1 dl dd.icoD{margin-bottom:2%;height:auto;}
+/* d4 */
+
+/* // AS-IS promotion */

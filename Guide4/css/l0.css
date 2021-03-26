@@ -1,0 +1,127 @@
+@charset "utf-8";
+/*
+.File Name  :  css/common.css
+.Final Editor : 전성호 (2016-04-11 : 최초 작성) 
+*/
+
+/* 옵션리스트 영역
+------------------------------------------------------------------------------------ */
+.oWrap{overflow:hidden; margin:0 auto;  border:none;border-top:4px solid #393939;}
+.oBox{margin:-1px; border:1px solid #ccc;border-bottom:none;}
+.oBox .oSec{overflow:hidden; position:relative; float:left; width:50%;margin:-1px;padding:0 0 40px 0; border-left:1px solid #ccc;}
+.oBox .oSec:nth-child(odd){margin-left:-2px;margin-right:0px; border-right:1px solid #ccc;}
+.oBox .oSec.h1{height:400px;}
+.oBox .oSec.h2{height:480px;}
+.oBox .oSec.h3{height:560px;}
+.oBox .oSec .sNum{position:absolute;left:30px;top:20px;width:80px;height:69px;padding-right:2px; background:url(../img/ip/lottei/oheart.png) no-repeat center center; z-index:2;}
+.oBox .oSec .sNum.emt{background:none;}
+.oBox .oSec .sNum .typeA{width:100%;height:100%;}
+.oBox .oSec .sNum .typeA td{font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;letter-spacing:-2px; text-align:center;color:#fff;}
+.oBox .oSec .sNum .typeA td span{display:none;}
+.oBox .oSec .sNum .typeA td strong{display:block; position:relative;top:-2px; font:normal 33px Noto Sans Korean, 'Noto Sans Korean', sans-serif;}
+
+.oBox .oSec .part2 .ttl{padding:0 0 0 15px;}
+.oBox .oSec .part2 .ttl > .typeA{width:100%;height:100%;}
+.oBox .oSec .part2 .ttl > .typeA td{height:auto;vertical-align:middle; padding:0 15px; color:#fff;}
+.oBox .oSec .part2 .ttl > .typeA td .e{position:relative;top:3px; margin:0 15px 15px 0; padding:0; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif; background:#da281c;color:#fff;}
+.oBox .oSec .part2 .ttl > .typeA td .e.emt{height:30px; background:none;}
+.oBox .oSec .part2 .ttl > .typeA td .t{font:normal 24px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; line-height:110%;}
+.oBox .oSec .part2 .ttl > .typeA td .s{font:300 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#5d5d5d;}
+.oBox .oSec .part2 .ttl > .typeA td .s span{padding-left:5px;}
+.oBox .oSec .part2 .dc{display:none; position:absolute;bottom:-83px; width:90px; padding:21px 0; background:#d8253a; font:bold 13px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#fff; text-align:center;}
+.oBox .oSec .part2 .dc span{font-size:36px;}
+
+.oBox .oSec .pic{overflow:hidden; padding:20px 30px; height;258px;}
+.oBox .oSec .pic p{position:relative; width:329px;height:329px;}
+.oBox .oSec .pic.h0 p > img{position:relative;left:0;top:0; width:100%;height:auto;}
+.oBox .oSec .pic.h1 p > img{position:relative;left:-10%;top:-10%; width:120%;height:120%;}
+.oBox .oSec .pic.h2 p > img{position:relative;left:-25%;top:-25%; width:150%;height:150%;}
+
+.oBox .oSec .part3 .prc > .typeA{float:right;width:100%;}
+.oBox .oSec .part3 .prc > .typeA > tbody > tr > td{height:auto; margin:0;padding:0 0 20px 32px;vertical-align:middle;}
+.oBox .oSec .part3 .prc > .typeA td div{float:left;}
+.oBox .oSec .part3 .prc > .typeA td em{vertical-align:middle;}
+.oBox .oSec .part3 .prc > .typeA td .pc2{display:none;clear:both;}
+.oBox .oSec .part3 .prc > .typeA td .pc2 > span{display:none; height:17px; font:bold 17px Noto Sans Korean, 'Noto Sans Korean', sans-serif; text-align:right;}
+.oBox .oSec .part3 .prc > .typeA td .pc2 > em{position:relative;top:17px; height:20px; font:400 24px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; text-align:right;}
+.oBox .oSec .part3 .prc > .typeA td .pc3 > span{display:none; height:20px; font:bold 17px Noto Sans Korean, 'kNoto Sans Korean', sans-serif;color:#2e2e2e; text-align:right;}
+.oBox .oSec .part3 .prc > .typeA td .pc3 em{position:relative;top:1px; height:35px; font:bold 40px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;letter-spacing:-1px; text-align:right;}
+.oBox .oSec .part3 .prc > .typeA td .pc1{clear:both; width:100%; padding-top:8px;}
+.oBox .oSec .part3 .prc > .typeA td .pc1 > span{position:relative;top:15px; float:left; height:20px; font:500 19px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; text-align:right;}
+.oBox .oSec .part3 .prc > .typeA td .pc1 > em{position:relative;left:10px;top:14px; float:left; height:35px; font:500 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939;letter-spacing:-1px; text-align:right;}
+.oBox .oSec .part3 .prc > .typeA td .pc2 > em span{padding-right:25px;}
+.oBox .oSec .part3 .prc > .typeA td .pc3 > em span{font-weight:400; font-size:29px;}
+.oBox .oSec .part3 .prc > .typeA td .pc1 > em span{font-weight:400; font-size:19px;}
+.oBox .oSec .part3 .prc > .typeA td .etc{display:none; clear:both; padding-left:30px; font:bold 15px Noto Sans Korean, 'Noto Sans Korean', sans-serif;letter-spacing:0;color:#ee2f58;text-align:right;}
+
+/* 빈영역 */
+.oBox .oSec.empty{overflow:hidden;  text-align:center;}
+.oBox .oSec.empty.h1{height:600px;}
+.oBox .oSec.empty.h2{height:650px;}
+.oBox .oSec.empty.h3{height:700px;}
+.oBox .oSec.empty .typeA{width:100%;border-top:1px solid #d7d7d7;}
+.oBox .oSec.empty td{width:100%;height:100%;vertical-align:middle;}
+
+
+/* 타이틀 영역
+------------------------------------------------------------------------------------ */
+.tBox{overflow:hidden;clear:both; margin:0 auto; border:none;} /*float:left; */
+
+.tBox .tSec{position:relative;border-bottom:1px solid #fff;}
+.tSec .h1,
+.tSec .h2{height:265px;}
+.tSec .h3{height:282px;}
+
+.tSec .sNum{position:absolute;left:60px;top:27px; width:130px;height:130px; background:url(../img/ip/lottei/theart.png) no-repeat center center;}
+.tSec .sNum.emt{background:none;}
+.tSec .sNum .typeA{width:100%;height:100%;}
+.tSec .sNum .typeA td{padding-top:8px; font:normal 19px Noto Sans Korean, 'Noto Sans Korean', sans-serif;letter-spacing:-2px; text-align:center;color:#fff; vertical-align:top;}
+.tSec .sNum .typeA td span{display:block;position:absolute;left:0;top:33px; width:130px; padding-top:1px;text-align:center; font:500 48px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#424242; letter-spacing:-2px;}
+
+.tSec .part2{width:100%;} /* #5e5e5e */
+.tSec .part2 .ttl{height:180px; padding-left:190px; background:#393939;}
+.tSec .part2 .ttl > .typeA{width:100%;height:100%;}
+.tSec .part2 .ttl > .typeA td{width:100%;height:100%; color:#fff; text-align:center;vertical-align:middle;}
+.tSec .part2 .ttl > .typeA td .e{position:relative;bottom:2px; display:inline; margin:-3px; padding:0 5px 0 5px; font:normal 25px Noto Sans Korean, 'Noto Sans Korean', sans-serif; background:#da281c;color:#fff;}
+.tSec .part2 .ttl > .typeA td .e.emt{display:none;}
+.tSec .part2 .ttl > .typeA td .t{font:normal 29px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#fff;}
+.tSec .part2 .ttl > .typeA td .s{padding-top:7px; font:normal 15px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#fff;}
+.tSec .part2 .ttl > .typeA td .s span{padding-left:5px;color:#aedaff;}
+
+.tSec .part3 .prc{clear:both; width:100%;height:80px;}
+.tSec .part3 .prc.s2{background:url(../img/ip/lottei/dotline.jpg) no-repeat center center;}
+.tSec .part3 .prc.s2 > .typeA{width:100%;height:100%; margin:2px -2px 0 0;}
+.tSec .part3 .prc > .typeA td > .dc{display:none;}
+.tSec .part3 .prc > .typeA > tbody > tr > td{width:100%;height:100%; vertical-align:middle;border:1px solid #393939;}
+.tSec .part3 .prc > .typeA td tr:last-child th, .tSec .part3 .prc > .typeA td tr:last-child td{padding-bottom:0;}
+.tSec .part3 .prc.s2 > .typeA td div{float:left; width:50%; text-align:center;}
+.tSec .part3 .prc.s2 > .typeA td div > span{display:inline-block; overflow:hidden; margin:0;padding:0;} 
+.tSec .part3 .prc.s2 > .typeA td div > em{display:inline-block; margin:0;padding:0;}
+.tSec .part3 .prc.s2 > .typeA td .pc2{height:60px;}
+.tSec .part3 .prc.s2 > .typeA td .pc2 > span{position:relative;top:-11px; vertical-align:middle; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; text-align:right;}
+.tSec .part3 .prc.s2 > .typeA td .pc2 > em{position:relative;top:-3px; padding:0;font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; text-align:right;} /* "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim, */
+.tSec .part3 .prc.s2 > .typeA td .pc3{height:60px;}
+.tSec .part3 .prc.s2 > .typeA td .pc3 > span{position:relative;top:1px; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;}
+.tSec .part3 .prc.s2 > .typeA td .pc3 > em{position:relative;top:-4px; padding:0;font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;letter-spacing:-1px;}
+/* height:36px;padding:2px 0 0 0;font:bold 30px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right; */
+.tSec .part3 .prc.s2 > .typeA td .pc1{display:none;}
+.tSec .part3 .prc.s2 > .typeA td .pc1 > span{position:relative;top:1px; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;}
+.tSec .part3 .prc.s2 > .typeA td .pc1 > em{position:relative;top:-4px; padding:0;font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;letter-spacing:-1px;}
+
+.tSec .part3 .prc.s3{height:95px; background:url(../img/ip/lottei/dotline2.jpg) no-repeat center center;}
+.tSec .part3 .prc.s3 > .typeA{width:100%;height:100%; margin:2px -2px 0 0;}
+.tSec .part3 .prc.s3 > .typeA td div{float:left; width:33.3%; text-align:left;}
+.tSec .part3 .prc.s3 > .typeA td div > span{display:block;margin:0;padding:8px 0 0 25px;}
+.tSec .part3 .prc.s3 > .typeA td div > em{display:block;padding:0 0 0 25px;}
+.tSec .part3 .prc.s3 > .typeA td .pc2 > span{position:relative;top:8px; vertical-align:middle; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939;}
+.tSec .part3 .prc.s3 > .typeA td .pc2 > em{position:relative;top:-10px; font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; } /* "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim, */
+.tSec .part3 .prc.s3 > .typeA td .pc3 > span{position:relative;top:8px; vertical-align:middle; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;}
+.tSec .part3 .prc.s3 > .typeA td .pc3 > em{position:relative;top:-10px; font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#da281c;letter-spacing:-1px;}
+/* height:36px;padding:2px 0 0 0;font:bold 30px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right; */
+.tSec .part3 .prc.s3 > .typeA td .pc1 > span{position:relative;top:8px; vertical-align:middle; font:normal 20px Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939;}
+.tSec .part3 .prc.s3 > .typeA td .pc1 > em{position:relative;top:-10px; font:bold 40px  Noto Sans Korean, 'Noto Sans Korean', sans-serif;color:#393939; } /* "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim, */
+
+.tSec .part3 .prc > .typeA td .pc2 > em > span,
+.tSec .part3 .prc > .typeA td .pc3 > em > span,
+.tSec .part3 .prc > .typeA td .pc1 > em > span{font:normal 30px Noto Sans Korean, 'Noto Sans Korean', sans-serif;}
+.tSec .part3 .prc > .typeA td .etc{display:none; clear:both; padding-left:30px; font:bold 15px Noto Sans Korean, 'Noto Sans Korean', sans-serif;letter-spacing:0;color:#ee2f58;}

@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" /> 
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>홈스타일 : 자사몰 상품기술서 코딩 자동화 가이드 : [현대리바트]가이드 홈페이지</title>
+<link rel="stylesheet" type="text/css" href="css/common_00.css"/>
+<link rel="stylesheet" type="text/css" href="css/common_wf.css"/>
+<link rel="stylesheet" type="text/css" href="css/ja.css"/>
+<script type="text/javascript" src="js/ja2_1.js"></script>
+<script type="text/javascript">
+//alert(imgLink);
+</script>
+</head>
+<body>
+
+<div class="header">
+	<h1><a href="index.html"><img src="img/logo.gif" alt="현대 리바트 가이드" /></a></h1>
+	<div class="navi">
+		<h2 class="skip">navigation</h2>
+		<ul>
+			<li class="on"><a href="ja1_00.html">자사몰</a></li> 
+			<li><a href="ip1_0.html">입점몰</a></li>
+			<!-- <li><a href="edm1_2.html">DM 발송</a></li> -->
+		</ul>
+		<p>* 궁금한 사항은 윤창준DR / 전성호SW 에게 문의 해주세요.</p>
+	</div>
+</div>
+<div class="Wrap">
+	<div class="leftNavi">
+		<h2>자사몰</h2>
+		<dl>
+			<dt>기획전 등록</dt>
+			<!-- <dd>-<a href="ja1_0.html">주말특가(week)</a></dd>
+			<dd>-<a href="ja1_1.html">정기전(jung)</a></dd>
+			<dd>-<a href="ja1_2.html">침실전(bed)</a></dd>
+			<dd>-<a href="ja1_3.html">거실전(room)</a></dd>
+			<dd>-<a href="ja1_4.html">주방전/식탁(kitchen)</a></dd>
+			<dd>-<a href="ja1_5.html">시스템주방전(system)</a></dd>
+			<dd>-<a href="ja1_6.html">서재전(book)</a></dd>
+			<dd>-<a href="ja1_7.html">오피스전(office)</a></dd>
+			<dd>-<a href="ja1_8.html">아이방전(kids)</a></dd>
+			<dd>-<a href="ja1_9.html">몰인몰(mallin)</a></dd>
+			<dd>-<a href="ja1_10.html">홈스타일(home)</a></dd> -->
+			<dd>-<a href="ja1_1.html">DB연동 기획전 제작</a></dd>
+			<dt>상품 등록</dt> 
+			<!-- <dd>-<a href="ja2_1.html">이즈마인</a></dd>
+			<dd>-<a href="ja2_2.html">시스템주방</a></dd>
+			<dd>-<a href="ja2_3.html">홈스타일(리바트)</a></dd>
+			<dd>-<a href="ja2_4.html">홈스타일(이즈마인)</a></dd> -->
+
+			<dd>-<a href="ja3_1.html">리바트</a></dd>
+			<dd class="on">-<a href="ja3_2.html">리첸</a></dd>
+			<dd>-<a href="ja3_3.html">네오스</a></dd>
+			<dd>-<a href="ja3_4.html">키친</a></dd>
+			<dd>-<a href="ja3_5.html">키즈</a></dd>
+			<dd>-<a href="ja3_6.html">H-몬도</a></dd>
+
+			<dd>-<a href="ja2_0.html" onclick="">2014 상품기술서 가이드</a></dd> <!--  -->
+
+			<dt>업데이트 내역</dt> 
+			<dd>-<a href="etc1_1.html">개발 세부 내용</a></dd>
+		</dl>
+	</div>
+	<div class="content">
+		<h2>리첸 상품기술서 가이드(Ver Ex)</h2>
+		<form method="get" action="" name="frm">
+			<fieldset>
+				<legend>상품기술서 코딩 가이드</legend>
+
+				<div class="guide">
+					<!-- // 생성영역 -->
+					<h3>공통 설정 영역(수정할때도 필수)</h3>
+					<div id="dev_tbl" class="slt">
+						<table class="tbl">
+							<colgroup>
+								<col width="20%"/>
+								<col width="80%"/>
+							</colgroup>
+							<tr>
+								<th scope="row"><span class="star">*</span> 브랜드+카테고리 영문명</th>
+								<td>
+									<p><input type="text" name="series" tabindex="1" value="matildaseries" style="width:500px;" /></p>
+									<!-- <ul>
+										<li><input type="radio" id="" /><label for="">휴고소파</label></li>
+									</ul> -->
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="star">*</span> 넷하드 상품번호</th>
+								<td>
+									<p><input type="text" name="numb" tabindex="2" value="03" style="width:500px;" /></p>
+									<p class="txt">※ 엑셀파일을 넷하드에 업로드 하셨나요?</p>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<p class="btn">
+						<span class="lnk em"><a href="#dev_all" onclick="excel('dev_all', '202');">Excel로 기술서 생성</a></span>
+					</p>
+					<!-- // 미리보기 영역 -->
+					<h3>제작된 화면 미리보기</h3>
+					<div id="dev_all" class="preview">
+						
+						<p style="margin:0;padding:50px 0; font-weight:bold;font-size:12px;color:blue; text-align:center;">엑셀 파일을 정해진 위치에 넣은 후 상품기술서를 생성하세요!</p>						
+
+					</div>
+					<!-- 미리보기 영역 // -->
+
+					<div id="dev_allC" class="coding">
+						
+						<p style="margin:0;padding:50px 0; font-weight:bold;font-size:12px;color:#666; text-align:center;">코딩이 생성되면 복사하세요.</p>						
+
+					</div>
+
+					<!-- <p class="btn">
+						<span class="lnk em"><a href="#dev_all" onclick="jsCopy('dev_all');">Html 전체복사</a></span> 
+					</p> -->
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+<div class="footer"><h2>Copyright 2016 <strong>Jeon sung ho</strong> All Rights Reserved.</h2></div>
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+@charset "utf-8";
+/*
+.File Name  :  css/common.css
+.Final Editor : 전성호 (2015-03-23 : 최초 작성) 
+*/
+
+/* base
+------------------------------------------------------------------------------------ */
+@font-face{
+	font-family:'Whitney-Bold';
+	src:url(/G_v02/font/Whitney-Bold.eot);
+	src:local(☺),url(/G_v02/font/Whitney-Bold.eot?#iefix) format(embedded-opentype),
+		url(/font/Whitney-Bold.woff) format(woff),
+		url(/font/Whitney-Bold.otf) format(truetype);
+	font-weight:normal;
+	font-style:normal
+}

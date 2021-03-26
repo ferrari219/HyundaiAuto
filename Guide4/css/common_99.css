@@ -1,0 +1,129 @@
+@charset "utf-8";
+/*
+.File Name  :  css/common.css
+.Final Editor : 전성호 (2013-11-12 : 최초 작성) 
+*/
+
+/* base
+------------------------------------------------------------------------------------ */
+html {_overflow-y:scroll; _overflow-x:auto; height:100%;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {padding:0; margin:0;}
+table {border-collapse:collapse; border-spacing:0; empty-cells:show;}
+ol, ul, li {list-style:none;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal; font-size:100%;}
+form, fieldset {border:0;}
+img {border:0; vertical-align:top;}
+address, caption, em {font-weight:normal; font-style:normal;}
+.clear {clear:both;}
+hr {display:none;}
+button {overflow:visible; margin:0; padding:0; border:0 none; background:transparent; cursor:pointer;}
+select, input, option, textarea {vertical-align:middle; font:12px  gulim, "굴림", dotum, "돋움", arial, sans-serif;}
+div.bug {clear:both; height:0; overflow:hidden; margin:0; padding:0;} 
+
+body{font:normal 12px gulim, "굴림";color:#666666;} 
+a{text-decoration:none; font:normal 12px gulim, "굴림"; color:#666666;}
+a:hover{font-weight:bold;}
+.skip {overflow:hidden;position:absolute;top:-5000em; width:0px !important;height:0px !important;  line-height:0; font-size:0; margin:0 !important;padding:0 !important;} 
+legend{display:none;}
+
+/* 공통 */
+.red{font-weight:bold;color:red;}
+.blu{font-weight:bold;color:blue;}
+.gre{font-weight:bold;color:green;}
+span.lnk{display:inline-block;} 
+.lnk > a{display:block; min-width:55px;height:23px; padding:0 7px; background-color:#8a8a8a;border:none; line-height:24px;text-align:center; font-weight:bold;text-decoration:none;color:#fff;}
+.lnk.em > a{display:block; height:23px;padding:10px 20px; background-color:#00C5BF; line-height:38px; font:bold 16px NanumGothic, gulim, sans-serif;}
+.lnk.light > a{display:block; height:23px;padding:10px 20px; background-color:#9a9a9a; line-height:38px; font:bold 16px NanumGothic, gulim, sans-serif;}
+a.lnk{margin-left:10px;color:blue;}
+.tip{color:#999;}
+.btn{padding:15px 0;text-align:center;}
+.star{color:red;}
+.txt{display:block;padding:5px 0; font-size:11px;color:#999;}
+
+/* Top
+------------------------------------------------------------------------------------ */
+.header{position:relative; min-width:980px; height:65px; margin:0 20px; background:url(../img/bg_line.gif) repeat-x center bottom;}
+.header h1{position:absolute;left:20px;top:20px;}
+.header ul{width:340px; margin:0 auto;}
+.header ul li{float:left;}
+.header ul li a{display:block; padding:20px 20px 10px 20px; font:bold 16px NanumGothic, gulim, sans-serif;color:#333;}
+.header ul li a:hover, header nav ul li a:focus, .header ul li.on a{padding:20px 20px 10px 20px; border-bottom:5px solid #008169; color:#008169;}
+.header p{position:absolute;right:20px;top:24px; font-size:11px; letter-spacing:-1px; color:#999;}
+
+
+/* Wrap
+------------------------------------------------------------------------------------ */
+.Wrap{overflow:hidden; position:relative; margin:20px auto; width:1380px;}
+
+/* leftNavi */
+.Wrap .leftNavi{overflow:hidden; float:left; width:200px;min-height:500px;}
+.Wrap .leftNavi h2{padding:10px 0 10px 5px; font:bold 18px NanumGothic, gulim, sans-serif;color:#333;}
+.Wrap .leftNavi dl dt{padding:20px 5px 5px 5px; font:normal  14px NanumGothic, gulim, sans-serif;color:#333;}
+.Wrap .leftNavi dl dd{padding-left:5px;}
+.Wrap .leftNavi dl dd a{display:inline-block;padding:2px 0; font:normal  12px NanumGothic, gulim, sans-serif;color:#999;}
+.Wrap .leftNavi dl dd a:hover, .Wrap .leftNavi ul li a:focus, .Wrap .leftNavi dl dd.on a{font-weight:bold;letter-spacing:-1px;color:blue;text-decoration:underline;}
+
+/* Content */
+.Wrap .content{overflow:hidden; min-height:500px; padding-left:40px; border-left:1px solid #eee;}
+.Wrap .content h2{padding-bottom:10px; font:bold 26px NanumGothic, gulim, sans-serif;color:#494949;}
+.Wrap .content .step dl dt{font:bold 14px NanumGothic, gulim, sans-serif;color:#008169;}
+.Wrap .content .step dl dd{min-height:300px; padding:10px 0 20px 0; font-size:11px;color:#787878;}
+.Wrap .content .step dl dd img{border:1px solid #ccc;}
+.Wrap .content .step dl dd p strong{background:yellow;color:#000;}
+.Wrap .content .step dl dd p.soc{margin:10px 0 20px 0;padding:10px; background:#eee;}
+
+.Wrap .content .tbl {width:100%; border-top:1px solid #333;}
+.Wrap .content .tbl th{padding:10px 15px; background:#eee;border-bottom:1px solid #ccc; text-align:left;}
+.Wrap .content .tbl td{padding:10px; border-bottom:1px solid #ccc;}
+.Wrap .content .tbl td strong{background:red;color:#fff;}
+.Wrap .content .tbl td input[type="text"]{padding:3px; border:1px solid #ddd;}
+.Wrap .content .tbl td input[type="radio"]{vertical-align:middle;margin:-3px 3px -3px -3px;padding:0 0 2px 3px;}
+.Wrap .content .tbl td label{margin-right:10px;}
+
+.Wrap .content .guide{position:relative;}
+.Wrap .content .guide > .fBtn{position:absolute;right:0;top:-40px;}
+.Wrap .content .guide > .fBtn > a{display:inline-block; width:15px;height:15px; padding:7px; background:#fff;border:1px solid #ccc;color:#666; text-align:center; font-size:16px;font-weight:bold;}
+.Wrap .content .guide > dl{width:100%;}
+.Wrap .content .guide > dl dt{margin:30px 0 10px 0; font-weight:bold; }
+.Wrap .content .guide > dl dd.pic{text-align:center;}
+.Wrap .content .guide > dl dd.soc{margin:10px 0 30px 0;padding:10px; background:#eee;border:1px solid #ddd; line-height:150%;}
+.Wrap .content .guide > dl dd.soc > strong{background:red;color:#fff;}
+.Wrap .content .guide > dl dd.soc > em{background:blue;color:#fff;}
+.Wrap .content .guide > dl dd.pic{max-width:100%;margin:0 0 20px 0;}
+.Wrap .content .guide > dl dd.pic img{max-width:100%;}
+.Wrap .content .guide .secLnk p{line-height:200%;}
+
+/* 신규 자사몰 페이지 */
+.Wrap .content .guide h3{padding:15px 0 5px 0;font:bold 14px NanumGothic, gulim, sans-serif;color:#333;}
+.Wrap .content .guide .tbl p{padding:3px 0;}
+.Wrap .content .guide > div{margin-bottom:30px;}
+.Wrap .content .guide .prv{margin:15px auto 0 auto;}
+.Wrap .content .guide .edm{width:710px;}
+.Wrap .content .guide .cde{display:none;}
+
+.Wrap .content .admin{width:100%;}
+.Wrap .content .admin dt{margin:30px 0 10px 0; font-weight:bold; }
+.Wrap .content .admin dd img{border:1px solid #ccc;}
+
+.Wrap .content .preview{overflow:hidden;border-top:3px solid #000 !important; margin:0; padding-top:20px;}
+//.Wrap .content .preview > .pic{display:none;}
+.Wrap .content .coding{clear:both;margin:20px 0 30px 0;padding:10px; background:#eee;border:1px solid #ddd; line-height:150%;}
+
+/* 버젼 안내 페이지 */
+.Wrap .content .version .line{color:#ddd;}
+.Wrap .content .version h3{padding:15px 0 10px 0;font:bold 14px NanumGothic, gulim, sans-serif;color:#333;}
+.Wrap .content .version dl dt{float:left; width:9%; padding:2px 0; line-height;150%;}
+.Wrap .content .version dl dd{float:left; width:89%; padding:2px 0; line-height;150%;}
+
+/* Deal
+------------------------------------------------------------------------------------ */
+.oBox{overflow:hidden; }
+.oBox .oSec a{font-weight:normal; text-decoration:none;}
+
+.typeA{width:100%;height:100%;}
+.typeA td{width:100%;height:100%; vertical-align:middle;}
+
+
+/* Footer
+------------------------------------------------------------------------------------ */
+.footer{margin:0 20px; padding:20px 0 30px 0; border-top:1px solid #eee; text-align:center;}

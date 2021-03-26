@@ -1,0 +1,1273 @@
+@charset "UTF-8";
+/* ============= Grid Setting ============ */
+.point1 {
+  color: #ff4181; }
+
+.point2 {
+  color: #0185e7; }
+
+.point3 {
+  color: #19a7b5; }
+
+h1 {
+  margin-bottom: 0 !important;
+  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+  font-weight: 600;
+  font-size: 49px;
+  letter-spacing: -0.025em;
+  color: #f8f9fa;
+  line-height: 1.4;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic; }
+
+h2 {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+  font-weight: 600;
+  font-size: 46px;
+  letter-spacing: -0.025em;
+  color: #212529;
+  line-height: 1.4; }
+
+h3 {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.025em;
+  color: #495057;
+  line-height: 1.4; }
+
+h4 {
+  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+  font-weight: 0;
+  font-size: 18px;
+  letter-spacing: -0.025em;
+  color: #212529;
+  line-height: 1.4; }
+
+/* ============= Product Detail ============ */
+* {
+  padding: 0;
+  margin: 0; }
+
+.pdtDetail {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+  .pdtDetail * {
+    box-sizing: inherit; }
+
+.price {
+  margin: 1px 0 0 0;
+  padding: 35px 0;
+  background: #1869e7;
+  text-align: center; }
+  .price dl {
+    margin-bottom: 0; }
+  .price dt {
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: -0.025em;
+    color: #f8f9fa;
+    line-height: 1.4; }
+    .price dt .point1,
+    .price dt .point2 {
+      font-style: normal;
+      font-weight: 800;
+      color: #fff; }
+  .price dd {
+    display: block;
+    margin-bottom: 0 !important;
+    padding: 3px 0 0 0;
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+    font-weight: 0;
+    font-size: 20px;
+    letter-spacing: -0.025em;
+    color: #f8f9fa;
+    line-height: 1.4;
+    color: #dae0e5; }
+
+.top .Box {
+  position: relative;
+  z-index: 1;
+  height: 160px;
+  background: #212529;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .top .Box .headBox {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center; }
+    .top .Box .headBox h1 {
+      margin-bottom: 0 !important;
+      line-height: 1.1;
+      color: #ffc90d; }
+      .top .Box .headBox h1 span {
+        font-weight: 400;
+        color: #f8f9fa; }
+    .top .Box .headBox p {
+      padding-top: 1px;
+      font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+      font-weight: 400;
+      font-size: 23px;
+      letter-spacing: -0.025em;
+      color: #dae0e5;
+      line-height: 1.4; }
+
+.top .opt {
+  position: relative; }
+  .top .opt h3 {
+    display: none; }
+  .top .opt p img {
+    max-width: 100%;
+    width: 100%;
+    height: auto; }
+  .top .opt .sup {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -0.025em;
+    color: #f8f9fa;
+    line-height: 1.4; }
+    .top .opt .sup .shadow {
+      text-shadow: #000 5px 5px 5px; }
+  .top .opt .sltOpt {
+    position: absolute;
+    left: 20px;
+    bottom: 0px; }
+    .top .opt .sltOpt ul {
+      list-style: none;
+      display: flex; }
+      .top .opt .sltOpt ul li {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: 20px 10px 20px 0;
+        border-radius: 35px;
+        text-indent: -5000px; }
+        .top .opt .sltOpt ul li span {
+          position: absolute;
+          left: 15px;
+          top: 40px;
+          display: block;
+          width: 32px;
+          height: 22px;
+          background: url(http://172.17.14.220/00_pd/on/01/01_cmn/deco/css_sprites.png) no-repeat -20px -68px;
+          text-indent: -5000px; }
+
+.specBox {
+  padding: 0 20px; }
+  .specBox h2 {
+    display: none; }
+  .specBox h3 {
+    display: none; }
+  .specBox .spec dt {
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+    font-weight: 400;
+    font-size: 27px;
+    letter-spacing: -0.025em;
+    color: #212529;
+    line-height: 1.4; }
+    .specBox .spec dt span {
+      font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+      font-weight: 400;
+      font-size: 19px;
+      letter-spacing: -0.025em;
+      color: #ced4da;
+      line-height: 1.4; }
+  .specBox .spec dd {
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+    font-weight: 400;
+    font-size: 23px;
+    letter-spacing: -0.025em;
+    color: #4d5256;
+    line-height: 1.4; }
+  .specBox .spec .basic1, .specBox .spec .s1, .specBox .spec .s2 {
+    overflow: hidden;
+    height: auto; }
+    .specBox .spec .basic1 dt, .specBox .spec .s1 dt, .specBox .spec .s2 dt {
+      float: left; }
+    .specBox .spec .basic1 dd, .specBox .spec .s1 dd, .specBox .spec .s2 dd {
+      float: left; }
+  .specBox .spec .basic2, .specBox .spec .s1-1, .specBox .spec .series .s1-2, .series .specBox .spec .s1-2, .specBox .spec .product .s1-2, .product .specBox .spec .s1-2, .specBox .spec .detail .s1-2, .detail .specBox .spec .s1-2, .specBox .spec .check .s1-2, .check .specBox .spec .s1-2, .specBox .spec
+  .special .s1-2,
+  .special .specBox .spec .s1-2, .specBox .spec .module .s1-2, .module .specBox .spec .s1-2, .specBox .spec .material .s1-2, .material .specBox .spec .s1-2, .specBox .spec .manual .s1-2, .manual .specBox .spec .s1-2, .specBox .spec .MD .s1-2, .MD .specBox .spec .s1-2, .specBox .spec
+  .guide .s1-2,
+  .guide .specBox .spec .s1-2, .specBox .spec .upgrade .s1-2, .upgrade .specBox .spec .s1-2, .specBox .spec .behind .s1-2, .behind .specBox .spec .s1-2, .specBox .spec .size .s1-2, .size .specBox .spec .s1-2, .specBox .spec .review .s1-2, .review .specBox .spec .s1-2, .specBox .spec
+  .option .s1-2,
+  .option .specBox .spec .s1-2, .specBox .spec .mix .s1-2, .mix .specBox .spec .s1-2, .specBox .spec .intro .s1-2, .intro .specBox .spec .s1-2, .specBox .spec .allT .s1-2, .allT .specBox .spec .s1-2, .specBox .spec .concept .s1-2, .concept .specBox .spec .s1-2, .specBox .spec .s2-1, .specBox .spec .s3-1 {
+    overflow: hidden;
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 25px;
+    border-bottom: 2px solid #f1f1f5; }
+    .specBox .spec .basic2 dt, .specBox .spec .s1-1 dt, .specBox .spec .series .s1-2 dt, .series .specBox .spec .s1-2 dt, .specBox .spec .product .s1-2 dt, .product .specBox .spec .s1-2 dt, .specBox .spec .detail .s1-2 dt, .detail .specBox .spec .s1-2 dt, .specBox .spec .check .s1-2 dt, .check .specBox .spec .s1-2 dt, .specBox .spec
+    .special .s1-2 dt,
+    .special .specBox .spec .s1-2 dt, .specBox .spec .module .s1-2 dt, .module .specBox .spec .s1-2 dt, .specBox .spec .material .s1-2 dt, .material .specBox .spec .s1-2 dt, .specBox .spec .manual .s1-2 dt, .manual .specBox .spec .s1-2 dt, .specBox .spec .MD .s1-2 dt, .MD .specBox .spec .s1-2 dt, .specBox .spec
+    .guide .s1-2 dt,
+    .guide .specBox .spec .s1-2 dt, .specBox .spec .upgrade .s1-2 dt, .upgrade .specBox .spec .s1-2 dt, .specBox .spec .behind .s1-2 dt, .behind .specBox .spec .s1-2 dt, .specBox .spec .size .s1-2 dt, .size .specBox .spec .s1-2 dt, .specBox .spec .review .s1-2 dt, .review .specBox .spec .s1-2 dt, .specBox .spec
+    .option .s1-2 dt,
+    .option .specBox .spec .s1-2 dt, .specBox .spec .mix .s1-2 dt, .mix .specBox .spec .s1-2 dt, .specBox .spec .intro .s1-2 dt, .intro .specBox .spec .s1-2 dt, .specBox .spec .allT .s1-2 dt, .allT .specBox .spec .s1-2 dt, .specBox .spec .concept .s1-2 dt, .concept .specBox .spec .s1-2 dt, .specBox .spec .s2-1 dt, .specBox .spec .s3-1 dt {
+      padding-bottom: 30px;
+      margin-bottom: 0px; }
+    .specBox .spec .basic2 dd, .specBox .spec .s1-1 dd, .specBox .spec .series .s1-2 dd, .series .specBox .spec .s1-2 dd, .specBox .spec .product .s1-2 dd, .product .specBox .spec .s1-2 dd, .specBox .spec .detail .s1-2 dd, .detail .specBox .spec .s1-2 dd, .specBox .spec .check .s1-2 dd, .check .specBox .spec .s1-2 dd, .specBox .spec
+    .special .s1-2 dd,
+    .special .specBox .spec .s1-2 dd, .specBox .spec .module .s1-2 dd, .module .specBox .spec .s1-2 dd, .specBox .spec .material .s1-2 dd, .material .specBox .spec .s1-2 dd, .specBox .spec .manual .s1-2 dd, .manual .specBox .spec .s1-2 dd, .specBox .spec .MD .s1-2 dd, .MD .specBox .spec .s1-2 dd, .specBox .spec
+    .guide .s1-2 dd,
+    .guide .specBox .spec .s1-2 dd, .specBox .spec .upgrade .s1-2 dd, .upgrade .specBox .spec .s1-2 dd, .specBox .spec .behind .s1-2 dd, .behind .specBox .spec .s1-2 dd, .specBox .spec .size .s1-2 dd, .size .specBox .spec .s1-2 dd, .specBox .spec .review .s1-2 dd, .review .specBox .spec .s1-2 dd, .specBox .spec
+    .option .s1-2 dd,
+    .option .specBox .spec .s1-2 dd, .specBox .spec .mix .s1-2 dd, .mix .specBox .spec .s1-2 dd, .specBox .spec .intro .s1-2 dd, .intro .specBox .spec .s1-2 dd, .specBox .spec .allT .s1-2 dd, .allT .specBox .spec .s1-2 dd, .specBox .spec .concept .s1-2 dd, .concept .specBox .spec .s1-2 dd, .specBox .spec .s2-1 dd, .specBox .spec .s3-1 dd {
+      overflow: hidden; }
+  .specBox .spec .s1 {
+    border-bottom: 2px solid #f1f1f5; }
+    .specBox .spec .s1 dt {
+      width: 15%;
+      padding: 25px 0; }
+    .specBox .spec .s1 dd {
+      width: 85%;
+      padding: 25px 0; }
+      .specBox .spec .s1 dd span {
+        display: block;
+        padding-top: 5px;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: -0.025em;
+        color: #ff4181;
+        line-height: 1.4; }
+  .specBox .spec .s2 {
+    border-bottom: 2px solid #f1f1f5; }
+    .specBox .spec .s2 dl {
+      float: left;
+      width: 50%;
+      margin: 25px -1px 25px 0;
+      border-right: 1px solid #f0f0f0; }
+      .specBox .spec .s2 dl dt {
+        position: relative;
+        top: -1px;
+        width: 27%; }
+      .specBox .spec .s2 dl dd {
+        text-align: right;
+        width: 63%;
+        color: #868e96; }
+    .specBox .spec .s2 dl:nth-child(2n) {
+      border-right: none;
+      padding-left: 5%; }
+      .specBox .spec .s2 dl:nth-child(2n) dd {
+        width: 73%; }
+  .specBox .spec .s1-1 dt span, .specBox .spec .series .s1-2 dt span, .series .specBox .spec .s1-2 dt span, .specBox .spec .product .s1-2 dt span, .product .specBox .spec .s1-2 dt span, .specBox .spec .detail .s1-2 dt span, .detail .specBox .spec .s1-2 dt span, .specBox .spec .check .s1-2 dt span, .check .specBox .spec .s1-2 dt span, .specBox .spec
+  .special .s1-2 dt span,
+  .special .specBox .spec .s1-2 dt span, .specBox .spec .module .s1-2 dt span, .module .specBox .spec .s1-2 dt span, .specBox .spec .material .s1-2 dt span, .material .specBox .spec .s1-2 dt span, .specBox .spec .manual .s1-2 dt span, .manual .specBox .spec .s1-2 dt span, .specBox .spec .MD .s1-2 dt span, .MD .specBox .spec .s1-2 dt span, .specBox .spec
+  .guide .s1-2 dt span,
+  .guide .specBox .spec .s1-2 dt span, .specBox .spec .upgrade .s1-2 dt span, .upgrade .specBox .spec .s1-2 dt span, .specBox .spec .behind .s1-2 dt span, .behind .specBox .spec .s1-2 dt span, .specBox .spec .size .s1-2 dt span, .size .specBox .spec .s1-2 dt span, .specBox .spec .review .s1-2 dt span, .review .specBox .spec .s1-2 dt span, .specBox .spec
+  .option .s1-2 dt span,
+  .option .specBox .spec .s1-2 dt span, .specBox .spec .mix .s1-2 dt span, .mix .specBox .spec .s1-2 dt span, .specBox .spec .intro .s1-2 dt span, .intro .specBox .spec .s1-2 dt span, .specBox .spec .allT .s1-2 dt span, .allT .specBox .spec .s1-2 dt span, .specBox .spec .concept .s1-2 dt span, .concept .specBox .spec .s1-2 dt span {
+    float: right;
+    padding-right: 10%; }
+  .specBox .spec .s1-1 dd em, .specBox .spec .series .s1-2 dd em, .series .specBox .spec .s1-2 dd em, .specBox .spec .product .s1-2 dd em, .product .specBox .spec .s1-2 dd em, .specBox .spec .detail .s1-2 dd em, .detail .specBox .spec .s1-2 dd em, .specBox .spec .check .s1-2 dd em, .check .specBox .spec .s1-2 dd em, .specBox .spec
+  .special .s1-2 dd em,
+  .special .specBox .spec .s1-2 dd em, .specBox .spec .module .s1-2 dd em, .module .specBox .spec .s1-2 dd em, .specBox .spec .material .s1-2 dd em, .material .specBox .spec .s1-2 dd em, .specBox .spec .manual .s1-2 dd em, .manual .specBox .spec .s1-2 dd em, .specBox .spec .MD .s1-2 dd em, .MD .specBox .spec .s1-2 dd em, .specBox .spec
+  .guide .s1-2 dd em,
+  .guide .specBox .spec .s1-2 dd em, .specBox .spec .upgrade .s1-2 dd em, .upgrade .specBox .spec .s1-2 dd em, .specBox .spec .behind .s1-2 dd em, .behind .specBox .spec .s1-2 dd em, .specBox .spec .size .s1-2 dd em, .size .specBox .spec .s1-2 dd em, .specBox .spec .review .s1-2 dd em, .review .specBox .spec .s1-2 dd em, .specBox .spec
+  .option .s1-2 dd em,
+  .option .specBox .spec .s1-2 dd em, .specBox .spec .mix .s1-2 dd em, .mix .specBox .spec .s1-2 dd em, .specBox .spec .intro .s1-2 dd em, .intro .specBox .spec .s1-2 dd em, .specBox .spec .allT .s1-2 dd em, .allT .specBox .spec .s1-2 dd em, .specBox .spec .concept .s1-2 dd em, .concept .specBox .spec .s1-2 dd em {
+    float: left;
+    width: 12.4%;
+    margin-right: 3.6%; }
+  .specBox .spec .s1-1 dd .icon, .specBox .spec .series .s1-2 dd .icon, .series .specBox .spec .s1-2 dd .icon, .specBox .spec .product .s1-2 dd .icon, .product .specBox .spec .s1-2 dd .icon, .specBox .spec .detail .s1-2 dd .icon, .detail .specBox .spec .s1-2 dd .icon, .specBox .spec .check .s1-2 dd .icon, .check .specBox .spec .s1-2 dd .icon, .specBox .spec
+  .special .s1-2 dd .icon,
+  .special .specBox .spec .s1-2 dd .icon, .specBox .spec .module .s1-2 dd .icon, .module .specBox .spec .s1-2 dd .icon, .specBox .spec .material .s1-2 dd .icon, .material .specBox .spec .s1-2 dd .icon, .specBox .spec .manual .s1-2 dd .icon, .manual .specBox .spec .s1-2 dd .icon, .specBox .spec .MD .s1-2 dd .icon, .MD .specBox .spec .s1-2 dd .icon, .specBox .spec
+  .guide .s1-2 dd .icon,
+  .guide .specBox .spec .s1-2 dd .icon, .specBox .spec .upgrade .s1-2 dd .icon, .upgrade .specBox .spec .s1-2 dd .icon, .specBox .spec .behind .s1-2 dd .icon, .behind .specBox .spec .s1-2 dd .icon, .specBox .spec .size .s1-2 dd .icon, .size .specBox .spec .s1-2 dd .icon, .specBox .spec .review .s1-2 dd .icon, .review .specBox .spec .s1-2 dd .icon, .specBox .spec
+  .option .s1-2 dd .icon,
+  .option .specBox .spec .s1-2 dd .icon, .specBox .spec .mix .s1-2 dd .icon, .mix .specBox .spec .s1-2 dd .icon, .specBox .spec .intro .s1-2 dd .icon, .intro .specBox .spec .s1-2 dd .icon, .specBox .spec .allT .s1-2 dd .icon, .allT .specBox .spec .s1-2 dd .icon, .specBox .spec .concept .s1-2 dd .icon, .concept .specBox .spec .s1-2 dd .icon {
+    height: 90px;
+    background: url(http://172.17.14.220/00_pd/on/01/01_cmn/deco/css_sprites.png) no-repeat;
+    text-indent: -5000px; }
+  .specBox .spec .s1-1 dd .edge01, .specBox .spec .series .s1-2 dd .edge01, .series .specBox .spec .s1-2 dd .edge01, .specBox .spec .product .s1-2 dd .edge01, .product .specBox .spec .s1-2 dd .edge01, .specBox .spec .detail .s1-2 dd .edge01, .detail .specBox .spec .s1-2 dd .edge01, .specBox .spec .check .s1-2 dd .edge01, .check .specBox .spec .s1-2 dd .edge01, .specBox .spec
+  .special .s1-2 dd .edge01,
+  .special .specBox .spec .s1-2 dd .edge01, .specBox .spec .module .s1-2 dd .edge01, .module .specBox .spec .s1-2 dd .edge01, .specBox .spec .material .s1-2 dd .edge01, .material .specBox .spec .s1-2 dd .edge01, .specBox .spec .manual .s1-2 dd .edge01, .manual .specBox .spec .s1-2 dd .edge01, .specBox .spec .MD .s1-2 dd .edge01, .MD .specBox .spec .s1-2 dd .edge01, .specBox .spec
+  .guide .s1-2 dd .edge01,
+  .guide .specBox .spec .s1-2 dd .edge01, .specBox .spec .upgrade .s1-2 dd .edge01, .upgrade .specBox .spec .s1-2 dd .edge01, .specBox .spec .behind .s1-2 dd .edge01, .behind .specBox .spec .s1-2 dd .edge01, .specBox .spec .size .s1-2 dd .edge01, .size .specBox .spec .s1-2 dd .edge01, .specBox .spec .review .s1-2 dd .edge01, .review .specBox .spec .s1-2 dd .edge01, .specBox .spec
+  .option .s1-2 dd .edge01,
+  .option .specBox .spec .s1-2 dd .edge01, .specBox .spec .mix .s1-2 dd .edge01, .mix .specBox .spec .s1-2 dd .edge01, .specBox .spec .intro .s1-2 dd .edge01, .intro .specBox .spec .s1-2 dd .edge01, .specBox .spec .allT .s1-2 dd .edge01, .allT .specBox .spec .s1-2 dd .edge01, .specBox .spec .concept .s1-2 dd .edge01, .concept .specBox .spec .s1-2 dd .edge01 {
+    background-position: -20px -260px; }
+  .specBox .spec .s1-1 dd .edge02, .specBox .spec .series .s1-2 dd .edge02, .series .specBox .spec .s1-2 dd .edge02, .specBox .spec .product .s1-2 dd .edge02, .product .specBox .spec .s1-2 dd .edge02, .specBox .spec .detail .s1-2 dd .edge02, .detail .specBox .spec .s1-2 dd .edge02, .specBox .spec .check .s1-2 dd .edge02, .check .specBox .spec .s1-2 dd .edge02, .specBox .spec
+  .special .s1-2 dd .edge02,
+  .special .specBox .spec .s1-2 dd .edge02, .specBox .spec .module .s1-2 dd .edge02, .module .specBox .spec .s1-2 dd .edge02, .specBox .spec .material .s1-2 dd .edge02, .material .specBox .spec .s1-2 dd .edge02, .specBox .spec .manual .s1-2 dd .edge02, .manual .specBox .spec .s1-2 dd .edge02, .specBox .spec .MD .s1-2 dd .edge02, .MD .specBox .spec .s1-2 dd .edge02, .specBox .spec
+  .guide .s1-2 dd .edge02,
+  .guide .specBox .spec .s1-2 dd .edge02, .specBox .spec .upgrade .s1-2 dd .edge02, .upgrade .specBox .spec .s1-2 dd .edge02, .specBox .spec .behind .s1-2 dd .edge02, .behind .specBox .spec .s1-2 dd .edge02, .specBox .spec .size .s1-2 dd .edge02, .size .specBox .spec .s1-2 dd .edge02, .specBox .spec .review .s1-2 dd .edge02, .review .specBox .spec .s1-2 dd .edge02, .specBox .spec
+  .option .s1-2 dd .edge02,
+  .option .specBox .spec .s1-2 dd .edge02, .specBox .spec .mix .s1-2 dd .edge02, .mix .specBox .spec .s1-2 dd .edge02, .specBox .spec .intro .s1-2 dd .edge02, .intro .specBox .spec .s1-2 dd .edge02, .specBox .spec .allT .s1-2 dd .edge02, .allT .specBox .spec .s1-2 dd .edge02, .specBox .spec .concept .s1-2 dd .edge02, .concept .specBox .spec .s1-2 dd .edge02 {
+    background-position: -20px -390px; }
+  .specBox .spec .s1-1 dd .custom, .specBox .spec .series .s1-2 dd .custom, .series .specBox .spec .s1-2 dd .custom, .specBox .spec .product .s1-2 dd .custom, .product .specBox .spec .s1-2 dd .custom, .specBox .spec .detail .s1-2 dd .custom, .detail .specBox .spec .s1-2 dd .custom, .specBox .spec .check .s1-2 dd .custom, .check .specBox .spec .s1-2 dd .custom, .specBox .spec
+  .special .s1-2 dd .custom,
+  .special .specBox .spec .s1-2 dd .custom, .specBox .spec .module .s1-2 dd .custom, .module .specBox .spec .s1-2 dd .custom, .specBox .spec .material .s1-2 dd .custom, .material .specBox .spec .s1-2 dd .custom, .specBox .spec .manual .s1-2 dd .custom, .manual .specBox .spec .s1-2 dd .custom, .specBox .spec .MD .s1-2 dd .custom, .MD .specBox .spec .s1-2 dd .custom, .specBox .spec
+  .guide .s1-2 dd .custom,
+  .guide .specBox .spec .s1-2 dd .custom, .specBox .spec .upgrade .s1-2 dd .custom, .upgrade .specBox .spec .s1-2 dd .custom, .specBox .spec .behind .s1-2 dd .custom, .behind .specBox .spec .s1-2 dd .custom, .specBox .spec .size .s1-2 dd .custom, .size .specBox .spec .s1-2 dd .custom, .specBox .spec .review .s1-2 dd .custom, .review .specBox .spec .s1-2 dd .custom, .specBox .spec
+  .option .s1-2 dd .custom,
+  .option .specBox .spec .s1-2 dd .custom, .specBox .spec .mix .s1-2 dd .custom, .mix .specBox .spec .s1-2 dd .custom, .specBox .spec .intro .s1-2 dd .custom, .intro .specBox .spec .s1-2 dd .custom, .specBox .spec .allT .s1-2 dd .custom, .allT .specBox .spec .s1-2 dd .custom, .specBox .spec .concept .s1-2 dd .custom, .concept .specBox .spec .s1-2 dd .custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: -20px -130px;
+    text-indent: 0 !important;
+    text-align: center;
+    font-style: normal;
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: -0.025em;
+    color: #868e96;
+    line-height: 1.4; }
+  .specBox .spec .s1-1 dd ul, .specBox .spec .series .s1-2 dd ul, .series .specBox .spec .s1-2 dd ul, .specBox .spec .product .s1-2 dd ul, .product .specBox .spec .s1-2 dd ul, .specBox .spec .detail .s1-2 dd ul, .detail .specBox .spec .s1-2 dd ul, .specBox .spec .check .s1-2 dd ul, .check .specBox .spec .s1-2 dd ul, .specBox .spec
+  .special .s1-2 dd ul,
+  .special .specBox .spec .s1-2 dd ul, .specBox .spec .module .s1-2 dd ul, .module .specBox .spec .s1-2 dd ul, .specBox .spec .material .s1-2 dd ul, .material .specBox .spec .s1-2 dd ul, .specBox .spec .manual .s1-2 dd ul, .manual .specBox .spec .s1-2 dd ul, .specBox .spec .MD .s1-2 dd ul, .MD .specBox .spec .s1-2 dd ul, .specBox .spec
+  .guide .s1-2 dd ul,
+  .guide .specBox .spec .s1-2 dd ul, .specBox .spec .upgrade .s1-2 dd ul, .upgrade .specBox .spec .s1-2 dd ul, .specBox .spec .behind .s1-2 dd ul, .behind .specBox .spec .s1-2 dd ul, .specBox .spec .size .s1-2 dd ul, .size .specBox .spec .s1-2 dd ul, .specBox .spec .review .s1-2 dd ul, .review .specBox .spec .s1-2 dd ul, .specBox .spec
+  .option .s1-2 dd ul,
+  .option .specBox .spec .s1-2 dd ul, .specBox .spec .mix .s1-2 dd ul, .mix .specBox .spec .s1-2 dd ul, .specBox .spec .intro .s1-2 dd ul, .intro .specBox .spec .s1-2 dd ul, .specBox .spec .allT .s1-2 dd ul, .allT .specBox .spec .s1-2 dd ul, .specBox .spec .concept .s1-2 dd ul, .concept .specBox .spec .s1-2 dd ul {
+    float: left;
+    list-style: none;
+    width: 83%; }
+    .specBox .spec .s1-1 dd ul li, .specBox .spec .series .s1-2 dd ul li, .series .specBox .spec .s1-2 dd ul li, .specBox .spec .product .s1-2 dd ul li, .product .specBox .spec .s1-2 dd ul li, .specBox .spec .detail .s1-2 dd ul li, .detail .specBox .spec .s1-2 dd ul li, .specBox .spec .check .s1-2 dd ul li, .check .specBox .spec .s1-2 dd ul li, .specBox .spec
+    .special .s1-2 dd ul li,
+    .special .specBox .spec .s1-2 dd ul li, .specBox .spec .module .s1-2 dd ul li, .module .specBox .spec .s1-2 dd ul li, .specBox .spec .material .s1-2 dd ul li, .material .specBox .spec .s1-2 dd ul li, .specBox .spec .manual .s1-2 dd ul li, .manual .specBox .spec .s1-2 dd ul li, .specBox .spec .MD .s1-2 dd ul li, .MD .specBox .spec .s1-2 dd ul li, .specBox .spec
+    .guide .s1-2 dd ul li,
+    .guide .specBox .spec .s1-2 dd ul li, .specBox .spec .upgrade .s1-2 dd ul li, .upgrade .specBox .spec .s1-2 dd ul li, .specBox .spec .behind .s1-2 dd ul li, .behind .specBox .spec .s1-2 dd ul li, .specBox .spec .size .s1-2 dd ul li, .size .specBox .spec .s1-2 dd ul li, .specBox .spec .review .s1-2 dd ul li, .review .specBox .spec .s1-2 dd ul li, .specBox .spec
+    .option .s1-2 dd ul li,
+    .option .specBox .spec .s1-2 dd ul li, .specBox .spec .mix .s1-2 dd ul li, .mix .specBox .spec .s1-2 dd ul li, .specBox .spec .intro .s1-2 dd ul li, .intro .specBox .spec .s1-2 dd ul li, .specBox .spec .allT .s1-2 dd ul li, .allT .specBox .spec .s1-2 dd ul li, .specBox .spec .concept .s1-2 dd ul li, .concept .specBox .spec .s1-2 dd ul li {
+      clear: both;
+      overflow: hidden;
+      padding-bottom: 8px;
+      margin-bottom: 0px; }
+      .specBox .spec .s1-1 dd ul li strong, .specBox .spec .series .s1-2 dd ul li strong, .series .specBox .spec .s1-2 dd ul li strong, .specBox .spec .product .s1-2 dd ul li strong, .product .specBox .spec .s1-2 dd ul li strong, .specBox .spec .detail .s1-2 dd ul li strong, .detail .specBox .spec .s1-2 dd ul li strong, .specBox .spec .check .s1-2 dd ul li strong, .check .specBox .spec .s1-2 dd ul li strong, .specBox .spec
+      .special .s1-2 dd ul li strong,
+      .special .specBox .spec .s1-2 dd ul li strong, .specBox .spec .module .s1-2 dd ul li strong, .module .specBox .spec .s1-2 dd ul li strong, .specBox .spec .material .s1-2 dd ul li strong, .material .specBox .spec .s1-2 dd ul li strong, .specBox .spec .manual .s1-2 dd ul li strong, .manual .specBox .spec .s1-2 dd ul li strong, .specBox .spec .MD .s1-2 dd ul li strong, .MD .specBox .spec .s1-2 dd ul li strong, .specBox .spec
+      .guide .s1-2 dd ul li strong,
+      .guide .specBox .spec .s1-2 dd ul li strong, .specBox .spec .upgrade .s1-2 dd ul li strong, .upgrade .specBox .spec .s1-2 dd ul li strong, .specBox .spec .behind .s1-2 dd ul li strong, .behind .specBox .spec .s1-2 dd ul li strong, .specBox .spec .size .s1-2 dd ul li strong, .size .specBox .spec .s1-2 dd ul li strong, .specBox .spec .review .s1-2 dd ul li strong, .review .specBox .spec .s1-2 dd ul li strong, .specBox .spec
+      .option .s1-2 dd ul li strong,
+      .option .specBox .spec .s1-2 dd ul li strong, .specBox .spec .mix .s1-2 dd ul li strong, .mix .specBox .spec .s1-2 dd ul li strong, .specBox .spec .intro .s1-2 dd ul li strong, .intro .specBox .spec .s1-2 dd ul li strong, .specBox .spec .allT .s1-2 dd ul li strong, .allT .specBox .spec .s1-2 dd ul li strong, .specBox .spec .concept .s1-2 dd ul li strong, .concept .specBox .spec .s1-2 dd ul li strong {
+        float: left;
+        overflow: hidden;
+        position: relative;
+        top: 4px;
+        width: 80px;
+        height: 26px;
+        margin-right: 10px;
+        background: #4da9fe;
+        border-radius: 4px;
+        text-align: center;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+        font-weight: 600;
+        font-size: 19px;
+        letter-spacing: -0.025em;
+        color: white;
+        line-height: 1.4; }
+      .specBox .spec .s1-1 dd ul li .let3, .specBox .spec .series .s1-2 dd ul li .let3, .series .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .product .s1-2 dd ul li .let3, .product .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .detail .s1-2 dd ul li .let3, .detail .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .check .s1-2 dd ul li .let3, .check .specBox .spec .s1-2 dd ul li .let3, .specBox .spec
+      .special .s1-2 dd ul li .let3,
+      .special .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .module .s1-2 dd ul li .let3, .module .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .material .s1-2 dd ul li .let3, .material .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .manual .s1-2 dd ul li .let3, .manual .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .MD .s1-2 dd ul li .let3, .MD .specBox .spec .s1-2 dd ul li .let3, .specBox .spec
+      .guide .s1-2 dd ul li .let3,
+      .guide .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .upgrade .s1-2 dd ul li .let3, .upgrade .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .behind .s1-2 dd ul li .let3, .behind .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .size .s1-2 dd ul li .let3, .size .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .review .s1-2 dd ul li .let3, .review .specBox .spec .s1-2 dd ul li .let3, .specBox .spec
+      .option .s1-2 dd ul li .let3,
+      .option .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .mix .s1-2 dd ul li .let3, .mix .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .intro .s1-2 dd ul li .let3, .intro .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .allT .s1-2 dd ul li .let3, .allT .specBox .spec .s1-2 dd ul li .let3, .specBox .spec .concept .s1-2 dd ul li .let3, .concept .specBox .spec .s1-2 dd ul li .let3 {
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+        font-weight: 600;
+        font-size: 17px;
+        letter-spacing: -0.025em;
+        color: white;
+        line-height: 1.4;
+        line-height: 26px; }
+      .specBox .spec .s1-1 dd ul li span, .specBox .spec .series .s1-2 dd ul li span, .series .specBox .spec .s1-2 dd ul li span, .specBox .spec .product .s1-2 dd ul li span, .product .specBox .spec .s1-2 dd ul li span, .specBox .spec .detail .s1-2 dd ul li span, .detail .specBox .spec .s1-2 dd ul li span, .specBox .spec .check .s1-2 dd ul li span, .check .specBox .spec .s1-2 dd ul li span, .specBox .spec
+      .special .s1-2 dd ul li span,
+      .special .specBox .spec .s1-2 dd ul li span, .specBox .spec .module .s1-2 dd ul li span, .module .specBox .spec .s1-2 dd ul li span, .specBox .spec .material .s1-2 dd ul li span, .material .specBox .spec .s1-2 dd ul li span, .specBox .spec .manual .s1-2 dd ul li span, .manual .specBox .spec .s1-2 dd ul li span, .specBox .spec .MD .s1-2 dd ul li span, .MD .specBox .spec .s1-2 dd ul li span, .specBox .spec
+      .guide .s1-2 dd ul li span,
+      .guide .specBox .spec .s1-2 dd ul li span, .specBox .spec .upgrade .s1-2 dd ul li span, .upgrade .specBox .spec .s1-2 dd ul li span, .specBox .spec .behind .s1-2 dd ul li span, .behind .specBox .spec .s1-2 dd ul li span, .specBox .spec .size .s1-2 dd ul li span, .size .specBox .spec .s1-2 dd ul li span, .specBox .spec .review .s1-2 dd ul li span, .review .specBox .spec .s1-2 dd ul li span, .specBox .spec
+      .option .s1-2 dd ul li span,
+      .option .specBox .spec .s1-2 dd ul li span, .specBox .spec .mix .s1-2 dd ul li span, .mix .specBox .spec .s1-2 dd ul li span, .specBox .spec .intro .s1-2 dd ul li span, .intro .specBox .spec .s1-2 dd ul li span, .specBox .spec .allT .s1-2 dd ul li span, .allT .specBox .spec .s1-2 dd ul li span, .specBox .spec .concept .s1-2 dd ul li span, .concept .specBox .spec .s1-2 dd ul li span {
+        float: left;
+        max-width: 85%;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+        font-weight: 0;
+        font-size: 23px;
+        letter-spacing: -0.025em;
+        color: #868e96;
+        line-height: 1.4; }
+  .specBox .spec .s1-1 dd + dd, .specBox .spec .series .s1-2 dd + dd, .series .specBox .spec .s1-2 dd + dd, .specBox .spec .product .s1-2 dd + dd, .product .specBox .spec .s1-2 dd + dd, .specBox .spec .detail .s1-2 dd + dd, .detail .specBox .spec .s1-2 dd + dd, .specBox .spec .check .s1-2 dd + dd, .check .specBox .spec .s1-2 dd + dd, .specBox .spec
+  .special .s1-2 dd + dd,
+  .special .specBox .spec .s1-2 dd + dd, .specBox .spec .module .s1-2 dd + dd, .module .specBox .spec .s1-2 dd + dd, .specBox .spec .material .s1-2 dd + dd, .material .specBox .spec .s1-2 dd + dd, .specBox .spec .manual .s1-2 dd + dd, .manual .specBox .spec .s1-2 dd + dd, .specBox .spec .MD .s1-2 dd + dd, .MD .specBox .spec .s1-2 dd + dd, .specBox .spec
+  .guide .s1-2 dd + dd,
+  .guide .specBox .spec .s1-2 dd + dd, .specBox .spec .upgrade .s1-2 dd + dd, .upgrade .specBox .spec .s1-2 dd + dd, .specBox .spec .behind .s1-2 dd + dd, .behind .specBox .spec .s1-2 dd + dd, .specBox .spec .size .s1-2 dd + dd, .size .specBox .spec .s1-2 dd + dd, .specBox .spec .review .s1-2 dd + dd, .review .specBox .spec .s1-2 dd + dd, .specBox .spec
+  .option .s1-2 dd + dd,
+  .option .specBox .spec .s1-2 dd + dd, .specBox .spec .mix .s1-2 dd + dd, .mix .specBox .spec .s1-2 dd + dd, .specBox .spec .intro .s1-2 dd + dd, .intro .specBox .spec .s1-2 dd + dd, .specBox .spec .allT .s1-2 dd + dd, .allT .specBox .spec .s1-2 dd + dd, .specBox .spec .concept .s1-2 dd + dd, .concept .specBox .spec .s1-2 dd + dd {
+    padding-top: 20px; }
+  .specBox .spec .s2-1 dl {
+    float: left;
+    width: 49.8%;
+    margin-right: -1px;
+    border-right: 1px solid #f0f0f0; }
+    .specBox .spec .s2-1 dl dt {
+      padding-bottom: 25px; }
+      .specBox .spec .s2-1 dl dt span {
+        float: right;
+        padding: 10px 10% 0 0; }
+    .specBox .spec .s2-1 dl dd {
+      margin-bottom: 15px; }
+      .specBox .spec .s2-1 dl dd em {
+        position: relative;
+        top: 3px;
+        float: left;
+        width: 30%;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+        font-weight: 400;
+        font-size: 23px;
+        letter-spacing: -0.025em;
+        color: #868e96;
+        line-height: 1.4;
+        font-style: normal; }
+      .specBox .spec .s2-1 dl dd span {
+        float: left;
+        width: 60%;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+        font-weight: 600;
+        font-size: 23px;
+        letter-spacing: -0.025em;
+        color: #4d5256;
+        line-height: 1.4;
+        text-align: right; }
+    .specBox .spec .s2-1 dl dd + dd {
+      padding-top: 0; }
+  .specBox .spec .s2-1 dl:nth-child(2n) {
+    padding-left: 5%;
+    border-right: none; }
+    .specBox .spec .s2-1 dl:nth-child(2n) dt span {
+      padding-right: 0; }
+    .specBox .spec .s2-1 dl:nth-child(2n) dd span {
+      width: 70%; }
+  .specBox .spec .s3-1 dl {
+    float: left;
+    width: 33%;
+    margin-right: 20px;
+    border-right: 1px solid #f0f0f0; }
+    .specBox .spec .s3-1 dl dt {
+      padding-bottom: 23px; }
+      .specBox .spec .s3-1 dl dt span {
+        float: right;
+        padding: 10px 10% 0 0; }
+    .specBox .spec .s3-1 dl dd {
+      margin-bottom: 13px; }
+      .specBox .spec .s3-1 dl dd em {
+        position: relative;
+        top: 3px;
+        float: left;
+        width: 40%;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+        font-weight: 400;
+        font-size: 23px;
+        letter-spacing: -0.025em;
+        color: #868e96;
+        line-height: 1.4;
+        font-style: normal; }
+      .specBox .spec .s3-1 dl dd span {
+        float: left;
+        width: 50%;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+        font-weight: 600;
+        font-size: 23px;
+        letter-spacing: -0.025em;
+        color: #4d5256;
+        line-height: 1.4;
+        text-align: right; }
+    .specBox .spec .s3-1 dl dd + dd {
+      padding-top: 0; }
+  .specBox .spec .s3-1 dl:nth-child(3n) {
+    width: 28%;
+    margin-right: -1px;
+    padding: 0;
+    border: none; }
+    .specBox .spec .s3-1 dl:nth-child(3n) dt span {
+      padding: 10px 0 0 0; }
+    .specBox .spec .s3-1 dl:nth-child(3n) dd span {
+      width: 59%; }
+  .specBox .spec .size {
+    position: relative; }
+    .specBox .spec .size dt {
+      padding-top: 25px; }
+    .specBox .spec .size dd {
+      min-height: 40px;
+      padding-bottom: 0px;
+      margin-bottom: 50px; }
+      .specBox .spec .size dd img {
+        width: 100%; }
+    .specBox .spec .size ul {
+      list-style: none;
+      font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+      font-weight: 0;
+      font-size: 16px;
+      letter-spacing: -0.025em;
+      color: #495057;
+      line-height: 1.4; }
+      .specBox .spec .size ul li {
+        padding-bottom: 10px; }
+
+.series, .product, .detail, .check,
+.special, .module, .material, .manual, .MD,
+.guide, .upgrade, .behind, .size, .review,
+.option, .mix, .intro, .allT, .concept {
+  padding: 0 20px; }
+  .series h2, .product h2, .detail h2, .check h2,
+  .special h2, .module h2, .material h2, .manual h2, .MD h2,
+  .guide h2, .upgrade h2, .behind h2, .size h2, .review h2,
+  .option h2, .mix h2, .intro h2, .allT h2, .concept h2 {
+    clear: both;
+    margin-top: 80px;
+    padding: 30px 0 20px;
+    border-top: 4px solid #ccc; }
+    .series h2 em, .product h2 em, .detail h2 em, .check h2 em,
+    .special h2 em, .module h2 em, .material h2 em, .manual h2 em, .MD h2 em,
+    .guide h2 em, .upgrade h2 em, .behind h2 em, .size h2 em, .review h2 em,
+    .option h2 em, .mix h2 em, .intro h2 em, .allT h2 em, .concept h2 em {
+      position: relative;
+      left: 0;
+      top: -19px;
+      padding: 10px 0 0 5px;
+      border-top: 8px solid #000;
+      font-style: normal; }
+    .series h2 span, .product h2 span, .detail h2 span, .check h2 span,
+    .special h2 span, .module h2 span, .material h2 span, .manual h2 span, .MD h2 span,
+    .guide h2 span, .upgrade h2 span, .behind h2 span, .size h2 span, .review h2 span,
+    .option h2 span, .mix h2 span, .intro h2 span, .allT h2 span, .concept h2 span {
+      position: relative;
+      left: 0;
+      bottom: 13px;
+      font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+      font-weight: 400;
+      font-size: 18px;
+      letter-spacing: 0;
+      color: #ced4da;
+      line-height: 1.4; }
+  .series dl, .product dl, .detail dl, .check dl,
+  .special dl, .module dl, .material dl, .manual dl, .MD dl,
+  .guide dl, .upgrade dl, .behind dl, .size dl, .review dl,
+  .option dl, .mix dl, .intro dl, .allT dl, .concept dl {
+    padding-bottom: 20px;
+    margin-bottom: 0px; }
+    .series dl dt, .product dl dt, .detail dl dt, .check dl dt,
+    .special dl dt, .module dl dt, .material dl dt, .manual dl dt, .MD dl dt,
+    .guide dl dt, .upgrade dl dt, .behind dl dt, .size dl dt, .review dl dt,
+    .option dl dt, .mix dl dt, .intro dl dt, .allT dl dt, .concept dl dt {
+      padding-bottom: 10px;
+      margin-bottom: 0px;
+      font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+      font-weight: 600;
+      font-size: 32px;
+      letter-spacing: -1.5px;
+      color: #4d5256;
+      line-height: 1.4; }
+    .series dl dd, .product dl dd, .detail dl dd, .check dl dd,
+    .special dl dd, .module dl dd, .material dl dd, .manual dl dd, .MD dl dd,
+    .guide dl dd, .upgrade dl dd, .behind dl dd, .size dl dd, .review dl dd,
+    .option dl dd, .mix dl dd, .intro dl dd, .allT dl dd, .concept dl dd {
+      margin-bottom: 0;
+      font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+      font-weight: 0;
+      font-size: 19px;
+      letter-spacing: -0.025em;
+      color: #868e96;
+      line-height: 1.4; }
+    .series dl .pics, .product dl .pics, .detail dl .pics, .check dl .pics,
+    .special dl .pics, .module dl .pics, .material dl .pics, .manual dl .pics, .MD dl .pics,
+    .guide dl .pics, .upgrade dl .pics, .behind dl .pics, .size dl .pics, .review dl .pics,
+    .option dl .pics, .mix dl .pics, .intro dl .pics, .allT dl .pics, .concept dl .pics {
+      position: relative;
+      margin: 10px 0; }
+      .series dl .pics img, .product dl .pics img, .detail dl .pics img, .check dl .pics img,
+      .special dl .pics img, .module dl .pics img, .material dl .pics img, .manual dl .pics img, .MD dl .pics img,
+      .guide dl .pics img, .upgrade dl .pics img, .behind dl .pics img, .size dl .pics img, .review dl .pics img,
+      .option dl .pics img, .mix dl .pics img, .intro dl .pics img, .allT dl .pics img, .concept dl .pics img {
+        width: 100%; }
+      .series dl .pics span, .product dl .pics span, .detail dl .pics span, .check dl .pics span,
+      .special dl .pics span, .module dl .pics span, .material dl .pics span, .manual dl .pics span, .MD dl .pics span,
+      .guide dl .pics span, .upgrade dl .pics span, .behind dl .pics span, .size dl .pics span, .review dl .pics span,
+      .option dl .pics span, .mix dl .pics span, .intro dl .pics span, .allT dl .pics span, .concept dl .pics span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: black;
+        padding: 5px 10px;
+        font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0;
+        color: #fff;
+        line-height: 1.4; }
+  .series .pic, .product .pic, .detail .pic, .check .pic,
+  .special .pic, .module .pic, .material .pic, .manual .pic, .MD .pic,
+  .guide .pic, .upgrade .pic, .behind .pic, .size .pic, .review .pic,
+  .option .pic, .mix .pic, .intro .pic, .allT .pic, .concept .pic {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    .series .pic span, .product .pic span, .detail .pic span, .check .pic span,
+    .special .pic span, .module .pic span, .material .pic span, .manual .pic span, .MD .pic span,
+    .guide .pic span, .upgrade .pic span, .behind .pic span, .size .pic span, .review .pic span,
+    .option .pic span, .mix .pic span, .intro .pic span, .allT .pic span, .concept .pic span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: black;
+      padding: 5px 10px;
+      font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0;
+      color: #fff;
+      line-height: 1.4; }
+  .series .subTxt, .product .subTxt, .detail .subTxt, .check .subTxt,
+  .special .subTxt, .module .subTxt, .material .subTxt, .manual .subTxt, .MD .subTxt,
+  .guide .subTxt, .upgrade .subTxt, .behind .subTxt, .size .subTxt, .review .subTxt,
+  .option .subTxt, .mix .subTxt, .intro .subTxt, .allT .subTxt, .concept .subTxt {
+    padding-bottom: 20px;
+    font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "\B098\B214\ACE0\B515", "NanumGothic", "sans-serif";
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.025em;
+    color: #adb5bd;
+    line-height: 1.4;
+    line-height: 140%; }
+  .series .custom, .product .custom, .detail .custom, .check .custom,
+  .special .custom, .module .custom, .material .custom, .manual .custom, .MD .custom,
+  .guide .custom, .upgrade .custom, .behind .custom, .size .custom, .review .custom,
+  .option .custom, .mix .custom, .intro .custom, .allT .custom, .concept .custom {
+    padding-bottom: 0px;
+    margin-bottom: 30px;
+    background: #2E91DD; }
+    .series .custom .point1,
+    .series .custom .point2, .product .custom .point1,
+    .product .custom .point2, .detail .custom .point1,
+    .detail .custom .point2, .check .custom .point1,
+    .check .custom .point2,
+    .special .custom .point1,
+    .special .custom .point2, .module .custom .point1,
+    .module .custom .point2, .material .custom .point1,
+    .material .custom .point2, .manual .custom .point1,
+    .manual .custom .point2, .MD .custom .point1,
+    .MD .custom .point2,
+    .guide .custom .point1,
+    .guide .custom .point2, .upgrade .custom .point1,
+    .upgrade .custom .point2, .behind .custom .point1,
+    .behind .custom .point2, .size .custom .point1,
+    .size .custom .point2, .review .custom .point1,
+    .review .custom .point2,
+    .option .custom .point1,
+    .option .custom .point2, .mix .custom .point1,
+    .mix .custom .point2, .intro .custom .point1,
+    .intro .custom .point2, .allT .custom .point1,
+    .allT .custom .point2, .concept .custom .point1,
+    .concept .custom .point2 {
+      color: #b2d6f2; }
+    .series .custom h3, .product .custom h3, .detail .custom h3, .check .custom h3,
+    .special .custom h3, .module .custom h3, .material .custom h3, .manual .custom h3, .MD .custom h3,
+    .guide .custom h3, .upgrade .custom h3, .behind .custom h3, .size .custom h3, .review .custom h3,
+    .option .custom h3, .mix .custom h3, .intro .custom h3, .allT .custom h3, .concept .custom h3 {
+      color: #fff;
+      text-align: center; }
+    .series .custom .boxWrapper, .product .custom .boxWrapper, .detail .custom .boxWrapper, .check .custom .boxWrapper,
+    .special .custom .boxWrapper, .module .custom .boxWrapper, .material .custom .boxWrapper, .manual .custom .boxWrapper, .MD .custom .boxWrapper,
+    .guide .custom .boxWrapper, .upgrade .custom .boxWrapper, .behind .custom .boxWrapper, .size .custom .boxWrapper, .review .custom .boxWrapper,
+    .option .custom .boxWrapper, .mix .custom .boxWrapper, .intro .custom .boxWrapper, .allT .custom .boxWrapper, .concept .custom .boxWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .series .custom .boxWrapper dl, .product .custom .boxWrapper dl, .detail .custom .boxWrapper dl, .check .custom .boxWrapper dl,
+      .special .custom .boxWrapper dl, .module .custom .boxWrapper dl, .material .custom .boxWrapper dl, .manual .custom .boxWrapper dl, .MD .custom .boxWrapper dl,
+      .guide .custom .boxWrapper dl, .upgrade .custom .boxWrapper dl, .behind .custom .boxWrapper dl, .size .custom .boxWrapper dl, .review .custom .boxWrapper dl,
+      .option .custom .boxWrapper dl, .mix .custom .boxWrapper dl, .intro .custom .boxWrapper dl, .allT .custom .boxWrapper dl, .concept .custom .boxWrapper dl {
+        margin: 20px 10px;
+        padding: 20px;
+        border: 1px solid #fff; }
+        .series .custom .boxWrapper dl dt, .product .custom .boxWrapper dl dt, .detail .custom .boxWrapper dl dt, .check .custom .boxWrapper dl dt,
+        .special .custom .boxWrapper dl dt, .module .custom .boxWrapper dl dt, .material .custom .boxWrapper dl dt, .manual .custom .boxWrapper dl dt, .MD .custom .boxWrapper dl dt,
+        .guide .custom .boxWrapper dl dt, .upgrade .custom .boxWrapper dl dt, .behind .custom .boxWrapper dl dt, .size .custom .boxWrapper dl dt, .review .custom .boxWrapper dl dt,
+        .option .custom .boxWrapper dl dt, .mix .custom .boxWrapper dl dt, .intro .custom .boxWrapper dl dt, .allT .custom .boxWrapper dl dt, .concept .custom .boxWrapper dl dt {
+          color: #fff; }
+        .series .custom .boxWrapper dl dd, .product .custom .boxWrapper dl dd, .detail .custom .boxWrapper dl dd, .check .custom .boxWrapper dl dd,
+        .special .custom .boxWrapper dl dd, .module .custom .boxWrapper dl dd, .material .custom .boxWrapper dl dd, .manual .custom .boxWrapper dl dd, .MD .custom .boxWrapper dl dd,
+        .guide .custom .boxWrapper dl dd, .upgrade .custom .boxWrapper dl dd, .behind .custom .boxWrapper dl dd, .size .custom .boxWrapper dl dd, .review .custom .boxWrapper dl dd,
+        .option .custom .boxWrapper dl dd, .mix .custom .boxWrapper dl dd, .intro .custom .boxWrapper dl dd, .allT .custom .boxWrapper dl dd, .concept .custom .boxWrapper dl dd {
+          color: #fff; }
+    .series .custom .subTxt, .product .custom .subTxt, .detail .custom .subTxt, .check .custom .subTxt,
+    .special .custom .subTxt, .module .custom .subTxt, .material .custom .subTxt, .manual .custom .subTxt, .MD .custom .subTxt,
+    .guide .custom .subTxt, .upgrade .custom .subTxt, .behind .custom .subTxt, .size .custom .subTxt, .review .custom .subTxt,
+    .option .custom .subTxt, .mix .custom .subTxt, .intro .custom .subTxt, .allT .custom .subTxt, .concept .custom .subTxt {
+      color: #fff;
+      text-align: center; }
+    .series .custom .pic, .product .custom .pic, .detail .custom .pic, .check .custom .pic,
+    .special .custom .pic, .module .custom .pic, .material .custom .pic, .manual .custom .pic, .MD .custom .pic,
+    .guide .custom .pic, .upgrade .custom .pic, .behind .custom .pic, .size .custom .pic, .review .custom .pic,
+    .option .custom .pic, .mix .custom .pic, .intro .custom .pic, .allT .custom .pic, .concept .custom .pic {
+      clear: both; }
+  .series .gray, .product .gray, .detail .gray, .check .gray,
+  .special .gray, .module .gray, .material .gray, .manual .gray, .MD .gray,
+  .guide .gray, .upgrade .gray, .behind .gray, .size .gray, .review .gray,
+  .option .gray, .mix .gray, .intro .gray, .allT .gray, .concept .gray {
+    background: #f4f4f4; }
+    .series .gray .text h3, .product .gray .text h3, .detail .gray .text h3, .check .gray .text h3,
+    .special .gray .text h3, .module .gray .text h3, .material .gray .text h3, .manual .gray .text h3, .MD .gray .text h3,
+    .guide .gray .text h3, .upgrade .gray .text h3, .behind .gray .text h3, .size .gray .text h3, .review .gray .text h3,
+    .option .gray .text h3, .mix .gray .text h3, .intro .gray .text h3, .allT .gray .text h3, .concept .gray .text h3 {
+      color: #5b5b5b; }
+    .series .gray .text dt, .product .gray .text dt, .detail .gray .text dt, .check .gray .text dt,
+    .special .gray .text dt, .module .gray .text dt, .material .gray .text dt, .manual .gray .text dt, .MD .gray .text dt,
+    .guide .gray .text dt, .upgrade .gray .text dt, .behind .gray .text dt, .size .gray .text dt, .review .gray .text dt,
+    .option .gray .text dt, .mix .gray .text dt, .intro .gray .text dt, .allT .gray .text dt, .concept .gray .text dt {
+      color: #282828; }
+    .series .gray .text dd, .product .gray .text dd, .detail .gray .text dd, .check .gray .text dd,
+    .special .gray .text dd, .module .gray .text dd, .material .gray .text dd, .manual .gray .text dd, .MD .gray .text dd,
+    .guide .gray .text dd, .upgrade .gray .text dd, .behind .gray .text dd, .size .gray .text dd, .review .gray .text dd,
+    .option .gray .text dd, .mix .gray .text dd, .intro .gray .text dd, .allT .gray .text dd, .concept .gray .text dd {
+      color: #5b5b5b; }
+    .series .gray .text .subTxt, .product .gray .text .subTxt, .detail .gray .text .subTxt, .check .gray .text .subTxt,
+    .special .gray .text .subTxt, .module .gray .text .subTxt, .material .gray .text .subTxt, .manual .gray .text .subTxt, .MD .gray .text .subTxt,
+    .guide .gray .text .subTxt, .upgrade .gray .text .subTxt, .behind .gray .text .subTxt, .size .gray .text .subTxt, .review .gray .text .subTxt,
+    .option .gray .text .subTxt, .mix .gray .text .subTxt, .intro .gray .text .subTxt, .allT .gray .text .subTxt, .concept .gray .text .subTxt {
+      color: #757575; }
+    .series .gray .text .point1,
+    .series .gray .text .point2, .product .gray .text .point1,
+    .product .gray .text .point2, .detail .gray .text .point1,
+    .detail .gray .text .point2, .check .gray .text .point1,
+    .check .gray .text .point2,
+    .special .gray .text .point1,
+    .special .gray .text .point2, .module .gray .text .point1,
+    .module .gray .text .point2, .material .gray .text .point1,
+    .material .gray .text .point2, .manual .gray .text .point1,
+    .manual .gray .text .point2, .MD .gray .text .point1,
+    .MD .gray .text .point2,
+    .guide .gray .text .point1,
+    .guide .gray .text .point2, .upgrade .gray .text .point1,
+    .upgrade .gray .text .point2, .behind .gray .text .point1,
+    .behind .gray .text .point2, .size .gray .text .point1,
+    .size .gray .text .point2, .review .gray .text .point1,
+    .review .gray .text .point2,
+    .option .gray .text .point1,
+    .option .gray .text .point2, .mix .gray .text .point1,
+    .mix .gray .text .point2, .intro .gray .text .point1,
+    .intro .gray .text .point2, .allT .gray .text .point1,
+    .allT .gray .text .point2, .concept .gray .text .point1,
+    .concept .gray .text .point2 {
+      color: #282828; }
+  .series .beige, .product .beige, .detail .beige, .check .beige,
+  .special .beige, .module .beige, .material .beige, .manual .beige, .MD .beige,
+  .guide .beige, .upgrade .beige, .behind .beige, .size .beige, .review .beige,
+  .option .beige, .mix .beige, .intro .beige, .allT .beige, .concept .beige {
+    background: #f6f3f0; }
+    .series .beige .text h3, .product .beige .text h3, .detail .beige .text h3, .check .beige .text h3,
+    .special .beige .text h3, .module .beige .text h3, .material .beige .text h3, .manual .beige .text h3, .MD .beige .text h3,
+    .guide .beige .text h3, .upgrade .beige .text h3, .behind .beige .text h3, .size .beige .text h3, .review .beige .text h3,
+    .option .beige .text h3, .mix .beige .text h3, .intro .beige .text h3, .allT .beige .text h3, .concept .beige .text h3 {
+      color: #715a44; }
+    .series .beige .text dt, .product .beige .text dt, .detail .beige .text dt, .check .beige .text dt,
+    .special .beige .text dt, .module .beige .text dt, .material .beige .text dt, .manual .beige .text dt, .MD .beige .text dt,
+    .guide .beige .text dt, .upgrade .beige .text dt, .behind .beige .text dt, .size .beige .text dt, .review .beige .text dt,
+    .option .beige .text dt, .mix .beige .text dt, .intro .beige .text dt, .allT .beige .text dt, .concept .beige .text dt {
+      color: #31271d; }
+    .series .beige .text dd, .product .beige .text dd, .detail .beige .text dd, .check .beige .text dd,
+    .special .beige .text dd, .module .beige .text dd, .material .beige .text dd, .manual .beige .text dd, .MD .beige .text dd,
+    .guide .beige .text dd, .upgrade .beige .text dd, .behind .beige .text dd, .size .beige .text dd, .review .beige .text dd,
+    .option .beige .text dd, .mix .beige .text dd, .intro .beige .text dd, .allT .beige .text dd, .concept .beige .text dd {
+      color: #715a44; }
+    .series .beige .text .subTxt, .product .beige .text .subTxt, .detail .beige .text .subTxt, .check .beige .text .subTxt,
+    .special .beige .text .subTxt, .module .beige .text .subTxt, .material .beige .text .subTxt, .manual .beige .text .subTxt, .MD .beige .text .subTxt,
+    .guide .beige .text .subTxt, .upgrade .beige .text .subTxt, .behind .beige .text .subTxt, .size .beige .text .subTxt, .review .beige .text .subTxt,
+    .option .beige .text .subTxt, .mix .beige .text .subTxt, .intro .beige .text .subTxt, .allT .beige .text .subTxt, .concept .beige .text .subTxt {
+      color: #907457; }
+    .series .beige .text .point1,
+    .series .beige .text .point2, .product .beige .text .point1,
+    .product .beige .text .point2, .detail .beige .text .point1,
+    .detail .beige .text .point2, .check .beige .text .point1,
+    .check .beige .text .point2,
+    .special .beige .text .point1,
+    .special .beige .text .point2, .module .beige .text .point1,
+    .module .beige .text .point2, .material .beige .text .point1,
+    .material .beige .text .point2, .manual .beige .text .point1,
+    .manual .beige .text .point2, .MD .beige .text .point1,
+    .MD .beige .text .point2,
+    .guide .beige .text .point1,
+    .guide .beige .text .point2, .upgrade .beige .text .point1,
+    .upgrade .beige .text .point2, .behind .beige .text .point1,
+    .behind .beige .text .point2, .size .beige .text .point1,
+    .size .beige .text .point2, .review .beige .text .point1,
+    .review .beige .text .point2,
+    .option .beige .text .point1,
+    .option .beige .text .point2, .mix .beige .text .point1,
+    .mix .beige .text .point2, .intro .beige .text .point1,
+    .intro .beige .text .point2, .allT .beige .text .point1,
+    .allT .beige .text .point2, .concept .beige .text .point1,
+    .concept .beige .text .point2 {
+      color: #31271d; }
+  .series .black, .product .black, .detail .black, .check .black,
+  .special .black, .module .black, .material .black, .manual .black, .MD .black,
+  .guide .black, .upgrade .black, .behind .black, .size .black, .review .black,
+  .option .black, .mix .black, .intro .black, .allT .black, .concept .black {
+    background: #262626; }
+    .series .black .text h3, .product .black .text h3, .detail .black .text h3, .check .black .text h3,
+    .special .black .text h3, .module .black .text h3, .material .black .text h3, .manual .black .text h3, .MD .black .text h3,
+    .guide .black .text h3, .upgrade .black .text h3, .behind .black .text h3, .size .black .text h3, .review .black .text h3,
+    .option .black .text h3, .mix .black .text h3, .intro .black .text h3, .allT .black .text h3, .concept .black .text h3 {
+      color: #868e96 !important; }
+    .series .black .text dt, .product .black .text dt, .detail .black .text dt, .check .black .text dt,
+    .special .black .text dt, .module .black .text dt, .material .black .text dt, .manual .black .text dt, .MD .black .text dt,
+    .guide .black .text dt, .upgrade .black .text dt, .behind .black .text dt, .size .black .text dt, .review .black .text dt,
+    .option .black .text dt, .mix .black .text dt, .intro .black .text dt, .allT .black .text dt, .concept .black .text dt {
+      color: #f1f3f5 !important; }
+    .series .black .text dd, .product .black .text dd, .detail .black .text dd, .check .black .text dd,
+    .special .black .text dd, .module .black .text dd, .material .black .text dd, .manual .black .text dd, .MD .black .text dd,
+    .guide .black .text dd, .upgrade .black .text dd, .behind .black .text dd, .size .black .text dd, .review .black .text dd,
+    .option .black .text dd, .mix .black .text dd, .intro .black .text dd, .allT .black .text dd, .concept .black .text dd {
+      color: #adb5bd !important; }
+    .series .black .text .subTxt, .product .black .text .subTxt, .detail .black .text .subTxt, .check .black .text .subTxt,
+    .special .black .text .subTxt, .module .black .text .subTxt, .material .black .text .subTxt, .manual .black .text .subTxt, .MD .black .text .subTxt,
+    .guide .black .text .subTxt, .upgrade .black .text .subTxt, .behind .black .text .subTxt, .size .black .text .subTxt, .review .black .text .subTxt,
+    .option .black .text .subTxt, .mix .black .text .subTxt, .intro .black .text .subTxt, .allT .black .text .subTxt, .concept .black .text .subTxt {
+      color: #868e96 !important; }
+  .series .s1-1, .series .s1-2, .product .s1-1, .product .s1-2, .detail .s1-1, .detail .s1-2, .check .s1-1, .check .s1-2,
+  .special .s1-1, .special .s1-2, .module .s1-1, .module .s1-2, .material .s1-1, .material .s1-2, .manual .s1-1, .manual .s1-2, .MD .s1-1, .MD .s1-2,
+  .guide .s1-1, .guide .s1-2, .upgrade .s1-1, .upgrade .s1-2, .behind .s1-1, .behind .s1-2, .size .s1-1, .size .s1-2, .review .s1-1, .review .s1-2,
+  .option .s1-1, .option .s1-2, .mix .s1-1, .mix .s1-2, .intro .s1-1, .intro .s1-2, .allT .s1-1, .allT .s1-2, .concept .s1-1, .concept .s1-2 {
+    clear: both;
+    padding-bottom: 0px;
+    margin-bottom: 30px; }
+    .series .s1-1 .text, .series .s1-2 .text, .product .s1-1 .text, .product .s1-2 .text, .detail .s1-1 .text, .detail .s1-2 .text, .check .s1-1 .text, .check .s1-2 .text,
+    .special .s1-1 .text, .special .s1-2 .text, .module .s1-1 .text, .module .s1-2 .text, .material .s1-1 .text, .material .s1-2 .text, .manual .s1-1 .text, .manual .s1-2 .text, .MD .s1-1 .text, .MD .s1-2 .text,
+    .guide .s1-1 .text, .guide .s1-2 .text, .upgrade .s1-1 .text, .upgrade .s1-2 .text, .behind .s1-1 .text, .behind .s1-2 .text, .size .s1-1 .text, .size .s1-2 .text, .review .s1-1 .text, .review .s1-2 .text,
+    .option .s1-1 .text, .option .s1-2 .text, .mix .s1-1 .text, .mix .s1-2 .text, .intro .s1-1 .text, .intro .s1-2 .text, .allT .s1-1 .text, .allT .s1-2 .text, .concept .s1-1 .text, .concept .s1-2 .text {
+      padding: 10px 0 0 0; }
+      .series .s1-1 .text h3, .series .s1-2 .text h3, .product .s1-1 .text h3, .product .s1-2 .text h3, .detail .s1-1 .text h3, .detail .s1-2 .text h3, .check .s1-1 .text h3, .check .s1-2 .text h3,
+      .special .s1-1 .text h3, .special .s1-2 .text h3, .module .s1-1 .text h3, .module .s1-2 .text h3, .material .s1-1 .text h3, .material .s1-2 .text h3, .manual .s1-1 .text h3, .manual .s1-2 .text h3, .MD .s1-1 .text h3, .MD .s1-2 .text h3,
+      .guide .s1-1 .text h3, .guide .s1-2 .text h3, .upgrade .s1-1 .text h3, .upgrade .s1-2 .text h3, .behind .s1-1 .text h3, .behind .s1-2 .text h3, .size .s1-1 .text h3, .size .s1-2 .text h3, .review .s1-1 .text h3, .review .s1-2 .text h3,
+      .option .s1-1 .text h3, .option .s1-2 .text h3, .mix .s1-1 .text h3, .mix .s1-2 .text h3, .intro .s1-1 .text h3, .intro .s1-2 .text h3, .allT .s1-1 .text h3, .allT .s1-2 .text h3, .concept .s1-1 .text h3, .concept .s1-2 .text h3 {
+        padding-bottom: 0px;
+        margin-bottom: 0; }
+      .series .s1-1 .text .subTxt, .series .s1-2 .text .subTxt, .product .s1-1 .text .subTxt, .product .s1-2 .text .subTxt, .detail .s1-1 .text .subTxt, .detail .s1-2 .text .subTxt, .check .s1-1 .text .subTxt, .check .s1-2 .text .subTxt,
+      .special .s1-1 .text .subTxt, .special .s1-2 .text .subTxt, .module .s1-1 .text .subTxt, .module .s1-2 .text .subTxt, .material .s1-1 .text .subTxt, .material .s1-2 .text .subTxt, .manual .s1-1 .text .subTxt, .manual .s1-2 .text .subTxt, .MD .s1-1 .text .subTxt, .MD .s1-2 .text .subTxt,
+      .guide .s1-1 .text .subTxt, .guide .s1-2 .text .subTxt, .upgrade .s1-1 .text .subTxt, .upgrade .s1-2 .text .subTxt, .behind .s1-1 .text .subTxt, .behind .s1-2 .text .subTxt, .size .s1-1 .text .subTxt, .size .s1-2 .text .subTxt, .review .s1-1 .text .subTxt, .review .s1-2 .text .subTxt,
+      .option .s1-1 .text .subTxt, .option .s1-2 .text .subTxt, .mix .s1-1 .text .subTxt, .mix .s1-2 .text .subTxt, .intro .s1-1 .text .subTxt, .intro .s1-2 .text .subTxt, .allT .s1-1 .text .subTxt, .allT .s1-2 .text .subTxt, .concept .s1-1 .text .subTxt, .concept .s1-2 .text .subTxt {
+        margin-bottom: 0;
+        padding-bottom: 20px; }
+    .series .s1-1 .pic img, .series .s1-2 .pic img, .product .s1-1 .pic img, .product .s1-2 .pic img, .detail .s1-1 .pic img, .detail .s1-2 .pic img, .check .s1-1 .pic img, .check .s1-2 .pic img,
+    .special .s1-1 .pic img, .special .s1-2 .pic img, .module .s1-1 .pic img, .module .s1-2 .pic img, .material .s1-1 .pic img, .material .s1-2 .pic img, .manual .s1-1 .pic img, .manual .s1-2 .pic img, .MD .s1-1 .pic img, .MD .s1-2 .pic img,
+    .guide .s1-1 .pic img, .guide .s1-2 .pic img, .upgrade .s1-1 .pic img, .upgrade .s1-2 .pic img, .behind .s1-1 .pic img, .behind .s1-2 .pic img, .size .s1-1 .pic img, .size .s1-2 .pic img, .review .s1-1 .pic img, .review .s1-2 .pic img,
+    .option .s1-1 .pic img, .option .s1-2 .pic img, .mix .s1-1 .pic img, .mix .s1-2 .pic img, .intro .s1-1 .pic img, .intro .s1-2 .pic img, .allT .s1-1 .pic img, .allT .s1-2 .pic img, .concept .s1-1 .pic img, .concept .s1-2 .pic img {
+      width: 100%; }
+  .series .s1-2, .product .s1-2, .detail .s1-2, .check .s1-2,
+  .special .s1-2, .module .s1-2, .material .s1-2, .manual .s1-2, .MD .s1-2,
+  .guide .s1-2, .upgrade .s1-2, .behind .s1-2, .size .s1-2, .review .s1-2,
+  .option .s1-2, .mix .s1-2, .intro .s1-2, .allT .s1-2, .concept .s1-2 {
+    margin-bottom: 10px; }
+    .series .s1-2 .text, .product .s1-2 .text, .detail .s1-2 .text, .check .s1-2 .text,
+    .special .s1-2 .text, .module .s1-2 .text, .material .s1-2 .text, .manual .s1-2 .text, .MD .s1-2 .text,
+    .guide .s1-2 .text, .upgrade .s1-2 .text, .behind .s1-2 .text, .size .s1-2 .text, .review .s1-2 .text,
+    .option .s1-2 .text, .mix .s1-2 .text, .intro .s1-2 .text, .allT .s1-2 .text, .concept .s1-2 .text {
+      padding: 11px 0 0 0; }
+  .series .s1-1.beige, .series .beige.s1-2,
+  .series .s1-1.black, .series .black.s1-2,
+  .series .s1-1.gray, .series .gray.s1-2,
+  .series .s1-2.beige,
+  .series .s1-2.black,
+  .series .s1-2.gray,
+  .series .custom, .product .s1-1.beige, .product .beige.s1-2,
+  .product .s1-1.black, .product .black.s1-2,
+  .product .s1-1.gray, .product .gray.s1-2,
+  .product .s1-2.beige,
+  .product .s1-2.black,
+  .product .s1-2.gray,
+  .product .custom, .detail .s1-1.beige, .detail .beige.s1-2,
+  .detail .s1-1.black, .detail .black.s1-2,
+  .detail .s1-1.gray, .detail .gray.s1-2,
+  .detail .s1-2.beige,
+  .detail .s1-2.black,
+  .detail .s1-2.gray,
+  .detail .custom, .check .s1-1.beige, .check .beige.s1-2,
+  .check .s1-1.black, .check .black.s1-2,
+  .check .s1-1.gray, .check .gray.s1-2,
+  .check .s1-2.beige,
+  .check .s1-2.black,
+  .check .s1-2.gray,
+  .check .custom,
+  .special .s1-1.beige, .special .beige.s1-2,
+  .special .s1-1.black, .special .black.s1-2,
+  .special .s1-1.gray, .special .gray.s1-2,
+  .special .s1-2.beige,
+  .special .s1-2.black,
+  .special .s1-2.gray,
+  .special .custom, .module .s1-1.beige, .module .beige.s1-2,
+  .module .s1-1.black, .module .black.s1-2,
+  .module .s1-1.gray, .module .gray.s1-2,
+  .module .s1-2.beige,
+  .module .s1-2.black,
+  .module .s1-2.gray,
+  .module .custom, .material .s1-1.beige, .material .beige.s1-2,
+  .material .s1-1.black, .material .black.s1-2,
+  .material .s1-1.gray, .material .gray.s1-2,
+  .material .s1-2.beige,
+  .material .s1-2.black,
+  .material .s1-2.gray,
+  .material .custom, .manual .s1-1.beige, .manual .beige.s1-2,
+  .manual .s1-1.black, .manual .black.s1-2,
+  .manual .s1-1.gray, .manual .gray.s1-2,
+  .manual .s1-2.beige,
+  .manual .s1-2.black,
+  .manual .s1-2.gray,
+  .manual .custom, .MD .s1-1.beige, .MD .beige.s1-2,
+  .MD .s1-1.black, .MD .black.s1-2,
+  .MD .s1-1.gray, .MD .gray.s1-2,
+  .MD .s1-2.beige,
+  .MD .s1-2.black,
+  .MD .s1-2.gray,
+  .MD .custom,
+  .guide .s1-1.beige, .guide .beige.s1-2,
+  .guide .s1-1.black, .guide .black.s1-2,
+  .guide .s1-1.gray, .guide .gray.s1-2,
+  .guide .s1-2.beige,
+  .guide .s1-2.black,
+  .guide .s1-2.gray,
+  .guide .custom, .upgrade .s1-1.beige, .upgrade .beige.s1-2,
+  .upgrade .s1-1.black, .upgrade .black.s1-2,
+  .upgrade .s1-1.gray, .upgrade .gray.s1-2,
+  .upgrade .s1-2.beige,
+  .upgrade .s1-2.black,
+  .upgrade .s1-2.gray,
+  .upgrade .custom, .behind .s1-1.beige, .behind .beige.s1-2,
+  .behind .s1-1.black, .behind .black.s1-2,
+  .behind .s1-1.gray, .behind .gray.s1-2,
+  .behind .s1-2.beige,
+  .behind .s1-2.black,
+  .behind .s1-2.gray,
+  .behind .custom, .size .s1-1.beige, .size .beige.s1-2,
+  .size .s1-1.black, .size .black.s1-2,
+  .size .s1-1.gray, .size .gray.s1-2,
+  .size .s1-2.beige,
+  .size .s1-2.black,
+  .size .s1-2.gray,
+  .size .custom, .review .s1-1.beige, .review .beige.s1-2,
+  .review .s1-1.black, .review .black.s1-2,
+  .review .s1-1.gray, .review .gray.s1-2,
+  .review .s1-2.beige,
+  .review .s1-2.black,
+  .review .s1-2.gray,
+  .review .custom,
+  .option .s1-1.beige, .option .beige.s1-2,
+  .option .s1-1.black, .option .black.s1-2,
+  .option .s1-1.gray, .option .gray.s1-2,
+  .option .s1-2.beige,
+  .option .s1-2.black,
+  .option .s1-2.gray,
+  .option .custom, .mix .s1-1.beige, .mix .beige.s1-2,
+  .mix .s1-1.black, .mix .black.s1-2,
+  .mix .s1-1.gray, .mix .gray.s1-2,
+  .mix .s1-2.beige,
+  .mix .s1-2.black,
+  .mix .s1-2.gray,
+  .mix .custom, .intro .s1-1.beige, .intro .beige.s1-2,
+  .intro .s1-1.black, .intro .black.s1-2,
+  .intro .s1-1.gray, .intro .gray.s1-2,
+  .intro .s1-2.beige,
+  .intro .s1-2.black,
+  .intro .s1-2.gray,
+  .intro .custom, .allT .s1-1.beige, .allT .beige.s1-2,
+  .allT .s1-1.black, .allT .black.s1-2,
+  .allT .s1-1.gray, .allT .gray.s1-2,
+  .allT .s1-2.beige,
+  .allT .s1-2.black,
+  .allT .s1-2.gray,
+  .allT .custom, .concept .s1-1.beige, .concept .beige.s1-2,
+  .concept .s1-1.black, .concept .black.s1-2,
+  .concept .s1-1.gray, .concept .gray.s1-2,
+  .concept .s1-2.beige,
+  .concept .s1-2.black,
+  .concept .s1-2.gray,
+  .concept .custom {
+    margin-bottom: 30px; }
+    .series .s1-1.beige .text, .series .beige.s1-2 .text,
+    .series .s1-1.black .text, .series .black.s1-2 .text,
+    .series .s1-1.gray .text, .series .gray.s1-2 .text,
+    .series .s1-2.beige .text,
+    .series .s1-2.black .text,
+    .series .s1-2.gray .text,
+    .series .custom .text, .product .s1-1.beige .text, .product .beige.s1-2 .text,
+    .product .s1-1.black .text, .product .black.s1-2 .text,
+    .product .s1-1.gray .text, .product .gray.s1-2 .text,
+    .product .s1-2.beige .text,
+    .product .s1-2.black .text,
+    .product .s1-2.gray .text,
+    .product .custom .text, .detail .s1-1.beige .text, .detail .beige.s1-2 .text,
+    .detail .s1-1.black .text, .detail .black.s1-2 .text,
+    .detail .s1-1.gray .text, .detail .gray.s1-2 .text,
+    .detail .s1-2.beige .text,
+    .detail .s1-2.black .text,
+    .detail .s1-2.gray .text,
+    .detail .custom .text, .check .s1-1.beige .text, .check .beige.s1-2 .text,
+    .check .s1-1.black .text, .check .black.s1-2 .text,
+    .check .s1-1.gray .text, .check .gray.s1-2 .text,
+    .check .s1-2.beige .text,
+    .check .s1-2.black .text,
+    .check .s1-2.gray .text,
+    .check .custom .text,
+    .special .s1-1.beige .text, .special .beige.s1-2 .text,
+    .special .s1-1.black .text, .special .black.s1-2 .text,
+    .special .s1-1.gray .text, .special .gray.s1-2 .text,
+    .special .s1-2.beige .text,
+    .special .s1-2.black .text,
+    .special .s1-2.gray .text,
+    .special .custom .text, .module .s1-1.beige .text, .module .beige.s1-2 .text,
+    .module .s1-1.black .text, .module .black.s1-2 .text,
+    .module .s1-1.gray .text, .module .gray.s1-2 .text,
+    .module .s1-2.beige .text,
+    .module .s1-2.black .text,
+    .module .s1-2.gray .text,
+    .module .custom .text, .material .s1-1.beige .text, .material .beige.s1-2 .text,
+    .material .s1-1.black .text, .material .black.s1-2 .text,
+    .material .s1-1.gray .text, .material .gray.s1-2 .text,
+    .material .s1-2.beige .text,
+    .material .s1-2.black .text,
+    .material .s1-2.gray .text,
+    .material .custom .text, .manual .s1-1.beige .text, .manual .beige.s1-2 .text,
+    .manual .s1-1.black .text, .manual .black.s1-2 .text,
+    .manual .s1-1.gray .text, .manual .gray.s1-2 .text,
+    .manual .s1-2.beige .text,
+    .manual .s1-2.black .text,
+    .manual .s1-2.gray .text,
+    .manual .custom .text, .MD .s1-1.beige .text, .MD .beige.s1-2 .text,
+    .MD .s1-1.black .text, .MD .black.s1-2 .text,
+    .MD .s1-1.gray .text, .MD .gray.s1-2 .text,
+    .MD .s1-2.beige .text,
+    .MD .s1-2.black .text,
+    .MD .s1-2.gray .text,
+    .MD .custom .text,
+    .guide .s1-1.beige .text, .guide .beige.s1-2 .text,
+    .guide .s1-1.black .text, .guide .black.s1-2 .text,
+    .guide .s1-1.gray .text, .guide .gray.s1-2 .text,
+    .guide .s1-2.beige .text,
+    .guide .s1-2.black .text,
+    .guide .s1-2.gray .text,
+    .guide .custom .text, .upgrade .s1-1.beige .text, .upgrade .beige.s1-2 .text,
+    .upgrade .s1-1.black .text, .upgrade .black.s1-2 .text,
+    .upgrade .s1-1.gray .text, .upgrade .gray.s1-2 .text,
+    .upgrade .s1-2.beige .text,
+    .upgrade .s1-2.black .text,
+    .upgrade .s1-2.gray .text,
+    .upgrade .custom .text, .behind .s1-1.beige .text, .behind .beige.s1-2 .text,
+    .behind .s1-1.black .text, .behind .black.s1-2 .text,
+    .behind .s1-1.gray .text, .behind .gray.s1-2 .text,
+    .behind .s1-2.beige .text,
+    .behind .s1-2.black .text,
+    .behind .s1-2.gray .text,
+    .behind .custom .text, .size .s1-1.beige .text, .size .beige.s1-2 .text,
+    .size .s1-1.black .text, .size .black.s1-2 .text,
+    .size .s1-1.gray .text, .size .gray.s1-2 .text,
+    .size .s1-2.beige .text,
+    .size .s1-2.black .text,
+    .size .s1-2.gray .text,
+    .size .custom .text, .review .s1-1.beige .text, .review .beige.s1-2 .text,
+    .review .s1-1.black .text, .review .black.s1-2 .text,
+    .review .s1-1.gray .text, .review .gray.s1-2 .text,
+    .review .s1-2.beige .text,
+    .review .s1-2.black .text,
+    .review .s1-2.gray .text,
+    .review .custom .text,
+    .option .s1-1.beige .text, .option .beige.s1-2 .text,
+    .option .s1-1.black .text, .option .black.s1-2 .text,
+    .option .s1-1.gray .text, .option .gray.s1-2 .text,
+    .option .s1-2.beige .text,
+    .option .s1-2.black .text,
+    .option .s1-2.gray .text,
+    .option .custom .text, .mix .s1-1.beige .text, .mix .beige.s1-2 .text,
+    .mix .s1-1.black .text, .mix .black.s1-2 .text,
+    .mix .s1-1.gray .text, .mix .gray.s1-2 .text,
+    .mix .s1-2.beige .text,
+    .mix .s1-2.black .text,
+    .mix .s1-2.gray .text,
+    .mix .custom .text, .intro .s1-1.beige .text, .intro .beige.s1-2 .text,
+    .intro .s1-1.black .text, .intro .black.s1-2 .text,
+    .intro .s1-1.gray .text, .intro .gray.s1-2 .text,
+    .intro .s1-2.beige .text,
+    .intro .s1-2.black .text,
+    .intro .s1-2.gray .text,
+    .intro .custom .text, .allT .s1-1.beige .text, .allT .beige.s1-2 .text,
+    .allT .s1-1.black .text, .allT .black.s1-2 .text,
+    .allT .s1-1.gray .text, .allT .gray.s1-2 .text,
+    .allT .s1-2.beige .text,
+    .allT .s1-2.black .text,
+    .allT .s1-2.gray .text,
+    .allT .custom .text, .concept .s1-1.beige .text, .concept .beige.s1-2 .text,
+    .concept .s1-1.black .text, .concept .black.s1-2 .text,
+    .concept .s1-1.gray .text, .concept .gray.s1-2 .text,
+    .concept .s1-2.beige .text,
+    .concept .s1-2.black .text,
+    .concept .s1-2.gray .text,
+    .concept .custom .text {
+      padding: 25px 25px 15px 25px; }
+  .series .s1-3, .series .s1-4, .product .s1-3, .product .s1-4, .detail .s1-3, .detail .s1-4, .check .s1-3, .check .s1-4,
+  .special .s1-3, .special .s1-4, .module .s1-3, .module .s1-4, .material .s1-3, .material .s1-4, .manual .s1-3, .manual .s1-4, .MD .s1-3, .MD .s1-4,
+  .guide .s1-3, .guide .s1-4, .upgrade .s1-3, .upgrade .s1-4, .behind .s1-3, .behind .s1-4, .size .s1-3, .size .s1-4, .review .s1-3, .review .s1-4,
+  .option .s1-3, .option .s1-4, .mix .s1-3, .mix .s1-4, .intro .s1-3, .intro .s1-4, .allT .s1-3, .allT .s1-4, .concept .s1-3, .concept .s1-4 {
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    margin: 0 0 30px 0; }
+    .series .s1-3 .pic, .series .s1-4 .pic, .product .s1-3 .pic, .product .s1-4 .pic, .detail .s1-3 .pic, .detail .s1-4 .pic, .check .s1-3 .pic, .check .s1-4 .pic,
+    .special .s1-3 .pic, .special .s1-4 .pic, .module .s1-3 .pic, .module .s1-4 .pic, .material .s1-3 .pic, .material .s1-4 .pic, .manual .s1-3 .pic, .manual .s1-4 .pic, .MD .s1-3 .pic, .MD .s1-4 .pic,
+    .guide .s1-3 .pic, .guide .s1-4 .pic, .upgrade .s1-3 .pic, .upgrade .s1-4 .pic, .behind .s1-3 .pic, .behind .s1-4 .pic, .size .s1-3 .pic, .size .s1-4 .pic, .review .s1-3 .pic, .review .s1-4 .pic,
+    .option .s1-3 .pic, .option .s1-4 .pic, .mix .s1-3 .pic, .mix .s1-4 .pic, .intro .s1-3 .pic, .intro .s1-4 .pic, .allT .s1-3 .pic, .allT .s1-4 .pic, .concept .s1-3 .pic, .concept .s1-4 .pic {
+      float: left;
+      overflow: hidden;
+      width: 62%;
+      height: 400px; }
+      .series .s1-3 .pic img, .series .s1-4 .pic img, .product .s1-3 .pic img, .product .s1-4 .pic img, .detail .s1-3 .pic img, .detail .s1-4 .pic img, .check .s1-3 .pic img, .check .s1-4 .pic img,
+      .special .s1-3 .pic img, .special .s1-4 .pic img, .module .s1-3 .pic img, .module .s1-4 .pic img, .material .s1-3 .pic img, .material .s1-4 .pic img, .manual .s1-3 .pic img, .manual .s1-4 .pic img, .MD .s1-3 .pic img, .MD .s1-4 .pic img,
+      .guide .s1-3 .pic img, .guide .s1-4 .pic img, .upgrade .s1-3 .pic img, .upgrade .s1-4 .pic img, .behind .s1-3 .pic img, .behind .s1-4 .pic img, .size .s1-3 .pic img, .size .s1-4 .pic img, .review .s1-3 .pic img, .review .s1-4 .pic img,
+      .option .s1-3 .pic img, .option .s1-4 .pic img, .mix .s1-3 .pic img, .mix .s1-4 .pic img, .intro .s1-3 .pic img, .intro .s1-4 .pic img, .allT .s1-3 .pic img, .allT .s1-4 .pic img, .concept .s1-3 .pic img, .concept .s1-4 .pic img {
+        display: block;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: 102%; }
+    .series .s1-3 .text, .series .s1-4 .text, .product .s1-3 .text, .product .s1-4 .text, .detail .s1-3 .text, .detail .s1-4 .text, .check .s1-3 .text, .check .s1-4 .text,
+    .special .s1-3 .text, .special .s1-4 .text, .module .s1-3 .text, .module .s1-4 .text, .material .s1-3 .text, .material .s1-4 .text, .manual .s1-3 .text, .manual .s1-4 .text, .MD .s1-3 .text, .MD .s1-4 .text,
+    .guide .s1-3 .text, .guide .s1-4 .text, .upgrade .s1-3 .text, .upgrade .s1-4 .text, .behind .s1-3 .text, .behind .s1-4 .text, .size .s1-3 .text, .size .s1-4 .text, .review .s1-3 .text, .review .s1-4 .text,
+    .option .s1-3 .text, .option .s1-4 .text, .mix .s1-3 .text, .mix .s1-4 .text, .intro .s1-3 .text, .intro .s1-4 .text, .allT .s1-3 .text, .allT .s1-4 .text, .concept .s1-3 .text, .concept .s1-4 .text {
+      float: left;
+      overflow: hidden;
+      padding: 0 0 0 20px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 38%; }
+      .series .s1-3 .text h3, .series .s1-4 .text h3, .product .s1-3 .text h3, .product .s1-4 .text h3, .detail .s1-3 .text h3, .detail .s1-4 .text h3, .check .s1-3 .text h3, .check .s1-4 .text h3,
+      .special .s1-3 .text h3, .special .s1-4 .text h3, .module .s1-3 .text h3, .module .s1-4 .text h3, .material .s1-3 .text h3, .material .s1-4 .text h3, .manual .s1-3 .text h3, .manual .s1-4 .text h3, .MD .s1-3 .text h3, .MD .s1-4 .text h3,
+      .guide .s1-3 .text h3, .guide .s1-4 .text h3, .upgrade .s1-3 .text h3, .upgrade .s1-4 .text h3, .behind .s1-3 .text h3, .behind .s1-4 .text h3, .size .s1-3 .text h3, .size .s1-4 .text h3, .review .s1-3 .text h3, .review .s1-4 .text h3,
+      .option .s1-3 .text h3, .option .s1-4 .text h3, .mix .s1-3 .text h3, .mix .s1-4 .text h3, .intro .s1-3 .text h3, .intro .s1-4 .text h3, .allT .s1-3 .text h3, .allT .s1-4 .text h3, .concept .s1-3 .text h3, .concept .s1-4 .text h3 {
+        padding-bottom: 5px; }
+      .series .s1-3 .text dt, .series .s1-4 .text dt, .product .s1-3 .text dt, .product .s1-4 .text dt, .detail .s1-3 .text dt, .detail .s1-4 .text dt, .check .s1-3 .text dt, .check .s1-4 .text dt,
+      .special .s1-3 .text dt, .special .s1-4 .text dt, .module .s1-3 .text dt, .module .s1-4 .text dt, .material .s1-3 .text dt, .material .s1-4 .text dt, .manual .s1-3 .text dt, .manual .s1-4 .text dt, .MD .s1-3 .text dt, .MD .s1-4 .text dt,
+      .guide .s1-3 .text dt, .guide .s1-4 .text dt, .upgrade .s1-3 .text dt, .upgrade .s1-4 .text dt, .behind .s1-3 .text dt, .behind .s1-4 .text dt, .size .s1-3 .text dt, .size .s1-4 .text dt, .review .s1-3 .text dt, .review .s1-4 .text dt,
+      .option .s1-3 .text dt, .option .s1-4 .text dt, .mix .s1-3 .text dt, .mix .s1-4 .text dt, .intro .s1-3 .text dt, .intro .s1-4 .text dt, .allT .s1-3 .text dt, .allT .s1-4 .text dt, .concept .s1-3 .text dt, .concept .s1-4 .text dt {
+        line-height: 1.2;
+        padding-bottom: 18px; }
+  .series .s1-4 .text, .product .s1-4 .text, .detail .s1-4 .text, .check .s1-4 .text,
+  .special .s1-4 .text, .module .s1-4 .text, .material .s1-4 .text, .manual .s1-4 .text, .MD .s1-4 .text,
+  .guide .s1-4 .text, .upgrade .s1-4 .text, .behind .s1-4 .text, .size .s1-4 .text, .review .s1-4 .text,
+  .option .s1-4 .text, .mix .s1-4 .text, .intro .s1-4 .text, .allT .s1-4 .text, .concept .s1-4 .text {
+    padding: 0 20px 0 0; }
+  .series .s1-3.beige .text, .series .beige.s1-4 .text,
+  .series .s1-3.black .text, .series .black.s1-4 .text,
+  .series .s1-3.gray .text, .series .gray.s1-4 .text,
+  .series .s1-4.beige .text,
+  .series .s1-4.black .text,
+  .series .s1-4.gray .text, .product .s1-3.beige .text, .product .beige.s1-4 .text,
+  .product .s1-3.black .text, .product .black.s1-4 .text,
+  .product .s1-3.gray .text, .product .gray.s1-4 .text,
+  .product .s1-4.beige .text,
+  .product .s1-4.black .text,
+  .product .s1-4.gray .text, .detail .s1-3.beige .text, .detail .beige.s1-4 .text,
+  .detail .s1-3.black .text, .detail .black.s1-4 .text,
+  .detail .s1-3.gray .text, .detail .gray.s1-4 .text,
+  .detail .s1-4.beige .text,
+  .detail .s1-4.black .text,
+  .detail .s1-4.gray .text, .check .s1-3.beige .text, .check .beige.s1-4 .text,
+  .check .s1-3.black .text, .check .black.s1-4 .text,
+  .check .s1-3.gray .text, .check .gray.s1-4 .text,
+  .check .s1-4.beige .text,
+  .check .s1-4.black .text,
+  .check .s1-4.gray .text,
+  .special .s1-3.beige .text, .special .beige.s1-4 .text,
+  .special .s1-3.black .text, .special .black.s1-4 .text,
+  .special .s1-3.gray .text, .special .gray.s1-4 .text,
+  .special .s1-4.beige .text,
+  .special .s1-4.black .text,
+  .special .s1-4.gray .text, .module .s1-3.beige .text, .module .beige.s1-4 .text,
+  .module .s1-3.black .text, .module .black.s1-4 .text,
+  .module .s1-3.gray .text, .module .gray.s1-4 .text,
+  .module .s1-4.beige .text,
+  .module .s1-4.black .text,
+  .module .s1-4.gray .text, .material .s1-3.beige .text, .material .beige.s1-4 .text,
+  .material .s1-3.black .text, .material .black.s1-4 .text,
+  .material .s1-3.gray .text, .material .gray.s1-4 .text,
+  .material .s1-4.beige .text,
+  .material .s1-4.black .text,
+  .material .s1-4.gray .text, .manual .s1-3.beige .text, .manual .beige.s1-4 .text,
+  .manual .s1-3.black .text, .manual .black.s1-4 .text,
+  .manual .s1-3.gray .text, .manual .gray.s1-4 .text,
+  .manual .s1-4.beige .text,
+  .manual .s1-4.black .text,
+  .manual .s1-4.gray .text, .MD .s1-3.beige .text, .MD .beige.s1-4 .text,
+  .MD .s1-3.black .text, .MD .black.s1-4 .text,
+  .MD .s1-3.gray .text, .MD .gray.s1-4 .text,
+  .MD .s1-4.beige .text,
+  .MD .s1-4.black .text,
+  .MD .s1-4.gray .text,
+  .guide .s1-3.beige .text, .guide .beige.s1-4 .text,
+  .guide .s1-3.black .text, .guide .black.s1-4 .text,
+  .guide .s1-3.gray .text, .guide .gray.s1-4 .text,
+  .guide .s1-4.beige .text,
+  .guide .s1-4.black .text,
+  .guide .s1-4.gray .text, .upgrade .s1-3.beige .text, .upgrade .beige.s1-4 .text,
+  .upgrade .s1-3.black .text, .upgrade .black.s1-4 .text,
+  .upgrade .s1-3.gray .text, .upgrade .gray.s1-4 .text,
+  .upgrade .s1-4.beige .text,
+  .upgrade .s1-4.black .text,
+  .upgrade .s1-4.gray .text, .behind .s1-3.beige .text, .behind .beige.s1-4 .text,
+  .behind .s1-3.black .text, .behind .black.s1-4 .text,
+  .behind .s1-3.gray .text, .behind .gray.s1-4 .text,
+  .behind .s1-4.beige .text,
+  .behind .s1-4.black .text,
+  .behind .s1-4.gray .text, .size .s1-3.beige .text, .size .beige.s1-4 .text,
+  .size .s1-3.black .text, .size .black.s1-4 .text,
+  .size .s1-3.gray .text, .size .gray.s1-4 .text,
+  .size .s1-4.beige .text,
+  .size .s1-4.black .text,
+  .size .s1-4.gray .text, .review .s1-3.beige .text, .review .beige.s1-4 .text,
+  .review .s1-3.black .text, .review .black.s1-4 .text,
+  .review .s1-3.gray .text, .review .gray.s1-4 .text,
+  .review .s1-4.beige .text,
+  .review .s1-4.black .text,
+  .review .s1-4.gray .text,
+  .option .s1-3.beige .text, .option .beige.s1-4 .text,
+  .option .s1-3.black .text, .option .black.s1-4 .text,
+  .option .s1-3.gray .text, .option .gray.s1-4 .text,
+  .option .s1-4.beige .text,
+  .option .s1-4.black .text,
+  .option .s1-4.gray .text, .mix .s1-3.beige .text, .mix .beige.s1-4 .text,
+  .mix .s1-3.black .text, .mix .black.s1-4 .text,
+  .mix .s1-3.gray .text, .mix .gray.s1-4 .text,
+  .mix .s1-4.beige .text,
+  .mix .s1-4.black .text,
+  .mix .s1-4.gray .text, .intro .s1-3.beige .text, .intro .beige.s1-4 .text,
+  .intro .s1-3.black .text, .intro .black.s1-4 .text,
+  .intro .s1-3.gray .text, .intro .gray.s1-4 .text,
+  .intro .s1-4.beige .text,
+  .intro .s1-4.black .text,
+  .intro .s1-4.gray .text, .allT .s1-3.beige .text, .allT .beige.s1-4 .text,
+  .allT .s1-3.black .text, .allT .black.s1-4 .text,
+  .allT .s1-3.gray .text, .allT .gray.s1-4 .text,
+  .allT .s1-4.beige .text,
+  .allT .s1-4.black .text,
+  .allT .s1-4.gray .text, .concept .s1-3.beige .text, .concept .beige.s1-4 .text,
+  .concept .s1-3.black .text, .concept .black.s1-4 .text,
+  .concept .s1-3.gray .text, .concept .gray.s1-4 .text,
+  .concept .s1-4.beige .text,
+  .concept .s1-4.black .text,
+  .concept .s1-4.gray .text {
+    padding-left: 25px;
+    padding-right: 25px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJjc3Mvc3R5bGUuYnVuZGxlLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

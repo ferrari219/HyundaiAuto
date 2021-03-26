@@ -1,0 +1,108 @@
+@charset "utf-8";
+/*
+.File Name  :  css/common.css
+.Final Editor : 전성호 (2016-04-11 : 최초 작성) 
+*/
+
+/* 옵션리스트 영역
+------------------------------------------------------------------------------------ */
+.oWrap{margin:0 auto;padding-top:47px; background:#fff url(../img/ip/auction/tit.gif) no-repeat left top;}
+.oBox{clear:both;overflow:visible;}
+.oBox .oSec{clear:both;position:relative; width:100%;margin:-1px; background:#fff;border:1px solid #ddd;}
+.oBox .oSec .part1{float:left; width:60%;}
+.oBox .oSec .sNum{float:left;margin:0 0 0 40px;}
+.oBox .oSec .sNum .typeA{width:100%;height:190px;}
+.oBox .oSec .sNum .typeA td{width:88px;height:88px; background:url(../img/ip/auction/circle.gif) no-repeat center center; text-align:center;}
+.oBox .oSec .sNum .typeA td > span{font:500 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;color:#fff;}
+.oBox .oSec .sNum .typeA td > strong{display:block;margin-top:-1px;font:normal 28px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif; letter-spacing:-1px;color:#fff;}
+
+
+.oBox .oSec .ttl{overflow:hidden; float:left;width:70%;height:190px;}
+.oBox .oSec .ttl > .typeA{width:100%;height:100%;}
+.oBox .oSec .ttl > .typeA td{width:100%;height:100%;vertical-align:middle; padding:0 30px 0 21px; color:#000;}
+.oBox .oSec .ttl > .typeA td .e{margin:0;padding-bottom:8px; font:normal 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#1880e2;}
+.oBox .oSec .ttl > .typeA td .t{overflow:hidden;display:inline-block;margin:0; white-space:normal;text-overflow:ellipsis; width:345px; font:600 24px "나눔바른고딕",NanumBarunGothic,"OldSansBlack",OldSansBlack,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;line-height:115%;color:#000;}
+.oBox .oSec .ttl > .typeA td .s{width:290px; margin:0;padding-top:9px; font:normal 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#626262;line-height:150%;}
+.oBox .oSec .ttl > .typeA td .s span{padding-left:5px;}
+
+.oBox .oSec .part3 .pic{overflow:hidden; position:relative; clear:both; background:url(../img/ip/auction/bg_line.jpg) right bottom; border-top:1px solid #ddd;}
+.oBox .oSec .part3 .pic p{overflow:hidden; position:relative; width:50%;height:100%; margin:0;}
+.oBox .oSec .part3 .pic.in span > img{width:100%;}
+.oBox .oSec .part3 .pic.h0,
+.oBox .oSec .part3 .pic.h1,
+.oBox .oSec .part3 .pic.h2,
+.oBox .oSec .part3 .pic.h3{height:390px;}
+.oBox .oSec .part3 .pic.h0 img{position:relative;left:0;top:0; width:100%;height:100%;}
+.oBox .oSec .part3 .pic.h1 img{position:relative;left:-10%;top:-10%; width:120%;height:120%;}
+.oBox .oSec .part3 .pic.h2 img{position:relative;left:-25%;top:-25%; width:150%;height:150%;}
+.oBox .oSec .part3 .pic.h3 img{position:relative;left:-50%;top:-50%; width:200%;height:200%;}
+.oBox .oSec .part3 .pic img{width:50%;margin-right:-1px; border-right:1px solid #ddd;}
+.oBox .oSec .part3 .pic .p1,
+.oBox .oSec .part3 .pic .p2,
+.oBox .oSec .part3 .pic .p3,
+.oBox .oSec .part3 .pic .p7,
+.oBox .oSec .part3 .pic .p8,
+.oBox .oSec .part3 .pic .p9{display:none;}
+
+.oBox .oSec .part2{float:left; width:40%;}
+.oBox .oSec .part2 .prc{float:left; width:45%;}
+.oBox .oSec .part2 .prc > .typeA > tbody > tr > td{height:190px; text-align:right;}
+.oBox .oSec .part2 .prc > .typeA td > span{width:31%;padding-top:0; vertical-align:middle;}
+.oBox .oSec .part2 .prc > .typeA td > em{padding-top:2px; vertical-align:middle; text-align:right;}
+.oBox .oSec .part2 .prc > .typeA td div{display:inline;}
+.oBox .oSec .part2 .prc > .typeA td .pc1 > span, .oBox .oSec .part2 .prc > .typeA td .pc2 > span{display:none;}
+.oBox .oSec .part2 .prc > .typeA td .pc1 > em{position:relative;top:10px;right:1px; font:normal 24px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#919191;text-decoration:line-through;}
+.oBox .oSec .part2 .prc > .typeA td .pc2{display:none;}
+.oBox .oSec .part2 .prc > .typeA td .pc2 > em{position:relative;top:10px;right:1px; font:normal 24px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#919191;}
+.oBox .oSec .part2 .prc > .typeA td .pc1 > em > span,
+.oBox .oSec .part2 .prc > .typeA td .pc2 > em > span{display:none;}
+.oBox .oSec .part2 .prc > .typeA td .pc2 > span, .oBox .oSec .part2 .prc > .typeA td .pc2 span, .oBox .oSec .part2 .prc > .typeA td .pc3 span{display:none;}
+.oBox .oSec .part2 .prc > .typeA td .pc3 > em{font:600 38px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#ea1414;letter-spacing:-2px; text-align:right;}
+.oBox .oSec .part2 .prc > .typeA td .pc3 > em > span{position:relative;top:-4px;padding-left:2px; font:800 22px "나눔고딕",NanumGothicBold, gulim, sans-serif;letter-spacing:-1px;}
+.oBox .oSec .part2 .prc > .typeA td .etc{display:none; clear:both; padding-left:30px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;text-align:right;}
+.oBox .oSec .part2 .dc{float:left; width:40%;margin-top:20px;margin-right:15%; background:url(../img/ip/auction/arrow.gif) no-repeat right center;}
+.oBox .oSec .part2 .dc strong{font:600 38px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#0079ea;letter-spacing:-2px;}
+.oBox .oSec .part2 .dc span{position:relative;top:-3px; font:600 32px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#0079ea;letter-spacing:-2px;}
+.oBox .oSec .part2 .dc > .typeA > tbody > tr > td{padding-right:33px; height:170px; text-align:right;}
+.oBox .oSec .part2 .dc em{display:none;}
+
+/* 빈영역 */
+.oBox .oSec.empty{display:none;}
+
+
+/* 타이틀 영역
+------------------------------------------------------------------------------------ */
+
+.tBox{margin:0 auto; padding-top:47px; background:#fff url(../img/ip/auction/tit_detail.gif) no-repeat left top; border-bottom:1px solid #ddd;}
+.tBox .tSec{position:relative; margin:-1px;padding:42px 0 0 0; border:1px solid #ddd;}
+.tBox .tSec:last-child{border-bottom:1px solid #ddd;}
+.tBox .sNum{width:100%;padding:0 0 23px 0;}
+.tBox .sNum .typeA{width:100%;height:100%;}
+.tBox .sNum .typeA td{height:132px; padding-top:2px;vertical-align:middle; background:#fff url(../img/ip/auction/lcircle.gif) no-repeat center center; font:600 25px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px; text-align:center;color:#fff;}
+.tBox .sNum .typeA td > em{font-style:normal;}
+.tBox .sNum .typeA td > span{display:block;margin-top:-1px;font:normal 42px "OldSansBlack",OldSansBlack, "나눔바른고딕",NanumBarunGothic, Arial,Helvetica,sans-serif; letter-spacing:-1px;}
+.tBox .sNum .typeA td > span > span{position:relative;top:-5px;font:normal 34px "나눔바른고딕",NanumBarunGothic, Arial,Helvetica,sans-serif; letter-spacing:-1px;}
+.tBox .part2{position:relative; height:195px;margin:-1px;}
+.tBox .part2 .ttl > .typeA{width:100%;}
+.tBox .part2 .ttl > .typeA td .e{display:none;}
+.tBox .part2 .ttl > .typeA td .t{height:60px; font:600 24px "나눔바른고딕",NanumBarunGothic,"OldSansBlack",OldSansBlack,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;line-height:115%;color:#000;text-align:center;}
+.tBox .part2 .ttl > .typeA td .s{padding:57px 0 62px 0; font:normal 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#626262;line-height:150%;text-align:center;}
+
+.tBox .part3{position:absolute;bottom:80px; width:100%; text-align:center;}
+.tBox .part3 .prc{display:inline-block;}
+.tBox .part3 .prc > .typeA{overflow:hidden; display:inline; width:500px;}
+.tBox .part3 .prc > .typeA > tbody > tr > td{ width:100%;vertical-align:top;}
+.tBox .part3 .prc > .typeA td > div{display:inline;}
+.tBox .part3 .prc > .typeA td .pc1 > span, .tBox .part3 .prc > .typeA td .prc .pc2 > span{display:none;}
+.tBox .part3 .prc > .typeA td .pc1 em{position:relative;top:5px;padding-right:20px; font:normal 24px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#919191;letter-spacing:-1px;}
+.tBox .part3 .prc > .typeA td .pc2 > span, .tBox .part3 .prc > .typeA td .pc2 > em, .tBox .part3 .prc > .typeA td .pc3 > span{display:none;}
+.tBox .part3 .prc > .typeA td .pc3 em{position:relative;top:5px; font:600 38px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#ea1414;letter-spacing:-2px; text-align:right;}
+.tBox .part3 .prc > .typeA td .pc1 em > span,
+.tBox .part3 .prc > .typeA td .pc2 em > span,
+.tBox .part3 .prc > .typeA td .pc3 em > span{display:none; position:relative;top:-6px;padding-left:2px; font:800 22px "나눔고딕",NanumGothicBold, gulim, sans-serif;letter-spacing:-1px;}
+.tBox .part3 .prc > .typeA td .etc{display:none; clear:both; padding-left:30px; font:bold 15px "나눔바른고딕","나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;text-align:right;}
+.tBox .part3 .dc{display:inline; position:relative;top:4px;  padding:40px 33px 0 15px; background:url(../img/ip/auction/arrow.gif) no-repeat right center;}
+.tBox .part3 .dc .typeA{display:inline;}
+.tBox .part3 .dc em{display:none;}
+.tBox .part3 .dc strong{font:600 38px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#0079ea;letter-spacing:-2px;}
+.tBox .part3 .dc span{position:relative;top:-3px; font:600 32px "OldSansBlack",OldSansBlack,Arial,Helvetica,sans-serif;color:#0079ea;letter-spacing:-2px;}

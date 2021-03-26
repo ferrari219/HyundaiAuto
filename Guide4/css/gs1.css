@@ -1,0 +1,106 @@
+@charset "utf-8";
+/*
+.File Name  :  css/common.css
+.Final Editor : 전성호 (2016-04-11 : 최초 작성) 
+*/
+
+/* 옵션리스트 영역
+------------------------------------------------------------------------------------ */
+.oWrap{overflow:hidden; margin:0 auto;}
+.oBox{overflow:hidden; border:1px solid #63d1d5;border-top:none;}
+.oBox .oSec{float:left;width:50%;margin:-1px; border:1px solid #63d1d5;border-bottom:none;}
+.oBox .oSec:nth-child(odd){margin-left:-2px;margin-right:0px;}
+.oBox .oSec .sNum{width:100%; padding-top:20px; background:#63d1d5;}
+.oBox .oSec .sNum .typeA{width:100%;}
+.oBox .oSec .sNum .typeA td{height:49px; vertical-align:middle;text-align:center;}
+.oBox .oSec .sNum .typeA td span{font:bold 31px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-2px; color:#fff;}
+.oBox .oSec .sNum .typeA td strong{margin-left:5px; font:bold 28px "OldSansBlack",OldSansBlack, verdana, gulim, sans-serif; letter-spacing:-1px; color:#fff;}
+
+.oBox .oSec .part1 .ttl{position:relative; width:100%; background:#63d1d5;}
+.oBox .oSec .part1 .ttl:after{content:''; position:absolute;left:50%;bottom:-20px; display:block;width:0;height:0; border:10px solid transparent;border-top:10px solid #63d1d5;z-index:99;}
+.oBox .oSec .part1 .ttl > .typeA{width:100%;}
+.oBox .oSec .part1 .ttl.h1{height:70px;}
+.oBox .oSec .part1 .ttl.h2{height:90px;}
+.oBox .oSec .part1 .ttl.h3{height:160px;}
+.oBox .oSec .part1 .ttl > .typeA td{overflow:hidden; height:auto;vertical-align:top; padding:0 30px 10px 25px; text-align:center; color:#fff;}
+.oBox .oSec .part1 .ttl > .typeA td .e{padding-bottom:5px; font:normal 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;line-height:115%;color:#fff;}
+.oBox .oSec .part1 .ttl > .typeA td .t{font:normal 21px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;line-height:115%;color:#fff;}
+.oBox .oSec .part1 .ttl > .typeA td .s{padding-top:7px; font:normal 14px "나눔바른고딕",NanumBarunGothicBold, gulim, sans-serif;color:#008287;}
+.oBox .oSec .part1 .ttl > .typeA td .s span{padding-left:5px;}
+
+.oBox .oSec .part2 .pic{clear:both;}
+.oBox .oSec .part2 .pic p{overflow:hidden; position:relative; width:100%;height:100%;}
+.oBox .oSec .part2 .pic.h0,
+.oBox .oSec .part2 .pic.h1,
+.oBox .oSec .part2 .pic.h2,
+.oBox .oSec .part2 .pic.h3{height:390px;}
+.oBox .oSec .part2 .pic.h0 p > img{position:relative;left:0;top:0; width:100%;height:100%;}
+.oBox .oSec .part2 .pic.h1 p > img{position:relative;left:-10%;top:-10%; width:120%;height:120%;}
+.oBox .oSec .part2 .pic.h2 p > img{position:relative;left:-25%;top:-25%; width:150%;height:150%;}
+.oBox .oSec .part2 .pic.h2 p > img{position:relative;left:-50%;top:-50%; width:200%;height:200%;}
+
+.oBox .oSec .part2{position:relative;}
+.oBox .oSec .part2 .dc{position:absolute;right:5px;top:5px; width:80px;height:80px; background:#000; border-radius:40px; text-align:center;}
+/* url(http://mall.hyundailivart.co.kr/UserFiles/Image/03_ipjum/guide/bg_circle.png) no-repeat right top; */
+.oBox .oSec .part2 .dc em{display:none;}
+.oBox .oSec .part2 .dc strong{padding-left:5px; font:bold 36px arial,verdana;color:#fff;letter-spacing:-2px;}
+.oBox .oSec .part2 .dc span{position:relative;left:-2px; font:bold 20px arial,verdana;color:#fff;}
+
+.oBox .oSec .part3 .dc{display:none;}
+.oBox .oSec .part3 .prc{position:relative;}
+.oBox .oSec .part3 .prc .dc{display:none;}
+.oBox .oSec .part3 .prc .dc span{font-size:36px;}
+.oBox .oSec .part3 .prc > .typeA{float:right;width:100%;}
+.oBox .oSec .part3 .prc > .typeA > tbody > tr > td{height:auto; padding:20px 0; vertical-align:middle; text-align:center;}
+.oBox .oSec .part3 .prc > .typeA td > div > span{overflow:hidden; display:inline-block; text-align:right; vertical-align:middle;}
+.oBox .oSec .part3 .prc > .typeA td > div > em{display:inline-block; text-align:left; line-height:110%;}
+.oBox .oSec .part3 .prc > .typeA td .pc1 > span{position:relative;top:-4px; height:14px; padding-bottom:5px; font:bold 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#525252;}
+.oBox .oSec .part3 .prc > .typeA td .pc1 > em{font:bold 29px "OldSansBlack",OldSansBlack, verdana;letter-spacing:-2px;color:#525252;}
+.oBox .oSec .part3 .prc > .typeA td .pc1 > em strike{text-decoration:none;}
+.oBox .oSec .part3 .prc > .typeA td .pc1 > em span{position:relative;top:-5px;padding-left:2px; font:normal 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;}
+.oBox .oSec .part3 .prc > .typeA td .pc2 > span{position:relative;top:-2px; height:22px; padding-bottom:5px; font:bold 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;}
+.oBox .oSec .part3 .prc > .typeA td .pc2 > em{padding-bottom:5px; font:bold 29px "OldSansBlack",OldSansBlack, verdana;color:#ee2f58;letter-spacing:-2px;}
+.oBox .oSec .part3 .prc > .typeA td .pc2 > em > span{position:relative;top:-6px;padding-left:2px; font:normal 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;}
+.oBox .oSec .part3 .prc > .typeA td .pc3{display:inline; padding:20px 5px 7px 5px; background:#63d1d5;}
+.oBox .oSec .part3 .prc > .typeA td .pc3 > span{position:relative;top:-5px;height:22px; margin:0 -5px 0 0;padding:7px 10px 6px 10px; font:normal 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#fff; }
+.oBox .oSec .part3 .prc > .typeA td .pc3 > span span{font-weight:bold;}
+.oBox .oSec .part3 .prc > .typeA td .pc3 > span > em{display:inline-block; overflow:hidden;height:17px;}
+.oBox .oSec .part3 .prc > .typeA td .pc3 > em{height:27px; margin:0;padding:1px 10px 6px 0; font:600 30px "OldSansBlack",OldSansBlack, verdana;color:#fff;letter-spacing:-2px;}
+.oBox .oSec .part3 .prc > .typeA td .pc3 > em > span{position:relative;top:-6px; padding-left:2px; font:normal 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:-1px;}
+.oBox .oSec .part3 .prc > .typeA td .etc{display:block;padding-left:30px; font:bold 15px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;letter-spacing:0;color:#ee2f58;}
+
+/* 빈영역 */
+.oBox .oSec.empty{overflow:hidden;  text-align:center;}
+.oBox .oSec.empty.h1{height:600px;}
+.oBox .oSec.empty.h2{height:650px;}
+.oBox .oSec.empty.h3{height:700px;}
+.oBox .oSec.empty .typeA{width:100%;height:600px; border-top:1px solid #d7d7d7;}
+.oBox .oSec.empty td{width:100%;height:100%;vertical-align:middle;}
+
+
+/* 타이틀 영역
+------------------------------------------------------------------------------------ */
+.tBox{overflow:hidden;clear:both; margin:0 auto; border:none;} /*float:left; */
+.tBox .tSec{overflow:hidden;clear:both; position:relative; background:#4c4848; border-bottom:1px solid #fff;}
+
+.tBox .part1 .sNum{width:310px;height:40px; margin:0 auto; padding:4px 0; background:#63d1d5;}
+.tBox .part1 .sNum .typeA{width:100%;height:100%;}
+.tBox .part1 .sNum .typeA td{text-align:center;}
+.tBox .part1 .sNum .typeA td em{position:relative;top:-4px;font:bold 29px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Verdana,Arial,Helvetica,sans-serif;letter-spacing:-2px; text-align:center;color:#fff; vertical-align:middle;}
+.tBox .part1 .sNum .typeA td span{position:relative;top:1px; margin-left:5px; font:bold 28px "OldSansBlack",OldSansBlack, verdana, gulim, sans-serif; letter-spacing:-1px;color:#fff;}
+
+.tBox .part2{float:left; width:100%;}
+.tBox .part2 .ttl > .typeA{width:100%;text-align:center;}
+.tBox .part2 .ttl > .typeA td{padding:20px 0 40px 0; vertical-align:top; color:#fff;}
+.tBox .part2 .ttl > .typeA td .e{display:none; padding-bottom:8px; font:normal 17px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#e2e2e2;}
+.tBox .part2 .ttl > .typeA td .t{font:normal 24px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#fff;}
+.tBox .part2 .ttl > .typeA td .s{display:none; padding-top:7px; font:normal 18px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#fff;}
+.tBox .part2 .ttl > .typeA td .s span{padding-left:5px;color:#aedaff;}
+
+.tBox .part3 .prc {display:none;}
+.tBox .part3 .prc > .typeA td .prc{width:230px;float:right;}
+.tBox .part3 .prc > .typeA td .prc .pc1 span{height:30px;font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#e8e8e8; text-align:right;}
+.tBox .part3 .prc > .typeA td .prc .pc1 em{height:30px;padding:2px 1px 0 0;font:bold 18px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#e8e8e8; text-align:right;}
+.tBox .part3 .prc > .typeA td .prc .pc2 span{height:45px;font:bold 20px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#ffde00; text-align:right;}
+.tBox .part3 .prc > .typeA td .prc .pc2 em{height:45px;padding:2px 1px 0 0;font:bold 30px "나눔바른고딕",NanumBarunGothic,"돋움",Dotum,"굴림",Gulim,Arial,Helvetica,sans-serif;color:#ffde00;letter-spacing:-1px; text-align:right;}
+.tBox .part3 .prc > .typeA td .prc .pc1 em > span, .tBox .part3 .prc > .typeA td .prc .pc2 em > span{display:none;}

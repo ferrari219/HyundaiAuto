@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" /> 
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<title>상품 등록-코딩 자동화 가이드 : [현대리바트]가이드 홈페이지</title>
+<link rel="stylesheet" type="text/css" href="css/common_00.css"/>
+<link rel="stylesheet" type="text/css" href="http://api.mobilis.co.kr/webfonts/css/?fontface=NanumGothicWeb"  />
+
+<script type="text/javascript">
+function nowName(){
+	i=1;
+	var vName = document.frm.newName.value;
+	document.getElementById('sName'+i).innerHTML=vName;
+}
+function nowMagam(){
+	i=1;
+	var vMagam = document.frm.newMagam.value;
+	document.getElementById('sMagam'+i).innerHTML=vMagam;
+}
+function nowGu(){
+	i=1;
+	var vGu = document.frm.newGu.value;
+	document.getElementById('sGu'+i).innerHTML=vGu;
+}
+function nowColor(){
+	i=1;
+	var vColor = document.frm.newColor.value;
+	document.getElementById('sColor'+i).innerHTML=vColor;
+}
+function nowSize(){
+	i=1;
+	var vSize = document.frm.newSize.value;
+	document.getElementById('sSize'+i).innerHTML=vSize;
+}
+function nowMade(){
+	i=1;
+	var vMade = document.frm.newMade.value;
+	document.getElementById('sMade'+i).innerHTML=vMade;
+}
+function nowChak(){
+	i=1;
+	var vChak = document.frm.newChak.value;
+	document.getElementById('sChak'+i).innerHTML=vChak;
+}
+
+function nowBrand(i){
+	var brandName = document.frm.bnd[i-1].value;
+	var bndSource = document.getElementById('bndTxt');
+	var bndPrv = document.getElementById('bndPrv');
+	if(brandName=="이즈마인") {
+		k=9;
+		bndSource.innerHTML='&lt;div style="width:100%;text-align:center;"&gt;<br/>';
+		bndSource.innerHTML=bndSource.innerHTML+'&lt;!-- <em> 이즈마인 서약 영역(공통)</em> --&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/event_600.jpg" alt="상품평 이벤트" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/01.jpg" alt="리바트 이즈마인" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/02.jpg" alt="리바트 온라인 브랜드가 드리는 고객 약속" /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/03.jpg" alt="친환경 가구 / 국가통합 인증마크" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/04.jpg" alt="브랜드파워 / 안정된 프로세스" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/05.jpg" alt="리바트 온라인 브랜드가 하나가 되었습니다." /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/06.jpg" alt="케이티오 + 이즈마인 + 하움 = 리바트" /&gt;&lt;/p&gt;<br/><br/>';		
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;!-- <em> 상품기술서 영역 </em> --&gt;&lt;br/&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/<strong id="code1">WA1327G2</strong>/01.jpg" alt="상품명 / <span id="sName1" class="blu"></span>" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/<strong id="code2">WA1327G2</strong>/02.jpg" alt="제품 정보 및 사양" /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/<strong id="code3">WA1327G2</strong>/03.jpg" alt="마감소재 / <span id="sMagam1" class="blu">바디:, 도어:, 손잡이:</span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/<strong id="code4">WA1327G2</strong>/04.jpg" alt="구성 / <span id="sGu1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/<strong id="code5">WA1327G2</strong>/05.jpg" alt="색상 / <span id="sColor1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/<strong id="code6">WA1327G2</strong>/06.jpg" alt="규격 / <span id="sSize1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/<strong id="code7">WA1327G2</strong>/07.jpg" alt="제조원,원산지 / <span id="sMade1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/<strong id="code8">WA1327G2</strong>/08.jpg" alt="<span id="sChak1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/<strong id="code9">WA1327G2</strong>/09.jpg" alt="제품 상세안내 부분" /&gt;&lt;/p&gt;<br/><br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;!-- <em>  양방향 메시징 서비스 영역(공통) </em> --&gt;&lt;br/&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/01.jpg" alt="양방향 메시징 서비스" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/02.jpg" alt="문자메세지를 사용하여 고객님과 의사소통하는 신개념 서비스입니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/03.jpg" alt="1.고객님께서 궁금하신 사항을 문자메세지(단문메세지) 013-3366-3332로 발송 2.리바트전문상담원이 고객님이 보내신 문자를 실시간으로 확인	3.고객님의 문의사항의 확인을 거쳐 빠른시간 안네 문자로 회신	4.문의내용이 핸드폰에 남아 문의하신 내용과 답변과 이력을 나중에도 확인 가능" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/04.jpg" alt="MO service : 013-3366-3332" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/05.jpg" alt="배송정보" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/06.jpg" alt="자주찾는 질문 FAQ" /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/07.jpg" alt="Q.배송일을 미리 알 수 있을까요? / A.주문이 확정되면 12시간이내(주말제외) 고객님 핸드폰으로 배송예정일이 문자 발송되어지며 배송일 2일전 한번 더 알려드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/08.jpg" alt="Q.배송일 지정 후 변경이 가능할까요? / A.배송일 3일전까지 변경이 가능" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/09.jpg" alt="Q.배송시간 지정이 가능할까요? / 온라인 배송 특성상 사전 시간지정이 불가능한점 양해부탁드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/10.jpg" alt="Q.지방배송도 가능한가요? / 리바트 직배 시스템은 전국 물류망을 갖추고 있습니다.(단, 제주도 및 섬지역 제외)" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/11.jpg" alt="Q.가구설치는 어떻게 진행되나요? / 리바트 전문 엔지니어가 방문하여 배송 및 설치해드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/12.jpg" alt="사용하다가 가구에 문제가 생기면? / AS센터(1577-3332~2)로 연락해 주시면 신속하고 철저한 A/S를 진행해드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/13.jpg" alt="" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/14.jpg" alt="이즈마인에서 구매하신 고객님, 아래내용 꼭 읽어보세요!" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/15.jpg" alt="리바트온라인 제품 배송 과정 : 1.결제완료 2.주문안내 3.배송 4.설치 5.완료" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/16.jpg" alt="유의사항: 화면상의 제품과 실제품간의 색상은 모니터사양에 따라 다소 차이가 있을 수 있습니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/17.jpg" alt="배송비는 무료입니다.(단, 제주도, 도서/일부지방은 배송불가)" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/18.jpg" alt="교환/반품안내 : 가구 특성상 박스 개봉 후 교환/반품은 불가합니다.(단, 제품 하자 경우 제외)" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/19.jpg" alt="A/S 구입 후 1년간 무상 A/S 해드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/20.jpg" alt="리바트 고객사랑 센터 : 1577-3332" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;/div&gt;';
+
+		alert('이즈마인 상품기술서가 제작되었습니다.');}
+
+	else if(brandName=="리바트") {
+		k=11;
+		bndSource.innerHTML='&lt;div style="width:100%;text-align:center;"&gt;<br/>';
+		bndSource.innerHTML=bndSource.innerHTML+'&lt;!-- <em> 상단 영역(공통)</em> --&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/common/01.jpg" alt="리바트 환경경영" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/common/02.jpg" alt="리바트의 환경경영은 환경을 배려하는 디자인 개발, 자원의 효율적 이용, 그리고 꾸준한 사회공헌을 추구하여 항상 환경을 배려하는 마음으로부터 시작됩니다." /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/common/03.jpg" alt="재활용, 재구성, 경량화, 환경회복, 재사용" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/common/04.jpg" alt="리바트 4대 환경전략" /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/common/05.jpg" alt="01.제품은 무조건 가볍게!" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/common/06.jpg" alt="02.버리는 양을 최대한 적게" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/common/07.jpg" alt="03.따지고 또 따져라!" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/common/08.jpg" alt="04.협력업체도 함께 친환경" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;!-- <em> 리바트 상품기술서 영역 </em> --&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/<strong id="code1">2013_namu</strong>/01.jpg" alt="상품명 / <span id="sName1" class="blu"></span>"/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/<strong id="code2">2013_namu</strong>/02.jpg" alt="디자인 컨셉"/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/<strong id="code3">2013_namu</strong>/03.jpg" alt="제품 정보 및 사양"/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/<strong id="code4">2013_namu</strong>/04.jpg" alt="(마감)소재 / <span id="sMagam1" class="blu">바디:, 도어:, 손잡이:</span>"/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/<strong id="code5">2013_namu</strong>/05.jpg" alt="색상 / <span id="sColor1" class="blu"></span>"/&gt;&lt;/p&gt;<br/><br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/<strong id="code6">2013_namu</strong>/06.jpg" alt="구성 / <span id="sGu1" class="blu"></span>"/&gt;&lt;/p&gt;<br/><br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/<strong id="code7">2013_namu</strong>/07.jpg" alt="규격 / <span id="sSize1" class="blu"></span>"/&gt;&lt;/p&gt;<br/><br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/<strong id="code8">2013_namu</strong>/08.jpg" alt="제조원,원산지 / <span id="sMade1" class="blu"></span>"/&gt;&lt;/p&gt;<br/><br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/<strong id="code9">2013_namu</strong>/09.jpg" alt="<span id="sChak1" class="blu"></span>"/&gt;&lt;/p&gt;<br/><br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/<strong id="code10">2013_namu</strong>/10.jpg" alt=""/&gt;&lt;/p&gt;<br/><br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/<strong id="code11">2013_namu</strong>/11.jpg" alt="디자인 상세 안내"/&gt;&lt;/p&gt;<br/><br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;!-- <em>  양방향 메시징 서비스 영역(공통) </em> --&gt;&lt;br/&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/01.jpg" alt="양방향 메시징 서비스" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/02.jpg" alt="문자메세지를 사용하여 고객님과 의사소통하는 신개념 서비스입니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/03.jpg" alt="1.고객님께서 궁금하신 사항을 문자메세지(단문메세지) 013-3366-3332로 발송 2.리바트전문상담원이 고객님이 보내신 문자를 실시간으로 확인	3.고객님의 문의사항의 확인을 거쳐 빠른시간 안네 문자로 회신	4.문의내용이 핸드폰에 남아 문의하신 내용과 답변과 이력을 나중에도 확인 가능" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/04.jpg" alt="MO service : 013-3366-3332(단문만 가능/오전 9시~오후 6시)" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/05.jpg" alt="배송정보" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/06.jpg" alt="자주찾는 질문 FAQ" /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/07.jpg" amlt="Q.배송일을 미리 알 수 있을까요? / A.주문이 확정되면 12시간이내(주말제외) 고객님 핸드폰으로 배송예정일이 문자 발송되어지며 배송일 2일전 한번 더 알려드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/08.jpg" alt="Q.배송일 지정 후 변경이 가능할까요? / A.배송일 3일전까지 변경이 가능" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/09.jpg" alt="Q.배송시간 지정이 가능할까요? / 온라인 배송 특성상 사전 시간지정이 불가능한점 양해부탁드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/10.jpg" alt="Q.지방배송도 가능한가요? / 리바트 직배 시스템은 전국 물류망을 갖추고 있습니다.(단, 제주도 및 섬지역 제외)" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/11.jpg" alt="Q.가구설치는 어떻게 진행되나요? / 리바트 전문 엔지니어가 방문하여 배송 및 설치해드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/12.jpg" alt="사용하다가 가구에 문제가 생기면? / AS센터(1577-3332~2)로 연락해 주시면 신속하고 철저한 A/S를 진행해드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/13.jpg" alt="" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/14.jpg" alt="이즈마인에서 구매하신 고객님, 아래내용 꼭 읽어보세요!" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/15.jpg" alt="리바트온라인 제품 배송 과정 : 1.결제완료 2.주문안내 3.배송 4.설치 5.완료" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/16.jpg" alt="유의사항: 화면상의 제품과 실제품간의 색상은 모니터사양에 따라 다소 차이가 있을 수 있습니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/17.jpg" alt="배송비는 무료입니다.(단, 제주도, 도서/일부지방은 배송불가)" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/18.jpg" alt="교환/반품안내 : 가구 특성상 박스 개봉 후 교환/반품은 불가합니다.(단, 제품 하자 경우 제외)" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/19.jpg" alt="A/S 구입 후 1년간 무상 A/S 해드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/02_livart/under/20.jpg" alt="리바트 고객사랑 센터 : 1577-3332" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;/div&gt;';
+		alert('리바트 상품기술서가 제작되었습니다.');}
+
+	else if(brandName=="스타일샵") {
+		k=11;
+		bndSource.innerHTML='&lt;div style="text-align:center;"&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;!-- <em>리바트 스타일 영역(공통)</em> --&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/common/01.jpg" alt="리바트 스타일은 내추럴 모던, 캐주얼 모던, 모던레트로 스타일로 제안하고 있습니다."/&gt;&lt;/p&gt;<br/><br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;!-- <em>상품기술서 영역</em> --&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/<strong id="code1">DDC1205030</strong>/01.jpg" alt="상품명 / <span id="sName1" class="blu"></span>"/&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/<strong id="code2">DDC1205030</strong>/02.jpg" alt="제품정보 및 사양"/&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/<strong id="code3">DDC1205030</strong>/03.jpg" alt="구성 / <span id="sGu1" class="blu"></span>"/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/<strong id="code4">DDC1205030</strong>/04.jpg" alt="규격 / <span id="sSize1" class="blu"></span> "/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/<strong id="code5">DDC1205030</strong>/05.jpg" alt="색상 / <span id="sColor1" class="blu"></span> ※모니터에 따라 색상이 다를 수가 있습니다."/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/<strong id="code6">DDC1205030</strong>/06.jpg" alt="소재 / <span id="sMagam1" class="blu"></span>"/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/<strong id="code7">DDC1205030</strong>/07.jpg" alt="제조원,원산지 / <span id="sMade1" class="blu"></span>"/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/<strong id="code8">DDC1205030</strong>/08.jpg" alt="<span id="sChak1" class="blu"></span>"/&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/<strong id="code9">DDC1205030</strong>/09.jpg" alt=""/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/<strong id="code10">DDC1205030</strong>/10.jpg" alt="취급주의사항"/&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/<strong id="code11">DDC1205030</strong>/11.jpg" alt=""/&gt;&lt;/p&gt;<br/><br/>';
+
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;!-- <em>배송안내 영역(공통)</em> --&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/under/01.jpg" alt="배송정보 고객님께서는 꼭 읽어보세요!"/&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/under/02.jpg" alt="유의사항: 본 상품기술서에 수록된 제품은 품질 개선과 성능 향상을 위해 일부 사양 및 가격이 변경될 수 있으며 일부 품목은 조기 품절될 수 있습니다."/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/under/03.jpg" alt="배송안내: 택배상품은 배송일, 시간지정 요청이 불가 합니다."/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/under/04.jpg" alt="교환/반품안내: 경기도 용인시 남사면 북리 54-10 (주)리바트"/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/under/05.jpg" alt="A/S: 일부상품들은 OEM으로 제조하고 있습니다."/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0px;margin:0px;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/03_styleshop/under/06.jpg" alt="Copyright livart corporation limited all right reserved"/&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;/div&gt;<br/>';
+		alert('스타일샵 상품기술서가 제작되었습니다.');}		
+
+	else if(brandName=="하움") {
+		k=8;
+		bndSource.innerHTML='&lt;div style="width:100%;text-align:center;"&gt;<br/>';
+		bndSource.innerHTML=bndSource.innerHTML+'&lt;!-- <em> 이즈마인 서약 영역(공통)</em> --&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/event_600.jpg" alt="상품평 이벤트" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/01.jpg" alt="리바트 하움" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/02.jpg" alt="리바트 온라인 브랜드가 드리는 고객 약속" /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/03.jpg" alt="친환경 가구 / 국가통합 인증마크" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/04.jpg" alt="브랜드파워 / 안정된 프로세스" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/05.jpg" alt="리바트 온라인 브랜드가 하나가 되었습니다." /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/06.jpg" alt="" /&gt;&lt;/p&gt;<br/><br/>';
+		
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;!-- <em> 상품기술서 영역 </em> --&gt;&lt;br/&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/04_haum/<strong id="code1">ICT10218AC</strong>/01.jpg" alt="상품명 / <span id="sName1" class="blu"></span>" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/04_haum/<strong id="code2">ICT10218AC</strong>/02.jpg" alt="제품사양 및 정보" /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/04_haum/<strong id="code3">ICT10218AC</strong>/03.jpg" alt="색상 / <span id="sColor1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/04_haum/<strong id="code4">ICT10218AC</strong>/04.jpg" alt="구성 / <span id="sGu1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/04_haum/<strong id="code5">ICT10218AC</strong>/05.jpg" alt="규격 / <span id="sSize1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/04_haum/<strong id="code6">ICT10218AC</strong>/06.jpg" alt="소재 / <span id="sMagam1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/04_haum/<strong id="code7">ICT10218AC</strong>/07.jpg" alt="제조원,원산지 / <span id="sMade1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/04_haum/<strong id="code8">ICT10218AC</strong>/08.jpg" alt="<span id="sChak1" class="blu"></span> 제품 상세 설명" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;!-- <em>  양방향 메시징 서비스 영역(공통) </em> --&gt;&lt;br/&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/01.jpg" alt="양방향 메시징 서비스" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/02.jpg" alt="문자메세지를 사용하여 고객님과 의사소통하는 신개념 서비스입니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/03.jpg" alt="1.고객님께서 궁금하신 사항을 문자메세지(단문메세지) 013-3366-3332로 발송 2.리바트전문상담원이 고객님이 보내신 문자를 실시간으로 확인	3.고객님의 문의사항의 확인을 거쳐 빠른시간 안네 문자로 회신	4.문의내용이 핸드폰에 남아 문의하신 내용과 답변과 이력을 나중에도 확인 가능" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/04.jpg" alt="MO service : 013-3366-3332" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/05.jpg" alt="배송정보" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/06.jpg" alt="자주찾는 질문 FAQ" /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/07.jpg" alt="Q.배송일을 미리 알 수 있을까요? / A.주문이 확정되면 12시간이내(주말제외) 고객님 핸드폰으로 배송예정일이 문자 발송되어지며 배송일 2일전 한번 더 알려드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/08.jpg" alt="Q.배송일 지정 후 변경이 가능할까요? / A.배송일 3일전까지 변경이 가능" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/09.jpg" alt="Q.배송시간 지정이 가능할까요? / 온라인 배송 특성상 사전 시간지정이 불가능한점 양해부탁드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/10.jpg" alt="Q.지방배송도 가능한가요? / 리바트 직배 시스템은 전국 물류망을 갖추고 있습니다.(단, 제주도 및 섬지역 제외)" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/11.jpg" alt="Q.가구설치는 어떻게 진행되나요? / 리바트 전문 엔지니어가 방문하여 배송 및 설치해드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/12.jpg" alt="사용하다가 가구에 문제가 생기면? / AS센터(1577-3332~2)로 연락해 주시면 신속하고 철저한 A/S를 진행해드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/13.jpg" alt="" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/14.jpg" alt="이즈마인에서 구매하신 고객님, 아래내용 꼭 읽어보세요!" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/15.jpg" alt="리바트온라인 제품 배송 과정 : 1.결제완료 2.주문안내 3.배송 4.설치 5.완료" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/16.jpg" alt="유의사항: 화면상의 제품과 실제품간의 색상은 모니터사양에 따라 다소 차이가 있을 수 있습니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/17.jpg" alt="배송비는 무료입니다.(단, 제주도, 도서/일부지방은 배송불가)" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/18.jpg" alt="교환/반품안내 : 가구 특성상 박스 개봉 후 교환/반품은 불가합니다.(단, 제품 하자 경우 제외)" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/19.jpg" alt="A/S 구입 후 1년간 무상 A/S 해드립니다." /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/under/20.jpg" alt="리바트 고객사랑 센터 : 1577-3332" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;/div&gt;';
+		alert('하움 상품기술서가 제작되었습니다.');}
+	else if(brandName=="케이티오") {
+		k=10;
+		bndSource.innerHTML='&lt;div style="width:100%;text-align:center;"&gt;<br/>';
+		bndSource.innerHTML=bndSource.innerHTML+'&lt;!-- <em> 이즈마인 서약 영역(공통)</em> --&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/event_600.jpg" alt="상품평 이벤트" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/01.jpg" alt="리바트 이즈마인" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/02.jpg" alt="리바트 온라인 브랜드가 드리는 고객 약속" /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/03.jpg" alt="친환경 가구 / 국가통합 인증마크" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/04.jpg" alt="브랜드파워 / 안정된 프로세스" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/05.jpg" alt="리바트 온라인 브랜드가 하나가 되었습니다." /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/01_ismine/common/06.jpg" alt="케이티오 + 이즈마인 + 하움 = 리바트" /&gt;&lt;/p&gt;<br/><br/>';
+		
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;!-- <em> 상품기술서 영역 </em> --&gt;&lt;br/&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/<strong id="code1">L1010WHWH520BM</strong>/01.jpg" alt="상품명 / <span id="sName1" class="blu"></span>" /&gt;&lt;/h4&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/<strong id="code2">L1010WHWH520BM</strong>/02.jpg" alt="제품 정보 및 사양" /&gt;&lt;/h5&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/<strong id="code3">L1010WHWH520BM</strong>/03.jpg" alt="마감소재 / <span id="sMagam1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/<strong id="code4">L1010WHWH520BM</strong>/04.jpg" alt="구성 / <span id="sGu1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/<strong id="code5">L1010WHWH520BM</strong>/05.jpg" alt="색상 / <span id="sColor1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/<strong id="code6">L1010WHWH520BM</strong>/06.jpg" alt="규격 / <span id="sSize1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/<strong id="code7">L1010WHWH520BM</strong>/07.jpg" alt="제조원/원산지 : <span id="sMade1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/<strong id="code8">L1010WHWH520BM</strong>/08.jpg" alt="구매플로어 : 01.주문결제 / 02.해피콜 / 03.디자이너방문실측 / 04.전문가 설치" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/<strong id="code9">L1010WHWH520BM</strong>/09.jpg" alt="<span id="sChak1" class="blu"></span>" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/<strong id="code10">L1010WHWH520BM</strong>/10.jpg" alt="상세설명" /&gt;&lt;/p&gt;<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'<br/>';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;!-- 양방향 메시징 서비스 영역(공통) --&gt;<br />';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img alt="리바트 온라인 배송 정보" src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/01.jpg" /&gt;&lt;/h4&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="양방향 메시징 서비스" src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/02.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="문자메세지를 사용하여 고객님과 의사소통하는 신개념 서비스입니다." src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/03.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="1.고객님께서 궁금하신 사항을 문자메세지(단문메세지) 013-3366-3332로 발송 2.리바트전문상담원이 고객님이 보내신 문자를 실시간으로 확인 3.고객님의 문의사항의 확인을 거쳐 빠른시간 안네 문자로 회신 4.문의내용이 핸드폰에 남아 문의하신 내용과 답변과 이력을 나중에도 확인 가능" src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/04.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img alt="MO service : 013-3366-3332" src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/05.jpg" /&gt;&lt;/h4&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h5 style="padding:0;margin:0;"&gt;&lt;img alt="자주찾는 질문 FAQ" src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/06.jpg" /&gt;&lt;/h5&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="Q.시공일지정이 가능한가요? / A.시공일은 방문/실측 후 사전 협의를 통해 지정 됩니다. 시공은 방문상담 현장 실측일 기준 최소 7일(주말포함) 이상이 소요됩니다." src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/07.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="Q.시공일 지정 후 변경이 가능할까요? / A.시공일 3일전까지 변경이 가능" src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/08.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="Q.제가 주문한 사이즈가 틀리면 어떻게 하죠? / 정확한 사이즈 측정이 어려우실 경우, 유사한 사이즈로 주문해주시면, 담당 디자이너가 방문하여 실측 상담안내를 받으실 수 있습니다. 주문한 주방 사이즈와 실제 사이즈가 다를 경우, 실제 사이즈에 따른 차액을 환불 받거나 추가 지불하시면 됩니다." src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/09.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="Q.지방시공도 가능한가요? / 리바트 온라인 시스템 주방 제품은 지방시공도 가능합니다.(단, 제주도 및 도서/일부지방 제외)" src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/10.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="Q.냉장고장을 키큰장으로 또는, 키큰장을 오븐렌지장/밥통렌지인출장으로 바꿀 수 있나요? / 주문하신 상품에서 제품 모듈을 변경하고 싶으실 경우 실측 상담 시 말씀해주시고 차액을 환불 받거나 추가 금액을 지불하시면 됩니다." src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/11.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="사용하다가 가구에 문제가 생기면? / AS센터(1577-3332~2)로 연락해 주시면 신속하고 철저한 A/S를 진행해드립니다." src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/12.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="" src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/13.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;h4 style="padding:0;margin:0;"&gt;&lt;img alt="리바트 온라인 제품을 구매하신 고객님, 아래내용 꼭 읽어보세요!" src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/14.jpg" /&gt;&lt;/h4&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="리바트온라인 제품 배송 과정 : 1.결제완료 2.주문안내 3.배송 4.설치 5.완료" src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/15.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="유의사항: 화면상의 제품과 실제품간의 색상은 모니터사양에 따라 다소 차이가 있을 수 있습니다." src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/16.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="배송비는 무료입니다.(단, 제주도, 도서/일부지방은 배송불가)" src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/17.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="교환/반품안내 : 가구 특성상 박스 개봉 후 교환/반품은 불가합니다.(단, 제품 하자 경우 제외)" src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/18.jpg" /&gt;&lt;/p&gt';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="A/S 구입 후 1년간 무상 A/S 해드립니다." src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/19.jpg" /&gt;&lt;/p&gt;';
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;p style="padding:0;margin:0;"&gt;&lt;img alt="리바트 고객사랑 센터 : 1577-3332" src="http://mall.hyundailivart.co.kr/images/detail/05_keittio/under/20.jpg" /&gt;&lt;/p&gt;';
+
+		bndSource.innerHTML= bndSource.innerHTML+'&lt;/div&gt;';
+		alert('케이티오 상품기술서가 제작되었습니다.');}
+	else{alert(brandName);}
+}
+function nowCode(){
+	var erpCode = document.frm.newCode.value;
+	for(i=1;i<=k;i++){
+		document.getElementById('code'+i).innerHTML=erpCode.replace( /(\s*)/g, "");
+	}
+	if (erpCode.length==0){alert("코드를 입력해주세요!");}
+	else {alert(erpCode+"로 변경되었습니다.");}
+}
+
+function nowAll(){
+	i=1;
+	var vName = document.frm.newName.value;
+	document.getElementById('sName'+i).innerHTML=vName;
+	var vMagam = document.frm.newMagam.value;
+	document.getElementById('sMagam'+i).innerHTML=vMagam;
+	var vGu = document.frm.newGu.value;
+	document.getElementById('sGu'+i).innerHTML=vGu;
+	var vColor = document.frm.newColor.value;
+	document.getElementById('sColor'+i).innerHTML=vColor;
+	var vSize = document.frm.newSize.value;
+	document.getElementById('sSize'+i).innerHTML=vSize;
+	var vMade = document.frm.newMade.value;
+	document.getElementById('sMade'+i).innerHTML=vMade;
+	var vChak = document.frm.newChak.value;
+	document.getElementById('sChak'+i).innerHTML=vChak;
+	var erpCode = document.frm.newCode.value;
+	for(i=1;i<=k;i++){
+		document.getElementById('code'+i).innerHTML=erpCode.replace( /(\s*)/g, "");;
+	}
+	if (erpCode.length==0){alert("코드를 입력해주세요!");}
+	else {alert(erpCode+"로 변경되었습니다.");}
+}
+
+
+//5초마다 실행
+function alarm(){
+	alert("해당페이지는 폐쇄상태입니다. 별도의 등록이 필요한 경우 전성호 호출 바랍니다.");
+	alert("제 말 안들어줄 껍니까? (ㅡ_-+ 귀찮게 계속 알림할겁니다. 2015버젼 많이 애용해주세요.^_^");
+}
+
+//setInterval(alarm, 5000);
+</script>
+
+</head>
+<body>
+<div class="header">
+	<h1><a href="index.html"><img src="img/logo.gif" alt="현대 리바트 가이드" /></a></h1>
+	<div class="navi">
+		<h2 class="skip">navigation</h2>
+		<ul>
+			<li class="on"><a href="ja1_00.html">자사몰</a></li> 
+			<li><a href="ip_gs_week.html">입점몰</a></li>
+			<li><a href="edm1_2.html">DM 발송</a></li>
+		</ul>
+		<p>* 궁금한 사항은 윤창준DR / 전성호DR 에게 문의 해주세요.</p>
+	</div>
+</div>
+<div class="Wrap">
+	<div class="leftNavi">
+		<h2>자사몰</h2>
+		<dl>
+			<dt>기획전 등록</dt>
+			<dd>-<a href="ja1_1.html">DB연동 기획전 제작</a></dd>
+			<dt>상품 등록</dt> 
+			<dd>-<a href="ja2_1.html">이즈마인</a></dd>
+			<dd>-<a href="ja2_2.html">시스템주방</a></dd>
+			<dd>-<a href="ja2_3.html">홈스타일(리바트)</a></dd>
+			<dd>-<a href="ja2_4.html">홈스타일(이즈마인)</a></dd>
+			<dd>-<a href="ja2_5.html">네오스 온라인</a></dd>
+			<dd>-<a href="ja2_6.html">H-Mondo</a></dd>
+			<dd>-<a href="ja2_7.html">체어스</a></dd>
+			<dd>-<a href="ja2_8.html">ICT</a></dd>
+			<dd>-<a href="ja2_9.html">몰인몰</a></dd>
+
+			<dd>-<a href="ja3_1.html">리바트</a></dd>
+			<dd>-<a href="ja3_2.html">리첸</a></dd>
+			<dd>-<a href="ja3_3.html">네오스</a></dd>
+			<dd>-<a href="ja3_4.html">키친</a></dd>
+			<dd>-<a href="ja3_5.html">키즈</a></dd>
+
+			<dd class="on">-<a href="ja2_0.html" onclick="">2014 상품기술서 가이드</a></dd> <!--  -->
+
+			<dt>업데이트 내역</dt> 
+			<dd>-<a href="etc1_1.html">개발 세부 내용</a></dd>
+		</dl>
+	</div>
+	<div class="content">
+		<h2>2014 상품기술서 자동 코딩 가이드</h2>
+		<form method="get" action="" name="frm">
+			<fieldset>
+				<legend>상품기술서 부분 코딩 가이드</legend>
+				<div class="guide">
+					<h3>함부로 사용금지!!</h3>
+					<dl>
+						<dt class="skip"><!-- 1. 상품기술서 영역 : top.jpg --></dt>
+						<dd class="pic"><!-- <img src="img/product/top.jpg" alt="top.jpg" /> --></dd>
+						<dd>
+							<table class="tbl">
+								<colgroup>
+									<col width="30%"/>
+									<col width="70%"/>
+								</colgroup>
+								<tr>
+									<th scope="row"><span class="star">*</span> 브랜드 선택</th>
+									<td>
+										<input type="radio" id="lb_brand1" name="bnd" value="이즈마인" onclick="nowBrand(1);" /><label for="lb_brand1">이즈마인</label> 
+										<input type="radio" id="lb_brand2" name="bnd" value="리바트" onclick="nowBrand(2);" /><label for="lb_brand2">리바트</label> 
+										<input type="radio" id="lb_brand3" name="bnd" value="스타일샵" onclick="nowBrand(3);" /><label for="lb_brand3">스타일샵</label> 
+										<input type="radio" id="lb_brand4" name="bnd" value="하움" onclick="nowBrand(4);" /><label for="lb_brand4">하움</label> 
+										<input type="radio" id="lb_brand5" name="bnd" value="케이티오" onclick="nowBrand(5);" /><label for="lb_brand5">케이티오</label> 
+									</td>
+								</tr>
+								<tr>
+									<th scope="row"><span class="star">*</span> ERP코드 입력</th>
+									<td><input type="text" name="newCode" style="width:400px;" /> <span class="lnk"><a href="#" onclick="nowCode();">부분적용</a></span></td>
+								</tr>
+								<tr>
+									<th scope="row"><span class="star">*</span> 상품명</th>
+									<td><input type="text" name="newName" style="width:400px;" /> <span class="lnk"><a href="#" onclick="nowName();">부분적용</a></span></td>
+								</tr>
+								<tr>
+									<th scope="row"><span class="star">*</span> (마감)소재</th>
+									<td><input type="text" name="newMagam" style="width:400px;" /> <span class="lnk"><a href="#" onclick="nowMagam();">부분적용</a></span></td>
+								</tr>
+								<tr>
+									<th scope="row"><span class="star">*</span> 구성</th>
+									<td><input type="text" name="newGu" style="width:400px;" /> <span class="lnk"><a href="#" onclick="nowGu();">부분적용</a></span></td>
+								</tr>
+								<tr>
+									<th scope="row"><span class="star">*</span> 색상</th>
+									<td><input type="text" name="newColor" style="width:400px;" /> <span class="lnk"><a href="#" onclick="nowColor();">부분적용</a></span></td>
+								</tr>
+								<tr>
+									<th scope="row"><span class="star">*</span> 규격(사이즈)</th>
+									<td><input type="text" name="newSize" style="width:400px;" /> <span class="lnk"><a href="#" onclick="nowSize();">부분적용</a></span></td>
+								</tr>
+								<tr>
+									<th scope="row"><span class="star">*</span> 제조원/원산지</th>
+									<td><input type="text" name="newMade" style="width:400px;" /> <span class="lnk"><a href="#" onclick="nowMade();">부분적용</a></span></td>
+								</tr>
+								<tr>
+									<th scope="row">그 외 추가옵션</th>
+									<td><input type="text" name="newChak" style="width:400px;" /> <span class="lnk"><a href="#" onclick="nowChak();">부분적용</a></span></td>
+								</tr>
+							</table>
+							<p class="btn"><span class="lnk em"><a href="#bndTxt" onclick="nowAll();">한번에 적용</a></span></p>
+						</dd>
+						<dd id="bndTxt" class="soc">
+							1.브랜드를 선택해 주세요.<br/>
+							2.ERP는 필수 입력입니다.
+						</dd>
+					</dl>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+
+
+
+
+<div class="footer"><h2>Copyright 2013 <strong>Jeon sung ho</strong> All Rights Reserved.</h2></div>
+
+
+
+</body>
+</html>

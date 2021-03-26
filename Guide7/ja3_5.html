@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="css/asset/img/favicon.ico">
+    <title>Hyundailivart ProductDetail Automation</title>
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="css/custom/style.bundle.css" rel="stylesheet" />
+    <link href="css/custom/ja2_1.css" rel="stylesheet" />
+    <!-- js -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.auto.js"></script> -->
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark" style="position:absolute">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="HyundaiLivart">
+        </a>
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" onClick="return false;">
+                        자사몰
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onClick="return false;">입점몰</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onClick="return false;">WSI</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="nav-scroller bg-white box-shadow">
+        <nav class="nav nav-underline">
+            <a class="nav-link" href="ja1_1.html">기획전</a>
+            <a class="nav-link active" href="ja2_1.html">상품기술서</a>
+        </nav>
+    </div>
+
+
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="ja2_1.html">
+                        리바트온라인
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ja2_3.html">
+                        리바트 홈스타일
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ja2_4.html">
+                        리바트온라인 홈스타일
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ja2_5.html">
+                        네오스 온라인
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ja2_6.html">
+                        H-몬도
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ja2_7.html">
+                        체어스
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ja2_8.html">
+                        ICT
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ja2_9.html">
+                        몰인몰
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ja3_1.html">
+                        리바트
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="ja3_2.html">
+                        리첸
+                    </a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="ja3_3.html">
+                        네오스
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ja3_4.html">
+                        키친
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="ja3_5.html">
+                        키즈
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ja3_6.html">
+                        하움
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="ja2_0.html">
+                        2014 상품기술서
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+        <section class="content">
+            <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-info rounded box-shadow">
+                <img class="mr-3" src="img/slogo_l01.png" alt="" width="48" height="48">
+                <div class="lh-100">
+                    <h6 class="mb-0 text-white lh-100">키즈 상품기술서 자동화</h6>
+                    <small>Product Detail Automation</small>
+                </div>
+            </div>
+
+            <div class="my-3 p-3 bg-white rounded box-shadow">
+                <div class="row">
+                    <div class="col-md-12 order-md-1">
+                        <h4 class="mb-3">정보 입력</h4>
+                        <form class="needs-validation col-md-8" method="get" action="" name="frm" novalidate>
+                            <div class="mb-3">
+                                <label for="series">브랜드+카테고리 영문파일명(엑셀파일명)</label>
+                                <input type="text" class="form-control" id="series" name="series" value="test"
+                                    placeholder="브랜드+카테고리명"
+                                    onKeyDown="if(event.keyCode==13){excel('dev_all', '205'); return false;};" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="numb">엑셀 탭번호(숫자만 가능)</label>
+                                <input type="text" class="form-control" id="numb" name="numb" value="01"
+                                    onKeyDown="if(event.keyCode==13){excel('dev_all', '205'); return false;};" required>
+                            </div>
+                            <!-- <hr class="mb-4"> -->
+                            <div class="text-center">
+                                <a href="#dev_all" onclick="excel('dev_all', '205','');"
+                                    class="btn btn-primary btn-lg">상품기술서 뷰어</a>
+                                <a href="#dev_all" onclick="excel('dev_all', '205','c');"
+                                    class="btn btn-success btn-lg">코딩</a>
+                            </div>
+                        </form>
+                        <small class="d-block text-center mt-3">
+                            최초 사용시 전성호DR 셋팅 필요
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+            <div class="createBox my-3 p-3 bg-white rounded box-shadow">
+                <h6 class="border-bottom border-gray pb-2 mb-0">생성 화면</h6>
+                <div id="dev_all">
+                    <div class="preview" id="dev_allp"></div>
+                    <div class="capture"></div>
+                </div>
+                <div id="dev_allC">
+                    <span style="display:block;text-align:center;">코딩이 생성되면 복사하세요</span>
+                </div>
+                <div id="dev_allS">
+                    <span style="display:block;text-align:center;color:#bbb">슬라이스 영역</span>
+                </div>
+                <!-- <small class="d-block text-right mt-3">
+                        <a href="#">슬라이스용 이미지 생성</a>
+                    </small> -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">Copyright 2018
+                <strong>Jeon sung ho</strong> All Rights Reserved.</span>
+        </div>
+    </footer>
+
+
+
+    <!-- core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
+    <script>window.jQuery || document.write('<script src="css/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="css/assets/js/vendor/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="css/assets/js/vendor/holder.min.js"></script>
+    <script src="js/custom/layout.js"></script>
+    <!-- bundler script file -->
+    <script src="js/custom/ja2_1.js"></script>
+
+</body>
+
+</html>

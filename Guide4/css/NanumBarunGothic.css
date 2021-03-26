@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*
+.File Name  :  css/common.css
+.Final Editor : 전성호 (2015-03-23 : 최초 작성) 
+*/
+
+/* base
+------------------------------------------------------------------------------------ */
+@font-face{
+	font-family:'NanumBarunGothic';
+	src:url(/font/NanumBarunGothic.eot);
+	src:local(☺),url(/font/NanumBarunGothic.eot?#iefix) format(embedded-opentype),
+		url(/font/NanumBarunGothic.woff) format(woff),
+		url(/font/NanumBarunGothic.ttf) format(truetype);
+	font-weight:normal;
+	font-style:normal
+}
+
+@font-face{
+	font-family:'NanumBarunGothicBold';
+	src:url(/font/NanumBarunGothicBold.eot);
+	src:local(☺),url(/font/NanumBarunGothicBold.eot?#iefix) format(embedded-opentype),
+		url(/font/NanumBarunGothicBold.woff) format(woff),
+		url(/font/NanumBarunGothicBold.ttf) format(truetype);
+	font-weight:normal;
+	font-style:normal
+}
